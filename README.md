@@ -19,6 +19,10 @@ ESPN (JSON público) ──▶ normalização (zod) ──▶ reconciliação de
 - **Um feed por time** (todos os jogos, todas as competições) para os 25 times de
   `data/featured-teams.json`, e **um por competição** para as 12 ligas de
   `data/leagues.json`.
+- O site é uma SPA estática (`src/site/static/`): selecionar um time/competição
+  abre um calendário responsivo (strip de meses e dias, painel do dia com os
+  jogos) alimentado pelos `calendars/**/*.json` gerados junto com os `.ics`.
+  Roteamento por hash (`#/time/{slug}`) para funcionar no Pages sem servidor.
 - Fonte: a API JSON pública da ESPN (`site.api.espn.com`) — sem autenticação, sem
   quota, sem scraping de HTML. Cobre Séries A/B/C, Copa do Brasil, Libertadores,
   Sudamericana, Recopa, Copa do Nordeste e os estaduais SP/RJ/RS/MG.

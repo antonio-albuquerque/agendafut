@@ -1,4 +1,5 @@
-import { mkdirSync, writeFileSync, readFileSync, rmSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readFileSync, rmSync, cpSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { join } from 'node:path';
 import { DateTime } from 'luxon';
 import type { Match, Team } from './domain/types.js';
@@ -6,8 +7,9 @@ import { buildCalendar } from './ics/builder.js';
 import type { CalendarEntry } from './ics/builder.js';
 import { EspnProvider, FEATURED_SLUGS } from './providers/espn.js';
 import { loadState, saveState, reconcile } from './state/sequence.js';
-import { renderIndexHtml } from './site/index.js';
+import { renderShell } from './site/index.js';
 import type { FeedRef, FeedsIndex } from './site/index.js';
+import { buildFeedJson } from './site/feedJson.js';
 
 const STATE_PATH = 'data/state.json';
 const DIST = 'dist';
@@ -89,9 +91,12 @@ async function main(): Promise<void> {
   const teamFeeds: FeedRef[] = [];
   for (const [slug, group] of teamGroups.sort(([a], [b]) => a.localeCompare(b))) {
     const path = `calendars/team/${slug}.ics`;
+    const jsonPath = `calendars/team/${slug}.json`;
     const ics = buildCalendar({ name: `${group.team.name} — jogos` }, group.entries);
     writeFileSync(join(DIST, path), ics, 'utf8');
-    teamFeeds.push({ slug, name: group.team.name, path, matchCount: group.entries.length });
+    const json = buildFeedJson('team', slug, group.team.name, group.entries);
+    writeFileSync(join(DIST, jsonPath), JSON.stringify(json) + '\n', 'utf8');
+    teamFeeds.push({ slug, name: group.team.name, path, jsonPath, matchCount: group.entries.length });
   }
 
   const competitionFeeds: FeedRef[] = [];
@@ -99,9 +104,12 @@ async function main(): Promise<void> {
     a.localeCompare(b),
   )) {
     const path = `calendars/competition/${slug}.ics`;
+    const jsonPath = `calendars/competition/${slug}.json`;
     const ics = buildCalendar({ name: group.name }, group.entries);
     writeFileSync(join(DIST, path), ics, 'utf8');
-    competitionFeeds.push({ slug, name: group.name, path, matchCount: group.entries.length });
+    const json = buildFeedJson('competition', slug, group.name, group.entries);
+    writeFileSync(join(DIST, jsonPath), JSON.stringify(json) + '\n', 'utf8');
+    competitionFeeds.push({ slug, name: group.name, path, jsonPath, matchCount: group.entries.length });
   }
 
   const feedsIndex: FeedsIndex = {
@@ -110,7 +118,10 @@ async function main(): Promise<void> {
     competitions: competitionFeeds,
   };
   writeFileSync(join(DIST, 'feeds.json'), JSON.stringify(feedsIndex, null, 2) + '\n', 'utf8');
-  writeFileSync(join(DIST, 'index.html'), renderIndexHtml(feedsIndex), 'utf8');
+  writeFileSync(join(DIST, 'index.html'), renderShell(), 'utf8');
+  cpSync(fileURLToPath(new URL('./site/static/', import.meta.url)), join(DIST, 'assets'), {
+    recursive: true,
+  });
   writeFileSync(join(DIST, '.nojekyll'), '', 'utf8');
 
   saveState(STATE_PATH, state);
