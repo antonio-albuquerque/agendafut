@@ -1,0 +1,14 @@
+[
+  { "code": "bra.1", "slug": "brasileirao-serie-a", "name": "Brasileirão Série A", "required": true },
+  { "code": "bra.2", "slug": "brasileirao-serie-b", "name": "Brasileirão Série B", "required": true },
+  { "code": "bra.3", "slug": "brasileirao-serie-c", "name": "Brasileirão Série C", "required": true },
+  { "code": "bra.copa_do_brazil", "slug": "copa-do-brasil", "name": "Copa do Brasil", "required": true },
+  { "code": "conmebol.libertadores", "slug": "libertadores", "name": "CONMEBOL Libertadores", "required": false },
+  { "code": "conmebol.sudamericana", "slug": "sudamericana", "name": "CONMEBOL Sudamericana", "required": false },
+  { "code": "conmebol.recopa", "slug": "recopa-sul-americana", "name": "Recopa Sul-Americana", "required": false },
+  { "code": "bra.copa_do_nordeste", "slug": "copa-do-nordeste", "name": "Copa do Nordeste", "required": false },
+  { "code": "bra.camp.paulista", "slug": "paulista", "name": "Campeonato Paulista", "required": false },
+  { "code": "bra.camp.carioca", "slug": "carioca", "name": "Campeonato Carioca", "required": false },
+  { "code": "bra.camp.gaucho", "slug": "gaucho", "name": "Campeonato Gaúcho", "required": false },
+  { "code": "bra.camp.mineiro", "slug": "mineiro", "name": "Campeonato Mineiro", "required": false }
+]

@@ -4,7 +4,7 @@ import { DateTime } from 'luxon';
 import type { Match, Team } from './domain/types.js';
 import { buildCalendar } from './ics/builder.js';
 import type { CalendarEntry } from './ics/builder.js';
-import { ApiFutebolProvider } from './providers/apiFutebol.js';
+import { EspnProvider, FEATURED_SLUGS } from './providers/espn.js';
 import { loadState, saveState, reconcile } from './state/sequence.js';
 import { renderIndexHtml } from './site/index.js';
 import type { FeedRef, FeedsIndex } from './site/index.js';
@@ -13,8 +13,8 @@ const STATE_PATH = 'data/state.json';
 const DIST = 'dist';
 
 /**
- * Smoke test offline: API_FUTEBOL_FIXTURE=<caminho.json> serve o mesmo
- * arquivo para toda chamada da API, sem rede e sem gastar quota.
+ * Smoke test offline: ESPN_FIXTURE=<caminho.json> serve o mesmo arquivo
+ * para toda chamada da API, sem rede.
  */
 function fixtureFetch(path: string): typeof fetch {
   const body = readFileSync(path, 'utf8');
@@ -22,14 +22,10 @@ function fixtureFetch(path: string): typeof fetch {
 }
 
 async function fetchAllMatches(): Promise<Match[]> {
-  const fixturePath = process.env.API_FUTEBOL_FIXTURE;
-  const token = process.env.API_FUTEBOL_TOKEN ?? (fixturePath ? 'fixture' : undefined);
-  if (!token) {
-    throw new Error('API_FUTEBOL_TOKEN não definido no ambiente');
-  }
-  const provider = new ApiFutebolProvider(token, {
-    ...(fixturePath ? { fetchImpl: fixtureFetch(fixturePath), cacheTtlMs: 0 } : {}),
-  });
+  const fixturePath = process.env.ESPN_FIXTURE;
+  const provider = new EspnProvider(
+    fixturePath ? { fetchImpl: fixtureFetch(fixturePath), cacheTtlMs: 0 } : {},
+  );
   const competitions = await provider.competitions();
 
   const all: Match[] = [];
@@ -87,8 +83,11 @@ async function main(): Promise<void> {
   mkdirSync(join(DIST, 'calendars', 'team'), { recursive: true });
   mkdirSync(join(DIST, 'calendars', 'competition'), { recursive: true });
 
+  // Feeds de time só para os 25 selecionados; adversários aparecem nos
+  // eventos, mas não ganham feed próprio.
+  const teamGroups = [...groupByTeam(entries)].filter(([slug]) => FEATURED_SLUGS.has(slug));
   const teamFeeds: FeedRef[] = [];
-  for (const [slug, group] of [...groupByTeam(entries)].sort(([a], [b]) => a.localeCompare(b))) {
+  for (const [slug, group] of teamGroups.sort(([a], [b]) => a.localeCompare(b))) {
     const path = `calendars/team/${slug}.ics`;
     const ics = buildCalendar({ name: `${group.team.name} — jogos` }, group.entries);
     writeFileSync(join(DIST, path), ics, 'utf8');

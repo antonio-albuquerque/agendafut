@@ -1,23 +1,34 @@
 # ⚽ agendafut
 
-Feeds iCal assináveis (`webcal://`) com os jogos do futebol brasileiro.
-Gerador 100% estático: GitHub Actions roda um cron diário, gera os `.ics` e publica
-no GitHub Pages. Sem servidor, sem banco, sem custo.
+Feeds iCal assináveis (`webcal://`) com os jogos dos 25 maiores times do futebol
+brasileiro. Gerador 100% estático: GitHub Actions roda um cron diário, gera os
+`.ics` e publica no GitHub Pages. Sem servidor, sem banco, sem custo.
+
+**Assine em:** https://antonio-albuquerque.github.io/agendafut/
 
 ## Como funciona
 
 ```
-API-Futebol ──▶ normalização (zod) ──▶ reconciliação de SEQUENCE (data/state.json)
-                                              │
-                                              ▼
-                            dist/calendars/{team,competition}/*.ics
-                            dist/index.html · dist/feeds.json
+ESPN (JSON público) ──▶ normalização (zod) ──▶ reconciliação de SEQUENCE (data/state.json)
+                                                      │
+                                                      ▼
+                                    dist/calendars/{team,competition}/*.ics
+                                    dist/index.html · dist/feeds.json
 ```
 
-- **Um feed por time** (todos os jogos, todas as competições) e **um por competição**.
-- Jogo sem horário definido vira **evento de dia inteiro** e migra para evento com
-  horário quando a CBF detalhar a rodada — mesmo UID, `SEQUENCE` incrementado.
-- Jogo adiado/cancelado permanece no feed (`TENTATIVE`/`CANCELLED`).
+- **Um feed por time** (todos os jogos, todas as competições) para os 25 times de
+  `data/featured-teams.json`, e **um por competição** para as 12 ligas de
+  `data/leagues.json`.
+- Fonte: a API JSON pública da ESPN (`site.api.espn.com`) — sem autenticação, sem
+  quota, sem scraping de HTML. Cobre Séries A/B/C, Copa do Brasil, Libertadores,
+  Sudamericana, Recopa, Copa do Nordeste e os estaduais SP/RJ/RS/MG.
+  *Limitação conhecida: a ESPN não expõe Baiano, Pernambucano, Cearense, Goiano
+  nem Paraense — quando houver fonte melhor, é só somar outro `FixtureProvider`.*
+- Jogo sem horário definido (`timeValid: false` na ESPN) vira **evento de dia
+  inteiro** e migra para evento com horário quando a CBF detalhar a rodada —
+  mesmo UID, `SEQUENCE` incrementado.
+- Jogo adiado/cancelado permanece no feed (`TENTATIVE`/`CANCELLED`); placar entra
+  no `SUMMARY` dos encerrados.
 - O Google Calendar faz polling de feeds externos no ritmo dele (8–24h+); o cron
   diário é suficiente. O valor está na corretude do `.ics`, não na frequência.
 
@@ -32,33 +43,24 @@ pnpm run typecheck
 ### Rodando local
 
 ```bash
-# offline, com fixture (não gasta quota):
-API_FUTEBOL_FIXTURE=src/providers/fixtures/partidas-brasileirao.json pnpm run build
+# offline, com fixture gravada (sem rede):
+ESPN_FIXTURE=src/providers/fixtures/espn-bra1.json pnpm run build
 
-# com a API real:
-export API_FUTEBOL_TOKEN=seu-token   # https://api-futebol.com.br
-pnpm run fetch -- --competition brasileirao-serie-a   # inspeciona dados normalizados
-pnpm run build                                        # gera dist/
+# contra a ESPN real:
+pnpm run fetch -- --league brasileirao-serie-a   # inspeciona dados normalizados
+pnpm run build                                   # gera dist/ e atualiza data/state.json
 ```
 
-Respostas da API ficam em `.cache/` com TTL de 12h para o dev loop não queimar a
-quota mensal (apertada no plano gratuito).
-
-> **Antes do primeiro build real:** confira os `providerId` em `data/competitions.json`
-> contra `GET /v1/campeonatos` da sua conta — os ids variam por plano/temporada.
+Respostas da API ficam em `.cache/` com TTL de 6h para o dev loop.
 
 ## Deploy (GitHub Pages)
 
-1. Crie o repositório no GitHub e faça push da `main`.
-2. Em *Settings → Secrets → Actions*, crie `API_FUTEBOL_TOKEN`.
-3. Em *Settings → Pages*, selecione **GitHub Actions** como source.
-4. Rode o workflow `build` manualmente (*Actions → build → Run workflow*).
+Já configurado: push na `main` ou o cron diário (06:00 BRT) rodam o workflow
+`build`, que commita `data/state.json` (mantendo o cron vivo) e só publica se a
+fonte respondeu com dados.
 
-O workflow roda todo dia às 06:00 BRT, commita `data/state.json` (o que também
-mantém o cron vivo) e só publica se o provider respondeu com dados.
-
-Depois do primeiro deploy: **assine o próprio feed no celular e valide por uma
-semana real antes de divulgar.**
+Depois de qualquer mudança estrutural: **assine o próprio feed no celular e
+valide por uma semana real antes de divulgar.**
 
 ## Estrutura
 
@@ -66,7 +68,9 @@ semana real antes de divulgar.**
 |---|---|
 | `src/ics/` | Serializador RFC 5545: UID estável, SEQUENCE, VTIMEZONE, folding |
 | `src/state/sequence.ts` | Reconciliação: hash → bump de SEQUENCE, índice de adiamentos |
-| `src/providers/` | `FixtureProvider` + implementação API-Futebol (zod + cache) |
+| `src/providers/espn.ts` | Provider ESPN (zod + cache); interface em `provider.ts` |
+| `data/featured-teams.json` | Os 25 times com feed próprio (slug + espnId) |
+| `data/leagues.json` | Ligas cobertas; `required: true` → vazio aborta o build |
 | `data/teams.json` | Nomes canônicos + aliases (fontes divergem: "CAM", "Atlético-MG"…) |
 | `data/state.json` | Estado de SEQUENCE, commitado pelo CI |
 | `test/golden/` | `.ics` esperados; regenerar com `UPDATE_GOLDEN=1 pnpm test` |
@@ -75,6 +79,7 @@ As regras invariantes do formato estão em [CLAUDE.md](CLAUDE.md).
 
 ## Nota legal
 
-Datas e horários de partidas são fatos públicos. O projeto não reproduz escudos,
-logos nem texto editorial; dados vêm da [API-Futebol](https://api-futebol.com.br).
-Não afiliado a CBF, clubes ou federações.
+Datas, horários e placares de partidas são fatos públicos. O projeto não
+reproduz escudos, logos nem texto editorial. Dados obtidos da API pública da
+ESPN; as requisições se identificam via User-Agent com link deste repositório.
+Não afiliado a ESPN, CBF, CONMEBOL, clubes ou federações.

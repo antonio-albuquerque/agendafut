@@ -33,4 +33,9 @@ Outras convenções:
 - Golden tests em `test/golden/` — regenerar só com `UPDATE_GOLDEN=1 pnpm test` e revisar o diff.
 - Toda resposta de API valida com zod; falhar alto > gerar `.ics` com `undefined`.
 - Nome de time novo/divergente entra em `data/teams.json` (aliases), nunca hardcoded.
-- Token via env `API_FUTEBOL_TOKEN`; smoke test offline: `API_FUTEBOL_FIXTURE=<json> pnpm run build`.
+- Fonte: API JSON pública da ESPN (`site.api.espn.com`), sem token. Ligas em
+  `data/leagues.json` (`required: true` → zero eventos aborta o build); os 25 times
+  com feed próprio em `data/featured-teams.json` (matching por `espnId`, não por nome).
+- `timeValid: false` na ESPN = horário placeholder → evento de dia inteiro, nunca
+  confie no horário desses eventos.
+- Smoke test offline: `ESPN_FIXTURE=src/providers/fixtures/espn-bra1.json pnpm run build`.
