@@ -1,0 +1,51 @@
+{
+  "campeonato": {
+    "campeonato_id": 10,
+    "nome": "Campeonato Brasileiro",
+    "slug": "campeonato-brasileiro"
+  },
+  "partidas": {
+    "fase-unica-pontos-corridos": {
+      "rodada-18": [
+        {
+          "partida_id": 9001,
+          "time_mandante": { "time_id": 1, "nome_popular": "Palmeiras", "sigla": "PAL" },
+          "time_visitante": { "time_id": 2, "nome_popular": "Corinthians", "sigla": "COR" },
+          "status": "agendado",
+          "data_realizacao": "30/07/2026",
+          "hora_realizacao": "16:00",
+          "data_realizacao_iso": "2026-07-30T16:00:00-03:00",
+          "estadio": { "nome_popular": "Allianz Parque" },
+          "placar_mandante": null,
+          "placar_visitante": null
+        },
+        {
+          "partida_id": 9002,
+          "time_mandante": { "time_id": 3, "nome_popular": "Atletico Mineiro", "sigla": "CAM" },
+          "time_visitante": { "time_id": 4, "nome_popular": "Gremio", "sigla": "GRE" },
+          "status": "agendado",
+          "data_realizacao": "02/08/2026",
+          "hora_realizacao": null,
+          "data_realizacao_iso": "2026-08-02T00:00:00-03:00",
+          "estadio": null,
+          "placar_mandante": null,
+          "placar_visitante": null
+        }
+      ],
+      "rodada-17": [
+        {
+          "partida_id": 8950,
+          "time_mandante": { "time_id": 5, "nome_popular": "Fortaleza", "sigla": "FOR" },
+          "time_visitante": { "time_id": 6, "nome_popular": "Sao Paulo", "sigla": "SAO" },
+          "status": "finalizado",
+          "data_realizacao": null,
+          "hora_realizacao": "18:30",
+          "data_realizacao_iso": "2026-07-20T18:30:00-03:00",
+          "estadio": { "nome_popular": "Arena Castelão" },
+          "placar_mandante": 2,
+          "placar_visitante": 2
+        }
+      ]
+    }
+  }
+}

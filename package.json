@@ -1,0 +1,33 @@
+{
+  "name": "agendafut",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Feeds iCal assináveis (webcal) para times do futebol brasileiro",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsx src/main.ts",
+    "fetch": "tsx src/cli/fetch.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src test"
+  },
+  "dependencies": {
+    "luxon": "^3.5.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^22.10.0",
+    "eslint": "^9.17.0",
+    "ical.js": "^2.1.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^2.1.0"
+  }
+}
