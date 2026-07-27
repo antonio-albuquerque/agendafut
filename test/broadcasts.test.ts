@@ -166,6 +166,38 @@ describe('enrichBroadcasts', () => {
     expect(called).toBe(0);
   });
 
+  it('busca as páginas de liga em paralelo', async () => {
+    const starts: string[] = [];
+    let release!: () => void;
+    const gate = new Promise<void>((resolve) => {
+      release = resolve;
+    });
+    // Cada chamada só resolve depois que AMBAS começaram: se o scrape fosse
+    // serial, a primeira nunca terminaria e o teste estouraria o timeout.
+    const client: LeagueScraper = {
+      leagueGames: async (url) => {
+        starts.push(url);
+        if (starts.length === 2) release();
+        await gate;
+        return [];
+      },
+    };
+    await enrichBroadcasts(
+      [makeMatch(), makeMatch({ competition: 'brasileirao-serie-b' })],
+      emptyState(),
+      {
+        now: FIXED_NOW,
+        client,
+        leagues: [
+          { slug: 'brasileirao-serie-a', url: 'https://fntv.example/liga/a' },
+          { slug: 'brasileirao-serie-b', url: 'https://fntv.example/liga/b' },
+        ],
+        log: noop,
+      },
+    );
+    expect(starts).toHaveLength(2);
+  });
+
   it('nunca rejeita, mesmo com tudo falhando', async () => {
     const report = await enrichBroadcasts([makeMatch()], emptyState(), {
       now: FIXED_NOW,
