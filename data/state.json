@@ -2879,20 +2879,30 @@
     "brasileirao-serie-a-2026-07-29-fluminense-vs-bahia@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "72dc873e7185c6003d4295775dae4e453b64dccf329968895ad4cfcf71a958da",
-      "contentHash": "3b564d39e62561b3f5e83411f0ac947f6ca5d580db512a162caf64d15967f2c2",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "547a9f20c5edb263966aa1c8508aa61d4b7254f3cafa20125e3dea8805c9ac45",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "GLOBO",
+        "PREMIERE 2"
+      ]
     },
     "brasileirao-serie-a-2026-07-29-internacional-vs-flamengo@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "a1ea08bc39a6e0038295dab0b239ee569ffa3ecca630ad8f9ee40c98ea3e955e",
-      "contentHash": "e4c6ceb7879846422e072e21bf9dab001fe22e72c98bf5f463286f5ee2afff7e",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "4e08114b31faf8b6c3f4ff509926bccb3eed5ebdce9dca8d63ed01c74a7ee2e7",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "PRIME VIDEO"
+      ]
     },
     "brasileirao-serie-a-2026-07-29-mirassol-vs-remo@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "0eaf865a4f73758400878980294e82f022f057e3a04c3bbf944ea6b375a55bb9",
-      "contentHash": "eef9925e529a6c784414dd14a3febfd3f927af16bde787f955d3c2d8f42f8a30",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "e73de1a90a37d4d9a10ebe5b2bf5322630985bb7a2d14c3f02f978effe66e54d",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "PREMIERE 4"
+      ]
     },
     "brasileirao-serie-a-2026-07-29-sao-paulo-vs-santos@futebol.agendafut": {
       "sequence": 0,
@@ -2903,20 +2913,34 @@
     "brasileirao-serie-a-2026-07-29-vitoria-vs-palmeiras@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "047aa452149fafb3243d931209b4906e08c0d32e0ca2fc15b532498c92d5fddd",
-      "contentHash": "a6aae5a34fb6019df54ae808c723418b79808e6869388ef1bfc51365299e7563",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "2b484a6f91a388039ac7d7c4de6c4b16691df71cd49697d7c841eaff19cd761a",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "GE TV",
+        "GLOBO",
+        "PREMIERE FC"
+      ]
     },
     "brasileirao-serie-a-2026-07-30-corinthians-vs-athletico-pr@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "7521424a1e16febd21ba362c6cf94e23519b91e9616a1a7bc950c1963266d07f",
-      "contentHash": "49adb38e797ccb02440136b50bc3d30dc97b3e70d5d5b73e2a381ba513584e5e",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "be2fb5e5c76a973d8daa91631f703407b6151faeb43dd043bdbbe413e901587a",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "CAZÉTV",
+        "PREMIERE FC",
+        "RECORD"
+      ]
     },
     "brasileirao-serie-a-2026-07-30-coritiba-vs-cruzeiro@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "91e58d5fe4462575db74127343b3ba5901d00c1ab9220b41dea89c49c55f0c36",
-      "contentHash": "6ecd2ae7afa89938dcab47967f8e9828035643344b349b31922fbd531ba6835f",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "236c0a7cb77df57b9ad04d8e80fc405e0620334614f15104d49fecf2c8dad870",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "PREMIERE 2",
+        "SPORTV"
+      ]
     },
     "brasileirao-serie-a-2026-08-08-botafogo-vs-fluminense@futebol.agendafut": {
       "sequence": 0,
@@ -3971,8 +3995,8 @@
     "brasileirao-serie-b-2026-03-22-athletic-vs-ponte-preta@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "7a193e8de2a7e9041fc01b0bb6a1bbc2f501fab3005ee8db4f010805bfb2e569",
-      "contentHash": "2fb26dd28ffc2fd166ecb88c21946f0328862196e8242a62cede442e3f002898",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "26b5a7c27ab6709fad839cc0fdf61a334bf5aed916f139b82f0b5b12adc4ac5c",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-03-22-avai-vs-juventude@futebol.agendafut": {
       "sequence": 0,
@@ -4031,8 +4055,8 @@
     "brasileirao-serie-b-2026-04-01-criciuma-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "9ab1a9f8a449a4ece9cdce9df6dc4fcc5782f15692c3480aed324409300af075",
-      "contentHash": "a03963c9ecb298bec24d558e71affa378ce09c990bbfa936ada12630249447b8",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "6e8e917b059c1dbc7a7d2b959e1c30c4263732132461e0102d789a90ae347065",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-04-01-londrina-vs-goias@futebol.agendafut": {
       "sequence": 0,
@@ -4091,8 +4115,8 @@
     "brasileirao-serie-b-2026-04-05-athletic-vs-america-mg@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "ab798530db5f702d6608458938a970cd715f0e11b074c9846255ebeec92fe571",
-      "contentHash": "697d1bd8583ac62348568073782f703a108ba3ff857587dff5b7eea280adbf8a",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "e1a20d60a0848603bac84762112396a866d983e4599785bbb899d281c76d42b9",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-04-05-avai-vs-operario-pr@futebol.agendafut": {
       "sequence": 0,
@@ -4163,8 +4187,8 @@
     "brasileirao-serie-b-2026-04-12-crb-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "f5161a5d17e3f5522f1e554674ad1e492c57a81a3f170bd0e536018b0dfe1f22",
-      "contentHash": "bee8a4dab6080e46923da629a161c21d966db18fc4e231c2f0c885927088cd4c",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "06d0c4f5b2055f0517db30c123d368ea07ea5363603645ac38dfaae0d1fef479",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-04-12-operario-pr-vs-cuiaba@futebol.agendafut": {
       "sequence": 0,
@@ -4235,8 +4259,8 @@
     "brasileirao-serie-b-2026-04-19-novorizontino-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "59dcb97da43c1ba97083268300dc9f9abb4cbff72ea859b1ae1eb0e20c0cb63d",
-      "contentHash": "6a993551b49220d47d1b6d91be1129f447ae4042a7593051708d8f62beec3b7f",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "6d1c883782ec2f6a0d6d2ddc95b53e0aa656bc6d2fb6f35ca5a8ff62dbc9fde6",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-04-22-cuiaba-vs-botafogo-sp@futebol.agendafut": {
       "sequence": 0,
@@ -4295,8 +4319,8 @@
     "brasileirao-serie-b-2026-04-27-athletic-vs-nautico@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "1c41f382305a093388617eca039323ee55d174ff1f6c525b187a764b9de0510c",
-      "contentHash": "b4198d2f07865b39c992fb913d77480c5054b3e8fe4ce53cb0ea41fdd30a6c28",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "6dfe0f0ebe682bf242a29125487fc3fa3d17f11911376f42d07d40c83bf4195e",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-05-02-botafogo-sp-vs-nautico@futebol.agendafut": {
       "sequence": 0,
@@ -4355,14 +4379,14 @@
     "brasileirao-serie-b-2026-05-04-vila-nova-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "9c36a718f7b67271bcaa713d0efe7d1efc2749f5e13813bdc24e238a344bcb63",
-      "contentHash": "a7aa91c6920e16505b720902b8bf9ad5fb04d3f7cc4aa26f98afef73b5ee8db1",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "5e24507e8a6f8316c26ba9dbadbf58fc2970112581f95a690a59d4fcfebf3a81",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-05-09-athletic-vs-cuiaba@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "c36c17354b5c632e6ffd24e49571ba076898afdbc22092f90c6e25d66a0b4434",
-      "contentHash": "bbd3dcc596eff8c90a51dd33105272588c4d6a55ecf0c92db46b16c18ed5e667",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "d26986c58bd090b029ef7cb9e85e7ca832a8b97d77730e0dda3eae53a766f7ec",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-05-09-ceara-vs-atletico-go@futebol.agendafut": {
       "sequence": 0,
@@ -4445,8 +4469,8 @@
     "brasileirao-serie-b-2026-05-17-athletic-vs-juventude@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "37aa125ccf2245869a73de1cfbfc85d5f596ad553c88faae3f12c62207d69ac5",
-      "contentHash": "9a642abb99c2da1c31df5eef8b44b2674f14415d269413a20a1f59746547d99d",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "00f2b6a6e53f33f115242681725e61c15bf8fa8a16b96f86c8fee6d614a387d9",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-05-17-ceara-vs-fortaleza@futebol.agendafut": {
       "sequence": 0,
@@ -4535,8 +4559,8 @@
     "brasileirao-serie-b-2026-05-25-botafogo-sp-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "19dd2d7f9ecde9e575e3f5efe67b88099a5d5e0314388f47ab290b29b7221493",
-      "contentHash": "3c4f52bca21690c21c7c1cb856bf47208f76887e836c549822445c33eaf35a3e",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "12ba3b9fd6d6e819b8a03b0271b5ca23dd8b353c5efa47be01b9bb0e96e00d7d",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-05-29-juventude-vs-america-mg@futebol.agendafut": {
       "sequence": 0,
@@ -4547,8 +4571,8 @@
     "brasileirao-serie-b-2026-05-30-athletic-vs-fortaleza@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "0e09ee92ad80c5cb7d445d3ae28679a8ea65bdc39755e6b69d1d4b7e968b8fab",
-      "contentHash": "af03ff939abbe8ebcbb0ae2a90aef52450589ebadb73ef5fd5a6db9ab76bc0e5",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "2dd09fb4b42494403ac4dd6fa8c7dfec6915e44e9b9e80525f4a2ace5ce7965b",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-05-30-atletico-go-vs-goias@futebol.agendafut": {
       "sequence": 0,
@@ -4655,8 +4679,8 @@
     "brasileirao-serie-b-2026-06-10-sport-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "83975093f8e4bb085bc402d09411d5d0377d809291ee818d3ad6cb36718a71b2",
-      "contentHash": "c758b2f7514ed1a680365c19ce5cbf96bce0024330fa9d20705104d585677933",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "113d92a0ab3a94a72256e3148d23575a5fbe5a0165dbe94c67daec60996e7da1",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-06-12-atletico-go-vs-crb@futebol.agendafut": {
       "sequence": 0,
@@ -4667,8 +4691,8 @@
     "brasileirao-serie-b-2026-06-14-athletic-vs-goias@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "2b517e651b470f5e7f6e9680a010315e7cb98dc860f86d66986594ab4a63a49c",
-      "contentHash": "887f948af34abbe8f2d3df898c37e6ad1be7672e67dceb3315b650ef92df86f6",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "16c25f3495383e564e8317248bc6224e16b010a9f7a0946d892a923d76b5a047",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-06-14-botafogo-sp-vs-operario-pr@futebol.agendafut": {
       "sequence": 0,
@@ -4733,8 +4757,8 @@
     "brasileirao-serie-b-2026-06-20-londrina-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "7636e477894ccd22ea290a123b617de0a8db086aa52da7a5c9b1408db3d1a466",
-      "contentHash": "777071e9c9bb9412aacdf53c10bdb8f1f46fa34a8af1272f7be01e202200642e",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "7221b757497f8e822e6a647c53465ebdfd7b6fbff5b7aef9a033c1671c9e4973",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-06-20-vila-nova-vs-nautico@futebol.agendafut": {
       "sequence": 0,
@@ -4805,8 +4829,8 @@
     "brasileirao-serie-b-2026-06-28-athletic-vs-avai@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "f2851549c2fff2454ab9bdd42ab182774f70794962ce26b1d4a2e36c7b631c48",
-      "contentHash": "cb7f82d8b18a189f8ef1c6eb7255329ea4311446c032e60fd36f9252dd3ada71",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "c95aabdb41e7b3991be954c41c24ea43090329a76fe0b7039005ac3b8f18b667",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-06-28-atletico-go-vs-ponte-preta@futebol.agendafut": {
       "sequence": 0,
@@ -4895,8 +4919,8 @@
     "brasileirao-serie-b-2026-07-07-athletic-vs-operario-pr@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "aa52ea9e477df60b77282ea54756c3fe38cc69c2217e835267503091e93fc9ba",
-      "contentHash": "b7402f2004f7f3b81e338adffe3d14a8194ca80539bc2476c836e1bc30e29184",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "2573f7b37ece83292fe787a3f457b69b65c3aadd80e189071715c02687b8c377",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-07-08-ponte-preta-vs-criciuma@futebol.agendafut": {
       "sequence": 0,
@@ -4955,8 +4979,8 @@
     "brasileirao-serie-b-2026-07-13-ceara-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "ac971b8a2dc8077e5725ca204384e8757b2470ee8df6f30179c9554d93221f1d",
-      "contentHash": "dd3fabb5ad2076062df9064e2dca8ec5cee5061f48f0464242122e74f1e13b68",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "d3a545d8c503542fea0148db5fdded2317603e14fb26cffea31d2f8a2751c9a0",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-07-16-crb-vs-nautico@futebol.agendafut": {
       "sequence": 0,
@@ -4997,8 +5021,8 @@
     "brasileirao-serie-b-2026-07-18-atletico-go-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "c78028fdce9891104116d389a93180542cdcb58919f8812a52a2b085b69e63d2",
-      "contentHash": "c9cd3974c6d0fa25d51f07961deb1b7330080d4e143836954d9d9bbdcb42a923",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "d26af82e02855510099be512d24d65ac9377b5d51a043c9d163786ab96da27ef",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-07-18-criciuma-vs-vila-nova@futebol.agendafut": {
       "sequence": 0,
@@ -5063,8 +5087,8 @@
     "brasileirao-serie-b-2026-07-23-athletic-vs-sao-bernardo@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "75c1079c3e20c7d1a3822c89507ff627c51e53206b4b9b884ea5eca5c37cbe97",
-      "contentHash": "830219b78beb44df98a416a34e8f49990f77abde24ac4af18b9b0572234edf3d",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "56c3dcd0496b69c9e0195a6bb9631ea7ed11dcacf04510bfb0ecd4adee9e613c",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-07-23-botafogo-sp-vs-juventude@futebol.agendafut": {
       "sequence": 0,
@@ -5105,50 +5129,83 @@
     "brasileirao-serie-b-2026-07-27-atletico-go-vs-operario-pr@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "891b8c39be0326212bcf2a3c0fa2fc710e7a7dfdfbbae7ac87eb200eedfeedda",
-      "contentHash": "f8b5b89a0bc4b858ff0371fed7b33fb7c9becd8a2de46410050d8efc6a12f70b",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "3eef31b2d6adf15eb155ab7694688e811d493947bf4146315140c85ca0016ae6",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-07-27-crb-vs-vila-nova@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "08a9315896ff4e6c801fa49d3285062fb63392c638a2f340726794e726b72b84",
-      "contentHash": "0abe85dd404ee67a6615e7deda40b8cfc8abf4b245220de7116edb155203e1db",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "984d92a895ca0457658620285054d5f8cdc8fe4ac91483d92461fce6d3a745c8",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "CANAL GOAT",
+        "DISNEY+",
+        "ESPN",
+        "XSPORTS"
+      ]
     },
     "brasileirao-serie-b-2026-07-27-sport-vs-cuiaba@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "2299d75a01f659baa833f0827c44fd44434ef8aae53931e53a212eab3731ebcf",
-      "contentHash": "931456726fc861c466c886c7445753f1662d74804cd76f039b9354fd81e1a5ca",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "48da5c31da555a300a73aa769e75746732a3fb43209e0039d39dc20512048ab9",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-07-28-fortaleza-vs-botafogo-sp@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "31dda46a7aca2760e4bd14c25278d991b0e7070487edd47ad51ef24d51cd64e4",
-      "contentHash": "c61703cf80cf3e96868006976789a087f1e44b1e7375b3443dcd0b1aec1f8702",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "0f7264c3aead331b64d01572b94621276028850dba0efbc7b5c0c7f6e50c8e6d",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN 4",
+        "REDETV!",
+        "SPORTYNET"
+      ]
     },
     "brasileirao-serie-b-2026-07-28-juventude-vs-avai@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "e849b5ca901b6649a7dcd1483a6af1865907f7880999bbe52187388590aac7f3",
-      "contentHash": "abfec5bab88eb73eae5a3d6a507e12ed1325b3b0073a39cb0f19ea6446364b6b",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "ede14910de932a2b1884866400944eeb2af7d14f765ef83ad27a98e8eb50843f",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN 4",
+        "SPORTYNET",
+        "XSPORTS"
+      ]
     },
     "brasileirao-serie-b-2026-07-28-ponte-preta-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "e9be5df751e602b03be6bb216fb4a5ccd91ba8b2e33ffc57fe599c83b366b3cc",
-      "contentHash": "dc174a89054d7ba6d7a8a0832618369863e2ee32b165b1e14191e5f8a0761fd2",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "02806295e2c04a51239056da1fdca035f54ef401a785ec137b01889b6b6862f1",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-08-07-ceara-vs-ponte-preta@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "4a63e98c3abe0c08d9fb2433885073b4b47bd6a6e8f4964c83ae63cd065b2889",
-      "contentHash": "5ec2742c23a78c982e6055af400511ac575f42b02a92fb98d033e5e36cec7ae5",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "da32c354de7428203348a543acdd94f907e2f5dd06115af268b6fdf1a5fe4710",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-08-07-operario-pr-vs-sao-bernardo@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "444bf91cf66343f1467cb729ed9360f1fb9c362f194bbf048917d78ac47bdd92",
-      "contentHash": "ec0634a31f1ba96e705cd4ed339aaf66ef3258c6a04ea7a270e29e6e34b536c0",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "b49a43055036163026dca71b1bb3a8e12337a1d46e4722d0920eec4052442e4b",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-08-08-botafogo-sp-vs-america-mg@futebol.agendafut": {
       "sequence": 0,
@@ -5165,8 +5222,8 @@
     "brasileirao-serie-b-2026-08-09-athletic-vs-criciuma@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "5c26365f84f4db63b8c04bd86749a12cfc68db9aabb1fb41287dae03871ce5bc",
-      "contentHash": "672d4bfc3c76d0b0b3c17c7124f8498d3ce24d88ff221f497b1594f6dc12b877",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "8ea6b199220d7a2ce3a4b89026372b4c2b11bb96aabf15a73e9d11f437ce6980",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-08-09-cuiaba-vs-fortaleza@futebol.agendafut": {
       "sequence": 0,
@@ -5243,8 +5300,8 @@
     "brasileirao-serie-b-2026-08-16-america-mg-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "cb0b8f3fdcab22fd42510c5d77a964286bed9051622cbb3ede56a5ff83209500",
-      "contentHash": "62e1a3cfd08d4633d4940ee2ffe668f85b1905a033e45883b40c7fcdd776b763",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "2aca7196f98cdf4d50660e90f2c623fe560d768fde46f009ee87faf946470c05",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-08-16-crb-vs-novorizontino@futebol.agendafut": {
       "sequence": 0,
@@ -5309,8 +5366,8 @@
     "brasileirao-serie-b-2026-08-20-athletic-vs-crb@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "049e6d6cc7f531291c5db1006f26d89c2ec99b4a930330b4af265d1b2407048c",
-      "contentHash": "7d6ca5a42f311b1e4fcd95f65af12d17e8e698990a0a729bb955f87acc3390a6",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "3136d68ea11243c85862d3a5a8eb07dcb131dbb4d80a845d049d4bfef900b14d",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-08-20-novorizontino-vs-america-mg@futebol.agendafut": {
       "sequence": 0,
@@ -5357,8 +5414,8 @@
     "brasileirao-serie-b-2026-08-24-athletic-vs-novorizontino@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "398b413a4076cad431df53832f49a77c74ca82a962ad86b3fb97093f9ee9e924",
-      "contentHash": "307f07643381c7eb30b6adfc9cc456b37636afe9434ae1e409c7c4873de0c783",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "efe617f519ffab0bd879bb76e891b55d218898ad66e3bb65ef6a0ac1da8b8f6c",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-08-24-sport-vs-america-mg@futebol.agendafut": {
       "sequence": 0,
@@ -5423,8 +5480,8 @@
     "brasileirao-serie-b-2026-08-28-nautico-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "9f8dda113132b2f60fb07b1df2840ab50b8936aca35edf8a0ff2a518dc46c036",
-      "contentHash": "271ab1ea5ef4f743b1507d06acecc1c223eef7a69f14c06c640bd96eebda6f5a",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "c56c7e2adb40504b416628ffa322affef2c9dc16e1034d56894b2466dbe23512",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-08-28-novorizontino-vs-sport@futebol.agendafut": {
       "sequence": 0,
@@ -5441,8 +5498,8 @@
     "brasileirao-serie-b-2026-09-04-athletic-vs-vila-nova@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "4180e3e1fbc44a9c0548f9eeb838ff2f4764fdd0c517ad3a66c2c95e0293fd05",
-      "contentHash": "d59e75947de78e5896774c2b4c149d1f2e727c0a99093cc08d3028ea56469463",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "67f19905b691d0cd56277e4eeab698a060ecdf6cbfb8dc9b9c9a151063c0a068",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-09-04-ceara-vs-sport@futebol.agendafut": {
       "sequence": 0,
@@ -5525,8 +5582,8 @@
     "brasileirao-serie-b-2026-09-08-cuiaba-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "8d60aa221c13fafd261f9230ab33fbbb658066f5d8b1a5ff551961eb3d3c9b88",
-      "contentHash": "f96bff51f7d0009b589bc4f4d796fbee08ea8d3236854699d148d0be342ec1a2",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "9a2a4492a7e45f8e495734c1333748985f8b8279ab2162fe71d6da48f7d536ae",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-09-08-fortaleza-vs-avai@futebol.agendafut": {
       "sequence": 0,
@@ -5597,8 +5654,8 @@
     "brasileirao-serie-b-2026-09-11-juventude-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "e4649f1a5bd714617e1027706231c96b32902a3e75d98bb2bbe59ac61d801c06",
-      "contentHash": "6ebdfcb5ef5e50ea06b97410013aac0851d554296c61c6a69c3b47c3bdd0532a",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "f3187bc42d96277dfcd35036e8502e913fbd3cd855c8c5d41dd7b4abd645d3d8",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-09-11-londrina-vs-ponte-preta@futebol.agendafut": {
       "sequence": 0,
@@ -5621,8 +5678,8 @@
     "brasileirao-serie-b-2026-09-18-athletic-vs-botafogo-sp@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "27ec8a35a39e2a061d3059726550d4d43f31bab85e796ab8da533a6e3899bc6e",
-      "contentHash": "9d5a668f5db1e1467c7a6faa9a6649c80ff9501a8801d8cdea43673ff5c197e0",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "8d2be7c78d8ef8285f029578dd48b68ecc9e2362a09009a58528ffb94a559877",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-09-18-ceara-vs-novorizontino@futebol.agendafut": {
       "sequence": 0,
@@ -5705,8 +5762,8 @@
     "brasileirao-serie-b-2026-09-25-fortaleza-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "3c5141af69471f15935ced9d27f605506f643a163faeb98116f5d20eb81fcbaa",
-      "contentHash": "b60447741e191eaea6ce47f69e843d84bff4518691cc88cd7705f2683ac09524",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "313c0288c0541c0473dcf38f617bb0e171aa7ee3f28a420d9c387d2ee678c7cc",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-09-25-goias-vs-atletico-go@futebol.agendafut": {
       "sequence": 0,
@@ -5741,8 +5798,8 @@
     "brasileirao-serie-b-2026-10-02-athletic-vs-sport@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "2759621d110d2c845bc5a8313db29f5ff9ee9d5523c0e88ef38e3c7e88e66fa3",
-      "contentHash": "dfe26a850bea8939e0d2100403b83a7c242847628add28be4671ff40fca9f1ad",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "d801784827aa2855591cbd30659f731a976b60be2eec146410552d632b54e5e5",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-10-02-atletico-go-vs-america-mg@futebol.agendafut": {
       "sequence": 0,
@@ -5825,8 +5882,8 @@
     "brasileirao-serie-b-2026-10-06-goias-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "e70bda8365c79436022a4640e64f9bc52bd96e7b8970ed9025a512100ed9cfdb",
-      "contentHash": "0ae81471b8a54e20d6f111bfbcb759b321f676ba59014f665b76534a3a9318fb",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "e7412ef692bd9bd3f1a2d02f9b57f403dbbaa4ce29ef085f024fbc867693aadf",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-10-06-nautico-vs-novorizontino@futebol.agendafut": {
       "sequence": 0,
@@ -5861,8 +5918,8 @@
     "brasileirao-serie-b-2026-10-09-athletic-vs-londrina@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "9c92d4e3adccf06122e39f9459f21b2c7a78428e2e2235444d885eb846c1b4ce",
-      "contentHash": "30f83602bb87baafc23318fdf2276ad565a611aea40a2d4b219cc107fc55fb0f",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "84efebba396ad9c9d88d2f7f4c094634cc5e921cdb58db426e3cb8c0d728c0b6",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-10-09-atletico-go-vs-sport@futebol.agendafut": {
       "sequence": 0,
@@ -5927,8 +5984,8 @@
     "brasileirao-serie-b-2026-10-16-avai-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "725d6485caa1be750574fe4a6fe4cf905435da202b8f756e237a8146748f8b02",
-      "contentHash": "665faf8d639776df19e879f1e63d55cedc43aa235e76a12a23af9905ea465469",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "047f86170bcd46c9dda6e05c7d4f1dba0cb4996dd12d60ac887214375588e80d",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-10-16-ceara-vs-juventude@futebol.agendafut": {
       "sequence": 0,
@@ -6017,8 +6074,8 @@
     "brasileirao-serie-b-2026-10-23-operario-pr-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "8b8d90e041ef6dbc5dd74d1d37ac314173efdc9af9f1d5a501cfa3649b4b381f",
-      "contentHash": "0399c03e4350cfb0695226f20b2281ffbd38673485fb8e8836f9097adbbf0c82",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "e8000b939f80cd198973530291e4ebcde3b2cc957d934690c0eda5bdde2c389d",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-10-23-ponte-preta-vs-fortaleza@futebol.agendafut": {
       "sequence": 0,
@@ -6041,8 +6098,8 @@
     "brasileirao-serie-b-2026-10-30-athletic-vs-ceara@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "fbb6feed417da74a2a0e88cb6d8ad7dcb836a6f26760a8de3cd03beeb6132adf",
-      "contentHash": "d53266f1d89bf873a3fb6d769f658bd3526f810e9efda94f1cee700a5658ef74",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "c12a48b5808db7befaea5939fb9a5f8a130537b8eb871f466845978685aa8be4",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-10-30-botafogo-sp-vs-sport@futebol.agendafut": {
       "sequence": 0,
@@ -6101,8 +6158,8 @@
     "brasileirao-serie-b-2026-11-06-athletic-vs-atletico-go@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "92b7994305662ff2982fdf3fe11fb43ee2539a256542bc37600d0dbe5a99b489",
-      "contentHash": "e641b7280d31f8dd84ecc9722fd00dfa72b8062139fa7bb9e6e043d4b2e8f58f",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "b73d9726b1872c03ed0ac9097c653034d2cc5207de90ebed5bad311601c1c081",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-11-06-avai-vs-sao-bernardo@futebol.agendafut": {
       "sequence": 0,
@@ -6209,8 +6266,8 @@
     "brasileirao-serie-b-2026-11-14-sao-bernardo-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "fd3fc7a46784cded2d04f48d4aab38690aec4d1129929d77d734a233b3694729",
-      "contentHash": "187c5f40f1b188b8c639583f8ddc1eec8b729789814101af9ce7ea1779dce14a",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "a60659f3fd7bc93e80d6a582393ed013ee595ea47622421ac0064307af550f89",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "brasileirao-serie-b-2026-11-14-sport-vs-goias@futebol.agendafut": {
       "sequence": 0,
@@ -7793,8 +7850,8 @@
     "copa-do-brasil-2026-03-04-rio-branco-es-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "6921e8425fb17df0f13d0b9881f371fb8232f020c40305c9ac26cd3c1dcf731a",
-      "contentHash": "35d67ec42332c7e8361cb65eb6564e6e6f096523db6e4e81c99aa8ad1ef7a5a1",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "02528c1286651e5dbd6991ac209c49b8634c613ee421bcbb460682b6a203fe38",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "copa-do-brasil-2026-03-04-santa-catarina-vs-cuiaba@futebol.agendafut": {
       "sequence": 0,
@@ -7859,8 +7916,8 @@
     "copa-do-brasil-2026-03-11-athletic-vs-ypiranga@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "c5538a253a2dac628d1fde3754ecf0fc1c17d0be035394c01dfa2d20aaa2eed7",
-      "contentHash": "d2046519ed65c38235c6dd03b03cf016bde0c6ab8e0a48076e940ceffc76f562",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "d1b0194522669aaf35b8551064e7903282a34ef3c83bc6dac423c58c2d85da82",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "copa-do-brasil-2026-03-11-castanhal-u20-vs-nova-iguacu@futebol.agendafut": {
       "sequence": 0,
@@ -8009,8 +8066,8 @@
     "copa-do-brasil-2026-03-17-sport-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "6dd043932cc0bd4d80f6fcd07547648150d31711ddd93bbb8f7fbbc59ee5df53",
-      "contentHash": "d94348adb097ef098f88640e14c0b7ecd0f0158c4a7e7ed11ae6ebcd44fe1a8f",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "71c1a7d088fa32862817076e9692d1665c58abe4b0a2215c5784e36f4a342650",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "copa-do-brasil-2026-03-18-atletico-go-vs-ponte-preta@futebol.agendafut": {
       "sequence": 0,
@@ -8087,8 +8144,8 @@
     "copa-do-brasil-2026-04-22-athletic-vs-internacional@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "458a1b9e6697278c87e28e5b3836e56fc2fe3df2d7c21a1f990876431dc99895",
-      "contentHash": "83ecc3634aaadcb3e3f00b8e4381f9af7fac77b906bce33c5e180ce250d26ec8",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "ed15bcf561f9625125210b21f7b75032aa7ad8137d9b76bca436bb509d0e6690",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "copa-do-brasil-2026-04-22-bahia-vs-remo@futebol.agendafut": {
       "sequence": 0,
@@ -8165,8 +8222,8 @@
     "copa-do-brasil-2026-05-12-internacional-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "66c2c7be9c0cc397eda496da59393b1dfd49513681d7afbbef83c695180a9056",
-      "contentHash": "03f7563c740b4e574e07e13908ddd777af21fcbf2568eb3094a665c7101b8264",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "8de759610d6e496151260f166e20d23b3e9c392f4514ab8f213fc860829a059c",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "copa-do-brasil-2026-05-13-ceara-vs-atletico-mg@futebol.agendafut": {
       "sequence": 0,
@@ -9965,8 +10022,8 @@
     "mineiro-2026-01-11-america-mg-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "855005b48966594b62876c14ccaf23cba7d2f836c45f19eedc33a2af6ea3cbf0",
-      "contentHash": "392319c23347ec0816865275d041991ad7d28dbcfe2e7fbc1a8305ac64f90513",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "b4e6d2d8a160dd261ed72792d911b90218419d6f464243749bcda0a47987bee6",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "mineiro-2026-01-11-atletico-mg-vs-betim-fc@futebol.agendafut": {
       "sequence": 0,
@@ -9977,8 +10034,8 @@
     "mineiro-2026-01-14-athletic-vs-urt@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "c4364a1baeeebd11c27776c0ce468d0710639550912c0e43b645623ede04b6e9",
-      "contentHash": "1caed620567d5018eca31fb856d8b12effb51805d26f66be85c858680b4b868c",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "abf8ed910793c3d630f2f7896c3fbb0dfa791f60fb35b8a1d7bff7077ce5ea2f",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "mineiro-2026-01-14-betim-fc-vs-uberlandia@futebol.agendafut": {
       "sequence": 0,
@@ -10019,8 +10076,8 @@
     "mineiro-2026-01-17-democrata-gv-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "34b8f6bdaaddd0639fe0a9b3756d85b0c56156fa7ea61ec7abc24c8a65d04529",
-      "contentHash": "4db07320dd90966af2a159f4b70eab8bb02029577ba0bc7223697cf8691b4717",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "903103fb7612a1ec8a9fe36e02a37f2d1c56d37a06205cfa40c03b6a8ad920d2",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "mineiro-2026-01-17-north-ec-vs-betim-fc@futebol.agendafut": {
       "sequence": 0,
@@ -10061,8 +10118,8 @@
     "mineiro-2026-01-21-pouso-alegre-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "25ed37a66009d4d299ae90dc3c251cf946b26bcb29c778ca2f5eb4ca7028ce8e",
-      "contentHash": "d999ba1b68c9119d2636a7629f7f5478c8ec68175cf9b2902e5008f502f98d21",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "ede2d0732cfc1d9e3f4b0b084632517ddb8e8ecc33acac16f9d6b468c6bc6791",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "mineiro-2026-01-21-tombense-vs-north-ec@futebol.agendafut": {
       "sequence": 0,
@@ -10103,8 +10160,8 @@
     "mineiro-2026-01-25-athletic-vs-betim-fc@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "9b38a03f364c2fa2cf048b174f4c8392e59a546a97e94b858ad311e66b6fb252",
-      "contentHash": "dce479378a32006a454181ad88e7e0555deb05488d91fc03f134e35521473912",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "6f6a3f892c9caf3766cac4b3a1e090c58f33922445f9e74faaf40951a03df4e1",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "mineiro-2026-01-25-atletico-mg-vs-cruzeiro@futebol.agendafut": {
       "sequence": 0,
@@ -10127,8 +10184,8 @@
     "mineiro-2026-01-31-athletic-vs-uberlandia@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "d5afc31f9d664873783c217e5c6554f8e45c172b8572b55d7a83fd3d03e5b701",
-      "contentHash": "d9d6088830437c9e24b0f004fa3a33773ce70adff0a51bac38875473502059a7",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "6b5143eec055da32c6f0ead158b4f3ca2739d9a898104624b85a640d2db23c71",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "mineiro-2026-01-31-democrata-gv-vs-north-ec@futebol.agendafut": {
       "sequence": 0,
@@ -10163,8 +10220,8 @@
     "mineiro-2026-02-07-atletico-mg-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "b261dbe3e87d0f7ca5f41eda1dfc6677d5ba7d4fd07d4214841f645a853f0e87",
-      "contentHash": "d1735237cdfc72ab619a6a68239457f8616b759608f9a769d231ffd8b242d830",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "8ff3f1dcd261610f03acfc58c8660fa53aaa329cedbad7c36b8248be9366b543",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "mineiro-2026-02-07-north-ec-vs-uberlandia@futebol.agendafut": {
       "sequence": 0,
@@ -10199,8 +10256,8 @@
     "mineiro-2026-02-14-athletic-vs-tombense@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "498605fb1ffd89e245855a7b9485314de90ba871572a189265b102a7672f9885",
-      "contentHash": "5d6ba448d21f225084b094e273d3cedf9c9af04bbc9ee6545ffc9f993c3b761a",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "7bab607326802e2539383a295d2aeff421296b5259a082fbe514a6b6b406e039",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "mineiro-2026-02-14-democrata-gv-vs-betim-fc@futebol.agendafut": {
       "sequence": 0,
@@ -10817,8 +10874,8 @@
     "sudamericana-2026-03-05-cienciano-del-cusco-vs-melgar@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "82fb76ea0c9a8b3967d8b08c8e85de3a1c831ca9b5e1258e38e043fa868bbaf4",
-      "contentHash": "1fd3df9dd26bdaa4a25efb2559972716cf801b7d6595d59ca4d5e91b23155edd",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "29496589846a31c6393fcc296122df6d9d34367e898b04fc6f38d872190e79ea",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "sudamericana-2026-03-05-nacional-asuncion-vs-deportivo-recoleta@futebol.agendafut": {
       "sequence": 0,
@@ -10919,8 +10976,8 @@
     "sudamericana-2026-04-09-juventud-vs-cienciano-del-cusco@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "147c48d7b24ae45227e988558a6cffaf29499c64710216b19f137686cb5d7dd5",
-      "contentHash": "e7137678a0aedec5aab185354001ae2e0c2b23e09fd52ea93d1625c9bbfdfe77",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "86f9695b94b0dc964094ee0aa43f04f0431c7119921cec6bba19b507d7660b9a",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "sudamericana-2026-04-09-macara-vs-america-de-cali@futebol.agendafut": {
       "sequence": 0,
@@ -11009,8 +11066,8 @@
     "sudamericana-2026-04-16-cienciano-del-cusco-vs-academia-puerto-cabello@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "fd920dc55e4c02b601ededd39fe5b926940cf8d7125759a043e321ec7e5b6688",
-      "contentHash": "f7f26acd4548318b0ef83f1784a9374cfd61ecd2b7436e62041f9ae05217a9df",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "768bea928b8f553f89b7da78ff5e5eb015cc6b719f0d0812cd8fade2baa2fb6e",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "sudamericana-2026-04-16-criciuma-vs-macara@futebol.agendafut": {
       "sequence": 0,
@@ -11069,8 +11126,8 @@
     "sudamericana-2026-04-29-cienciano-del-cusco-vs-atletico-mg@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "122750c048360aa42db32a9fd8bdda49bd2f5ed8a6314a44ef7681d35e6e34a3",
-      "contentHash": "36e6d4e575057ba4b727d3899a4465cfd257898484c649bd0636dfbb60036b21",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "f609bcf793f284cba6d3b35e018f6457aa2c920229a0c6611038196037e86327",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "sudamericana-2026-04-29-deportivo-riestra-vs-montevideo-city-torque@futebol.agendafut": {
       "sequence": 0,
@@ -11123,8 +11180,8 @@
     "sudamericana-2026-05-05-academia-puerto-cabello-vs-cienciano-del-cusco@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "dfa7210f8cfc62cd5bb6a50c7e945db2041ca425ea36e66a25efffb177d3fdc3",
-      "contentHash": "0bb2d34a237aa1c497375e98818016afb2499004ce5ff1e9727e5a169e443946",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "b7e3ef5438aa81acbf986fb72acf068e77798fa8c8e932236c04403ee0546003",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "sudamericana-2026-05-05-deportivo-cuenca-vs-san-lorenzo@futebol.agendafut": {
       "sequence": 0,
@@ -11291,8 +11348,8 @@
     "sudamericana-2026-05-21-atletico-mg-vs-cienciano-del-cusco@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "7f3c5728994ea4778399d16240bbaa4451d1f2a1b6e3ddfa58ec1479ca5ceeb1",
-      "contentHash": "5a1dde5c2ffda8e73fc183c0d6df82e7906af6d8c66960d936b7255d2071c785",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "24918a7bb7df716471fdbee8a3ec950d7e080c3ea3c20d3c8ecec38022ffd94d",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "sudamericana-2026-05-21-blooming-vs-carabobo@futebol.agendafut": {
       "sequence": 0,
@@ -11369,8 +11426,8 @@
     "sudamericana-2026-05-27-cienciano-del-cusco-vs-juventud@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "c4e03f79a1df65834e96ecf415727d4ad9d8c1cbb1fa095b2207d7d2910f9401",
-      "contentHash": "e63839272fa9566d0e272019f4784ed146fa785ef487f716738d4ab4a60b6402",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "1bf26bced818681c74b6962cb5d8c695483882671b76a5abaebad4898dffb852",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "sudamericana-2026-05-27-club-olimpia-vs-audax-italiano@futebol.agendafut": {
       "sequence": 0,
@@ -11429,8 +11486,8 @@
     "sudamericana-2026-07-22-lanus-vs-cienciano-del-cusco@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "e7a7625f877c35eae203631af254374ecd1bfb802cefec6c0585e290144e128c",
-      "contentHash": "b55ec1c88ebd11a3e3ccf20e7b8f5449eed14db0b6ec7c5829f742ac7cabdb33",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "759d6ee8bf430f9eb6900946138fe3cd767b35c6e728a7cd35ccb1a636707598",
+      "lastModified": "2026-07-27T14:54:03.639Z"
     },
     "sudamericana-2026-07-22-sporting-cristal-vs-bragantino@futebol.agendafut": {
       "sequence": 0,
@@ -11459,50 +11516,77 @@
     "sudamericana-2026-07-28-criciuma-vs-nacional@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "fa38a6a8f97cf2d9331c82061a6137f574060dbd2971f7333dcac0759ebab8d3",
-      "contentHash": "144dde19fccbbe276a0a0f905a72131ea094e5aa5dde228d5c836d447c5cbcf9",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "cae76c75fe0511a3439ea2c38f520bcdde7293d8036a4f9c0ef6feffc17f9e44",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN 3"
+      ]
     },
     "sudamericana-2026-07-28-santos-vs-ucv-fc@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "853a73cfbf286a9ade91c1cca74c4d759a604543570a29a6be8e0070ae982719",
-      "contentHash": "9048e9d68120b386c2f9ee49fd26c7d3f85c704e6a43c1acbd042ddd82f798c4",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "f912a3a01df9311261805a5be93cfcb7319e9342ac9e0fa030ee2dae59b39495",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "PARAMOUNT+"
+      ]
     },
     "sudamericana-2026-07-29-bragantino-vs-sporting-cristal@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "533ad0f7d8471924c3d077077b4847939f81db34594f7bf33851901316b5179c",
-      "contentHash": "0d5a7e6deb86ce6f3bcde2dc63746954eb800dc3f411dc1ce92c066f3bcad41e",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "868deeb8dcac9f657d31d37a46f639361bccae51c8d53d42e2ec54b8b6336b46",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "PARAMOUNT+"
+      ]
     },
     "sudamericana-2026-07-29-cienciano-del-cusco-vs-lanus@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "3bce06bec075f78d1ea55846d153de8f9f4d578c0520d4a8abb2919cf5186eed",
-      "contentHash": "f3bbccd5341caa45389e966e0d16cd8863ca2c77be997c95947358e71b738769",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "718ccaafdb53a1e505413a613fc3e86c738780c8231cf306d262cec5ab24ad87",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "PARAMOUNT+"
+      ]
     },
     "sudamericana-2026-07-29-vasco-vs-independiente-medellin@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "7a3327b418c6d3ea4730e862f3ba746c6b4d106f7f68021f83281f9a49d49259",
-      "contentHash": "7b3a922210020fc65d7c07e2c820f679be50a8c316ce8b85614bc095db249bf6",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "b6dd3c0a797f0fe1587944061e4aa036fbc2608838ad2ab0c9012dca818eca58",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "sudamericana-2026-07-30-caracas-fc-vs-independiente-santa-fe@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "a077c05a6b268608d2f90a006d8cbd7c447f681d9b6e1d66fe01d35676f0e377",
-      "contentHash": "d51cdec34b3c1f15d6b2a784a74b745db995aecf35ef169a955820f5d9b0e90e",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "ea639232c9e3958a4d54affd4f77582fc754cfd6327329cd29db4df24675b722",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "PARAMOUNT+"
+      ]
     },
     "sudamericana-2026-07-30-gremio-vs-bolivar@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "617bbed617e0da447e2fef20e70377ce520b4cbe16d09a0521a4e474fb9e6a33",
-      "contentHash": "cc5745e5f9815f5c25721ffbdc4e43fe31a142213cfb207063e8234b838fd7e1",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "3903ac5d9a7de7851b2762cadc0d24c548ab9addc0ab90a37cfdd4e013d887c9",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "PARAMOUNT+"
+      ]
     },
     "sudamericana-2026-07-30-o-higgins-vs-boca-juniors@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "952d4d43470a3b2c91fa60223d639879d5bb0398a4d2a44470c7794294ea83de",
-      "contentHash": "0d9acae9f707860f44907834db62939e4e9b8c9b376ee1a8ce56db73ed2f986c",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "d6b6710be69e856f61c0f0d5e6fdb92d98ef4d1d9cd493efad7d97dcd2b0b200",
+      "lastModified": "2026-07-27T14:54:03.639Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     }
   }
 }
