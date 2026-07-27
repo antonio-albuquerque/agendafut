@@ -46,9 +46,10 @@ const SELECTORS = {
 const HEADER_DDMM = /(\d{1,2})\/(\d{1,2})/;
 
 /**
- * "Hoje" / "Amanhã" / "Sex, 07/08" → ISO date. dd/MM não traz ano: usa o de
- * `today` e, se cair mais de 2 dias no passado, assume o ano seguinte
- * (página de dezembro listando "02/01"). Inválido → null.
+ * "Hoje" / "Amanhã" / "Sex, 07/08" → ISO date. dd/MM não traz ano: entre
+ * ano anterior/corrente/seguinte, vence o candidato mais PRÓXIMO de hoje —
+ * cobre as duas pontas da virada ("02/01" visto em dezembro → ano seguinte;
+ * "31/12" visto em janeiro → ano anterior). Inválido → null.
  */
 export function resolveDateHeader(label: string, today: DateTime): string | null {
   const text = label.replace(/\s+/g, ' ').trim();
@@ -59,14 +60,19 @@ export function resolveDateHeader(label: string, today: DateTime): string | null
   const ddmm = HEADER_DDMM.exec(text);
   if (!ddmm) return null;
   const [, dd, mm] = ddmm;
-  let candidate = DateTime.fromObject(
-    { day: Number(dd), month: Number(mm), year: base.year },
-    { zone: TIMEZONE },
+  const candidates = [-1, 0, 1]
+    .map((deltaYear) =>
+      DateTime.fromObject(
+        { day: Number(dd), month: Number(mm), year: base.year + deltaYear },
+        { zone: TIMEZONE },
+      ),
+    )
+    .filter((c) => c.isValid);
+  if (candidates.length === 0) return null;
+  const closest = candidates.reduce((a, b) =>
+    Math.abs(a.diff(base).as('days')) <= Math.abs(b.diff(base).as('days')) ? a : b,
   );
-  if (candidate.isValid && candidate < base.minus({ days: 2 })) {
-    candidate = candidate.plus({ years: 1 });
-  }
-  return candidate.isValid ? candidate.toISODate() : null;
+  return closest.toISODate();
 }
 
 export function parseLeaguePage(

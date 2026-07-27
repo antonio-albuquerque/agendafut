@@ -29,11 +29,17 @@ describe('resolveDateHeader', () => {
     expect(resolveDateHeader('Sex, 07/08', CAPTURE_DAY)).toBe('2026-08-07');
   });
 
-  it('virada de ano: dd/MM no passado distante vira ano seguinte', () => {
+  it('virada de ano nas duas direções: vence o ano mais próximo de hoje', () => {
     const dec30 = DateTime.fromISO('2026-12-30T12:00:00', { zone: TIMEZONE });
-    expect(resolveDateHeader('Qui, 02/01', dec30)).toBe('2027-01-02');
-    // ontem/anteontem continuam no ano corrente (graça de 2 dias)
-    expect(resolveDateHeader('Ter, 29/12', dec30)).toBe('2026-12-29');
+    expect(resolveDateHeader('Qui, 02/01', dec30)).toBe('2027-01-02'); // dezembro vendo janeiro
+    expect(resolveDateHeader('Ter, 29/12', dec30)).toBe('2026-12-29'); // ontem fica no ano corrente
+
+    const jan1 = DateTime.fromISO('2027-01-01T12:00:00', { zone: TIMEZONE });
+    expect(resolveDateHeader('Qui, 31/12', jan1)).toBe('2026-12-31'); // janeiro vendo dezembro
+    expect(resolveDateHeader('Dom, 03/01', jan1)).toBe('2027-01-03');
+
+    // dd/MM alguns dias no passado NÃO pula um ano pra frente
+    expect(resolveDateHeader('Sex, 24/07', CAPTURE_DAY)).toBe('2026-07-24');
   });
 
   it('header que não é data → null', () => {
