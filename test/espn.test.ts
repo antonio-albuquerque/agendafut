@@ -67,18 +67,21 @@ describe('normalizeEvent', () => {
     expect(match.home.name).toBe('Bahia');
   });
 
-  it('broadcasts/geoBroadcasts viram broadcasters normalizados', () => {
+  it('só geoBroadcasts com region br viram broadcasters; mercado US é descartado', () => {
     // Shape real observado na eng.1 (ligas BR vêm vazias hoje)
     const raw = structuredClone(fixture.events[0]) as {
       competitions: Array<{ broadcasts?: unknown; geoBroadcasts?: unknown }>;
     };
-    raw.competitions[0]!.broadcasts = [{ market: 'national', names: ['USA Net', 'ESPN 4'] }];
+    // mercado US: nunca pode vazar para o feed de assinante brasileiro
+    raw.competitions[0]!.broadcasts = [{ market: 'national', names: ['USA Net', 'Fubo'] }];
     raw.competitions[0]!.geoBroadcasts = [
-      { type: { id: '1' }, media: { shortName: 'usa net' } },
+      { type: { id: '1' }, media: { shortName: 'ESPN+' }, lang: 'en', region: 'us' },
+      { type: { id: '1' }, media: { shortName: 'ESPN 4' }, lang: 'pt', region: 'br' },
+      { type: { id: '1' }, media: { shortName: 'Disney+' }, lang: 'pt', region: 'BR' },
       { type: { id: '4' }, media: {} },
     ];
     const match = normalizeEvent(raw, league, 2026, noop)!;
-    expect(match.broadcasters).toEqual(['ESPN 4', 'USA Net']);
+    expect(match.broadcasters).toEqual(['Disney+', 'ESPN 4']);
   });
 
   it('sem campos de transmissão → broadcasters vazio', () => {

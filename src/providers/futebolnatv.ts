@@ -26,7 +26,9 @@ const ScrapedGameSchema = z.object({
   homeRaw: z.string().min(1),
   awayRaw: z.string().min(1),
   round: z.string().nullable(),
-  channels: z.array(z.string().min(1)).min(1),
+  // Vazio é significativo: card listado sem canal = transmissão retirada/não
+  // anunciada — o orquestrador usa isso para LIMPAR canais persistidos.
+  channels: z.array(z.string().min(1)),
 });
 
 // Seletores concentrados aqui: se o site mudar o markup, o conserto é 1 linha.
@@ -44,9 +46,10 @@ const SELECTORS = {
 const HEADER_DDMM = /(\d{1,2})\/(\d{1,2})/;
 
 /**
- * "Hoje" / "Amanhã" / "Sex, 07/08" → ISO date. dd/MM não traz ano: usa o de
- * `today` e, se cair mais de 2 dias no passado, assume o ano seguinte
- * (página de dezembro listando "02/01"). Inválido → null.
+ * "Hoje" / "Amanhã" / "Sex, 07/08" → ISO date. dd/MM não traz ano: entre
+ * ano anterior/corrente/seguinte, vence o candidato mais PRÓXIMO de hoje —
+ * cobre as duas pontas da virada ("02/01" visto em dezembro → ano seguinte;
+ * "31/12" visto em janeiro → ano anterior). Inválido → null.
  */
 export function resolveDateHeader(label: string, today: DateTime): string | null {
   const text = label.replace(/\s+/g, ' ').trim();
@@ -57,14 +60,19 @@ export function resolveDateHeader(label: string, today: DateTime): string | null
   const ddmm = HEADER_DDMM.exec(text);
   if (!ddmm) return null;
   const [, dd, mm] = ddmm;
-  let candidate = DateTime.fromObject(
-    { day: Number(dd), month: Number(mm), year: base.year },
-    { zone: TIMEZONE },
+  const candidates = [-1, 0, 1]
+    .map((deltaYear) =>
+      DateTime.fromObject(
+        { day: Number(dd), month: Number(mm), year: base.year + deltaYear },
+        { zone: TIMEZONE },
+      ),
+    )
+    .filter((c) => c.isValid);
+  if (candidates.length === 0) return null;
+  const closest = candidates.reduce((a, b) =>
+    Math.abs(a.diff(base).as('days')) <= Math.abs(b.diff(base).as('days')) ? a : b,
   );
-  if (candidate.isValid && candidate < base.minus({ days: 2 })) {
-    candidate = candidate.plus({ years: 1 });
-  }
-  return candidate.isValid ? candidate.toISODate() : null;
+  return closest.toISODate();
 }
 
 export function parseLeaguePage(
@@ -85,6 +93,8 @@ export function parseLeaguePage(
     const document = window.document;
 
     const games: ScrapedGame[] = [];
+    let cardsSeen = 0;
+    let parseFailures = 0;
     for (const header of document.querySelectorAll(SELECTORS.dateGroupHeader)) {
       const date = resolveDateHeader(header.textContent ?? '', today);
       if (date === null) continue; // h3 que não é header de data (ou data inválida)
@@ -94,6 +104,7 @@ export function parseLeaguePage(
       if (!group) continue;
 
       for (const card of group.querySelectorAll(SELECTORS.card)) {
+        cardsSeen += 1;
         const homeRaw = card.querySelector(SELECTORS.teamHome)?.getAttribute('alt')?.trim() ?? '';
         const awayRaw = card.querySelector(SELECTORS.teamAway)?.getAttribute('alt')?.trim() ?? '';
         const timeText = card.querySelector(SELECTORS.kickoff)?.textContent?.trim() ?? '';
@@ -103,10 +114,9 @@ export function parseLeaguePage(
           .map((icon) => icon.nextElementSibling?.textContent?.replace(/\s+/g, ' ').trim() ?? '')
           .filter((name) => name !== '');
 
-        if (channels.length === 0) continue; // jogo sem transmissão anunciada: nada a enriquecer
-
         const parsed = ScrapedGameSchema.safeParse({ date, time, homeRaw, awayRaw, round, channels });
         if (!parsed.success) {
+          parseFailures += 1;
           warn(`card ilegível em ${date} (${homeRaw || '?'} x ${awayRaw || '?'}) — pulando`);
           continue;
         }
@@ -115,9 +125,23 @@ export function parseLeaguePage(
     }
 
     if (games.length === 0) {
-      // 200 sem nenhum card parseável = estrutura do site mudou (ou liga sem
-      // jogos). Falha alto para o orquestrador usar o estado persistido.
-      throw new Error('nenhum jogo parseado — markup mudou ou liga sem próximos jogos');
+      // Liga sem próximos jogos ≠ markup quebrado. A âncora é o heading
+      // "Próximos jogos": presente e sem nenhum card → vazio legítimo
+      // (pausa de calendário); ausente, ou com cards que não parseiam →
+      // falha alto para o orquestrador usar o estado persistido.
+      const structureOk = [...document.querySelectorAll('h2')].some((h) =>
+        (h.textContent ?? '').includes('Próximos jogos'),
+      );
+      if (structureOk && parseFailures === 0) {
+        // Nenhum card, ou só cards sem canal anunciado: vazio legítimo.
+        warn('sem próximos jogos com transmissão listados — liga em pausa?');
+        return [];
+      }
+      throw new Error(
+        cardsSeen > 0
+          ? `nenhum dos ${cardsSeen} cards parseou — markup mudou?`
+          : 'estrutura da página não reconhecida — markup mudou?',
+      );
     }
     return games;
   } finally {
@@ -131,28 +155,34 @@ export function parseLeaguePage(
 const BROWSER_UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
 
+/**
+ * GET de página do futebolnatv com o UA/timeout canônicos. Fonte única
+ * também para o CLI de harvest — dois UAs divergindo dá "funciona no build,
+ * falha no harvest" quando o site mudar o que serve a cada variante.
+ */
+export async function fetchPage(
+  url: string,
+  opts: { fetchImpl?: typeof fetch; timeoutMs?: number } = {},
+): Promise<string> {
+  const res = await (opts.fetchImpl ?? fetch)(url, {
+    headers: { 'User-Agent': BROWSER_UA },
+    signal: AbortSignal.timeout(opts.timeoutMs ?? 15_000),
+  });
+  if (!res.ok) {
+    throw new Error(`futebolnatv ${url}: HTTP ${res.status} ${res.statusText}`);
+  }
+  return res.text();
+}
+
 export interface FntvOptions {
   fetchImpl?: typeof fetch;
   timeoutMs?: number;
 }
 
 export class FntvClient {
-  private readonly fetchImpl: typeof fetch;
-  private readonly timeoutMs: number;
-
-  constructor(opts: FntvOptions = {}) {
-    this.fetchImpl = opts.fetchImpl ?? fetch;
-    this.timeoutMs = opts.timeoutMs ?? 15_000;
-  }
+  constructor(private readonly opts: FntvOptions = {}) {}
 
   async leagueGames(url: string, today: DateTime, warn: (msg: string) => void): Promise<ScrapedGame[]> {
-    const res = await this.fetchImpl(url, {
-      headers: { 'User-Agent': BROWSER_UA },
-      signal: AbortSignal.timeout(this.timeoutMs),
-    });
-    if (!res.ok) {
-      throw new Error(`futebolnatv ${url}: HTTP ${res.status} ${res.statusText}`);
-    }
-    return parseLeaguePage(await res.text(), today, warn);
+    return parseLeaguePage(await fetchPage(url, this.opts), today, warn);
   }
 }

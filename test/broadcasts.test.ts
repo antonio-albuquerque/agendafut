@@ -90,6 +90,52 @@ describe('enrichBroadcasts', () => {
     expect(match.broadcasters).toEqual(['PREMIERE']); // GLOBO saiu
   });
 
+  it('card fresco SEM canais limpa o persistido (transmissão retirada)', async () => {
+    const state = emptyState();
+    reconcile(state, [makeMatch({ broadcasters: ['GLOBO'] })], FIXED_NOW);
+
+    const match = makeMatch();
+    await enrichBroadcasts([match], state, {
+      now: FIXED_NOW,
+      client: fakeClient([makeGame({ channels: [] })]),
+      leagues: LEAGUES,
+      log: noop,
+    });
+    expect(match.broadcasters).toEqual([]);
+    // e o reconcile seguinte remove o campo do estado (não ressuscita depois)
+    reconcile(state, [match], FIXED_NOW.plus({ hours: 1 }));
+    const uid = Object.keys(state.events)[0]!;
+    expect(state.events[uid]!.broadcasters).toBeUndefined();
+  });
+
+  it('scrape falhou + ESPN com canais → une ESPN e persistido (não descarta nenhum)', async () => {
+    const state = emptyState();
+    reconcile(state, [makeMatch({ broadcasters: ['ESPN 4', 'PREMIERE'] })], FIXED_NOW);
+
+    const match = makeMatch({ broadcasters: ['ESPN 4'] }); // ESPN passou a entregar
+    await enrichBroadcasts([match], state, {
+      now: FIXED_NOW,
+      client: failingClient,
+      leagues: LEAGUES,
+      log: noop,
+    });
+    expect(match.broadcasters).toEqual(['ESPN 4', 'PREMIERE']); // PREMIERE não some
+  });
+
+  it('mesmo jogo raspado 2x (card duplicado) une os canais em vez de sobrescrever', async () => {
+    const match = makeMatch();
+    await enrichBroadcasts([match], emptyState(), {
+      now: FIXED_NOW,
+      client: fakeClient([
+        makeGame({ channels: ['GLOBO'] }),
+        makeGame({ channels: ['PREMIERE'] }),
+      ]),
+      leagues: LEAGUES,
+      log: noop,
+    });
+    expect(match.broadcasters).toEqual(['GLOBO', 'PREMIERE']);
+  });
+
   it('jogo do site sem partida ESPN correspondente só loga', async () => {
     const match = makeMatch();
     const logs: string[] = [];
@@ -142,6 +188,38 @@ describe('enrichBroadcasts', () => {
     });
     expect(again1.broadcasters).toEqual(['GLOBO']);
     expect(again2.broadcasters).toEqual(['PREMIERE']); // não herda o do 1º jogo
+  });
+
+  it('busca as páginas de liga em paralelo', async () => {
+    const starts: string[] = [];
+    let release!: () => void;
+    const gate = new Promise<void>((resolve) => {
+      release = resolve;
+    });
+    // Cada chamada só resolve depois que AMBAS começaram: se o scrape fosse
+    // serial, a primeira nunca terminaria e o teste estouraria o timeout.
+    const client: LeagueScraper = {
+      leagueGames: async (url) => {
+        starts.push(url);
+        if (starts.length === 2) release();
+        await gate;
+        return [];
+      },
+    };
+    await enrichBroadcasts(
+      [makeMatch(), makeMatch({ competition: 'brasileirao-serie-b' })],
+      emptyState(),
+      {
+        now: FIXED_NOW,
+        client,
+        leagues: [
+          { slug: 'brasileirao-serie-a', url: 'https://fntv.example/liga/a' },
+          { slug: 'brasileirao-serie-b', url: 'https://fntv.example/liga/b' },
+        ],
+        log: noop,
+      },
+    );
+    expect(starts).toHaveLength(2);
   });
 
   it('nunca rejeita, mesmo com tudo falhando', async () => {

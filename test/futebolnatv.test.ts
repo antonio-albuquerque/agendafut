@@ -29,11 +29,17 @@ describe('resolveDateHeader', () => {
     expect(resolveDateHeader('Sex, 07/08', CAPTURE_DAY)).toBe('2026-08-07');
   });
 
-  it('virada de ano: dd/MM no passado distante vira ano seguinte', () => {
+  it('virada de ano nas duas direções: vence o ano mais próximo de hoje', () => {
     const dec30 = DateTime.fromISO('2026-12-30T12:00:00', { zone: TIMEZONE });
-    expect(resolveDateHeader('Qui, 02/01', dec30)).toBe('2027-01-02');
-    // ontem/anteontem continuam no ano corrente (graça de 2 dias)
-    expect(resolveDateHeader('Ter, 29/12', dec30)).toBe('2026-12-29');
+    expect(resolveDateHeader('Qui, 02/01', dec30)).toBe('2027-01-02'); // dezembro vendo janeiro
+    expect(resolveDateHeader('Ter, 29/12', dec30)).toBe('2026-12-29'); // ontem fica no ano corrente
+
+    const jan1 = DateTime.fromISO('2027-01-01T12:00:00', { zone: TIMEZONE });
+    expect(resolveDateHeader('Qui, 31/12', jan1)).toBe('2026-12-31'); // janeiro vendo dezembro
+    expect(resolveDateHeader('Dom, 03/01', jan1)).toBe('2027-01-03');
+
+    // dd/MM alguns dias no passado NÃO pula um ano pra frente
+    expect(resolveDateHeader('Sex, 24/07', CAPTURE_DAY)).toBe('2026-07-24');
   });
 
   it('header que não é data → null', () => {
@@ -45,8 +51,7 @@ describe('resolveDateHeader', () => {
 describe('parseLeaguePage', () => {
   it('extrai todos os jogos da página real com data, times e canais', () => {
     const games = parseLeaguePage(fixture, CAPTURE_DAY, noop);
-    // A página tem 10 cards; 2 (Sáb 08/08) ainda sem canal anunciado são pulados.
-    expect(games).toHaveLength(8);
+    expect(games).toHaveLength(10);
 
     const crb = games.find((g) => g.homeRaw === 'CRB')!;
     expect(crb).toMatchObject({
@@ -63,8 +68,11 @@ describe('parseLeaguePage', () => {
 
     // grupos de data com dd/MM
     expect(games.filter((g) => g.date === '2026-08-07')).toHaveLength(2);
-    // os 2 jogos de 08/08 não têm canal anunciado → pulados
-    expect(games.filter((g) => g.date === '2026-08-08')).toHaveLength(0);
+    // os 2 jogos de 08/08 ainda sem canal anunciado entram com channels vazio
+    // (vazio é significativo: é o que permite limpar canal retirado)
+    const aug8 = games.filter((g) => g.date === '2026-08-08');
+    expect(aug8).toHaveLength(2);
+    for (const g of aug8) expect(g.channels).toEqual([]);
   });
 
   it('card quebrado é pulado com warn; o resto da página sobrevive', () => {
@@ -79,8 +87,24 @@ describe('parseLeaguePage', () => {
     expect(carioca.channels).toEqual(['BAND', 'CANAL GOAT']);
   });
 
-  it('página sem nenhum card parseável lança', () => {
+  it('página sem estrutura reconhecível lança (markup mudou)', () => {
     expect(() => parseLeaguePage('<html><body><p>manutenção</p></body></html>', CAPTURE_DAY, noop))
-      .toThrow(/nenhum jogo/);
+      .toThrow(/markup mudou/);
+  });
+
+  it('estrutura ok mas nenhum jogo listado → [] (liga em pausa, não falha)', () => {
+    const warnings: string[] = [];
+    const html = '<html><body><h2>Próximos jogos</h2><div></div></body></html>';
+    expect(parseLeaguePage(html, CAPTURE_DAY, (m) => warnings.push(m))).toEqual([]);
+    expect(warnings.some((m) => m.includes('liga em pausa'))).toBe(true);
+  });
+
+  it('estrutura ok mas todos os cards ilegíveis lança (markup mudou)', () => {
+    // card com canal mas sem imgs de time → falha estrutural de parse
+    const html = `<html><body><h2>Próximos jogos</h2><div><div>
+      <h3>Hoje</h3>
+      <article><time>19:30</time><span><span class="hero-tv"></span><span>GLOBO</span></span></article>
+    </div></div></body></html>`;
+    expect(() => parseLeaguePage(html, CAPTURE_DAY, noop)).toThrow(/cards parseou/);
   });
 });
