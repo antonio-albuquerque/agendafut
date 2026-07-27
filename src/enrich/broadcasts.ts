@@ -76,17 +76,32 @@ export async function enrichBroadcasts(
   const report: EnrichReport = { scrapedGames: 0, matched: 0, fromStateOnly: 0, failedLeagues: [] };
   const fresh = new Map<Match, string[]>();
 
-  for (const league of leagues) {
-    if (!competitionsWithMatches.has(league.slug)) continue;
+  // Páginas independentes: busca em paralelo (pior caso = 1 timeout de 15s,
+  // não 15s × nº de ligas). O casamento continua serial e determinístico na
+  // ordem de data/broadcast-leagues.json.
+  const pages = await Promise.all(
+    leagues
+      .filter((league) => competitionsWithMatches.has(league.slug))
+      .map(async (league) => {
+        try {
+          const games = await client.leagueGames(league.url, opts.now, (msg) =>
+            log(`${league.slug}: ${msg}`),
+          );
+          return { league, games };
+        } catch (err) {
+          return { league, games: null, error: err };
+        }
+      }),
+  );
 
-    let games: ScrapedGame[];
-    try {
-      games = await client.leagueGames(league.url, opts.now, (msg) => log(`${league.slug}: ${msg}`));
-    } catch (err) {
+  for (const page of pages) {
+    const league = page.league;
+    if (page.games === null) {
       report.failedLeagues.push(league.slug);
-      log(`${league.slug}: scrape falhou (${String(err)}) — usando transmissões persistidas`);
+      log(`${league.slug}: scrape falhou (${String(page.error)}) — usando transmissões persistidas`);
       continue;
     }
+    const games = page.games;
 
     report.scrapedGames += games.length;
     for (const game of games) {
