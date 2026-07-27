@@ -6,7 +6,10 @@ import type { Match, Team } from './domain/types.js';
 import { buildCalendar } from './ics/builder.js';
 import type { CalendarEntry } from './ics/builder.js';
 import { EspnProvider, FEATURED_SLUGS } from './providers/espn.js';
+import { FntvClient } from './providers/futebolnatv.js';
+import { enrichBroadcasts } from './enrich/broadcasts.js';
 import { loadState, saveState, reconcile } from './state/sequence.js';
+import { TIMEZONE } from './domain/types.js';
 import { renderShell } from './site/index.js';
 import type { FeedRef, FeedsIndex } from './site/index.js';
 import { buildFeedJson } from './site/feedJson.js';
@@ -78,6 +81,28 @@ async function main(): Promise<void> {
   }
 
   const state = loadState(STATE_PATH);
+
+  // Transmissões: enriquecimento fail-soft (falha nunca derruba o build).
+  // FNTV_FIXTURE=<caminho.html> → offline; só ESPN_FIXTURE → pula o scrape
+  // (o smoke offline não pode tocar a rede); persistido cobre os dois casos.
+  const fntvFixture = process.env.FNTV_FIXTURE;
+  if (fntvFixture !== undefined || process.env.ESPN_FIXTURE === undefined) {
+    const report = await enrichBroadcasts(matches, state, {
+      now: DateTime.now().setZone(TIMEZONE),
+      client: fntvFixture !== undefined ? new FntvClient({ fetchImpl: fixtureFetch(fntvFixture) }) : undefined,
+    });
+    console.log(
+      `[build] transmissões: ${report.matched} casadas de ${report.scrapedGames} raspadas, ` +
+        `${report.fromStateOnly} só do estado` +
+        (report.failedLeagues.length > 0 ? `, falhas: ${report.failedLeagues.join(', ')}` : ''),
+    );
+  } else {
+    await enrichBroadcasts(matches, state, {
+      now: DateTime.now().setZone(TIMEZONE),
+      leagues: [], // smoke offline: sem scrape, só o fallback persistido
+    });
+  }
+
   const { entries, changed } = reconcile(state, matches, DateTime.now());
   console.log(`[build] ${entries.length} eventos, ${changed.length} alterados`);
 

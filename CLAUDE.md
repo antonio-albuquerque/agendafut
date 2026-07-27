@@ -38,4 +38,10 @@ Outras convenções:
   com feed próprio em `data/featured-teams.json` (matching por `espnId`, não por nome).
 - `timeValid: false` na ESPN = horário placeholder → evento de dia inteiro, nunca
   confie no horário desses eventos.
-- Smoke test offline: `ESPN_FIXTURE=src/providers/fixtures/espn-bra1.json pnpm run build`.
+- Smoke test offline: `ESPN_FIXTURE=src/providers/fixtures/espn-bra1.json pnpm run build`
+  (só ESPN_FIXTURE → scrape de transmissões é pulado; adicione
+  `FNTV_FIXTURE=src/providers/fixtures/fntv-serie-b.html` para cobrir o enriquecimento).
+- Transmissões: scrape do futebolnatv.com.br (`data/broadcast-leagues.json` mapeia
+  liga → URL; `pnpm harvest:fntv` descobre URLs). É enriquecimento fail-soft — falha
+  NUNCA derruba o build; último valor visto persiste em `state.json` (sem flapping).
+  Mudança de canal é conteúdo: LAST-MODIFIED sim, SEQUENCE não.

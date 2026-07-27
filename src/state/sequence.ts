@@ -16,6 +16,12 @@ export interface EventState {
   contentHash: string;
   /** ISO UTC — preservado quando nada muda, para o .ics ficar byte-idêntico */
   lastModified: string;
+  /**
+   * Última transmissão conhecida. O scraper só enxerga ~10 dias à frente e
+   * pode falhar; sem isso o "Transmissão:" sumiria da descrição a cada
+   * soluço da fonte (flapping).
+   */
+  broadcasters?: string[];
 }
 
 export interface StateFile {
@@ -111,15 +117,20 @@ export function reconcile(
     const contentHash = contentHashOf(match);
     const prev = state.events[uid];
 
+    // Persistida mesmo sem mudança de hash: o enriquecimento lê daqui no
+    // próximo build quando o scraper falhar ou o jogo sair do horizonte.
+    const broadcasters =
+      match.broadcasters.length > 0 ? { broadcasters: match.broadcasters } : {};
+
     let next: EventState;
     if (prev === undefined) {
-      next = { sequence: 0, seqHash, contentHash, lastModified: nowIso };
+      next = { sequence: 0, seqHash, contentHash, lastModified: nowIso, ...broadcasters };
       changed.push(uid);
     } else if (prev.seqHash !== seqHash) {
-      next = { sequence: prev.sequence + 1, seqHash, contentHash, lastModified: nowIso };
+      next = { sequence: prev.sequence + 1, seqHash, contentHash, lastModified: nowIso, ...broadcasters };
       changed.push(uid);
     } else if (prev.contentHash !== contentHash) {
-      next = { ...prev, contentHash, lastModified: nowIso };
+      next = { ...prev, contentHash, lastModified: nowIso, ...broadcasters };
       changed.push(uid);
     } else {
       // Nada mudou: preserva sequence E lastModified. Reescrever

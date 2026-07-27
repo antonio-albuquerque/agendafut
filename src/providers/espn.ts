@@ -5,6 +5,7 @@ import { z } from 'zod';
 import type { Competition, Match, MatchStatus } from '../domain/types.js';
 import { TIMEZONE } from '../domain/types.js';
 import { resolveTeam } from '../domain/slug.js';
+import { normalizeChannels } from '../domain/channels.js';
 import type { FixtureProvider } from './provider.js';
 
 export interface LeagueConfig {
@@ -57,6 +58,18 @@ const CompetitionBlockSchema = z
     venue: z.object({ fullName: z.string().nullish() }).nullish(),
     status: z.object({ type: z.object({ name: z.string() }).passthrough() }).passthrough(),
     competitors: z.array(CompetitorSchema).min(2),
+    // Vazios p/ ligas brasileiras hoje (ESPN só preenche o mercado dos EUA),
+    // mas extraímos mesmo assim caso a fonte passe a preencher.
+    broadcasts: z
+      .array(z.object({ names: z.array(z.string()).optional() }).passthrough())
+      .optional(),
+    geoBroadcasts: z
+      .array(
+        z
+          .object({ media: z.object({ shortName: z.string().nullish() }).passthrough().nullish() })
+          .passthrough(),
+      )
+      .optional(),
   })
   .passthrough();
 
@@ -103,6 +116,13 @@ function scoreValue(raw: z.infer<typeof CompetitorSchema>['score']): number | nu
   if (raw === null || raw === undefined) return null;
   const value = typeof raw === 'string' ? Number(raw) : raw.value;
   return typeof value === 'number' && Number.isFinite(value) ? value : null;
+}
+
+function broadcastNames(block: z.infer<typeof CompetitionBlockSchema>): string[] {
+  return normalizeChannels([
+    ...(block.broadcasts ?? []).flatMap((b) => b.names ?? []),
+    ...(block.geoBroadcasts ?? []).flatMap((g) => g.media?.shortName ?? []),
+  ]);
 }
 
 function toTeam(competitor: z.infer<typeof CompetitorSchema>) {
@@ -161,7 +181,7 @@ export function normalizeEvent(
     date: local.toISODate()!,
     venue: block.venue?.fullName?.trim() || null,
     status: status ?? 'scheduled',
-    broadcasters: [],
+    broadcasters: broadcastNames(block),
     score: finished && homeScore !== null && awayScore !== null
       ? { home: homeScore, away: awayScore }
       : null,

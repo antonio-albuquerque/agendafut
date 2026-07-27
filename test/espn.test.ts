@@ -67,6 +67,26 @@ describe('normalizeEvent', () => {
     expect(match.home.name).toBe('Bahia');
   });
 
+  it('broadcasts/geoBroadcasts viram broadcasters normalizados', () => {
+    // Shape real observado na eng.1 (ligas BR vêm vazias hoje)
+    const raw = structuredClone(fixture.events[0]) as {
+      competitions: Array<{ broadcasts?: unknown; geoBroadcasts?: unknown }>;
+    };
+    raw.competitions[0]!.broadcasts = [{ market: 'national', names: ['USA Net', 'ESPN 4'] }];
+    raw.competitions[0]!.geoBroadcasts = [
+      { type: { id: '1' }, media: { shortName: 'usa net' } },
+      { type: { id: '4' }, media: {} },
+    ];
+    const match = normalizeEvent(raw, league, 2026, noop)!;
+    expect(match.broadcasters).toEqual(['ESPN 4', 'USA Net']);
+  });
+
+  it('sem campos de transmissão → broadcasters vazio', () => {
+    for (const match of normalized()) {
+      expect(match.broadcasters).toEqual([]);
+    }
+  });
+
   it('status desconhecido avisa e cai em scheduled', () => {
     const warnings: string[] = [];
     const raw = structuredClone(fixture.events[0]) as {
