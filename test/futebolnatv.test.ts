@@ -45,8 +45,7 @@ describe('resolveDateHeader', () => {
 describe('parseLeaguePage', () => {
   it('extrai todos os jogos da página real com data, times e canais', () => {
     const games = parseLeaguePage(fixture, CAPTURE_DAY, noop);
-    // A página tem 10 cards; 2 (Sáb 08/08) ainda sem canal anunciado são pulados.
-    expect(games).toHaveLength(8);
+    expect(games).toHaveLength(10);
 
     const crb = games.find((g) => g.homeRaw === 'CRB')!;
     expect(crb).toMatchObject({
@@ -63,8 +62,11 @@ describe('parseLeaguePage', () => {
 
     // grupos de data com dd/MM
     expect(games.filter((g) => g.date === '2026-08-07')).toHaveLength(2);
-    // os 2 jogos de 08/08 não têm canal anunciado → pulados
-    expect(games.filter((g) => g.date === '2026-08-08')).toHaveLength(0);
+    // os 2 jogos de 08/08 ainda sem canal anunciado entram com channels vazio
+    // (vazio é significativo: é o que permite limpar canal retirado)
+    const aug8 = games.filter((g) => g.date === '2026-08-08');
+    expect(aug8).toHaveLength(2);
+    for (const g of aug8) expect(g.channels).toEqual([]);
   });
 
   it('card quebrado é pulado com warn; o resto da página sobrevive', () => {

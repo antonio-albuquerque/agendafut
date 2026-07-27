@@ -116,9 +116,12 @@ export async function enrichBroadcasts(
         log(`${league.slug}: horário divergente em ${homeSlug} x ${awaySlug} (site ${game.time}, ESPN ${kickoffLocal}) — ESPN prevalece`);
       }
 
-      // União com o que a ESPN trouxe; substitui (não soma) o persistido —
+      // União com o que a ESPN trouxe (e com card anterior do mesmo jogo, se
+      // a página o listar duas vezes); substitui (não soma) o persistido —
       // com dado fresco em mãos, canal removido pela fonte deve sumir.
-      fresh.set(match, normalizeChannels([...match.broadcasters, ...game.channels]));
+      // game.channels vazio também é fresco: transmissão retirada → limpa.
+      const seen = fresh.get(match) ?? match.broadcasters;
+      fresh.set(match, normalizeChannels([...seen, ...game.channels]));
       report.matched += 1;
     }
   }
@@ -129,13 +132,14 @@ export async function enrichBroadcasts(
       match.broadcasters = channels;
       continue;
     }
-    const persisted = persistedFor(state, match);
-    if (persisted !== null && persisted.length > 0 && match.broadcasters.length === 0) {
-      match.broadcasters = persisted;
+    // Sem dado fresco (scrape falhou, liga não mapeada ou jogo fora do
+    // horizonte): une ESPN + persistido — persistido nunca pode APAGAR um
+    // canal que a ESPN está entregando agora, nem sumir num soluço da fonte.
+    const persisted = persistedFor(state, match) ?? [];
+    if (persisted.length > 0 && match.broadcasters.length === 0) {
       report.fromStateOnly += 1;
-    } else {
-      match.broadcasters = normalizeChannels(match.broadcasters);
     }
+    match.broadcasters = normalizeChannels([...match.broadcasters, ...persisted]);
   }
 
   return report;
