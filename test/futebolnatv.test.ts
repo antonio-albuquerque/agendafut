@@ -79,8 +79,24 @@ describe('parseLeaguePage', () => {
     expect(carioca.channels).toEqual(['BAND', 'CANAL GOAT']);
   });
 
-  it('página sem nenhum card parseável lança', () => {
+  it('página sem estrutura reconhecível lança (markup mudou)', () => {
     expect(() => parseLeaguePage('<html><body><p>manutenção</p></body></html>', CAPTURE_DAY, noop))
-      .toThrow(/nenhum jogo/);
+      .toThrow(/markup mudou/);
+  });
+
+  it('estrutura ok mas nenhum jogo listado → [] (liga em pausa, não falha)', () => {
+    const warnings: string[] = [];
+    const html = '<html><body><h2>Próximos jogos</h2><div></div></body></html>';
+    expect(parseLeaguePage(html, CAPTURE_DAY, (m) => warnings.push(m))).toEqual([]);
+    expect(warnings.some((m) => m.includes('liga em pausa'))).toBe(true);
+  });
+
+  it('estrutura ok mas todos os cards ilegíveis lança (markup mudou)', () => {
+    // card com canal mas sem imgs de time → falha estrutural de parse
+    const html = `<html><body><h2>Próximos jogos</h2><div><div>
+      <h3>Hoje</h3>
+      <article><time>19:30</time><span><span class="hero-tv"></span><span>GLOBO</span></span></article>
+    </div></div></body></html>`;
+    expect(() => parseLeaguePage(html, CAPTURE_DAY, noop)).toThrow(/cards parseou/);
   });
 });
