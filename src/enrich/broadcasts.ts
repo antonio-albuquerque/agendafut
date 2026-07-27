@@ -47,7 +47,11 @@ export interface EnrichOptions {
 /** Última transmissão persistida para o match, via a mesma resolução de UID do reconcile. */
 function persistedFor(state: StateFile, match: Match): string[] | null {
   const key = pairKey(match);
-  const uid = state.pairIndex[key] ?? state.pairIndex[`${key}:${match.date}`];
+  // Chave com data PRIMEIRO: o reconcile só cria `key:date` para a segunda
+  // partida do mesmo par na temporada (replay/desempate) — para ela, a chave
+  // base aponta o UID do PRIMEIRO jogo e devolveria os canais errados.
+  // Jogo comum não tem entrada com data e cai na chave base normalmente.
+  const uid = state.pairIndex[`${key}:${match.date}`] ?? state.pairIndex[key];
   if (uid === undefined) return null;
   return state.events[uid]?.broadcasters ?? null;
 }
