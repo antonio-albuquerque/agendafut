@@ -130,7 +130,10 @@ export function reconcile(
       next = { sequence: prev.sequence + 1, seqHash, contentHash, lastModified: nowIso, ...broadcasters };
       changed.push(uid);
     } else if (prev.contentHash !== contentHash) {
-      next = { ...prev, contentHash, lastModified: nowIso, ...broadcasters };
+      // Reconstrói em vez de `...prev`: se a transmissão foi retirada
+      // (match.broadcasters vazio), o campo antigo precisa SUMIR do estado,
+      // senão o fallback do enriquecimento o ressuscita no próximo build.
+      next = { sequence: prev.sequence, seqHash, contentHash, lastModified: nowIso, ...broadcasters };
       changed.push(uid);
     } else {
       // Nada mudou: preserva sequence E lastModified. Reescrever

@@ -26,7 +26,9 @@ const ScrapedGameSchema = z.object({
   homeRaw: z.string().min(1),
   awayRaw: z.string().min(1),
   round: z.string().nullable(),
-  channels: z.array(z.string().min(1)).min(1),
+  // Vazio é significativo: card listado sem canal = transmissão retirada/não
+  // anunciada — o orquestrador usa isso para LIMPAR canais persistidos.
+  channels: z.array(z.string().min(1)),
 });
 
 // Seletores concentrados aqui: se o site mudar o markup, o conserto é 1 linha.
@@ -102,8 +104,6 @@ export function parseLeaguePage(
         const channels = [...card.querySelectorAll(SELECTORS.channelIcon)]
           .map((icon) => icon.nextElementSibling?.textContent?.replace(/\s+/g, ' ').trim() ?? '')
           .filter((name) => name !== '');
-
-        if (channels.length === 0) continue; // jogo sem transmissão anunciada: nada a enriquecer
 
         const parsed = ScrapedGameSchema.safeParse({ date, time, homeRaw, awayRaw, round, channels });
         if (!parsed.success) {
