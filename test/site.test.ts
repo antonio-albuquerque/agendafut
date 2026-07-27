@@ -28,6 +28,9 @@ const palmeirasFixture = {
   ],
 };
 
+const MONTHS = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+  'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+
 function bootApp() {
   const window = new Window({ url: 'https://example.test/agendafut/' });
   const routes: Record<string, unknown> = {
@@ -53,80 +56,104 @@ async function flush(window: Window) {
   await new Promise((resolve) => window.setTimeout(resolve, 0));
 }
 
+async function openDetail(window: Window, hash: string) {
+  window.location.hash = hash;
+  window.dispatchEvent(new window.Event('hashchange'));
+  await flush(window);
+  return window.document.getElementById('app')!;
+}
+
+/** navega a grade até "{mês} {ano}" via botões ‹ › (relógio do teste é o real) */
+async function gotoMonth(window: Window, label: string) {
+  const appEl = window.document.getElementById('app')!;
+  for (let i = 0; i < 48; i++) {
+    const cur = appEl.querySelector('.mlabel')!.textContent!;
+    if (cur === label) return;
+    const [cm, cy] = cur.split(' ');
+    const [tm, ty] = label.split(' ');
+    const curIdx = Number(cy) * 12 + MONTHS.indexOf(cm);
+    const tgtIdx = Number(ty) * 12 + MONTHS.indexOf(tm);
+    const nav = appEl.querySelectorAll('.mbtn')[tgtIdx > curIdx ? 1 : 0];
+    (nav as unknown as { click(): void }).click();
+    await flush(window);
+  }
+  throw new Error('mês não alcançado: ' + label);
+}
+
 describe('SPA', () => {
-  it('home lista times e competições com botões de assinar', async () => {
+  it('home lista times e competições com busca', async () => {
     const { window } = bootApp();
     await flush(window);
-    const html = window.document.getElementById('app')!.innerHTML;
+    const appEl = window.document.getElementById('app')!;
+    const html = appEl.innerHTML;
     expect(html).toContain('Palmeiras');
     expect(html).toContain('Campeonato Paulista');
-    expect(html).toContain('webcal://example.test/agendafut/calendars/team/palmeiras.ics');
     expect(html).toContain('3 jogos');
+    expect(html).toContain('atualizado');
+    expect(appEl.querySelector('.search input')).toBeTruthy();
+    expect(appEl.querySelector('a[href="#/time/palmeiras"]')).toBeTruthy();
   });
 
-  it('rota #/time/{slug} renderiza o calendário com meses, dias e jogos', async () => {
+  it('busca filtra times e competições sem acento', async () => {
     const { window } = bootApp();
     await flush(window);
-    window.location.hash = '#/time/palmeiras';
-    window.dispatchEvent(new window.Event('hashchange'));
-    await flush(window);
-
     const appEl = window.document.getElementById('app')!;
-    const html = appEl.innerHTML;
-    // sem jogo futuro no relógio real de 2026? relógio do teste é o real do
-    // sistema — só valida a estrutura, não a seleção específica
-    expect(html).toContain('class="cal"');
-    expect(appEl.querySelectorAll('.month').length).toBe(12);
-    expect(appEl.querySelectorAll('.month:not(.off)').length).toBe(3); // jan, jul, ago
-    expect(appEl.querySelectorAll('.dayn').length).toBeGreaterThanOrEqual(28);
-    expect(appEl.querySelector('.dayn.sel')).toBeTruthy();
-    expect(appEl.querySelector('.ematch')).toBeTruthy();
-    expect(html).toContain('← nada'.slice(0, 1)); // botão voltar presente
+    const input = appEl.querySelector('.search input') as unknown as { value: string; dispatchEvent(e: unknown): void };
+    input.value = 'paulista';
+    input.dispatchEvent(new window.Event('input'));
+    await flush(window);
+    expect(appEl.querySelector('#list-teams')!.innerHTML).toContain('Nada encontrado');
+    expect(appEl.querySelector('#list-comps')!.innerHTML).toContain('Campeonato Paulista');
+
+    input.value = 'PALMEIRAS';
+    input.dispatchEvent(new window.Event('input'));
+    await flush(window);
+    expect(appEl.querySelector('#list-teams')!.innerHTML).toContain('Palmeiras');
+    expect(appEl.querySelector('#list-comps')!.innerHTML).toContain('Nada encontrado');
   });
 
-  it('selecionar um mês mostra o primeiro dia com jogo e o card do jogo', async () => {
+  it('rota #/time/{slug} renderiza grade mensal, assinar e jogos', async () => {
     const { window } = bootApp();
-    await flush(window);
-    window.location.hash = '#/time/palmeiras';
-    window.dispatchEvent(new window.Event('hashchange'));
-    await flush(window);
-
-    const appEl = window.document.getElementById('app')!;
-    const jan = [...appEl.querySelectorAll('.month')].find((b) => b.textContent === 'Jan')!;
-    (jan as unknown as { click(): void }).click();
-    await flush(window);
+    const appEl = await openDetail(window, '#/time/palmeiras');
 
     const html = appEl.innerHTML;
-    expect(appEl.querySelector('.month.sel')!.textContent).toBe('Jan');
-    expect(appEl.querySelector('.dayn.sel')!.textContent).toBe('28');
-    expect(html).toContain('quarta-feira'); // 2026-01-28
+    expect(html).toContain('webcal://example.test/agendafut/calendars/team/palmeiras.ics');
+    expect(html).toContain('Assinar calendário');
+    expect(appEl.querySelector('.calcard')).toBeTruthy();
+    expect(appEl.querySelectorAll('.dow').length).toBe(7);
+    expect(appEl.querySelectorAll('.cell').length).toBe(42);
+    expect(appEl.querySelector('.backbtn')).toBeTruthy();
+    expect(appEl.querySelector('.mlabel')!.textContent).toMatch(/^[a-zç]+ \d{4}$/);
+  });
+
+  it('navegar até janeiro mostra o jogo encerrado com placar', async () => {
+    const { window } = bootApp();
+    const appEl = await openDetail(window, '#/time/palmeiras');
+    await gotoMonth(window, 'janeiro 2026');
+
+    const html = appEl.innerHTML;
     expect(html).toContain('21:30');
     expect(html).toContain('2 x 1'); // placar do encerrado
     expect(html).toContain('Campeonato Paulista');
+    // dia 28 tem jogo → ponto colorido na grade
+    const dots = [...appEl.querySelectorAll('.cell')].filter(
+      (c) => !(c.querySelector('.dot')!.getAttribute('style') || '').includes('transparent'),
+    );
+    expect(dots.length).toBe(1);
   });
 
   it('jogo sem horário exibe badge "Horário a definir"', async () => {
     const { window } = bootApp();
-    await flush(window);
-    window.location.hash = '#/time/palmeiras';
-    window.dispatchEvent(new window.Event('hashchange'));
-    await flush(window);
-
-    const appEl = window.document.getElementById('app')!;
-    const ago = [...appEl.querySelectorAll('.month')].find((b) => b.textContent === 'Ago')!;
-    (ago as unknown as { click(): void }).click();
-    await flush(window);
+    const appEl = await openDetail(window, '#/time/palmeiras');
+    await gotoMonth(window, 'agosto 2026');
 
     expect(appEl.innerHTML).toContain('Horário a definir');
-    expect(appEl.querySelector('.etime.tbd')).toBeTruthy();
+    expect(appEl.innerHTML).toContain('—'); // horário vazio na linha do jogo
   });
 
   it('feed inexistente mostra erro sem quebrar', async () => {
     const { window } = bootApp();
-    await flush(window);
-    window.location.hash = '#/time/nao-existe';
-    window.dispatchEvent(new window.Event('hashchange'));
-    await flush(window);
-    expect(window.document.getElementById('app')!.innerHTML).toContain('Erro');
+    const appEl = await openDetail(window, '#/time/nao-existe');
+    expect(appEl.innerHTML).toContain('Não foi possível carregar os dados');
   });
 });

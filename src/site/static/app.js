@@ -1,20 +1,46 @@
-/* agendafut — SPA estática. Renderiza a partir de feeds.json e
-   calendars/{kind}/{slug}.json; roteamento por hash para funcionar em
-   qualquer subcaminho do GitHub Pages. */
+/* agendafut — SPA estática. Implementa o design AgendaFut.dc.html
+   (variante Nocturne) do projeto Claude Design: home com busca,
+   listas com barra de cor do time, e detalhe com grade mensal.
+   Renderiza a partir de feeds.json e calendars/{kind}/{slug}.json;
+   roteamento por hash para funcionar em qualquer subcaminho do
+   GitHub Pages. */
 (function () {
   'use strict';
 
   var app = document.getElementById('app');
   var cache = { feeds: null, data: {} };
-  var MONTHS = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
-  // seleção corrente da view de detalhe (zerada ao trocar de feed)
-  var sel = { key: null, ym: null, day: null };
+  var MONTHS = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+    'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+  var DOW = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'];
+  // cores por time (do design; barra de cor nas listas e pontos na grade)
+  var COLORS = {
+    'america-mg': '#12874f', 'athletico-pr': '#d0342c', 'atletico-mg': '#787d86', 'bahia': '#1a6cb5',
+    'botafogo': '#6e7278', 'ceara': '#5c6470', 'corinthians': '#8a9099', 'coritiba': '#0e6b5c',
+    'cruzeiro': '#1355a8', 'flamengo': '#d02c2c', 'fluminense': '#8c1c3a', 'fortaleza': '#3b6cb4',
+    'goias': '#0d8a44', 'gremio': '#2a9fd8', 'internacional': '#d81e2a', 'nautico': '#d13a45',
+    'palmeiras': '#14804a', 'paysandu': '#1e4f9c', 'remo': '#2b5cb0', 'santa-cruz': '#cf3339',
+    'santos': '#8b929c', 'sao-paulo': '#cc2830', 'sport': '#c8342c', 'vasco': '#7c828a', 'vitoria': '#d64230'
+  };
+  var ACCENT = '#9184d9';
+  var query = '';
+  // mês corrente da view de detalhe (zerado ao trocar de feed)
+  var sel = { key: null, y: null, m: null };
+
+  var SVG_SEARCH = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>';
+  var SVG_CHEV_R = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6"></path></svg>';
+  var SVG_CHEV_L = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 6l-6 6 6 6"></path></svg>';
+  var SVG_CAL = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M8 3v4M16 3v4M3 10h18M12 13v6M9 16h6"></path></svg>';
+  var SVG_COPY = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15V5a2 2 0 0 1 2-2h10"></path></svg>';
 
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
+  function norm(s) {
+    return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+  function pad(n) { return String(n).padStart(2, '0'); }
   function absUrl(path) { return new URL(path, window.location.href).href; }
   function webcalUrl(path) { return absUrl(path).replace(/^https?:/, 'webcal:'); }
 
@@ -37,21 +63,41 @@
     });
   }
 
-  function subscribeButtons(icsPath) {
-    return (
-      '<span class="actions">' +
-      '<a class="btn btn-primary" href="' + esc(webcalUrl(icsPath)) + '">Assinar</a>' +
-      '<button class="btn" data-copy="' + esc(icsPath) + '">Copiar URL</button>' +
-      '</span>'
-    );
+  function todayIso() {
+    // data local do navegador; para agenda de jogos a diferença de fuso
+    // do usuário é o comportamento esperado
+    var d = new Date();
+    return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+  }
+  function feedColor(kind, slug) {
+    return (kind === 'time' || kind === 'team') && COLORS[slug] ? COLORS[slug] : ACCENT;
+  }
+  function crestHtml(kind, slug) {
+    // só times têm escudo em assets/logos; se faltar o arquivo o img se remove
+    if (kind !== 'time' && kind !== 'team') return '';
+    return '<img class="crest" src="assets/logos/' + esc(slug) + '.png" alt="" ' +
+      'loading="lazy" onerror="this.remove()">';
+  }
+  function brandbarHtml(feeds) {
+    var gen = '…';
+    if (feeds && feeds.generatedAt) {
+      var g = new Date(feeds.generatedAt);
+      gen = pad(g.getDate()) + '/' + pad(g.getMonth() + 1) + '/' + g.getFullYear();
+    }
+    return '<div class="brandbar">' +
+      '<a class="brand" href="#">agendafut</a>' +
+      '<span class="dash"></span>' +
+      '<span class="updated">atualizado ' + esc(gen) + '</span>' +
+      '</div>';
   }
   function wireCopyButtons(root) {
     root.querySelectorAll('[data-copy]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         navigator.clipboard.writeText(absUrl(btn.dataset.copy)).then(function () {
-          var old = btn.textContent;
-          btn.textContent = 'Copiado!';
-          setTimeout(function () { btn.textContent = old; }, 1500);
+          var label = btn.querySelector('.blabel') || btn;
+          var old = label.textContent;
+          label.textContent = 'Link copiado!';
+          setTimeout(function () { label.textContent = old; }, 2000);
         });
       });
     });
@@ -59,90 +105,73 @@
 
   /* ── Home ─────────────────────────────────────────────────── */
 
-  function crestHtml(kind, slug) {
-    // só times têm escudo em assets/logos; se faltar o arquivo o img se remove
-    if (kind !== 'time' && kind !== 'team') return '';
-    return '<img class="crest" src="assets/logos/' + esc(slug) + '.png" alt="" ' +
-      'loading="lazy" onerror="this.remove()">';
-  }
-
-  function rowHtml(kind, feed) {
+  function itemHtml(kind, f) {
     return (
-      '<div class="row">' +
-      '<a class="row-link" href="#/' + kind + '/' + esc(feed.slug) + '">' +
-      crestHtml(kind, feed.slug) +
-      '<span class="row-name">' + esc(feed.name) + '</span>' +
-      '<span class="row-count">' + feed.matchCount + ' jogos</span>' +
-      '</a>' +
-      subscribeButtons(feed.path) +
-      '</div>'
+      '<a class="item" href="#/' + kind + '/' + esc(f.slug) + '">' +
+      '<span class="cbar" style="background:' + feedColor(kind, f.slug) + '"></span>' +
+      crestHtml(kind, f.slug) +
+      '<span class="item-name">' + esc(f.name) + '</span>' +
+      '<span class="chip">' + f.matchCount + ' jogos</span>' +
+      '<span class="chev">' + SVG_CHEV_R + '</span>' +
+      '</a>'
     );
+  }
+  function listsHtml(feeds) {
+    var q = norm(query);
+    function build(list, kind) {
+      var out = list
+        .filter(function (f) { return !q || norm(f.name).indexOf(q) >= 0; })
+        .map(function (f) { return itemHtml(kind, f); })
+        .join('');
+      return out || '<p class="empty">Nada encontrado.</p>';
+    }
+    return {
+      teams: build(feeds.teams, 'time'),
+      comps: build(feeds.competitions, 'competicao')
+    };
   }
 
   function renderHome() {
     document.title = 'agendafut — calendários do futebol brasileiro';
     getFeeds().then(function (feeds) {
+      var lists = listsHtml(feeds);
       app.innerHTML =
         '<div class="wrap">' +
-        '<h1 class="brand">⚽ agendafut</h1>' +
+        brandbarHtml(feeds) +
         '<p class="lead">Calendários assináveis com os jogos do futebol brasileiro. ' +
-        'Assine uma vez e os jogos aparecem — e se atualizam — direto na sua agenda.</p>' +
-        '<details class="howto"><summary>Como assinar</summary>' +
-        '<p><strong>iPhone / Mac:</strong> toque em <em>Assinar</em> — abre direto no Apple Calendar.</p>' +
-        '<p><strong>Google Calendar / Android:</strong> toque em <em>Copiar URL</em> e cole em ' +
-        '<em>Outros calendários → + → De URL</em>. O Google atualiza feeds externos no ritmo dele ' +
-        '(pode levar até um dia).</p></details>' +
-        '<h2 class="section">Times</h2>' +
-        '<div class="rows">' +
-        feeds.teams.map(function (f) { return rowHtml('time', f); }).join('') +
-        '</div>' +
-        '<h2 class="section">Competições</h2>' +
-        '<div class="rows">' +
-        feeds.competitions.map(function (f) { return rowHtml('competicao', f); }).join('') +
-        '</div>' +
-        '<footer><p>Dados de fontes públicas; horários sujeitos a alteração. ' +
-        'Não afiliado a clubes ou federações. ' +
-        '<a href="feeds.json">feeds.json</a></p></footer>' +
+        'Escolha seu time e receba os jogos direto na sua agenda.</p>' +
+        '<label class="search">' + SVG_SEARCH +
+        '<input id="q" type="search" placeholder="Buscar time ou competição…" ' +
+        'value="' + esc(query) + '" autocomplete="off">' +
+        '</label>' +
+        '<div class="group"><div class="glabel">Times</div>' +
+        '<div class="list" id="list-teams">' + lists.teams + '</div></div>' +
+        '<div class="hr"></div>' +
+        '<div class="group"><div class="glabel">Competições</div>' +
+        '<div class="list" id="list-comps">' + lists.comps + '</div></div>' +
+        '<div class="hr"></div>' +
+        '<div class="group"><div class="glabel">Como assinar</div>' +
+        '<div class="step"><span class="n">1</span><span><strong>iPhone e Mac</strong> — ' +
+        'toque em Assinar: o Calendário abre e acompanha novos jogos automaticamente.</span></div>' +
+        '<div class="step"><span class="n">2</span><span><strong>Google Agenda</strong> — ' +
+        'copie o link .ics e cole em Outras agendas → Assinar por URL.</span></div>' +
+        '<div class="step"><span class="n">3</span><span><strong>Outlook e Android</strong> — ' +
+        'cole o link .ics na opção Adicionar calendário por URL.</span></div></div>' +
+        '<div class="foot">Feeds gerados automaticamente · <a href="feeds.json">feeds.json</a></div>' +
         '</div>';
-      wireCopyButtons(app);
+
+      var input = app.querySelector('#q');
+      input.addEventListener('input', function () {
+        query = input.value;
+        var l = listsHtml(feeds);
+        document.getElementById('list-teams').innerHTML = l.teams;
+        document.getElementById('list-comps').innerHTML = l.comps;
+      });
     }).catch(renderError);
   }
 
-  /* ── Detalhe: calendário ──────────────────────────────────── */
+  /* ── Detalhe: grade mensal + jogos do mês ─────────────────── */
 
-  function groupByDate(matches) {
-    var map = {};
-    matches.forEach(function (m) {
-      (map[m.date] = map[m.date] || []).push(m);
-    });
-    return map;
-  }
-  function todayIso() {
-    // data local do navegador; para agenda de jogos a diferença de fuso
-    // do usuário é o comportamento esperado
-    var d = new Date();
-    return d.getFullYear() + '-' +
-      String(d.getMonth() + 1).padStart(2, '0') + '-' +
-      String(d.getDate()).padStart(2, '0');
-  }
-  function defaultDate(dates) {
-    var today = todayIso();
-    for (var i = 0; i < dates.length; i++) {
-      if (dates[i] >= today) return dates[i];
-    }
-    return dates[dates.length - 1];
-  }
-  function weekdayName(iso) {
-    var d = new Date(iso + 'T12:00:00');
-    return new Intl.DateTimeFormat('pt-BR', { weekday: 'long' }).format(d);
-  }
-
-  function statusBadge(m) {
-    if (m.status === 'postponed') return '<span class="badge warn">Adiado</span>';
-    if (m.status === 'cancelled') return '<span class="badge danger">Cancelado</span>';
-    if (m.time === null && m.status !== 'finished') return '<span class="badge">Horário a definir</span>';
-    return '';
-  }
   function matchLine(m) {
     if (m.status === 'finished' && m.score) {
       return esc(m.home) + ' <span class="score">' + m.score.home + ' x ' + m.score.away +
@@ -150,19 +179,39 @@
     }
     return esc(m.home) + ' x ' + esc(m.away);
   }
-  function eventHtml(m, kind) {
-    var time = m.time
-      ? '<div class="etime">' + esc(m.time) + '</div>'
-      : '<div class="etime tbd">—</div>';
-    var comp = kind === 'team' ? esc(m.competition) : esc(m.competition);
-    return (
-      '<div class="event">' + time +
-      '<div class="ecard ' + esc(m.status) + '">' +
-      '<div class="ecomp">' + comp + '</div>' +
-      '<div class="ematch">' + matchLine(m) + statusBadge(m) + '</div>' +
-      (m.venue ? '<div class="evenue">' + esc(m.venue) + '</div>' : '') +
-      '</div></div>'
-    );
+  function statusBadge(m) {
+    if (m.status === 'postponed') return '<span class="badge warn">Adiado</span>';
+    if (m.status === 'cancelled') return '<span class="badge danger">Cancelado</span>';
+    if (m.time === null && m.status !== 'finished') return '<span class="badge">Horário a definir</span>';
+    return '';
+  }
+  function defaultMonth(dates) {
+    var pick = null;
+    var today = todayIso();
+    for (var i = 0; i < dates.length; i++) {
+      if (dates[i] >= today) { pick = dates[i]; break; }
+    }
+    if (!pick) pick = dates.length ? dates[dates.length - 1] : todayIso();
+    return { y: Number(pick.slice(0, 4)), m: Number(pick.slice(5, 7)) - 1 };
+  }
+
+  function gridHtml(y, m, matchDays, color) {
+    var first = new Date(y, m, 1, 12);
+    var off = first.getDay();
+    var today = todayIso();
+    var html = '<div class="grid7 dows">' + DOW.map(function (d) {
+      return '<div class="dow">' + d + '</div>';
+    }).join('') + '</div><div class="grid7">';
+    for (var i = 0; i < 42; i++) {
+      var d = new Date(y, m, 1 - off + i, 12);
+      var iso = d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+      var inMonth = d.getMonth() === m;
+      html += '<div class="cell' + (inMonth ? '' : ' out') + (iso === today ? ' today' : '') + '">' +
+        '<span>' + d.getDate() + '</span>' +
+        '<span class="dot" style="background:' + (matchDays[iso] ? color : 'transparent') + '"></span>' +
+        '</div>';
+    }
+    return html + '</div>';
   }
 
   function renderDetail(kind, slug) {
@@ -176,125 +225,94 @@
 
       document.title = data.name + ' — agendafut';
 
-      var byDate = groupByDate(data.matches);
-      var dates = Object.keys(byDate).sort();
+      var dates = data.matches.map(function (m) { return m.date; }).sort();
       if (sel.key !== key) {
-        var d = defaultDate(dates);
-        sel = { key: key, ym: d.slice(0, 7), day: d };
+        var def = defaultMonth(dates);
+        sel = { key: key, y: def.y, m: def.m };
       }
+      var ym = sel.y + '-' + pad(sel.m + 1);
+      var color = feedColor(kind, slug);
 
-      // meses (com ano) que têm jogos, em ordem
-      var months = [];
-      dates.forEach(function (d) {
-        var ym = d.slice(0, 7);
-        if (months.indexOf(ym) === -1) months.push(ym);
-      });
-      if (months.indexOf(sel.ym) === -1) sel.ym = months[0];
-      var mi = months.indexOf(sel.ym);
-      var year = sel.ym.slice(0, 4);
+      var matchDays = {};
+      data.matches.forEach(function (mt) { matchDays[mt.date] = true; });
 
-      // dias do mês selecionado
-      var daysInMonth = new Date(Number(year), Number(sel.ym.slice(5, 7)), 0).getDate();
-      var dayButtons = '';
-      for (var day = 1; day <= daysInMonth; day++) {
-        var iso = sel.ym + '-' + String(day).padStart(2, '0');
-        var has = !!byDate[iso];
-        dayButtons +=
-          '<button class="dayn' + (has ? '' : ' off') + (iso === sel.day ? ' sel' : '') +
-          '" data-date="' + iso + '"' + (has ? '' : ' disabled') + '>' + day + '</button>';
-      }
-
-      var monthButtons = MONTHS.map(function (label, idx) {
-        var ym = year + '-' + String(idx + 1).padStart(2, '0');
-        var has = months.indexOf(ym) !== -1;
-        return '<button class="month' + (has ? '' : ' off') + (ym === sel.ym ? ' sel' : '') +
-          '" data-ym="' + ym + '"' + (has ? '' : ' disabled') + '>' + label + '</button>';
+      var monthMatches = data.matches
+        .filter(function (mt) { return mt.date.slice(0, 7) === ym; })
+        .sort(function (a, b) {
+          if (a.date !== b.date) return a.date < b.date ? -1 : 1;
+          if (a.time === b.time) return 0;
+          if (a.time === null) return 1;
+          if (b.time === null) return -1;
+          return a.time < b.time ? -1 : 1;
+        });
+      var rows = monthMatches.map(function (mt) {
+        var d = new Date(mt.date + 'T12:00:00');
+        return '<div class="mrow">' +
+          '<div class="mday"><div class="d">' + pad(d.getDate()) + '</div>' +
+          '<div class="dw">' + DOW[d.getDay()] + '</div></div>' +
+          '<div class="minfo"><div class="mt">' + matchLine(mt) + statusBadge(mt) + '</div>' +
+          '<div class="ml">' + esc(mt.competition + (mt.venue ? ' · ' + mt.venue : '')) + '</div></div>' +
+          '<div class="mtime">' + (mt.time ? esc(mt.time) : '—') + '</div>' +
+          '</div>';
       }).join('');
-
-      var dayMatches = (byDate[sel.day] || []).slice().sort(function (a, b) {
-        if (a.time === b.time) return 0;
-        if (a.time === null) return 1;
-        if (b.time === null) return -1;
-        return a.time < b.time ? -1 : 1;
-      });
-      var panel = sel.day && byDate[sel.day]
-        ? '<div class="daytitle"><h2 class="wd">' + esc(weekdayName(sel.day)) + '</h2>' +
-          '<span class="dn">' + Number(sel.day.slice(8, 10)) + '</span></div>' +
-          '<div class="events">' +
-          dayMatches.map(function (m) { return eventHtml(m, kind); }).join('') +
-          '</div>'
-        : '<p class="noevents">Sem jogos neste dia.</p>';
 
       app.innerHTML =
         '<div class="wrap">' +
-        '<div class="topbar">' +
-        '<button class="back" aria-label="Voltar">←</button>' +
+        brandbarHtml(feeds) +
+        '<button class="backbtn">' + SVG_CHEV_L + ' Voltar</button>' +
+        '<div class="dhead">' +
+        '<span class="cbar big" style="background:' + color + '"></span>' +
         crestHtml(kind, slug) +
-        '<h1>' + esc(data.name) + '</h1>' +
-        subscribeButtons(ref.path) +
+        '<h2>' + esc(data.name) + '</h2>' +
+        '<span class="tag">' + (kind === 'team' ? 'Time' : 'Competição') + '</span>' +
         '</div>' +
-        '<div class="cal">' +
-        '<div class="cal-head">' +
-        '<span class="yearnav">' +
-        '<span class="year">' + esc(year) + '</span>' +
-        '<button class="nav" data-nav="-1"' + (mi <= 0 ? ' disabled' : '') + '>‹</button>' +
-        '<button class="nav" data-nav="1"' + (mi >= months.length - 1 ? ' disabled' : '') + '>›</button>' +
-        '</span>' +
-        '<div class="months">' + monthButtons + '</div>' +
+        '<div class="subs">' +
+        '<a class="bigbtn primary" href="' + esc(webcalUrl(ref.path)) + '">' + SVG_CAL +
+        ' Assinar calendário</a>' +
+        '<button class="bigbtn" data-copy="' + esc(ref.path) + '">' + SVG_COPY +
+        ' <span class="blabel">Copiar link .ics</span></button>' +
         '</div>' +
-        '<div class="days">' + dayButtons + '</div>' +
-        panel +
-        '</div></div>';
+        '<div class="calcard">' +
+        '<div class="mnav">' +
+        '<button class="mbtn" data-nav="-1">' + SVG_CHEV_L + '</button>' +
+        '<div class="mlabel">' + MONTHS[sel.m] + ' ' + sel.y + '</div>' +
+        '<button class="mbtn" data-nav="1">' + SVG_CHEV_R + '</button>' +
+        '</div>' +
+        gridHtml(sel.y, sel.m, matchDays, color) +
+        '</div>' +
+        (monthMatches.length
+          ? '<div class="mlist">' + rows + '</div>'
+          : '<p class="empty">Sem jogos neste mês.</p>') +
+        '<div class="foot">Também no Google Agenda: copie o link .ics e cole em ' +
+        'Outras agendas → Assinar por URL.</div>' +
+        '</div>';
 
       wireCopyButtons(app);
-      app.querySelector('.back').addEventListener('click', function () {
+      app.querySelector('.backbtn').addEventListener('click', function () {
         window.location.hash = '';
       });
-      app.querySelectorAll('.month:not(.off)').forEach(function (btn) {
+      app.querySelectorAll('.mbtn').forEach(function (btn) {
         btn.addEventListener('click', function () {
-          selectMonth(kind, slug, btn.dataset.ym, byDate);
-        });
-      });
-      app.querySelectorAll('.nav:enabled').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var next = months[months.indexOf(sel.ym) + Number(btn.dataset.nav)];
-          if (next) selectMonth(kind, slug, next, byDate);
-        });
-      });
-      app.querySelectorAll('.dayn:not(.off)').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          sel.day = btn.dataset.date;
+          var m = sel.m + Number(btn.dataset.nav);
+          if (m < 0) { sel.m = 11; sel.y--; }
+          else if (m > 11) { sel.m = 0; sel.y++; }
+          else sel.m = m;
           renderDetail(kind, slug);
         });
-      });
-      ['.dayn.sel', '.month.sel'].forEach(function (selector) {
-        var el = app.querySelector(selector);
-        if (el && typeof el.scrollIntoView === 'function') {
-          el.scrollIntoView({ inline: 'center', block: 'nearest' });
-        }
       });
     }).catch(renderError);
   }
 
-  function selectMonth(kind, slug, ym, byDate) {
-    sel.ym = ym;
-    // primeiro dia com jogo no mês
-    var first = null;
-    Object.keys(byDate).sort().some(function (d) {
-      if (d.slice(0, 7) === ym) { first = d; return true; }
-      return false;
-    });
-    sel.day = first;
-    renderDetail(kind, slug);
-  }
-
   function renderError(err) {
     app.innerHTML =
-      '<div class="wrap"><div class="topbar">' +
-      '<button class="back" aria-label="Voltar">←</button><h1>Erro</h1></div>' +
-      '<p class="noevents">' + esc(err && err.message ? err.message : String(err)) + '</p></div>';
-    var back = app.querySelector('.back');
-    if (back) back.addEventListener('click', function () { window.location.hash = ''; });
+      '<div class="wrap">' +
+      '<div class="brandbar"><a class="brand" href="#">agendafut</a><span class="dash"></span></div>' +
+      '<button class="backbtn">' + SVG_CHEV_L + ' Voltar</button>' +
+      '<p class="empty">Não foi possível carregar os dados. Tente recarregar a página.<br>' +
+      '<small>' + esc(err && err.message ? err.message : String(err)) + '</small></p></div>';
+    app.querySelector('.backbtn').addEventListener('click', function () {
+      window.location.hash = '';
+    });
   }
 
   /* ── Router ───────────────────────────────────────────────── */
