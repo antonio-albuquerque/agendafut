@@ -120,6 +120,30 @@ describe('enrichBroadcasts', () => {
     expect(called).toBe(0);
   });
 
+  it('par duplicado na temporada: cada jogo recupera os próprios canais persistidos', async () => {
+    // Mesmo par 2x (ex.: desempate): o reconcile indexa o 2º sob `key:date`.
+    const state = emptyState();
+    const leg1 = makeMatch({ broadcasters: ['GLOBO'] });
+    const leg2 = makeMatch({
+      date: '2026-09-10',
+      kickoff: null,
+      broadcasters: ['PREMIERE'],
+    });
+    reconcile(state, [leg1, leg2], FIXED_NOW);
+
+    // scrape fora do ar: cada partida deve cair no SEU persistido
+    const again1 = makeMatch();
+    const again2 = makeMatch({ date: '2026-09-10', kickoff: null });
+    await enrichBroadcasts([again1, again2], state, {
+      now: FIXED_NOW,
+      client: failingClient,
+      leagues: LEAGUES,
+      log: noop,
+    });
+    expect(again1.broadcasters).toEqual(['GLOBO']);
+    expect(again2.broadcasters).toEqual(['PREMIERE']); // não herda o do 1º jogo
+  });
+
   it('nunca rejeita, mesmo com tudo falhando', async () => {
     const report = await enrichBroadcasts([makeMatch()], emptyState(), {
       now: FIXED_NOW,
