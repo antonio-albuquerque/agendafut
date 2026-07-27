@@ -185,3 +185,66 @@ a { color: inherit; }
 }
 .badge.warn { background: transparent; border: 1px solid var(--warn); color: var(--warn); }
 .badge.danger { background: transparent; border: 1px solid var(--danger); color: var(--danger); }
+
+/* ── Desktop (mobile permanece a coluna única acima) ───────── */
+@media (min-width: 900px) {
+  /* home: times em grade de 2 colunas à esquerda, competições à direita */
+  .wrap.home {
+    max-width: 68rem;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    grid-template-areas:
+      'brand  brand'
+      'lead   lead'
+      'search search'
+      'teams  comps'
+      'howto  howto'
+      'foot   foot';
+    column-gap: 48px;
+    align-items: start;
+    padding: 28px 32px 40px;
+  }
+  .wrap.home .brandbar { grid-area: brand; }
+  .wrap.home .lead { grid-area: lead; }
+  .wrap.home .search { grid-area: search; max-width: 32rem; }
+  .wrap.home .hr { display: none; }
+  .g-teams { grid-area: teams; }
+  .g-comps { grid-area: comps; }
+  .g-teams .list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  .g-howto {
+    grid-area: howto;
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px 32px; margin-top: 8px;
+    padding-top: 20px; background: var(--rule) no-repeat top / 100% 1px;
+  }
+  .g-howto .glabel { grid-column: 1 / -1; }
+  .g-howto .step + .step { margin-top: 0; }
+  .wrap.home .foot { grid-area: foot; }
+
+  /* detalhe: cabeçalho + assinar + grade à esquerda, jogos do mês à direita */
+  .wrap.detail {
+    max-width: 68rem;
+    display: grid;
+    grid-template-columns: 420px minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto auto 1fr auto;
+    grid-template-areas:
+      'brand brand'
+      'back  back'
+      'head  list'
+      'subs  list'
+      'cal   list'
+      '.     list'
+      'foot  foot';
+    column-gap: 48px;
+    align-items: start;
+    padding: 28px 32px 40px;
+  }
+  .wrap.detail .brandbar { grid-area: brand; }
+  .wrap.detail .backbtn { grid-area: back; }
+  .wrap.detail .dhead { grid-area: head; }
+  .wrap.detail .subs { grid-area: subs; }
+  .wrap.detail .calcard { grid-area: cal; }
+  .wrap.detail .mlist,
+  .wrap.detail > .empty { grid-area: list; }
+  .wrap.detail .foot { grid-area: foot; }
+}

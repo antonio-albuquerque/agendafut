@@ -136,7 +136,7 @@
     getFeeds().then(function (feeds) {
       var lists = listsHtml(feeds);
       app.innerHTML =
-        '<div class="wrap">' +
+        '<div class="wrap home">' +
         brandbarHtml(feeds) +
         '<p class="lead">Calendários assináveis com os jogos do futebol brasileiro. ' +
         'Escolha seu time e receba os jogos direto na sua agenda.</p>' +
@@ -144,13 +144,13 @@
         '<input id="q" type="search" placeholder="Buscar time ou competição…" ' +
         'value="' + esc(query) + '" autocomplete="off">' +
         '</label>' +
-        '<div class="group"><div class="glabel">Times</div>' +
+        '<div class="group g-teams"><div class="glabel">Times</div>' +
         '<div class="list" id="list-teams">' + lists.teams + '</div></div>' +
         '<div class="hr"></div>' +
-        '<div class="group"><div class="glabel">Competições</div>' +
+        '<div class="group g-comps"><div class="glabel">Competições</div>' +
         '<div class="list" id="list-comps">' + lists.comps + '</div></div>' +
         '<div class="hr"></div>' +
-        '<div class="group"><div class="glabel">Como assinar</div>' +
+        '<div class="group g-howto"><div class="glabel">Como assinar</div>' +
         '<div class="step"><span class="n">1</span><span><strong>iPhone e Mac</strong> — ' +
         'toque em Assinar: o Calendário abre e acompanha novos jogos automaticamente.</span></div>' +
         '<div class="step"><span class="n">2</span><span><strong>Google Agenda</strong> — ' +
@@ -257,7 +257,7 @@
       }).join('');
 
       app.innerHTML =
-        '<div class="wrap">' +
+        '<div class="wrap detail">' +
         brandbarHtml(feeds) +
         '<button class="backbtn">' + SVG_CHEV_L + ' Voltar</button>' +
         '<div class="dhead">' +
