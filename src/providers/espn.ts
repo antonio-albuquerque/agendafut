@@ -58,15 +58,17 @@ const CompetitionBlockSchema = z
     venue: z.object({ fullName: z.string().nullish() }).nullish(),
     status: z.object({ type: z.object({ name: z.string() }).passthrough() }).passthrough(),
     competitors: z.array(CompetitorSchema).min(2),
-    // Vazios p/ ligas brasileiras hoje (ESPN só preenche o mercado dos EUA),
-    // mas extraímos mesmo assim caso a fonte passe a preencher.
-    broadcasts: z
-      .array(z.object({ names: z.array(z.string()).optional() }).passthrough())
-      .optional(),
+    // Vazio p/ ligas brasileiras hoje, mas extraímos caso passem a preencher.
+    // Só geoBroadcasts: cada entrada declara region/lang. O array irmão
+    // `broadcasts` é o mercado dos EUA sem marcação de região — canal
+    // americano no feed de assinante brasileiro é pior que canal nenhum.
     geoBroadcasts: z
       .array(
         z
-          .object({ media: z.object({ shortName: z.string().nullish() }).passthrough().nullish() })
+          .object({
+            media: z.object({ shortName: z.string().nullish() }).passthrough().nullish(),
+            region: z.string().nullish(),
+          })
           .passthrough(),
       )
       .optional(),
@@ -119,10 +121,11 @@ function scoreValue(raw: z.infer<typeof CompetitorSchema>['score']): number | nu
 }
 
 function broadcastNames(block: z.infer<typeof CompetitionBlockSchema>): string[] {
-  return normalizeChannels([
-    ...(block.broadcasts ?? []).flatMap((b) => b.names ?? []),
-    ...(block.geoBroadcasts ?? []).flatMap((g) => g.media?.shortName ?? []),
-  ]);
+  return normalizeChannels(
+    (block.geoBroadcasts ?? [])
+      .filter((g) => g.region?.toLowerCase() === 'br')
+      .flatMap((g) => g.media?.shortName ?? []),
+  );
 }
 
 function toTeam(competitor: z.infer<typeof CompetitorSchema>) {
