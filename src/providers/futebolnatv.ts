@@ -87,6 +87,8 @@ export function parseLeaguePage(
     const document = window.document;
 
     const games: ScrapedGame[] = [];
+    let cardsSeen = 0;
+    let parseFailures = 0;
     for (const header of document.querySelectorAll(SELECTORS.dateGroupHeader)) {
       const date = resolveDateHeader(header.textContent ?? '', today);
       if (date === null) continue; // h3 que não é header de data (ou data inválida)
@@ -96,6 +98,7 @@ export function parseLeaguePage(
       if (!group) continue;
 
       for (const card of group.querySelectorAll(SELECTORS.card)) {
+        cardsSeen += 1;
         const homeRaw = card.querySelector(SELECTORS.teamHome)?.getAttribute('alt')?.trim() ?? '';
         const awayRaw = card.querySelector(SELECTORS.teamAway)?.getAttribute('alt')?.trim() ?? '';
         const timeText = card.querySelector(SELECTORS.kickoff)?.textContent?.trim() ?? '';
@@ -107,6 +110,7 @@ export function parseLeaguePage(
 
         const parsed = ScrapedGameSchema.safeParse({ date, time, homeRaw, awayRaw, round, channels });
         if (!parsed.success) {
+          parseFailures += 1;
           warn(`card ilegível em ${date} (${homeRaw || '?'} x ${awayRaw || '?'}) — pulando`);
           continue;
         }
@@ -115,9 +119,23 @@ export function parseLeaguePage(
     }
 
     if (games.length === 0) {
-      // 200 sem nenhum card parseável = estrutura do site mudou (ou liga sem
-      // jogos). Falha alto para o orquestrador usar o estado persistido.
-      throw new Error('nenhum jogo parseado — markup mudou ou liga sem próximos jogos');
+      // Liga sem próximos jogos ≠ markup quebrado. A âncora é o heading
+      // "Próximos jogos": presente e sem nenhum card → vazio legítimo
+      // (pausa de calendário); ausente, ou com cards que não parseiam →
+      // falha alto para o orquestrador usar o estado persistido.
+      const structureOk = [...document.querySelectorAll('h2')].some((h) =>
+        (h.textContent ?? '').includes('Próximos jogos'),
+      );
+      if (structureOk && parseFailures === 0) {
+        // Nenhum card, ou só cards sem canal anunciado: vazio legítimo.
+        warn('sem próximos jogos com transmissão listados — liga em pausa?');
+        return [];
+      }
+      throw new Error(
+        cardsSeen > 0
+          ? `nenhum dos ${cardsSeen} cards parseou — markup mudou?`
+          : 'estrutura da página não reconhecida — markup mudou?',
+      );
     }
     return games;
   } finally {
