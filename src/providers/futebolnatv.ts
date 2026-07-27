@@ -149,28 +149,34 @@ export function parseLeaguePage(
 const BROWSER_UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
 
+/**
+ * GET de página do futebolnatv com o UA/timeout canônicos. Fonte única
+ * também para o CLI de harvest — dois UAs divergindo dá "funciona no build,
+ * falha no harvest" quando o site mudar o que serve a cada variante.
+ */
+export async function fetchPage(
+  url: string,
+  opts: { fetchImpl?: typeof fetch; timeoutMs?: number } = {},
+): Promise<string> {
+  const res = await (opts.fetchImpl ?? fetch)(url, {
+    headers: { 'User-Agent': BROWSER_UA },
+    signal: AbortSignal.timeout(opts.timeoutMs ?? 15_000),
+  });
+  if (!res.ok) {
+    throw new Error(`futebolnatv ${url}: HTTP ${res.status} ${res.statusText}`);
+  }
+  return res.text();
+}
+
 export interface FntvOptions {
   fetchImpl?: typeof fetch;
   timeoutMs?: number;
 }
 
 export class FntvClient {
-  private readonly fetchImpl: typeof fetch;
-  private readonly timeoutMs: number;
-
-  constructor(opts: FntvOptions = {}) {
-    this.fetchImpl = opts.fetchImpl ?? fetch;
-    this.timeoutMs = opts.timeoutMs ?? 15_000;
-  }
+  constructor(private readonly opts: FntvOptions = {}) {}
 
   async leagueGames(url: string, today: DateTime, warn: (msg: string) => void): Promise<ScrapedGame[]> {
-    const res = await this.fetchImpl(url, {
-      headers: { 'User-Agent': BROWSER_UA },
-      signal: AbortSignal.timeout(this.timeoutMs),
-    });
-    if (!res.ok) {
-      throw new Error(`futebolnatv ${url}: HTTP ${res.status} ${res.statusText}`);
-    }
-    return parseLeaguePage(await res.text(), today, warn);
+    return parseLeaguePage(await fetchPage(url, this.opts), today, warn);
   }
 }

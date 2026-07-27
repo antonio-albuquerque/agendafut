@@ -9,10 +9,9 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { slugify } from '../domain/slug.js';
+import { fetchPage } from '../providers/futebolnatv.js';
 
 const BASE = 'https://www.futebolnatv.com.br';
-const UA =
-  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
 
 interface LeagueRow {
   slug: string;
@@ -28,15 +27,6 @@ const existing: Array<{ slug: string; url: string }> = existsSync(MAPPING_PATH)
   ? (JSON.parse(readFileSync(MAPPING_PATH, 'utf8')) as Array<{ slug: string; url: string }>)
   : [];
 const existingUrls = new Set(existing.map((e) => e.url));
-
-async function get(url: string): Promise<string> {
-  const res = await fetch(url, {
-    headers: { 'User-Agent': UA },
-    signal: AbortSignal.timeout(15_000),
-  });
-  if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
-  return res.text();
-}
 
 interface Breadcrumb {
   '@type'?: string;
@@ -63,7 +53,7 @@ function ligaFromGamePage(html: string): { url: string; name: string } | null {
 async function main(): Promise<void> {
   const gameUrls = new Set<string>();
   for (const page of ['/jogos-ontem', '/jogos-hoje', '/jogos-amanha']) {
-    const html = await get(`${BASE}${page}`);
+    const html = await fetchPage(`${BASE}${page}`);
     for (const m of html.matchAll(/href="(\/aovivo\/[^"]+\.html)"/g)) {
       gameUrls.add(m[1]!);
     }
@@ -74,7 +64,7 @@ async function main(): Promise<void> {
   for (const path of gameUrls) {
     await sleep(500); // educação com o site
     try {
-      const liga = ligaFromGamePage(await get(`${BASE}${path}`));
+      const liga = ligaFromGamePage(await fetchPage(`${BASE}${path}`));
       if (liga) found.set(liga.url, liga.name);
     } catch (err) {
       console.warn(`falha em ${path}: ${String(err)}`);
