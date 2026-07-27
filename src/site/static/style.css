@@ -73,9 +73,16 @@ h2.section { font-size: 1.05rem; margin: 2rem 0 .6rem; }
   padding: .7rem .9rem;
 }
 .row-link {
-  flex: 1 1 auto; min-width: 0; display: flex; align-items: baseline; gap: .6rem;
+  flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: .6rem;
   text-decoration: none; cursor: pointer;
 }
+/* fundo branco fixo: escudos vindos de GIF não têm transparência */
+.crest {
+  width: 2rem; height: 2rem; object-fit: contain; flex-shrink: 0;
+  background: #fff; border: 1px solid var(--border); border-radius: 8px;
+  padding: .15rem;
+}
+.topbar .crest { width: 2.4rem; height: 2.4rem; border-radius: 10px; }
 .row-name { font-weight: 600; }
 .row-count { color: var(--muted); font-size: .8rem; }
 .row .actions .btn { padding: .35rem .7rem; font-size: .8rem; }

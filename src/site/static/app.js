@@ -59,10 +59,18 @@
 
   /* ── Home ─────────────────────────────────────────────────── */
 
+  function crestHtml(kind, slug) {
+    // só times têm escudo em assets/logos; se faltar o arquivo o img se remove
+    if (kind !== 'time' && kind !== 'team') return '';
+    return '<img class="crest" src="assets/logos/' + esc(slug) + '.png" alt="" ' +
+      'loading="lazy" onerror="this.remove()">';
+  }
+
   function rowHtml(kind, feed) {
     return (
       '<div class="row">' +
       '<a class="row-link" href="#/' + kind + '/' + esc(feed.slug) + '">' +
+      crestHtml(kind, feed.slug) +
       '<span class="row-name">' + esc(feed.name) + '</span>' +
       '<span class="row-count">' + feed.matchCount + ' jogos</span>' +
       '</a>' +
@@ -221,6 +229,7 @@
         '<div class="wrap">' +
         '<div class="topbar">' +
         '<button class="back" aria-label="Voltar">←</button>' +
+        crestHtml(kind, slug) +
         '<h1>' + esc(data.name) + '</h1>' +
         subscribeButtons(ref.path) +
         '</div>' +
