@@ -33,6 +33,11 @@ ESPN (JSON público) ──▶ normalização (zod) ──▶ reconciliação de
   mesmo UID, `SEQUENCE` incrementado.
 - Jogo adiado/cancelado permanece no feed (`TENTATIVE`/`CANCELLED`); placar entra
   no `SUMMARY` dos encerrados.
+- Canais de transmissão entram na `DESCRIPTION` (`Transmissão: Globo, Premiere…`),
+  raspados das páginas de liga do futebolnatv.com.br (~10 dias de horizonte;
+  `data/broadcast-leagues.json` mapeia liga → URL — `pnpm harvest:fntv` descobre
+  URLs novas). Falha do scraper nunca derruba o build: o último valor visto fica
+  persistido no `data/state.json`.
 - O Google Calendar faz polling de feeds externos no ritmo dele (8–24h+); o cron
   diário é suficiente. O valor está na corretude do `.ics`, não na frequência.
 
@@ -47,8 +52,12 @@ pnpm run typecheck
 ### Rodando local
 
 ```bash
-# offline, com fixture gravada (sem rede):
+# offline, com fixture gravada (sem rede; sem FNTV_FIXTURE o scrape é pulado):
 ESPN_FIXTURE=src/providers/fixtures/espn-bra1.json pnpm run build
+
+# offline incluindo transmissões:
+ESPN_FIXTURE=src/providers/fixtures/espn-bra1.json \
+FNTV_FIXTURE=src/providers/fixtures/fntv-serie-b.html pnpm run build
 
 # contra a ESPN real:
 pnpm run fetch -- --league brasileirao-serie-a   # inspeciona dados normalizados

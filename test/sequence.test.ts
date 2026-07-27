@@ -1,6 +1,9 @@
+import { mkdtempSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { DateTime } from 'luxon';
 import { describe, expect, it } from 'vitest';
-import { emptyState, reconcile, pairKey } from '../src/state/sequence.js';
+import { emptyState, reconcile, pairKey, saveState, loadState } from '../src/state/sequence.js';
 import { buildCalendar } from '../src/ics/builder.js';
 import { TIMEZONE } from '../src/domain/types.js';
 import { FIXED_NOW, makeMatch } from './helpers.js';
@@ -82,6 +85,44 @@ describe('reconcile', () => {
     expect(entries[0]!.meta.sequence).toBe(1); // sem bump
     expect(entries[0]!.meta.lastModified).toBe(MUCH_LATER.toISO({ suppressMilliseconds: true }));
     expect(changed).toHaveLength(1);
+  });
+
+  it('transmissão nova (só conteúdo) → mesma sequence, lastModified novo, persiste no estado', () => {
+    const state = emptyState();
+    const first = reconcile(state, [makeMatch()], FIXED_NOW);
+    const uid = first.entries[0]!.meta.uid;
+
+    const withTv = makeMatch({ broadcasters: ['GLOBO', 'PREMIERE'] });
+    const { entries, changed } = reconcile(state, [withTv], LATER);
+    expect(entries[0]!.meta.sequence).toBe(0); // sem bump: DESCRIPTION não entra no seqHash
+    expect(entries[0]!.meta.lastModified).toBe(LATER.toISO({ suppressMilliseconds: true }));
+    expect(changed).toHaveLength(1);
+    expect(state.events[uid]!.broadcasters).toEqual(['GLOBO', 'PREMIERE']);
+  });
+
+  it('idempotência vale também com broadcasters preenchidos', () => {
+    const state = emptyState();
+    const matches = [makeMatch({ broadcasters: ['CANAL GOAT', 'DISNEY+'] })];
+    const first = reconcile(state, matches, FIXED_NOW);
+    const second = reconcile(state, matches, LATER);
+    expect(second.changed).toHaveLength(0);
+    expect(buildCalendar({ name: 'x' }, second.entries)).toBe(
+      buildCalendar({ name: 'x' }, first.entries),
+    );
+  });
+
+  it('broadcasters sobrevivem ao round-trip save/load', () => {
+    const state = emptyState();
+    const { entries } = reconcile(state, [makeMatch({ broadcasters: ['SPORTV'] })], FIXED_NOW);
+    const dir = mkdtempSync(join(tmpdir(), 'agendafut-state-'));
+    try {
+      const path = join(dir, 'state.json');
+      saveState(path, state);
+      const loaded = loadState(path);
+      expect(loaded.events[entries[0]!.meta.uid]!.broadcasters).toEqual(['SPORTV']);
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
   });
 
   it('partida adiada reaparece com outra data mas mesmo UID', () => {

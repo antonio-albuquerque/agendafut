@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      happy-dom:
+        specifier: ^20.11.1
+        version: 20.11.1
       luxon:
         specifier: ^3.5.0
         version: 3.7.2
@@ -30,9 +33,6 @@ importers:
       globals:
         specifier: ^17.7.0
         version: 17.7.0
-      happy-dom:
-        specifier: ^20.11.1
-        version: 20.11.1
       ical.js:
         specifier: ^2.1.0
         version: 2.2.1

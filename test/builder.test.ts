@@ -90,6 +90,17 @@ describe('buildCalendar', () => {
     expect(event.location).toBe('Arena do Grêmio, Porto Alegre');
   });
 
+  it('transmissão raspada entra na DESCRIPTION', () => {
+    const match = makeMatch({
+      broadcasters: ['CANAL GOAT', 'DISNEY+', 'REDETV!'],
+    });
+    const ics = buildCalendar({ name: 'Palmeiras — jogos' }, [entryFor(match)]);
+    expectGolden('transmissao.ics', ics);
+
+    const event = new ICAL.Event(roundTrip(ics).getAllSubcomponents('vevent')[0]!);
+    expect(event.description).toContain('Transmissão: CANAL GOAT, DISNEY+, REDETV!');
+  });
+
   it('jogo cancelado mantém o evento com STATUS:CANCELLED', () => {
     const match = makeMatch({ status: 'cancelled' });
     const ics = buildCalendar({ name: 'Palmeiras — jogos' }, [entryFor(match, 2)]);

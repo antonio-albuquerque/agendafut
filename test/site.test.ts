@@ -69,8 +69,8 @@ async function gotoMonth(window: Window, label: string) {
   for (let i = 0; i < 48; i++) {
     const cur = appEl.querySelector('.mlabel')!.textContent!;
     if (cur === label) return;
-    const [cm, cy] = cur.split(' ');
-    const [tm, ty] = label.split(' ');
+    const [cm = '', cy = ''] = cur.split(' ');
+    const [tm = '', ty = ''] = label.split(' ');
     const curIdx = Number(cy) * 12 + MONTHS.indexOf(cm);
     const tgtIdx = Number(ty) * 12 + MONTHS.indexOf(tm);
     const nav = appEl.querySelectorAll('.mbtn')[tgtIdx > curIdx ? 1 : 0];

@@ -44,5 +44,14 @@
   { "slug": "londrina", "name": "Londrina", "aliases": ["Londrina EC", "LON", "Tubarão"] },
   { "slug": "nautico", "name": "Náutico", "aliases": ["Nautico", "Clube Náutico Capibaribe", "NAU", "Timbu"] },
   { "slug": "sampaio-correa", "name": "Sampaio Corrêa", "aliases": ["Sampaio Correa", "Sampaio Corrêa FC", "SAM", "Bolívia Querida"] },
-  { "slug": "santa-cruz", "name": "Santa Cruz", "aliases": ["Santa Cruz FC", "STC", "Cobra Coral"] }
+  { "slug": "santa-cruz", "name": "Santa Cruz", "aliases": ["Santa Cruz FC", "STC", "Cobra Coral"] },
+  { "slug": "athletic", "name": "Athletic-MG", "aliases": ["Athletic", "Athletic Club", "Athletic Club MG"] },
+  { "slug": "nacional", "name": "Nacional", "aliases": ["Club Nacional"] },
+  { "slug": "ucv-fc", "name": "UCV FC", "aliases": ["UCV", "Universidad César Vallejo", "César Vallejo"] },
+  { "slug": "independiente-santa-fe", "name": "Independiente Santa Fe", "aliases": ["Santa Fe", "Santa Fe Bogotá"] },
+  { "slug": "cienciano-del-cusco", "name": "Cienciano", "aliases": ["Cienciano del Cusco"] },
+  { "slug": "sao-bernardo", "name": "São Bernardo", "aliases": ["São Bernardo FC", "Sao Bernardo"] },
+  { "slug": "floresta", "name": "Floresta", "aliases": ["Floresta EC"] },
+  { "slug": "maringa", "name": "Maringá", "aliases": ["Maringá FC", "Maringa"] },
+  { "slug": "inter-de-limeira", "name": "Inter de Limeira", "aliases": ["Internacional de Limeira"] }
 ]
