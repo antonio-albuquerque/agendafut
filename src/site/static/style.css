@@ -1,75 +1,79 @@
-/* Paleta inspirada na referência: fundo cinza-azulado, cards brancos,
-   acento teal, cards de evento lavanda com barra lateral. */
+/* Tema Nocturne (projeto Claude Design): dark-only, mono violeta,
+   Inter, botões outline, elevação por aro hairline e réguas com
+   fade nas pontas. Tokens de styles.css/theme.json do projeto. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
-  color-scheme: light dark;
-  --bg: #edf0f6;
-  --card: #ffffff;
-  --fg: #202533;
-  --muted: #8a93a6;
-  --accent: #34c0a0;
-  --accent-ink: #ffffff;
-  --event-bg: #f2f4fb;
-  --event-bar: #4a7dff;
-  --border: #e4e8f1;
-  --shadow: 0 6px 24px rgba(30, 40, 70, 0.06);
-  --warn: #b7791f;
-  --danger: #c0392b;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #101318;
-    --card: #181c24;
-    --fg: #e7eaf2;
-    --muted: #7e8797;
-    --accent: #2fae90;
-    --event-bg: #1e232e;
-    --event-bar: #5a88ff;
-    --border: #262c38;
-    --shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
-    --warn: #d69e2e;
-    --danger: #e06050;
-  }
+  color-scheme: dark;
+  --bg: #161826;
+  --card: #232532;
+  --fg: #e9e9ed;
+  --muted: color-mix(in srgb, #e9e9ed 55%, transparent);
+  --accent: #9184d9;
+  --accent-ink: #161826;
+  --event-bg: #2b2741;   /* accent-900 do ramp Nocturne */
+  --event-bar: #9184d9;
+  --border: color-mix(in srgb, #e9e9ed 16%, transparent);
+  --shadow: 0 0 0 1px #3f424d;
+  --shadow-lg: 0 0 0 1px #595d6c, 0 6px 18px rgba(0, 0, 0, 0.55);
+  --warn: #d69e2e;
+  --danger: #e06050;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  /* régua Nocturne: some nas duas pontas (48px por lado) */
+  --rule: linear-gradient(to right,
+    transparent, var(--border) 48px,
+    var(--border) calc(100% - 48px), transparent);
 }
 
 * { box-sizing: border-box; }
 html, body { margin: 0; }
 body {
-  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  font: 15px/1.55 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--fg);
 }
+h1, h2 { font-weight: 500; letter-spacing: -0.015em; line-height: 1.12; }
 button { font: inherit; }
 a { color: inherit; }
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+::selection { background: color-mix(in srgb, var(--accent) 30%, transparent); }
 
 .wrap { max-width: 64rem; margin: 0 auto; padding: 1.75rem 1rem 4rem; }
-.loading { text-align: center; color: #8a93a6; padding: 4rem 0; }
+.loading { text-align: center; color: var(--muted); padding: 4rem 0; }
 
 /* ── Cabeçalho ─────────────────────────────────────────────── */
 .topbar { display: flex; align-items: center; gap: .9rem; margin-bottom: 1.25rem; flex-wrap: wrap; }
 .back {
-  width: 2.4rem; height: 2.4rem; border-radius: 12px; border: none;
-  background: var(--card); color: var(--muted); box-shadow: var(--shadow);
+  width: 2.4rem; height: 2.4rem; border-radius: var(--radius-md); border: 1px solid var(--border);
+  background: transparent; color: var(--muted);
   cursor: pointer; font-size: 1.1rem; line-height: 1; flex-shrink: 0;
 }
-.back:hover { color: var(--fg); }
+.back:hover { color: var(--fg); background: color-mix(in srgb, var(--fg) 7%, transparent); }
 .topbar h1 { font-size: 1.45rem; margin: 0; flex: 1 1 auto; min-width: 0; }
 .brand { font-size: 1.6rem; margin: 0 0 .25rem; }
 .lead { color: var(--muted); margin: 0 0 1.5rem; }
 .actions { display: flex; gap: .5rem; flex-shrink: 0; }
 
+/* Botões no estilo outline do Nocturne: fundo transparente,
+   primário desenhado só com a cor de acento. */
 .btn {
-  border: 1px solid var(--border); background: var(--card); color: var(--fg);
-  padding: .45rem .9rem; border-radius: 10px; cursor: pointer;
-  font-size: .875rem; text-decoration: none; display: inline-block;
+  border: 1px solid var(--border); background: transparent; color: var(--fg);
+  padding: .45rem .9rem; border-radius: var(--radius-md); cursor: pointer;
+  font-size: .875rem; font-weight: 500; text-decoration: none; display: inline-block;
 }
-.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.btn:hover { background: color-mix(in srgb, var(--fg) 7%, transparent); }
+.btn-primary { background: transparent; border-color: var(--accent); color: var(--accent); }
+.btn-primary:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.btn-primary:active { background: color-mix(in srgb, var(--accent) 22%, transparent); }
 
 /* ── Home: listas ──────────────────────────────────────────── */
 h2.section { font-size: 1.05rem; margin: 2rem 0 .6rem; }
 .rows { display: flex; flex-direction: column; gap: .5rem; }
 .row {
   display: flex; align-items: center; gap: .75rem;
-  background: var(--card); border-radius: 14px; box-shadow: var(--shadow);
+  background: var(--card); border-radius: var(--radius-lg); box-shadow: var(--shadow);
   padding: .7rem .9rem;
 }
 .row-link {
@@ -79,16 +83,16 @@ h2.section { font-size: 1.05rem; margin: 2rem 0 .6rem; }
 /* fundo branco fixo: escudos vindos de GIF não têm transparência */
 .crest {
   width: 2rem; height: 2rem; object-fit: contain; flex-shrink: 0;
-  background: #fff; border: 1px solid var(--border); border-radius: 8px;
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius-md);
   padding: .15rem;
 }
-.topbar .crest { width: 2.4rem; height: 2.4rem; border-radius: 10px; }
+.topbar .crest { width: 2.4rem; height: 2.4rem; }
 .row-name { font-weight: 600; }
 .row-count { color: var(--muted); font-size: .8rem; }
 .row .actions .btn { padding: .35rem .7rem; font-size: .8rem; }
 
 .howto {
-  background: var(--card); border-radius: 14px; box-shadow: var(--shadow);
+  background: var(--card); border-radius: var(--radius-lg); box-shadow: var(--shadow);
   padding: .9rem 1.1rem; margin-bottom: .5rem;
 }
 .howto summary { cursor: pointer; font-weight: 600; }
@@ -100,7 +104,7 @@ footer a { color: inherit; }
 
 /* ── Calendário ────────────────────────────────────────────── */
 .cal {
-  background: var(--card); border-radius: 18px; box-shadow: var(--shadow);
+  background: var(--card); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);
   padding: 1.1rem 1.25rem 1.5rem;
 }
 .cal-head { display: flex; align-items: center; gap: .75rem; }
@@ -108,9 +112,9 @@ footer a { color: inherit; }
 .year { font-weight: 700; margin-right: .25rem; }
 .nav {
   border: none; background: none; color: var(--muted); cursor: pointer;
-  font-size: 1rem; padding: .2rem .4rem; border-radius: 8px;
+  font-size: 1rem; padding: .2rem .4rem; border-radius: var(--radius-md);
 }
-.nav:hover:enabled { color: var(--fg); background: var(--event-bg); }
+.nav:hover:enabled { color: var(--fg); background: color-mix(in srgb, var(--fg) 7%, transparent); }
 .nav:disabled { opacity: .3; cursor: default; }
 
 .months {
@@ -118,30 +122,32 @@ footer a { color: inherit; }
   flex: 1 1 auto; padding: .2rem 0;
 }
 .months::-webkit-scrollbar { display: none; }
+/* seleção no estilo do controle segmentado Nocturne: cor de acento
+   com aro interno, sem preenchimento */
 .month {
   border: none; background: none; color: var(--fg); cursor: pointer;
-  padding: .4rem .7rem; border-radius: 10px; font-size: .9rem; flex-shrink: 0;
+  padding: .4rem .7rem; border-radius: var(--radius-md); font-size: .9rem; flex-shrink: 0;
 }
 .month.off { color: var(--muted); opacity: .45; cursor: default; }
-.month.sel { background: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.month.sel { color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); font-weight: 600; }
 
 .days {
   display: flex; gap: .1rem; overflow-x: auto; scrollbar-width: none;
   margin-top: .35rem; padding: .2rem 0 .6rem;
-  border-bottom: 1px solid var(--border);
+  background: var(--rule) no-repeat bottom / 100% 1px;
 }
 .days::-webkit-scrollbar { display: none; }
 .dayn {
   border: none; background: none; color: var(--fg); cursor: pointer;
-  min-width: 2.3rem; height: 2.3rem; border-radius: 10px; font-size: .9rem;
+  min-width: 2.3rem; height: 2.3rem; border-radius: var(--radius-md); font-size: .9rem;
   flex-shrink: 0;
 }
 .dayn.off { color: var(--muted); opacity: .4; cursor: default; }
-.dayn.sel { background: var(--accent); color: var(--accent-ink); font-weight: 700; }
+.dayn.sel { color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); font-weight: 700; }
 
 /* ── Painel do dia ─────────────────────────────────────────── */
 .daytitle { display: flex; align-items: baseline; gap: .5rem; margin: 1.4rem 0 1rem; }
-.daytitle .wd { font-size: 1.5rem; font-weight: 800; margin: 0; text-transform: capitalize; }
+.daytitle .wd { font-size: 1.5rem; font-weight: 500; letter-spacing: -0.015em; margin: 0; text-transform: capitalize; }
 .daytitle .dn { color: var(--muted); font-size: .95rem; }
 
 .events { position: relative; display: flex; flex-direction: column; gap: .8rem; }
@@ -152,14 +158,14 @@ footer a { color: inherit; }
 }
 .etime.tbd { color: var(--muted); font-weight: 500; }
 .ecard {
-  position: relative; background: var(--event-bg); border-radius: 12px;
+  position: relative; background: var(--event-bg); border-radius: var(--radius-md);
   padding: .75rem 1rem .75rem 1.1rem; min-width: 0;
 }
 .ecard::before {
   content: ''; position: absolute; left: .45rem; top: .8rem; bottom: .8rem;
   width: 3px; border-radius: 3px; background: var(--event-bar);
 }
-.ecard.finished::before { background: var(--accent); }
+.ecard.finished::before { background: #75798c; }  /* neutral-600: jogo encerrado recua */
 .ecard.postponed::before { background: var(--warn); }
 .ecard.cancelled::before { background: var(--danger); }
 .ecomp { color: var(--muted); font-size: .78rem; margin-bottom: .15rem; }
@@ -169,10 +175,10 @@ footer a { color: inherit; }
 .badge {
   display: inline-block; font-size: .72rem; font-weight: 600;
   padding: .1rem .5rem; border-radius: 99px; margin-left: .4rem;
-  vertical-align: middle; background: var(--card); color: var(--muted);
+  vertical-align: middle; background: #3f424d; color: var(--fg);
 }
-.badge.warn { color: var(--warn); }
-.badge.danger { color: var(--danger); }
+.badge.warn { background: transparent; border: 1px solid var(--warn); color: var(--warn); }
+.badge.danger { background: transparent; border: 1px solid var(--danger); color: var(--danger); }
 .noevents { color: var(--muted); padding: 1rem 0 .5rem; }
 
 /* ── Mobile ────────────────────────────────────────────────── */
@@ -181,7 +187,7 @@ footer a { color: inherit; }
   .topbar h1 { font-size: 1.2rem; }
   .actions { width: 100%; }
   .actions .btn { flex: 1 1 auto; text-align: center; }
-  .cal { padding: .9rem .8rem 1.1rem; border-radius: 14px; }
+  .cal { padding: .9rem .8rem 1.1rem; }
   .cal-head { flex-wrap: wrap; }
   .event { grid-template-columns: 1fr; gap: .15rem; }
   .etime { text-align: left; padding: 0 0 0 .25rem; }
