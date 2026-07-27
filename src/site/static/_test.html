@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>_test</title>
+</head>
+<body>
+<div id="test-root" style="padding:20px;font-family:system-ui"></div>
+<script>
+(function () {
+  'use strict';
+  /* Implementação de _test.dc.html (projeto Claude Design):
+     componente com state { n: 1 } renderizando "hello {{n}}". */
+  var state = { n: 1 };
+  function render() {
+    document.getElementById('test-root').textContent = 'hello ' + state.n;
+  }
+  render();
+})();
+</script>
+</body>
+</html>
