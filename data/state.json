@@ -2879,11 +2879,12 @@
     "brasileirao-serie-a-2026-07-29-fluminense-vs-bahia@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "72dc873e7185c6003d4295775dae4e453b64dccf329968895ad4cfcf71a958da",
-      "contentHash": "547a9f20c5edb263966aa1c8508aa61d4b7254f3cafa20125e3dea8805c9ac45",
-      "lastModified": "2026-07-27T14:54:03.639Z",
+      "contentHash": "0bae7340f4cc72dd6d4697b226c15a51997d645e28570f7d0633309af4fd3b2c",
+      "lastModified": "2026-07-28T11:16:47.261Z",
       "broadcasters": [
         "GLOBO",
-        "PREMIERE 2"
+        "PREMIERE 2",
+        "PREMIERE 3"
       ]
     },
     "brasileirao-serie-a-2026-07-29-internacional-vs-flamengo@futebol.agendafut": {
@@ -5127,19 +5128,19 @@
       "lastModified": "2026-07-26T22:08:34.949Z"
     },
     "brasileirao-serie-b-2026-07-27-atletico-go-vs-operario-pr@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "891b8c39be0326212bcf2a3c0fa2fc710e7a7dfdfbbae7ac87eb200eedfeedda",
-      "contentHash": "3eef31b2d6adf15eb155ab7694688e811d493947bf4146315140c85ca0016ae6",
-      "lastModified": "2026-07-27T14:54:03.639Z",
+      "sequence": 1,
+      "seqHash": "f4d58f2d4e2c14c68b1944b0e29e39b772d6bbab57c4e2e64002cbcdc1230e03",
+      "contentHash": "6d45be4e3f3be02a7d0da9d070e560e9bfa1dcd14b3ee9ab96b726c885283a75",
+      "lastModified": "2026-07-28T11:16:47.261Z",
       "broadcasters": [
         "DISNEY+"
       ]
     },
     "brasileirao-serie-b-2026-07-27-crb-vs-vila-nova@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "08a9315896ff4e6c801fa49d3285062fb63392c638a2f340726794e726b72b84",
-      "contentHash": "984d92a895ca0457658620285054d5f8cdc8fe4ac91483d92461fce6d3a745c8",
-      "lastModified": "2026-07-27T14:54:03.639Z",
+      "sequence": 1,
+      "seqHash": "77b4e0167013620ed6307fcdf84b4fcc1cd01ce94f1ac636e9b64f66fc74a608",
+      "contentHash": "d7606e8be6e44799ceac0f39ea329d7b545816257a70747186c38ad2188947a9",
+      "lastModified": "2026-07-28T11:16:47.261Z",
       "broadcasters": [
         "CANAL GOAT",
         "DISNEY+",
@@ -5148,10 +5149,10 @@
       ]
     },
     "brasileirao-serie-b-2026-07-27-sport-vs-cuiaba@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "2299d75a01f659baa833f0827c44fd44434ef8aae53931e53a212eab3731ebcf",
-      "contentHash": "48da5c31da555a300a73aa769e75746732a3fb43209e0039d39dc20512048ab9",
-      "lastModified": "2026-07-27T14:54:03.639Z",
+      "sequence": 1,
+      "seqHash": "f2d98e83671c2a1eb7b4caf11e9acd57c3569ad8351b2e44b92b0d521aeae972",
+      "contentHash": "e565773fccec2d3ef296f55902e261993d02bc65e1bfec474f60fbbac5b23d2e",
+      "lastModified": "2026-07-28T11:16:47.261Z",
       "broadcasters": [
         "DISNEY+"
       ]
