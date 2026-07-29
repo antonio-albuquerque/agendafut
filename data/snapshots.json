@@ -1,0 +1,3520 @@
+{
+  "version": 1,
+  "leagues": {
+    "brasileirao-serie-c": {
+      "fetchedAt": "2026-07-28T11:16:18Z",
+      "matches": [
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "away": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "kickoff": "2026-04-04T19:30:00.000-03:00",
+          "date": "2026-04-04",
+          "venue": "Estádio José Américo de Almeida Filho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "away": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "kickoff": "2026-04-04T18:00:00.000-03:00",
+          "date": "2026-04-04",
+          "venue": "Augusto Bauer",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "away": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "kickoff": "2026-04-04T17:00:00.000-03:00",
+          "date": "2026-04-04",
+          "venue": "Castelão (São Luis)",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "away": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "kickoff": "2026-04-04T19:30:00.000-03:00",
+          "date": "2026-04-04",
+          "venue": "Estádio Regional Willie Davids",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "away": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "kickoff": "2026-04-05T19:00:00.000-03:00",
+          "date": "2026-04-05",
+          "venue": "Estadio Estadual Lourival Baptista",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "away": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "kickoff": "2026-04-05T17:00:00.000-03:00",
+          "date": "2026-04-05",
+          "venue": "Estádio Major José Levy Sobrinho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "away": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "kickoff": "2026-04-05T17:00:00.000-03:00",
+          "date": "2026-04-05",
+          "venue": "Estádio Novelli Júnior",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "away": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "kickoff": "2026-04-05T19:00:00.000-03:00",
+          "date": "2026-04-05",
+          "venue": "Estádio Raulino de Oliveira",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "away": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "kickoff": "2026-04-06T20:00:00.000-03:00",
+          "date": "2026-04-06",
+          "venue": "Arena de Pernambuco",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "away": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "kickoff": "2026-04-06T20:00:00.000-03:00",
+          "date": "2026-04-06",
+          "venue": "Estádio Olímpico Colosso da Lagoa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "away": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "kickoff": "2026-04-11T20:00:00.000-03:00",
+          "date": "2026-04-11",
+          "venue": "Estádio do Barra Futebol Clube",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "away": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "kickoff": "2026-04-11T20:00:00.000-03:00",
+          "date": "2026-04-11",
+          "venue": "Estádio Fonte Luminosa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "away": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "kickoff": "2026-04-11T17:00:00.000-03:00",
+          "date": "2026-04-11",
+          "venue": "Estádio Domingão",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "away": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "kickoff": "2026-04-12T19:00:00.000-03:00",
+          "date": "2026-04-12",
+          "venue": "Municipal Carlos Zamith",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "away": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "kickoff": "2026-04-12T17:00:00.000-03:00",
+          "date": "2026-04-12",
+          "venue": "Estádio Jonas Duarte",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "away": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "kickoff": "2026-04-12T17:00:00.000-03:00",
+          "date": "2026-04-12",
+          "venue": "Estádio Francisco Stédile (Centenário)",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "away": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "kickoff": "2026-04-12T18:30:00.000-03:00",
+          "date": "2026-04-12",
+          "venue": "Estádio Brinco de Ouro da Princesa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "away": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "kickoff": "2026-04-12T19:00:00.000-03:00",
+          "date": "2026-04-12",
+          "venue": "Estádio Presidente Médici",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "away": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "kickoff": "2026-04-12T17:00:00.000-03:00",
+          "date": "2026-04-12",
+          "venue": "Estádio Leônidas Sodré de Castro",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "away": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "kickoff": "2026-04-13T20:00:00.000-03:00",
+          "date": "2026-04-13",
+          "venue": "Orlando Scarpelli",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 3
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "away": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "kickoff": "2026-04-18T20:30:00.000-03:00",
+          "date": "2026-04-18",
+          "venue": "Municipal Carlos Zamith",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "away": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "kickoff": "2026-04-18T16:00:00.000-03:00",
+          "date": "2026-04-18",
+          "venue": "Estadio Estadual Lourival Baptista",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "away": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "kickoff": "2026-04-18T17:00:00.000-03:00",
+          "date": "2026-04-18",
+          "venue": "Estádio Major José Levy Sobrinho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "away": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "kickoff": "2026-04-18T18:30:00.000-03:00",
+          "date": "2026-04-18",
+          "venue": "Estádio Leônidas Sodré de Castro",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "away": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "kickoff": "2026-04-18T18:15:00.000-03:00",
+          "date": "2026-04-18",
+          "venue": "Estádio Raulino de Oliveira",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "away": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "kickoff": "2026-04-18T19:30:00.000-03:00",
+          "date": "2026-04-18",
+          "venue": "Estádio Olímpico Colosso da Lagoa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "away": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "kickoff": "2026-04-19T18:30:00.000-03:00",
+          "date": "2026-04-19",
+          "venue": "Orlando Scarpelli",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "away": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "kickoff": "2026-04-19T16:30:00.000-03:00",
+          "date": "2026-04-19",
+          "venue": "Estádio Brinco de Ouro da Princesa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "away": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "kickoff": "2026-04-20T20:00:00.000-03:00",
+          "date": "2026-04-20",
+          "venue": "Estádio Domingão",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "away": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "kickoff": "2026-04-20T20:00:00.000-03:00",
+          "date": "2026-04-20",
+          "venue": "Estádio Regional Willie Davids",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 3
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "away": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "kickoff": "2026-04-25T19:30:00.000-03:00",
+          "date": "2026-04-25",
+          "venue": "Estádio José Américo de Almeida Filho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "away": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "kickoff": "2026-04-25T17:00:00.000-03:00",
+          "date": "2026-04-25",
+          "venue": "Augusto Bauer",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "away": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "kickoff": "2026-04-25T17:00:00.000-03:00",
+          "date": "2026-04-25",
+          "venue": "Estádio Presidente Médici",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 4
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "away": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "kickoff": "2026-04-25T19:30:00.000-03:00",
+          "date": "2026-04-25",
+          "venue": "Castelão (São Luis)",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "away": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "kickoff": "2026-04-26T17:00:00.000-03:00",
+          "date": "2026-04-26",
+          "venue": "Estádio Jonas Duarte",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "away": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "kickoff": "2026-04-26T17:00:00.000-03:00",
+          "date": "2026-04-26",
+          "venue": "Estádio do Barra Futebol Clube",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "away": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "kickoff": "2026-04-26T19:00:00.000-03:00",
+          "date": "2026-04-26",
+          "venue": "Estádio Novelli Júnior",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 4,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "away": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "kickoff": "2026-04-26T16:00:00.000-03:00",
+          "date": "2026-04-26",
+          "venue": "Arena de Pernambuco",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "away": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "kickoff": "2026-04-27T20:00:00.000-03:00",
+          "date": "2026-04-27",
+          "venue": "Estádio Francisco Stédile (Centenário)",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "away": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "kickoff": "2026-04-27T20:00:00.000-03:00",
+          "date": "2026-04-27",
+          "venue": "Estádio Fonte Luminosa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "away": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "kickoff": "2026-05-02T19:00:00.000-03:00",
+          "date": "2026-05-02",
+          "venue": "Estadio Estadual Lourival Baptista",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "away": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "kickoff": "2026-05-02T17:00:00.000-03:00",
+          "date": "2026-05-02",
+          "venue": "Estádio Brinco de Ouro da Princesa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "away": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "kickoff": "2026-05-03T17:00:00.000-03:00",
+          "date": "2026-05-03",
+          "venue": "Municipal Carlos Zamith",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "away": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "kickoff": "2026-05-03T17:00:00.000-03:00",
+          "date": "2026-05-03",
+          "venue": "Estádio Fonte Luminosa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "away": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "kickoff": "2026-05-03T19:00:00.000-03:00",
+          "date": "2026-05-03",
+          "venue": "Estádio Regional Willie Davids",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 4,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "away": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "kickoff": "2026-05-03T19:00:00.000-03:00",
+          "date": "2026-05-03",
+          "venue": "Estádio Leônidas Sodré de Castro",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 4,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "away": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "kickoff": "2026-05-03T17:00:00.000-03:00",
+          "date": "2026-05-03",
+          "venue": "Estádio Raulino de Oliveira",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "away": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "kickoff": "2026-05-04T20:00:00.000-03:00",
+          "date": "2026-05-04",
+          "venue": "Orlando Scarpelli",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 3
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "away": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "kickoff": "2026-05-04T20:00:00.000-03:00",
+          "date": "2026-05-04",
+          "venue": "Estádio Domingão",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "away": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "kickoff": "2026-05-05T15:00:00.000-03:00",
+          "date": "2026-05-05",
+          "venue": "Estádio Olímpico Colosso da Lagoa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "away": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "kickoff": "2026-05-09T17:00:00.000-03:00",
+          "date": "2026-05-09",
+          "venue": "Estádio Presidente Médici",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "away": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "kickoff": "2026-05-09T18:00:00.000-03:00",
+          "date": "2026-05-09",
+          "venue": "Castelão (São Luis)",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "away": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "kickoff": "2026-05-09T17:00:00.000-03:00",
+          "date": "2026-05-09",
+          "venue": "Estádio Leônidas Sodré de Castro",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "away": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "kickoff": "2026-05-10T17:00:00.000-03:00",
+          "date": "2026-05-10",
+          "venue": "Municipal Carlos Zamith",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "away": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "kickoff": "2026-05-10T17:00:00.000-03:00",
+          "date": "2026-05-10",
+          "venue": "Estádio do Barra Futebol Clube",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "away": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "kickoff": "2026-05-10T19:30:00.000-03:00",
+          "date": "2026-05-10",
+          "venue": "Augusto Bauer",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "away": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "kickoff": "2026-05-10T19:30:00.000-03:00",
+          "date": "2026-05-10",
+          "venue": "Estádio Novelli Júnior",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "away": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "kickoff": "2026-05-10T17:00:00.000-03:00",
+          "date": "2026-05-10",
+          "venue": "Estádio Raulino de Oliveira",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "away": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "kickoff": "2026-05-11T20:00:00.000-03:00",
+          "date": "2026-05-11",
+          "venue": "Estádio Major José Levy Sobrinho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "away": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "kickoff": "2026-05-11T20:00:00.000-03:00",
+          "date": "2026-05-11",
+          "venue": "Estádio Regional Willie Davids",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 5
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "away": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "kickoff": "2026-05-16T19:30:00.000-03:00",
+          "date": "2026-05-16",
+          "venue": "Orlando Scarpelli",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "away": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "kickoff": "2026-05-16T19:30:00.000-03:00",
+          "date": "2026-05-16",
+          "venue": "Estádio Domingão",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "away": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "kickoff": "2026-05-16T17:00:00.000-03:00",
+          "date": "2026-05-16",
+          "venue": "Arena de Pernambuco",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "away": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "kickoff": "2026-05-16T17:00:00.000-03:00",
+          "date": "2026-05-16",
+          "venue": "Estádio Olímpico Colosso da Lagoa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 4
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "away": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "kickoff": "2026-05-17T18:00:00.000-03:00",
+          "date": "2026-05-17",
+          "venue": "Estádio Jonas Duarte",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "away": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "kickoff": "2026-05-17T16:00:00.000-03:00",
+          "date": "2026-05-17",
+          "venue": "Estádio Francisco Stédile (Centenário)",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "away": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "kickoff": "2026-05-17T16:00:00.000-03:00",
+          "date": "2026-05-17",
+          "venue": "Estádio Fonte Luminosa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "away": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "kickoff": "2026-05-17T18:30:00.000-03:00",
+          "date": "2026-05-17",
+          "venue": "Estádio Brinco de Ouro da Princesa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 3
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "away": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "kickoff": "2026-05-18T20:00:00.000-03:00",
+          "date": "2026-05-18",
+          "venue": "Estádio José Américo de Almeida Filho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "away": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "kickoff": "2026-05-18T20:00:00.000-03:00",
+          "date": "2026-05-18",
+          "venue": "Estadio Estadual Lourival Baptista",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "away": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "kickoff": "2026-05-23T17:00:00.000-03:00",
+          "date": "2026-05-23",
+          "venue": "Estádio do Barra Futebol Clube",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "away": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "kickoff": "2026-05-23T19:30:00.000-03:00",
+          "date": "2026-05-23",
+          "venue": "Castelão (São Luis)",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "away": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "kickoff": "2026-05-23T19:30:00.000-03:00",
+          "date": "2026-05-23",
+          "venue": "Estádio Regional Willie Davids",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "away": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "kickoff": "2026-05-24T16:30:00.000-03:00",
+          "date": "2026-05-24",
+          "venue": "Municipal Carlos Zamith",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "away": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "kickoff": "2026-05-24T16:30:00.000-03:00",
+          "date": "2026-05-24",
+          "venue": "Augusto Bauer",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "away": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "kickoff": "2026-05-24T18:00:00.000-03:00",
+          "date": "2026-05-24",
+          "venue": "Estadio Estadual Lourival Baptista",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "away": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "kickoff": "2026-05-24T16:30:00.000-03:00",
+          "date": "2026-05-24",
+          "venue": "Estádio Major José Levy Sobrinho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "away": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "kickoff": "2026-05-24T19:00:00.000-03:00",
+          "date": "2026-05-24",
+          "venue": "Estádio Raulino de Oliveira",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "away": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "kickoff": "2026-05-25T20:00:00.000-03:00",
+          "date": "2026-05-25",
+          "venue": "Estádio Novelli Júnior",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "away": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "kickoff": "2026-05-25T20:00:00.000-03:00",
+          "date": "2026-05-25",
+          "venue": "Estádio Leônidas Sodré de Castro",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "away": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "kickoff": "2026-05-30T18:00:00.000-03:00",
+          "date": "2026-05-30",
+          "venue": "Estádio José Américo de Almeida Filho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "away": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "kickoff": "2026-05-30T19:30:00.000-03:00",
+          "date": "2026-05-30",
+          "venue": "Estádio Francisco Stédile (Centenário)",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "away": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "kickoff": "2026-05-30T17:00:00.000-03:00",
+          "date": "2026-05-30",
+          "venue": "Estádio Presidente Vargas",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "away": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "kickoff": "2026-05-30T17:00:00.000-03:00",
+          "date": "2026-05-30",
+          "venue": null,
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "away": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "kickoff": "2026-05-31T18:30:00.000-03:00",
+          "date": "2026-05-31",
+          "venue": "Estádio Jonas Duarte",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "away": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "kickoff": "2026-05-31T20:30:00.000-03:00",
+          "date": "2026-05-31",
+          "venue": "Orlando Scarpelli",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "away": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "kickoff": "2026-05-31T16:00:00.000-03:00",
+          "date": "2026-05-31",
+          "venue": "Estádio Brinco de Ouro da Princesa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 5,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "away": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "kickoff": "2026-05-31T16:00:00.000-03:00",
+          "date": "2026-05-31",
+          "venue": "Estádio Major José Levy Sobrinho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "away": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "kickoff": "2026-05-31T16:00:00.000-03:00",
+          "date": "2026-05-31",
+          "venue": "Arena de Pernambuco",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "away": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "kickoff": "2026-06-01T20:00:00.000-03:00",
+          "date": "2026-06-01",
+          "venue": null,
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "away": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "kickoff": "2026-06-13T16:00:00.000-03:00",
+          "date": "2026-06-13",
+          "venue": null,
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "away": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "kickoff": "2026-06-13T11:00:00.000-03:00",
+          "date": "2026-06-13",
+          "venue": "Estádio Brinco de Ouro da Princesa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "away": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "kickoff": "2026-06-14T11:00:00.000-03:00",
+          "date": "2026-06-14",
+          "venue": "Augusto Bauer",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "away": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "kickoff": "2026-06-14T19:30:00.000-03:00",
+          "date": "2026-06-14",
+          "venue": "Estádio Presidente Vargas",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "away": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "kickoff": "2026-06-14T16:30:00.000-03:00",
+          "date": "2026-06-14",
+          "venue": null,
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "away": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "kickoff": "2026-06-14T16:00:00.000-03:00",
+          "date": "2026-06-14",
+          "venue": "Estádio Leônidas Sodré de Castro",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "away": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "kickoff": "2026-06-14T19:30:00.000-03:00",
+          "date": "2026-06-14",
+          "venue": "Estádio Raulino de Oliveira",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "away": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "kickoff": "2026-06-15T20:30:00.000-03:00",
+          "date": "2026-06-15",
+          "venue": "Arena Capivari",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "away": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "kickoff": "2026-06-15T19:30:00.000-03:00",
+          "date": "2026-06-15",
+          "venue": "Estádio Regional Willie Davids",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "away": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "kickoff": "2026-06-15T20:30:00.000-03:00",
+          "date": "2026-06-15",
+          "venue": "Estádio Olímpico Colosso da Lagoa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "away": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "kickoff": "2026-06-20T16:30:00.000-03:00",
+          "date": "2026-06-20",
+          "venue": "Estádio Jonas Duarte",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "away": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "kickoff": "2026-06-20T17:00:00.000-03:00",
+          "date": "2026-06-20",
+          "venue": "Estádio José Américo de Almeida Filho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "away": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "kickoff": "2026-06-20T20:30:00.000-03:00",
+          "date": "2026-06-20",
+          "venue": "Estádio Novelli Júnior",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "away": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "kickoff": "2026-06-20T21:00:00.000-03:00",
+          "date": "2026-06-20",
+          "venue": "Castelão (São Luis)",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "away": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "kickoff": "2026-06-20T19:00:00.000-03:00",
+          "date": "2026-06-20",
+          "venue": "Arena de Pernambuco",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "away": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "kickoff": "2026-06-21T18:30:00.000-03:00",
+          "date": "2026-06-21",
+          "venue": "Estádio do Barra Futebol Clube",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "away": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "kickoff": "2026-06-21T16:00:00.000-03:00",
+          "date": "2026-06-21",
+          "venue": "Augusto Bauer",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "away": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "kickoff": "2026-06-21T11:00:00.000-03:00",
+          "date": "2026-06-21",
+          "venue": "Estádio Francisco Stédile (Centenário)",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "away": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "kickoff": "2026-06-21T18:30:00.000-03:00",
+          "date": "2026-06-21",
+          "venue": "Estádio Fonte Luminosa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "away": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "kickoff": "2026-06-22T19:30:00.000-03:00",
+          "date": "2026-06-22",
+          "venue": "Estadio Estadual Lourival Baptista",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "away": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "kickoff": "2026-06-27T16:00:00.000-03:00",
+          "date": "2026-06-27",
+          "venue": "Estádio Presidente Vargas",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "away": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "kickoff": "2026-06-27T11:00:00.000-03:00",
+          "date": "2026-06-27",
+          "venue": "Estádio Major José Levy Sobrinho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 2
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "away": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "kickoff": "2026-06-27T19:00:00.000-03:00",
+          "date": "2026-06-27",
+          "venue": null,
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "away": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "kickoff": "2026-06-27T17:00:00.000-03:00",
+          "date": "2026-06-27",
+          "venue": "Estádio Leônidas Sodré de Castro",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 3
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "away": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "kickoff": "2026-06-28T11:00:00.000-03:00",
+          "date": "2026-06-28",
+          "venue": "Orlando Scarpelli",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "away": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "kickoff": "2026-06-28T20:30:00.000-03:00",
+          "date": "2026-06-28",
+          "venue": "Estádio Novelli Júnior",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "away": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "kickoff": "2026-06-28T20:30:00.000-03:00",
+          "date": "2026-06-28",
+          "venue": "Estádio Olímpico Colosso da Lagoa",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "away": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "kickoff": "2026-06-30T20:30:00.000-03:00",
+          "date": "2026-06-30",
+          "venue": "Estádio José Américo de Almeida Filho",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "away": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "kickoff": "2026-06-30T19:30:00.000-03:00",
+          "date": "2026-06-30",
+          "venue": "Estádio Francisco Stédile (Centenário)",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "away": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "kickoff": "2026-06-30T20:30:00.000-03:00",
+          "date": "2026-06-30",
+          "venue": "Estádio Raulino de Oliveira",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "away": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "kickoff": null,
+          "date": "2026-08-15",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "away": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "kickoff": null,
+          "date": "2026-08-15",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "away": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "kickoff": null,
+          "date": "2026-08-15",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "away": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "kickoff": null,
+          "date": "2026-08-15",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "away": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "kickoff": null,
+          "date": "2026-08-15",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "away": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "kickoff": null,
+          "date": "2026-08-15",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "away": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "kickoff": null,
+          "date": "2026-08-15",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "away": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "kickoff": null,
+          "date": "2026-08-15",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "away": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "kickoff": null,
+          "date": "2026-08-15",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "away": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "kickoff": null,
+          "date": "2026-08-15",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "away": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "kickoff": null,
+          "date": "2026-08-22",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "away": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "kickoff": null,
+          "date": "2026-08-22",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "away": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "kickoff": null,
+          "date": "2026-08-22",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "away": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "kickoff": null,
+          "date": "2026-08-22",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "away": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "kickoff": null,
+          "date": "2026-08-22",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "away": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "kickoff": null,
+          "date": "2026-08-22",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "away": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "kickoff": null,
+          "date": "2026-08-22",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "away": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "kickoff": null,
+          "date": "2026-08-22",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "away": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "kickoff": null,
+          "date": "2026-08-22",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "away": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "kickoff": null,
+          "date": "2026-08-22",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Amazonas",
+            "slug": "amazonas"
+          },
+          "away": {
+            "name": "Ypiranga",
+            "slug": "ypiranga"
+          },
+          "kickoff": null,
+          "date": "2026-08-30",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Anápolis",
+            "slug": "anapolis"
+          },
+          "away": {
+            "name": "Santa Cruz",
+            "slug": "santa-cruz"
+          },
+          "kickoff": null,
+          "date": "2026-08-30",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Barra FC",
+            "slug": "barra-fc"
+          },
+          "away": {
+            "name": "Volta Redonda",
+            "slug": "volta-redonda"
+          },
+          "kickoff": null,
+          "date": "2026-08-30",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Caxias do Sul",
+            "slug": "caxias-do-sul"
+          },
+          "away": {
+            "name": "Inter de Limeira",
+            "slug": "inter-de-limeira"
+          },
+          "kickoff": null,
+          "date": "2026-08-30",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ferroviária",
+            "slug": "ferroviaria"
+          },
+          "away": {
+            "name": "Confiança",
+            "slug": "confianca"
+          },
+          "kickoff": null,
+          "date": "2026-08-30",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Figueirense",
+            "slug": "figueirense"
+          },
+          "away": {
+            "name": "Maranhao",
+            "slug": "maranhao"
+          },
+          "kickoff": null,
+          "date": "2026-08-30",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Floresta",
+            "slug": "floresta"
+          },
+          "away": {
+            "name": "Ituano",
+            "slug": "ituano"
+          },
+          "kickoff": null,
+          "date": "2026-08-30",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Guarani",
+            "slug": "guarani"
+          },
+          "away": {
+            "name": "Brusque",
+            "slug": "brusque"
+          },
+          "kickoff": null,
+          "date": "2026-08-30",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Itabaiana",
+            "slug": "itabaiana"
+          },
+          "away": {
+            "name": "Botafogo PB",
+            "slug": "botafogo-pb"
+          },
+          "kickoff": null,
+          "date": "2026-08-30",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": null,
+          "competition": "brasileirao-serie-c",
+          "competitionName": "Brasileirão Série C",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Paysandu",
+            "slug": "paysandu"
+          },
+          "away": {
+            "name": "Maringá",
+            "slug": "maringa"
+          },
+          "kickoff": null,
+          "date": "2026-08-30",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        }
+      ]
+    }
+  }
+}
