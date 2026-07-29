@@ -30,7 +30,14 @@ describe('buildFeedJson', () => {
       venue: 'Allianz Parque',
       status: 'scheduled',
       score: null,
+      broadcasters: [],
     });
+  });
+
+  it('projeta canais de transmissão', () => {
+    const match = makeMatch({ broadcasters: ['Globo', 'SporTV'] });
+    const json = buildFeedJson('team', 'palmeiras', 'Palmeiras', [entryFor(match)]);
+    expect(json.matches[0]!.broadcasters).toEqual(['Globo', 'SporTV']);
   });
 
   it('jogo sem horário → time null', () => {

@@ -16,6 +16,7 @@ export interface FeedMatchJson {
   venue: string | null;
   status: MatchStatus;
   score: { home: number; away: number } | null;
+  broadcasters: string[];
 }
 
 export interface FeedJson {
@@ -57,6 +58,7 @@ export function buildFeedJson(
       venue: match.venue,
       status: match.status,
       score: match.score,
+      broadcasters: match.broadcasters,
     })),
   };
 }

@@ -22,9 +22,9 @@ const palmeirasFixture = {
   slug: 'palmeiras',
   name: 'Palmeiras',
   matches: [
-    { date: '2026-07-30', time: '16:00', home: 'Palmeiras', away: 'Corinthians', homeSlug: 'palmeiras', awaySlug: 'corinthians', competition: 'Brasileirão Série A', competitionSlug: 'brasileirao-serie-a', venue: 'Allianz Parque', status: 'scheduled', score: null },
-    { date: '2026-08-29', time: null, home: 'Grêmio', away: 'Palmeiras', homeSlug: 'gremio', awaySlug: 'palmeiras', competition: 'Brasileirão Série A', competitionSlug: 'brasileirao-serie-a', venue: null, status: 'scheduled', score: null },
-    { date: '2026-01-28', time: '21:30', home: 'Palmeiras', away: 'Santos', homeSlug: 'palmeiras', awaySlug: 'santos', competition: 'Campeonato Paulista', competitionSlug: 'paulista', venue: 'Allianz Parque', status: 'finished', score: { home: 2, away: 1 } },
+    { date: '2026-07-30', time: '16:00', home: 'Palmeiras', away: 'Corinthians', homeSlug: 'palmeiras', awaySlug: 'corinthians', competition: 'Brasileirão Série A', competitionSlug: 'brasileirao-serie-a', venue: 'Allianz Parque', status: 'scheduled', score: null, broadcasters: ['Premiere', 'Record'] },
+    { date: '2026-08-29', time: null, home: 'Grêmio', away: 'Palmeiras', homeSlug: 'gremio', awaySlug: 'palmeiras', competition: 'Brasileirão Série A', competitionSlug: 'brasileirao-serie-a', venue: null, status: 'scheduled', score: null, broadcasters: [] },
+    { date: '2026-01-28', time: '21:30', home: 'Palmeiras', away: 'Santos', homeSlug: 'palmeiras', awaySlug: 'santos', competition: 'Campeonato Paulista', competitionSlug: 'paulista', venue: 'Allianz Parque', status: 'finished', score: { home: 2, away: 1 }, broadcasters: ['Globo'] },
   ],
 };
 
@@ -140,6 +140,26 @@ describe('SPA', () => {
       (c) => !(c.querySelector('.dot')!.getAttribute('style') || '').includes('transparent'),
     );
     expect(dots.length).toBe(1);
+  });
+
+  it('jogo agendado exibe canais de transmissão', async () => {
+    const { window } = bootApp();
+    const appEl = await openDetail(window, '#/time/palmeiras');
+    await gotoMonth(window, 'julho 2026');
+
+    const tv = appEl.querySelector('.mtv');
+    expect(tv).toBeTruthy();
+    expect(tv!.textContent).toContain('Premiere, Record');
+  });
+
+  it('jogo encerrado não exibe transmissão; sem canais não há linha', async () => {
+    const { window } = bootApp();
+    const appEl = await openDetail(window, '#/time/palmeiras');
+    await gotoMonth(window, 'janeiro 2026'); // encerrado, com broadcasters no JSON
+    expect(appEl.querySelector('.mtv')).toBeNull();
+
+    await gotoMonth(window, 'agosto 2026'); // agendado, broadcasters vazio
+    expect(appEl.querySelector('.mtv')).toBeNull();
   });
 
   it('jogo sem horário exibe badge "Horário a definir"', async () => {
