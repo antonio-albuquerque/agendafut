@@ -31,6 +31,7 @@
   var SVG_CHEV_L = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 6l-6 6 6 6"></path></svg>';
   var SVG_CAL = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M8 3v4M16 3v4M3 10h18M12 13v6M9 16h6"></path></svg>';
   var SVG_COPY = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15V5a2 2 0 0 1 2-2h10"></path></svg>';
+  var SVG_TV = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 2l4 4 4-4"></path></svg>';
 
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
@@ -179,6 +180,12 @@
     }
     return esc(m.home) + ' x ' + esc(m.away);
   }
+  function broadcastHtml(m) {
+    // canais vêm do enriquecimento fail-soft; feeds antigos podem não ter o campo
+    if (!m.broadcasters || !m.broadcasters.length || m.status === 'finished') return '';
+    return '<div class="mtv">' + SVG_TV +
+      '<span>' + esc(m.broadcasters.join(', ')) + '</span></div>';
+  }
   function statusBadge(m) {
     if (m.status === 'postponed') return '<span class="badge warn">Adiado</span>';
     if (m.status === 'cancelled') return '<span class="badge danger">Cancelado</span>';
@@ -251,7 +258,8 @@
           '<div class="mday"><div class="d">' + pad(d.getDate()) + '</div>' +
           '<div class="dw">' + DOW[d.getDay()] + '</div></div>' +
           '<div class="minfo"><div class="mt">' + matchLine(mt) + statusBadge(mt) + '</div>' +
-          '<div class="ml">' + esc(mt.competition + (mt.venue ? ' · ' + mt.venue : '')) + '</div></div>' +
+          '<div class="ml">' + esc(mt.competition + (mt.venue ? ' · ' + mt.venue : '')) + '</div>' +
+          broadcastHtml(mt) + '</div>' +
           '<div class="mtime">' + (mt.time ? esc(mt.time) : '—') + '</div>' +
           '</div>';
       }).join('');
