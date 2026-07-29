@@ -5,16 +5,23 @@ import { DateTime } from 'luxon';
 import type { Match, Team } from './domain/types.js';
 import { buildCalendar } from './ics/builder.js';
 import type { CalendarEntry } from './ics/builder.js';
-import { EspnProvider, FEATURED_SLUGS } from './providers/espn.js';
+import { EspnProvider, FEATURED_SLUGS, LEAGUES } from './providers/espn.js';
 import { FntvClient } from './providers/futebolnatv.js';
 import { enrichBroadcasts } from './enrich/broadcasts.js';
 import { loadState, saveState, reconcile } from './state/sequence.js';
+import {
+  applyLeagueResult,
+  emptySnapshots,
+  loadSnapshots,
+  saveSnapshots,
+} from './state/snapshots.js';
 import { TIMEZONE } from './domain/types.js';
 import { renderShell } from './site/index.js';
 import type { FeedRef, FeedsIndex } from './site/index.js';
 import { buildFeedJson } from './site/feedJson.js';
 
 const STATE_PATH = 'data/state.json';
+const SNAPSHOTS_PATH = 'data/snapshots.json';
 const DIST = 'dist';
 
 /**
@@ -33,11 +40,34 @@ async function fetchAllMatches(): Promise<Match[]> {
   );
   const competitions = await provider.competitions();
 
+  // Best-effort por liga: fetch falho ou 0 eventos reusa o último snapshot
+  // bom em vez de derrubar o build (a ESPN já sumiu com uma liga inteira
+  // por um dia). No smoke offline os snapshots não são lidos nem escritos.
+  const warn = (msg: string) => console.warn(`[build] ${msg}`);
+  const snapshots = fixturePath ? emptySnapshots() : loadSnapshots(SNAPSHOTS_PATH, warn);
+  const nowIso = DateTime.now().toUTC().toISO({ suppressMilliseconds: true })!;
+
   const all: Match[] = [];
+  const fromSnapshot: string[] = [];
   for (const competition of competitions) {
-    const matches = await provider.matches(competition.id, competition.season);
-    console.log(`[build] ${competition.slug}: ${matches.length} partidas`);
+    const league = LEAGUES.find((l) => l.code === competition.id)!;
+    let fresh: Match[] | null = null;
+    try {
+      fresh = await provider.matches(competition.id, competition.season);
+    } catch (err) {
+      warn(`${competition.slug}: ${err instanceof Error ? err.message : String(err)}`);
+    }
+    const { matches, usedSnapshot } = applyLeagueResult(snapshots, league, fresh, nowIso, warn);
+    if (usedSnapshot) fromSnapshot.push(competition.slug);
+    console.log(
+      `[build] ${competition.slug}: ${matches.length} partidas${usedSnapshot ? ' (snapshot)' : ''}`,
+    );
     all.push(...matches);
+  }
+
+  if (!fixturePath) saveSnapshots(SNAPSHOTS_PATH, snapshots);
+  if (fromSnapshot.length > 0) {
+    console.warn(`[build] ligas sem dados novos (usando snapshot): ${fromSnapshot.join(', ')}`);
   }
   return all;
 }
@@ -73,8 +103,9 @@ function groupByCompetition(
 }
 
 async function main(): Promise<void> {
-  // Se o provider falhar, o throw derruba o processo ANTES de tocar em dist/:
-  // publicar um feed vazio apagaria a agenda de quem assinou.
+  // Liga sem dados novos cai no snapshot anterior; se uma liga required
+  // ficar sem dados E sem snapshot, o throw derruba o processo ANTES de
+  // tocar em dist/: publicar um feed vazio apagaria a agenda de quem assinou.
   const matches = await fetchAllMatches();
   if (matches.length === 0) {
     throw new Error('0 partidas no total — abortando sem publicar');

@@ -16,8 +16,11 @@ sem servidor. Estas invariantes são as que se perdem em refactors — não rela
    Nunca converta horários para UTC fixo — o Brasil pode voltar a ter DST.
    Aritmética de datas sempre com luxon e zona explícita, nunca `Date` nativo.
 
-4. **Nunca publicar feed vazio.** Provider falhou ou 0 partidas → o build lança erro
-   e nada em `dist/` é tocado. Feed vazio publicado apaga a agenda dos assinantes.
+4. **Nunca publicar feed vazio.** Coleta é best-effort por liga: fetch falho ou
+   0 eventos reusa o último snapshot bom (`data/snapshots.json`, commitado pelo
+   CI; a ESPN já sumiu com uma liga inteira por um dia). Liga `required` sem
+   dados novos NEM snapshot → o build lança erro e nada em `dist/` é tocado.
+   Feed vazio publicado apaga a agenda dos assinantes.
 
 5. **Jogo cancelado/adiado permanece no feed** (`STATUS:CANCELLED`/`TENTATIVE`).
    Sumir do feed deixa evento órfão em quem já sincronizou.

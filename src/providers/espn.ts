@@ -14,8 +14,9 @@ export interface LeagueConfig {
   slug: string;
   name: string;
   /**
-   * required=true → zero eventos derruba o build (proteção contra feed vazio).
-   * Estaduais e mata-matas continentais podem legitimamente estar vazios.
+   * required=true → sem dados novos NEM snapshot anterior, o build aborta
+   * (proteção contra feed vazio). Estaduais e mata-matas continentais
+   * podem legitimamente estar vazios.
    */
   required: boolean;
 }
@@ -243,10 +244,8 @@ export class EspnProvider implements FixtureProvider {
     const scoreboard = ScoreboardSchema.parse(payload);
 
     if (scoreboard.events.length === 0) {
-      if (league.required) {
-        throw new Error(`0 eventos em ${league.slug} — fonte quebrada? Abortando.`);
-      }
-      this.log(`0 eventos em ${league.slug} (liga opcional) — seguindo`);
+      // Quem decide o que fazer (snapshot anterior / abortar) é o chamador.
+      this.log(`0 eventos em ${league.slug}`);
       return [];
     }
     if (scoreboard.events.length >= 1000) {

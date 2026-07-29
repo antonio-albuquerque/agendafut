@@ -40,15 +40,16 @@ jobs:
       # agenda de todo mundo que assinou.
       - run: pnpm run build
 
-      # O commit diário do state.json também impede o GitHub de desativar
+      # O commit diário do estado também impede o GitHub de desativar
       # o cron por inatividade (60 dias sem commit em repo público).
-      - name: Commit state.json se mudou
+      # snapshots.json é o fallback best-effort: última coleta boa por liga.
+      - name: Commit state.json/snapshots.json se mudaram
         run: |
-          if ! git diff --quiet -- data/state.json; then
+          if [ -n "$(git status --porcelain -- data/state.json data/snapshots.json)" ]; then
             git config user.name 'github-actions[bot]'
             git config user.email 'github-actions[bot]@users.noreply.github.com'
-            git add data/state.json
-            git commit -m 'chore: atualiza state.json [skip ci]'
+            git add data/state.json data/snapshots.json
+            git commit -m 'chore: atualiza estado do build [skip ci]'
             git push
           fi
 
