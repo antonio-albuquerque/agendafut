@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-07-29T13:57:41.238Z",
+      "fetchedAt": "2026-07-30T11:07:46.504Z",
       "matches": [
         {
           "id": "401840808",
@@ -4944,9 +4944,12 @@
           "kickoff": "2026-07-29T19:30:00.000-03:00",
           "date": "2026-07-29",
           "venue": "Estadio Beira-Rio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841170",
@@ -4965,9 +4968,12 @@
           "kickoff": "2026-07-29T19:30:00.000-03:00",
           "date": "2026-07-29",
           "venue": "Estadio Municipal José Maria de Campos Maia",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401841177",
@@ -4986,9 +4992,12 @@
           "kickoff": "2026-07-29T21:30:00.000-03:00",
           "date": "2026-07-29",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401841172",
@@ -5007,9 +5016,12 @@
           "kickoff": "2026-07-29T21:30:00.000-03:00",
           "date": "2026-07-29",
           "venue": "Estadio Manoel Barradas",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 4
+          }
         },
         {
           "id": "401841174",
@@ -35142,7 +35154,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-07-29T13:57:41.238Z",
+      "fetchedAt": "2026-07-30T11:07:46.504Z",
       "matches": [
         {
           "id": "401843575",
@@ -38089,9 +38101,12 @@
           "kickoff": "2026-07-29T19:00:00.000-03:00",
           "date": "2026-07-29",
           "venue": "Estádio São Januário",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401874158",
@@ -38110,9 +38125,12 @@
           "kickoff": "2026-07-29T21:30:00.000-03:00",
           "date": "2026-07-29",
           "venue": "Estadio Inca Garcilaso de la Vega",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 4,
+            "away": 0
+          }
         },
         {
           "id": "401874151",
@@ -38131,9 +38149,12 @@
           "kickoff": "2026-07-29T21:30:00.000-03:00",
           "date": "2026-07-29",
           "venue": "Estádio Municipal Cicero de Souza Marques",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401874159",
@@ -38194,6 +38215,90 @@
           "kickoff": "2026-07-30T21:30:00.000-03:00",
           "date": "2026-07-30",
           "venue": "Estadio El Teniente",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401902572",
+          "competition": "sudamericana",
+          "competitionName": "CONMEBOL Sudamericana",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Santos",
+            "slug": "santos"
+          },
+          "away": {
+            "name": "Macará",
+            "slug": "macara"
+          },
+          "kickoff": null,
+          "date": "2026-08-12",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401902573",
+          "competition": "sudamericana",
+          "competitionName": "CONMEBOL Sudamericana",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Criciúma",
+            "slug": "criciuma"
+          },
+          "away": {
+            "name": "Montevideo City Torque",
+            "slug": "montevideo-city-torque"
+          },
+          "kickoff": null,
+          "date": "2026-08-12",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401902449",
+          "competition": "sudamericana",
+          "competitionName": "CONMEBOL Sudamericana",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Macará",
+            "slug": "macara"
+          },
+          "away": {
+            "name": "Santos",
+            "slug": "santos"
+          },
+          "kickoff": null,
+          "date": "2026-08-19",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401902571",
+          "competition": "sudamericana",
+          "competitionName": "CONMEBOL Sudamericana",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Montevideo City Torque",
+            "slug": "montevideo-city-torque"
+          },
+          "away": {
+            "name": "Criciúma",
+            "slug": "criciuma"
+          },
+          "kickoff": null,
+          "date": "2026-08-19",
+          "venue": null,
           "status": "scheduled",
           "broadcasters": [],
           "score": null
