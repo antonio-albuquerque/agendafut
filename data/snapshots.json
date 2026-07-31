@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-07-30T11:07:46.504Z",
+      "fetchedAt": "2026-07-31T11:28:55.530Z",
       "matches": [
         {
           "id": "401840808",
@@ -5040,9 +5040,12 @@
           "kickoff": "2026-07-30T19:30:00.000-03:00",
           "date": "2026-07-30",
           "venue": "Neo Química Arena",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401841173",
@@ -5061,9 +5064,12 @@
           "kickoff": "2026-07-30T21:30:00.000-03:00",
           "date": "2026-07-30",
           "venue": "Couto Pereira",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401841181",
@@ -8638,7 +8644,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-07-29T13:57:41.238Z",
+      "fetchedAt": "2026-07-31T11:28:55.530Z",
       "matches": [
         {
           "id": "401860064",
@@ -13477,7 +13483,7 @@
           },
           "kickoff": "2026-08-07T20:30:00.000-03:00",
           "date": "2026-08-07",
-          "venue": "Estádio Presidente Vargas",
+          "venue": "Arena Castelão",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -13651,27 +13657,6 @@
           "score": null
         },
         {
-          "id": "401860272",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "São Bernardo",
-            "slug": "sao-bernardo"
-          },
-          "away": {
-            "name": "Botafogo-SP",
-            "slug": "botafogo-sp"
-          },
-          "kickoff": "2026-08-14T19:00:00.000-03:00",
-          "date": "2026-08-14",
-          "venue": "Estádio Primeiro de Maio",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401860273",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
@@ -13688,6 +13673,27 @@
           "kickoff": "2026-08-14T19:30:00.000-03:00",
           "date": "2026-08-14",
           "venue": "Moisés Lucarelli",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860272",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "São Bernardo",
+            "slug": "sao-bernardo"
+          },
+          "away": {
+            "name": "Botafogo-SP",
+            "slug": "botafogo-sp"
+          },
+          "kickoff": "2026-08-14T19:30:00.000-03:00",
+          "date": "2026-08-14",
+          "venue": "Estádio Primeiro de Maio",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -35154,7 +35160,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-07-30T11:07:46.504Z",
+      "fetchedAt": "2026-07-31T11:28:55.530Z",
       "matches": [
         {
           "id": "401843575",
@@ -38173,9 +38179,12 @@
           "kickoff": "2026-07-30T19:00:00.000-03:00",
           "date": "2026-07-30",
           "venue": "Arena do Grêmio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401874162",
@@ -38194,9 +38203,12 @@
           "kickoff": "2026-07-30T21:30:00.000-03:00",
           "date": "2026-07-30",
           "venue": null,
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 3
+          }
         },
         {
           "id": "401874164",
@@ -38215,9 +38227,12 @@
           "kickoff": "2026-07-30T21:30:00.000-03:00",
           "date": "2026-07-30",
           "venue": "Estadio El Teniente",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401902572",

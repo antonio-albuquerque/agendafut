@@ -2927,10 +2927,10 @@
       ]
     },
     "brasileirao-serie-a-2026-07-30-corinthians-vs-athletico-pr@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "7521424a1e16febd21ba362c6cf94e23519b91e9616a1a7bc950c1963266d07f",
-      "contentHash": "be2fb5e5c76a973d8daa91631f703407b6151faeb43dd043bdbbe413e901587a",
-      "lastModified": "2026-07-27T14:54:03.639Z",
+      "sequence": 1,
+      "seqHash": "0fc7b92dd3094c50919e9eaf2ecd13f8541a19f8184597ad1f19e6fccaf7f080",
+      "contentHash": "717b4c77d8658b2ee602556be74d6f5cd130fbd84e5879546fe2454f93c6fb34",
+      "lastModified": "2026-07-31T11:28:58Z",
       "broadcasters": [
         "CAZÉTV",
         "PREMIERE FC",
@@ -2938,10 +2938,10 @@
       ]
     },
     "brasileirao-serie-a-2026-07-30-coritiba-vs-cruzeiro@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "91e58d5fe4462575db74127343b3ba5901d00c1ab9220b41dea89c49c55f0c36",
-      "contentHash": "236c0a7cb77df57b9ad04d8e80fc405e0620334614f15104d49fecf2c8dad870",
-      "lastModified": "2026-07-27T14:54:03.639Z",
+      "sequence": 1,
+      "seqHash": "382420181fa0fbe493baa7c1e7376fafcef8cb770db62c1c8cd3408f608f1cd4",
+      "contentHash": "e7a663df881ffeb957388c92f31202eef3d6fe03bc5e8cd89c5a7a7035b088bb",
+      "lastModified": "2026-07-31T11:28:58Z",
       "broadcasters": [
         "PREMIERE 2",
         "SPORTV"
@@ -2999,8 +2999,11 @@
     "brasileirao-serie-a-2026-08-09-bragantino-vs-corinthians@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "c90f2a8235c89450150556387170e2873ffeb90f1645c88024f25187821d9279",
-      "contentHash": "5c9e87c64b72c16b081029c0a26c750d8ee0ea4464453c6d3c5316d37cdb88f9",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "8773ac5d2729f303df7ef55ace36915740e49ccc3bba9f08c34add2726953fbb",
+      "lastModified": "2026-07-31T11:28:58Z",
+      "broadcasters": [
+        "PREMIERE"
+      ]
     },
     "brasileirao-serie-a-2026-08-09-cruzeiro-vs-mirassol@futebol.agendafut": {
       "sequence": 0,
@@ -3014,8 +3017,12 @@
     "brasileirao-serie-a-2026-08-09-flamengo-vs-vitoria@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "cb1f6240f75ffef892753bfb67121670df9c558379838fa4433fe5ae98907d93",
-      "contentHash": "29b8ff149dd55ba4dd7a4f63215cda5979fa3e692d6943ecb4c95443ffe556e6",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "a214fc4cbd4f314ab70db08262741d1a773a5fd895f9c94675ff6b93f27ffef5",
+      "lastModified": "2026-07-31T11:28:58Z",
+      "broadcasters": [
+        "PREMIERE",
+        "SPORTV"
+      ]
     },
     "brasileirao-serie-a-2026-08-09-palmeiras-vs-internacional@futebol.agendafut": {
       "sequence": 0,
@@ -5224,10 +5231,10 @@
       ]
     },
     "brasileirao-serie-b-2026-08-07-ceara-vs-ponte-preta@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "4a63e98c3abe0c08d9fb2433885073b4b47bd6a6e8f4964c83ae63cd065b2889",
-      "contentHash": "da32c354de7428203348a543acdd94f907e2f5dd06115af268b6fdf1a5fe4710",
-      "lastModified": "2026-07-27T14:54:03.639Z",
+      "sequence": 1,
+      "seqHash": "0db8a7a0462545e3590fa035819a93ec9453889de939f2b3c3b7c79bbfb3ee0f",
+      "contentHash": "dc859a63ba8a4d38bfa0479e8768ef58b3e9ff90dcfafa0388fade6661643f9b",
+      "lastModified": "2026-07-31T11:28:58Z",
       "broadcasters": [
         "DISNEY+"
       ]
@@ -5327,10 +5334,10 @@
       "lastModified": "2026-07-26T22:08:34.949Z"
     },
     "brasileirao-serie-b-2026-08-14-sao-bernardo-vs-botafogo-sp@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "3f64352492e812995058613dff03f7183c4065009d7445c6f1a69046b0b76daf",
-      "contentHash": "163798a2f02ad0fc51a54c2fc32908a878ec3b49229843b6cf4d985181126fd1",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "sequence": 1,
+      "seqHash": "256ce97785cb791baaef5f6a158ca70e6449be62d8f55bb199fca42f26b7175f",
+      "contentHash": "43914c2c6f8d9f48aecdc2d3e1774eb1af6a750fe309ea5b84872fd8c096fbe9",
+      "lastModified": "2026-07-31T11:28:58Z"
     },
     "brasileirao-serie-b-2026-08-14-sport-vs-londrina@futebol.agendafut": {
       "sequence": 0,
@@ -11626,28 +11633,28 @@
       ]
     },
     "sudamericana-2026-07-30-caracas-fc-vs-independiente-santa-fe@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "a077c05a6b268608d2f90a006d8cbd7c447f681d9b6e1d66fe01d35676f0e377",
-      "contentHash": "ea639232c9e3958a4d54affd4f77582fc754cfd6327329cd29db4df24675b722",
-      "lastModified": "2026-07-27T14:54:03.639Z",
+      "sequence": 1,
+      "seqHash": "bf9fecd13a741f9702518e747f2b287ad5a5c48f9a12237e7fb14f564aebcd1e",
+      "contentHash": "77fd9a5069d3fd199c1090d51e02e6cd798da78cb09ab12812587c5f5bc7fcae",
+      "lastModified": "2026-07-31T11:28:58Z",
       "broadcasters": [
         "PARAMOUNT+"
       ]
     },
     "sudamericana-2026-07-30-gremio-vs-bolivar@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "617bbed617e0da447e2fef20e70377ce520b4cbe16d09a0521a4e474fb9e6a33",
-      "contentHash": "3903ac5d9a7de7851b2762cadc0d24c548ab9addc0ab90a37cfdd4e013d887c9",
-      "lastModified": "2026-07-27T14:54:03.639Z",
+      "sequence": 1,
+      "seqHash": "923492dcbf3de320cda444861affe6b1df59971d267e3ddbe65be5444d5ac057",
+      "contentHash": "88d09cb4031d60b9200311391be35d6994975c2bf7b4f75b4aff8538fa1c0de8",
+      "lastModified": "2026-07-31T11:28:58Z",
       "broadcasters": [
         "PARAMOUNT+"
       ]
     },
     "sudamericana-2026-07-30-o-higgins-vs-boca-juniors@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "952d4d43470a3b2c91fa60223d639879d5bb0398a4d2a44470c7794294ea83de",
-      "contentHash": "d6b6710be69e856f61c0f0d5e6fdb92d98ef4d1d9cd493efad7d97dcd2b0b200",
-      "lastModified": "2026-07-27T14:54:03.639Z",
+      "sequence": 1,
+      "seqHash": "603955f84d3b404f46ce8580058c460e6488c253f8d0421f05e6ced5b83251b2",
+      "contentHash": "6f1d1299951e8a3a8fc26555884adb06cb97443ad32b5663a0e3d647329b4503",
+      "lastModified": "2026-07-31T11:28:58Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN"
