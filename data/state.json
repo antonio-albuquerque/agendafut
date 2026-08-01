@@ -1529,6 +1529,7 @@
     "sudamericana:2026:america-de-cali:criciuma": "sudamericana-2026-05-19-america-de-cali-vs-criciuma@futebol.agendafut",
     "sudamericana:2026:america-de-cali:macara": "sudamericana-2026-05-28-america-de-cali-vs-macara@futebol.agendafut",
     "sudamericana:2026:atletico-mg:academia-puerto-cabello": "sudamericana-2026-05-27-atletico-mg-vs-academia-puerto-cabello@futebol.agendafut",
+    "sudamericana:2026:atletico-mg:bragantino": "sudamericana-2026-08-19-atletico-mg-vs-bragantino@futebol.agendafut",
     "sudamericana:2026:atletico-mg:cienciano-del-cusco": "sudamericana-2026-05-21-atletico-mg-vs-cienciano-del-cusco@futebol.agendafut",
     "sudamericana:2026:atletico-mg:juventud": "sudamericana-2026-04-16-atletico-mg-vs-juventud@futebol.agendafut",
     "sudamericana:2026:atletico-nacional:millonarios": "sudamericana-2026-03-04-atletico-nacional-vs-millonarios@futebol.agendafut",
@@ -1542,15 +1543,19 @@
     "sudamericana:2026:blooming:carabobo": "sudamericana-2026-05-21-blooming-vs-carabobo@futebol.agendafut",
     "sudamericana:2026:blooming:river-plate": "sudamericana-2026-04-08-blooming-vs-river-plate@futebol.agendafut",
     "sudamericana:2026:blooming:san-antonio-bulo-bulo": "sudamericana-2026-03-04-blooming-vs-san-antonio-bulo-bulo@futebol.agendafut",
+    "sudamericana:2026:boca-juniors:deportivo-recoleta": "sudamericana-2026-08-11-boca-juniors-vs-deportivo-recoleta@futebol.agendafut",
     "sudamericana:2026:boca-juniors:o-higgins": "sudamericana-2026-07-23-boca-juniors-vs-o-higgins@futebol.agendafut",
     "sudamericana:2026:bolivar:gremio": "sudamericana-2026-07-23-bolivar-vs-gremio@futebol.agendafut",
+    "sudamericana:2026:bolivar:sao-paulo": "sudamericana-2026-08-11-bolivar-vs-sao-paulo@futebol.agendafut",
     "sudamericana:2026:boston-river:millonarios": "sudamericana-2026-05-07-boston-river-vs-millonarios@futebol.agendafut",
     "sudamericana:2026:boston-river:o-higgins": "sudamericana-2026-05-20-boston-river-vs-o-higgins@futebol.agendafut",
     "sudamericana:2026:boston-river:racing-montevideo": "sudamericana-2026-03-05-boston-river-vs-racing-montevideo@futebol.agendafut",
     "sudamericana:2026:boston-river:sao-paulo": "sudamericana-2026-04-07-boston-river-vs-sao-paulo@futebol.agendafut",
     "sudamericana:2026:botafogo:caracas-fc": "sudamericana-2026-04-09-botafogo-vs-caracas-fc@futebol.agendafut",
+    "sudamericana:2026:botafogo:cienciano-del-cusco": "sudamericana-2026-08-20-botafogo-vs-cienciano-del-cusco@futebol.agendafut",
     "sudamericana:2026:botafogo:independiente-petrolero": "sudamericana-2026-04-28-botafogo-vs-independiente-petrolero@futebol.agendafut",
     "sudamericana:2026:botafogo:racing-club": "sudamericana-2026-05-06-botafogo-vs-racing-club@futebol.agendafut",
+    "sudamericana:2026:bragantino:atletico-mg": "sudamericana-2026-08-12-bragantino-vs-atletico-mg@futebol.agendafut",
     "sudamericana:2026:bragantino:blooming": "sudamericana-2026-04-16-bragantino-vs-blooming@futebol.agendafut",
     "sudamericana:2026:bragantino:carabobo": "sudamericana-2026-05-27-bragantino-vs-carabobo@futebol.agendafut",
     "sudamericana:2026:bragantino:river-plate": "sudamericana-2026-04-30-bragantino-vs-river-plate@futebol.agendafut",
@@ -1565,12 +1570,14 @@
     "sudamericana:2026:caracas-fc:racing-club": "sudamericana-2026-04-29-caracas-fc-vs-racing-club@futebol.agendafut",
     "sudamericana:2026:cienciano-del-cusco:academia-puerto-cabello": "sudamericana-2026-04-16-cienciano-del-cusco-vs-academia-puerto-cabello@futebol.agendafut",
     "sudamericana:2026:cienciano-del-cusco:atletico-mg": "sudamericana-2026-04-29-cienciano-del-cusco-vs-atletico-mg@futebol.agendafut",
+    "sudamericana:2026:cienciano-del-cusco:botafogo": "sudamericana-2026-08-13-cienciano-del-cusco-vs-botafogo@futebol.agendafut",
     "sudamericana:2026:cienciano-del-cusco:juventud": "sudamericana-2026-05-27-cienciano-del-cusco-vs-juventud@futebol.agendafut",
     "sudamericana:2026:cienciano-del-cusco:lanus": "sudamericana-2026-07-29-cienciano-del-cusco-vs-lanus@futebol.agendafut",
     "sudamericana:2026:cienciano-del-cusco:melgar": "sudamericana-2026-03-05-cienciano-del-cusco-vs-melgar@futebol.agendafut",
     "sudamericana:2026:club-olimpia:audax-italiano": "sudamericana-2026-05-27-club-olimpia-vs-audax-italiano@futebol.agendafut",
     "sudamericana:2026:club-olimpia:barracas-central": "sudamericana-2026-04-15-club-olimpia-vs-barracas-central@futebol.agendafut",
     "sudamericana:2026:club-olimpia:vasco": "sudamericana-2026-05-20-club-olimpia-vs-vasco@futebol.agendafut",
+    "sudamericana:2026:club-olimpia:vasco:2026-08-20": "sudamericana-2026-08-20-club-olimpia-vs-vasco@futebol.agendafut",
     "sudamericana:2026:cobresal:audax-italiano": "sudamericana-2026-03-03-cobresal-vs-audax-italiano@futebol.agendafut",
     "sudamericana:2026:criciuma:alianza-atletico": "sudamericana-2026-05-28-criciuma-vs-alianza-atletico@futebol.agendafut",
     "sudamericana:2026:criciuma:america-de-cali": "sudamericana-2026-04-30-criciuma-vs-america-de-cali@futebol.agendafut",
@@ -1581,6 +1588,7 @@
     "sudamericana:2026:deportivo-cuenca:libertad-ecuador": "sudamericana-2026-03-04-deportivo-cuenca-vs-libertad-ecuador@futebol.agendafut",
     "sudamericana:2026:deportivo-cuenca:san-lorenzo": "sudamericana-2026-05-05-deportivo-cuenca-vs-san-lorenzo@futebol.agendafut",
     "sudamericana:2026:deportivo-cuenca:santos": "sudamericana-2026-04-08-deportivo-cuenca-vs-santos@futebol.agendafut",
+    "sudamericana:2026:deportivo-recoleta:boca-juniors": "sudamericana-2026-08-18-deportivo-recoleta-vs-boca-juniors@futebol.agendafut",
     "sudamericana:2026:deportivo-recoleta:deportivo-cuenca": "sudamericana-2026-04-28-deportivo-recoleta-vs-deportivo-cuenca@futebol.agendafut",
     "sudamericana:2026:deportivo-recoleta:san-lorenzo": "sudamericana-2026-04-08-deportivo-recoleta-vs-san-lorenzo@futebol.agendafut",
     "sudamericana:2026:deportivo-recoleta:santos": "sudamericana-2026-05-05-deportivo-recoleta-vs-santos@futebol.agendafut",
@@ -1597,6 +1605,7 @@
     "sudamericana:2026:independiente-petrolero:guabira": "sudamericana-2026-03-03-independiente-petrolero-vs-guabira@futebol.agendafut",
     "sudamericana:2026:independiente-petrolero:racing-club": "sudamericana-2026-04-07-independiente-petrolero-vs-racing-club@futebol.agendafut",
     "sudamericana:2026:independiente-santa-fe:caracas-fc": "sudamericana-2026-07-23-independiente-santa-fe-vs-caracas-fc@futebol.agendafut",
+    "sudamericana:2026:independiente-santa-fe:river-plate": "sudamericana-2026-08-12-independiente-santa-fe-vs-river-plate@futebol.agendafut",
     "sudamericana:2026:juventud:academia-puerto-cabello": "sudamericana-2026-04-29-juventud-vs-academia-puerto-cabello@futebol.agendafut",
     "sudamericana:2026:juventud:atletico-mg": "sudamericana-2026-05-05-juventud-vs-atletico-mg@futebol.agendafut",
     "sudamericana:2026:juventud:cienciano-del-cusco": "sudamericana-2026-04-09-juventud-vs-cienciano-del-cusco@futebol.agendafut",
@@ -1629,6 +1638,7 @@
     "sudamericana:2026:river-plate:blooming": "sudamericana-2026-05-27-river-plate-vs-blooming@futebol.agendafut",
     "sudamericana:2026:river-plate:bragantino": "sudamericana-2026-05-20-river-plate-vs-bragantino@futebol.agendafut",
     "sudamericana:2026:river-plate:carabobo": "sudamericana-2026-04-15-river-plate-vs-carabobo@futebol.agendafut",
+    "sudamericana:2026:river-plate:independiente-santa-fe": "sudamericana-2026-08-19-river-plate-vs-independiente-santa-fe@futebol.agendafut",
     "sudamericana:2026:san-lorenzo:deportivo-cuenca": "sudamericana-2026-04-16-san-lorenzo-vs-deportivo-cuenca@futebol.agendafut",
     "sudamericana:2026:san-lorenzo:deportivo-recoleta": "sudamericana-2026-05-26-san-lorenzo-vs-deportivo-recoleta@futebol.agendafut",
     "sudamericana:2026:san-lorenzo:santos": "sudamericana-2026-04-28-san-lorenzo-vs-santos@futebol.agendafut",
@@ -1637,6 +1647,7 @@
     "sudamericana:2026:santos:macara": "sudamericana-2026-08-12-santos-vs-macara@futebol.agendafut",
     "sudamericana:2026:santos:san-lorenzo": "sudamericana-2026-05-20-santos-vs-san-lorenzo@futebol.agendafut",
     "sudamericana:2026:santos:ucv-fc": "sudamericana-2026-07-28-santos-vs-ucv-fc@futebol.agendafut",
+    "sudamericana:2026:sao-paulo:bolivar": "sudamericana-2026-08-18-sao-paulo-vs-bolivar@futebol.agendafut",
     "sudamericana:2026:sao-paulo:boston-river": "sudamericana-2026-05-26-sao-paulo-vs-boston-river@futebol.agendafut",
     "sudamericana:2026:sao-paulo:millonarios": "sudamericana-2026-05-19-sao-paulo-vs-millonarios@futebol.agendafut",
     "sudamericana:2026:sao-paulo:o-higgins": "sudamericana-2026-04-14-sao-paulo-vs-o-higgins@futebol.agendafut",
@@ -1647,6 +1658,7 @@
     "sudamericana:2026:vasco:audax-italiano": "sudamericana-2026-04-14-vasco-vs-audax-italiano@futebol.agendafut",
     "sudamericana:2026:vasco:barracas-central": "sudamericana-2026-05-27-vasco-vs-barracas-central@futebol.agendafut",
     "sudamericana:2026:vasco:club-olimpia": "sudamericana-2026-04-30-vasco-vs-club-olimpia@futebol.agendafut",
+    "sudamericana:2026:vasco:club-olimpia:2026-08-13": "sudamericana-2026-08-13-vasco-vs-club-olimpia@futebol.agendafut",
     "sudamericana:2026:vasco:independiente-medellin": "sudamericana-2026-07-29-vasco-vs-independiente-medellin@futebol.agendafut"
   },
   "events": {
@@ -11660,29 +11672,101 @@
         "ESPN"
       ]
     },
-    "sudamericana-2026-08-12-criciuma-vs-montevideo-city-torque@futebol.agendafut": {
+    "sudamericana-2026-08-11-boca-juniors-vs-deportivo-recoleta@futebol.agendafut": {
       "sequence": 0,
-      "seqHash": "f1a63d0f2302593876ee1a3d8a57b8d4c11b3cae83059f4410c07065fcc8252c",
-      "contentHash": "867858e5be12ed7ad994b519ae8d571e764689938935ab8e156164b8a5027b24",
-      "lastModified": "2026-07-30T11:07:48.284Z"
+      "seqHash": "1c7518b0f4a4a762bcfcb014da3a9aab9afe0609f0fdbf4496bcce2dd993d05f",
+      "contentHash": "9cc21e4f616ef6af564ae4ecf46ad2afb7a54e7aa4b67cdd91ec2dd7ca909a36",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-11-bolivar-vs-sao-paulo@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "ef9691bf05784f2cead920f517e275c69b4474deca28116751d9f204ea910cac",
+      "contentHash": "3e8d16666a19faf2958d031bf58bc453e08e1b6f907fa80d3cfa1517eed9a28b",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-12-bragantino-vs-atletico-mg@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "e8c971dc1c5c2f8bc9d55769e01e9cb44ad7b2ba6c4c77bab6acac9c848fd2ea",
+      "contentHash": "ad5f624b8e855629df6f496e03a6545168a4190cbbf5cd0c6adb4613f18e7a9c",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-12-criciuma-vs-montevideo-city-torque@futebol.agendafut": {
+      "sequence": 1,
+      "seqHash": "d74d8f8a1f98271b693442403522cd008a66be20a975465f4a68b02b990cfc44",
+      "contentHash": "6abf8560d47f6ff528b635d9f818560fe57238746b55df7e85006d1aa8e1bff3",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-12-independiente-santa-fe-vs-river-plate@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "0af629edce96fec73b14f8fddf422c12ae52f838e77a09424bfdf2436f681f14",
+      "contentHash": "aa8c1b360f3abb689aac1418342d246e4ae4a6b44f94508b4cf0f11bfac34361",
+      "lastModified": "2026-08-01T10:39:59.913Z"
     },
     "sudamericana-2026-08-12-santos-vs-macara@futebol.agendafut": {
+      "sequence": 1,
+      "seqHash": "012c3b3db9255e1f9812226847220925c5f89143e283053168497bbabb444f4c",
+      "contentHash": "d57e5906226e8b3ccec252771f2073eb91746d2c0ddf96669ef7e2a7bb20b8f2",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-13-cienciano-del-cusco-vs-botafogo@futebol.agendafut": {
       "sequence": 0,
-      "seqHash": "f1a63d0f2302593876ee1a3d8a57b8d4c11b3cae83059f4410c07065fcc8252c",
-      "contentHash": "12e6d288a3b3b295bd66d9d82bd91ba4a64d822d71c22df5b89f64bd896c6926",
-      "lastModified": "2026-07-30T11:07:48.284Z"
+      "seqHash": "7e57c38e69ad69c309f7ad5059c043b94ccac8507914db37d9a857e3771e4d20",
+      "contentHash": "7eb6d86ea0da5c7c8a801739187e0cceeea5206c48c66b55151faa6c7bdf95aa",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-13-vasco-vs-club-olimpia@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "c09ca1668eac20e1bf45e6aa117399f6bacedaad8140fb2974eb2db4a43ea9e7",
+      "contentHash": "e21984a0ecaeaf67ee9becc8a32c002ef87a51b6c0c8c3971eca05af76f23110",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-18-deportivo-recoleta-vs-boca-juniors@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "23d35c7a6d83a4265f5ea005b1af5494030808d3833bd0b1dec83d564ffbb5fd",
+      "contentHash": "41aca682c30de161c84bf4e6277295151db90a2c4f6260e839e03c8d903d1db0",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-18-sao-paulo-vs-bolivar@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "beef515211056fce1888437fd260bc29150cc6cf2f6cd93a15dc78691ff90b2b",
+      "contentHash": "e032bbde6e26682899d13a1fbefe92cc41d0b05273e78505ce033fa26bb69150",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-19-atletico-mg-vs-bragantino@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "e6bccdf57f07982fa2639f63768f6345baf0168afea4f0b52005eb60e7228a0d",
+      "contentHash": "917e71ccf66acc3cd4f95ebf04c68373fac6a7ee78a17b93dc8bab7ab84cdba5",
+      "lastModified": "2026-08-01T10:39:59.913Z"
     },
     "sudamericana-2026-08-19-macara-vs-santos@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "250c6e49dfc514052b2c59c3647fbfcea2adabe8669d59152e00e07006590707",
-      "contentHash": "15f893c3f389aa3bfcc7ac5105d10955fee7b292bcd3857607b8560f29dd65e6",
-      "lastModified": "2026-07-30T11:07:48.284Z"
+      "sequence": 1,
+      "seqHash": "8017e68d000c8d19f406eda1053c52e5c3dea03dcee5aff8d1e1677a9aae8ad5",
+      "contentHash": "ac706110c77af111b0006605732022b69fe607b182cab7bf89327f2c3b0cbcec",
+      "lastModified": "2026-08-01T10:39:59.913Z"
     },
     "sudamericana-2026-08-19-montevideo-city-torque-vs-criciuma@futebol.agendafut": {
+      "sequence": 1,
+      "seqHash": "0a155922b606d1fd6e476da5118b6f79ba069443709ef41b664a5343787ed3ce",
+      "contentHash": "f065bd1f91f7235711f69179fef658f36b51b1a87275c0f10674bd4fb3eb4502",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-19-river-plate-vs-independiente-santa-fe@futebol.agendafut": {
       "sequence": 0,
-      "seqHash": "250c6e49dfc514052b2c59c3647fbfcea2adabe8669d59152e00e07006590707",
-      "contentHash": "4d550d6dd7d3e760022090b301307a44b698c79a4833a110d279acaf7b69ed55",
-      "lastModified": "2026-07-30T11:07:48.284Z"
+      "seqHash": "9b18d6df267c2b08637f62f3fff924827c7bad62ca3fcf3afe64dd6ca9cc754c",
+      "contentHash": "6595de07cdbb430e0150d1ed966155551d5ad3282aa69a98eac41ededd1357ac",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-20-botafogo-vs-cienciano-del-cusco@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "2ac80bf0d2c715b225ce1e3f1245d244b2b6ad03d26ee210b41afc8b65af994b",
+      "contentHash": "46ca0b70d7a8f107c58521950a2c0df296f6a5b238aed9d3750b90aa3334821a",
+      "lastModified": "2026-08-01T10:39:59.913Z"
+    },
+    "sudamericana-2026-08-20-club-olimpia-vs-vasco@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "92489ddf231fba5bf69ea560570ff412ed21d21ffac6584c1ed36d695c3d9851",
+      "contentHash": "339c76e7d02fbb6abfc7e1f50d3904de2af3e75143dc70df47741724cfad1213",
+      "lastModified": "2026-08-01T10:39:59.913Z"
     }
   }
 }
