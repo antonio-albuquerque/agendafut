@@ -22237,7 +22237,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-07-29T13:57:41.238Z",
+      "fetchedAt": "2026-08-02T10:40:42.466Z",
       "matches": [
         {
           "id": "401858546",
@@ -25280,9 +25280,12 @@
           "kickoff": "2026-08-01T17:30:00.000-03:00",
           "date": "2026-08-01",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401873958",
@@ -25301,9 +25304,12 @@
           "kickoff": "2026-08-01T19:30:00.000-03:00",
           "date": "2026-08-01",
           "venue": "Arena MRV",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401873954",
@@ -25322,9 +25328,12 @@
           "kickoff": "2026-08-01T21:00:00.000-03:00",
           "date": "2026-08-01",
           "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401873913",

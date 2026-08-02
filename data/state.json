@@ -5254,10 +5254,11 @@
     "brasileirao-serie-b-2026-08-07-operario-pr-vs-sao-bernardo@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "444bf91cf66343f1467cb729ed9360f1fb9c362f194bbf048917d78ac47bdd92",
-      "contentHash": "b49a43055036163026dca71b1bb3a8e12337a1d46e4722d0920eec4052442e4b",
-      "lastModified": "2026-07-27T14:54:03.639Z",
+      "contentHash": "5bdd6d7fe0c5cdb6c362e4c30c40cb0e61882ea992a18a3733836e78095ce1d6",
+      "lastModified": "2026-08-02T10:40:45.533Z",
       "broadcasters": [
-        "DISNEY+"
+        "DISNEY+",
+        "ESPN"
       ]
     },
     "brasileirao-serie-b-2026-08-08-botafogo-sp-vs-america-mg@futebol.agendafut": {
@@ -8388,22 +8389,22 @@
       "lastModified": "2026-07-26T22:08:34.949Z"
     },
     "copa-do-brasil-2026-08-01-atletico-mg-vs-juventude@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "243255073bfdd5fb156bea02bb791e525a4b549a48f153c1b6d27a5a2ad99bd7",
-      "contentHash": "4ef04871f1dd93419313d9ba8ea38deed3ffe62eea298fc8b2d5cd9cf7e6ad1c",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "sequence": 1,
+      "seqHash": "0bd645136939a232f17d3187240eb027cecb5542910b2c08141c8ff9ea41a939",
+      "contentHash": "e5c2581d5aa0f8bf5632884f14bcc6625f79bae6914bdf3606104b991f406192",
+      "lastModified": "2026-08-02T10:40:45.533Z"
     },
     "copa-do-brasil-2026-08-01-santos-vs-remo@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "3ead0a4060af2e32178e9d327fd1926a78cdc16d489201d76b3349c006e5f70a",
-      "contentHash": "b68ac75e397810e154d7a2d93a83c69115ba39088b245448133b057b8ad75ee2",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "sequence": 1,
+      "seqHash": "d2a9bc37de003aca3a6dddce5f2d2658f35184865ecb4a76e2f900a4495e01d1",
+      "contentHash": "7a99e19b372e785c98ca16cb3c547733626f2db0883f4be09edd5f00641650e8",
+      "lastModified": "2026-08-02T10:40:45.533Z"
     },
     "copa-do-brasil-2026-08-01-vasco-vs-fluminense@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "1b0138e72fe008a8506a5e06f6119ae107390d3fa8ca4f70dd44c8ee21b4b9a1",
-      "contentHash": "573c67b97dc7b83f3e3081527183497e8afcea3866020d8ffaaa601eb490d6d5",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "sequence": 1,
+      "seqHash": "4db830a6a4e4be3f4f7a1db6bfef9392586cea332481df17ba28da7003986831",
+      "contentHash": "817de1fc74397078291118a8df1517d70d3a658dff309f3635fea79cfec5bd37",
+      "lastModified": "2026-08-02T10:40:45.533Z"
     },
     "copa-do-brasil-2026-08-02-chapecoense-vs-cruzeiro@futebol.agendafut": {
       "sequence": 0,
