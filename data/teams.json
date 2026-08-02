@@ -53,5 +53,9 @@
   { "slug": "sao-bernardo", "name": "São Bernardo", "aliases": ["São Bernardo FC", "Sao Bernardo"] },
   { "slug": "floresta", "name": "Floresta", "aliases": ["Floresta EC"] },
   { "slug": "maringa", "name": "Maringá", "aliases": ["Maringá FC", "Maringa"] },
-  { "slug": "inter-de-limeira", "name": "Inter de Limeira", "aliases": ["Internacional de Limeira"] }
+  { "slug": "inter-de-limeira", "name": "Inter de Limeira", "aliases": ["Internacional de Limeira"] },
+  { "slug": "estudiantes-de-la-plata", "name": "Estudiantes de La Plata", "aliases": ["Estudiantes", "Estudiantes LP", "EDLP"] },
+  { "slug": "independiente-rivadavia", "name": "Independiente Rivadavia", "aliases": ["Independ. Rivadavia", "Ind. Rivadavia"] },
+  { "slug": "liga-de-quito", "name": "Liga de Quito", "aliases": ["LDU de Quito", "LDU Quito", "LDU"] },
+  { "slug": "universidad-catolica", "name": "Universidad Católica", "aliases": ["U. Catolica", "U. Católica"] }
 ]
