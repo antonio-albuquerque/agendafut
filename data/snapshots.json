@@ -22237,7 +22237,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-08-02T10:40:42.466Z",
+      "fetchedAt": "2026-08-02T19:07:25.664Z",
       "matches": [
         {
           "id": "401858546",
@@ -25352,7 +25352,7 @@
           "kickoff": "2026-08-02T16:00:00.000-03:00",
           "date": "2026-08-02",
           "venue": "Allianz Parque",
-          "status": "scheduled",
+          "status": "confirmed",
           "broadcasters": [],
           "score": null
         },

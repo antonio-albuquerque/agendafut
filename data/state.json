@@ -8409,68 +8409,111 @@
     "copa-do-brasil-2026-08-02-chapecoense-vs-cruzeiro@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "f20b80066be692a41c86f7a291823141e3498d2242646e7a9c7bee8e0622a824",
-      "contentHash": "663ca7fdf8f9f96ea5f88ab0aac3c6b79e65ba5c15da1aaf9b4c33c681c6daf2",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "72a7099ea8e8377127800be7e108a0f57310486a8b7527df5617407399beed19",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "PREMIERE FC",
+        "SPORTV"
+      ]
     },
     "copa-do-brasil-2026-08-02-internacional-vs-corinthians@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "ea9a657b96c2cecf8d34878e945f34cef5756f12bb158c5a43ef77ed63614f31",
-      "contentHash": "31227c244973189fdfa6251c0836f04c32fbd3a67ce697d16c75498e12720075",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "c193470bf691759c618c1de002f5887f76c71a378de995a3e9db4c01af163288",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "PRIME VIDEO"
+      ]
     },
     "copa-do-brasil-2026-08-02-mirassol-vs-gremio@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "4f4b04ed73a7b1f5e279192b77abe9ccd498dbdf873a15931a13f15970032e32",
-      "contentHash": "d90bc4273501b7e9752e1f302014c950690ace72906c37dedae4d1dbf976cde1",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "da3b91fa3c584d9535fa911ea1b154a5baffc4eba80553b9a3a4bb55cefb0d2d",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "PRIME VIDEO"
+      ]
     },
     "copa-do-brasil-2026-08-02-palmeiras-vs-fortaleza@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "e25192e8904593dc5f7b6a82ef5a9965e6da6f388b187d1132c500aef02a60dd",
-      "contentHash": "f019368bfe69be1fb5588f9628d2e104dd5f1b9922ca4ba750206c59c39dffbf",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "sequence": 1,
+      "seqHash": "f7d7886200b2e0d5e1e3bd0dd57a19443db0284dc09fa24da578124adda0d1b7",
+      "contentHash": "6b90432c04e68f4efd3eb28f8e2cbb76663212897aa2e9d06ff429b8baa6b58a",
+      "lastModified": "2026-08-02T19:07:28.489Z"
     },
     "copa-do-brasil-2026-08-03-athletico-pr-vs-vitoria@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "ab6d3c2fea6d7357bb5812cb6e66884177ff33541ce3bcd6ddfad95ce695d7a0",
-      "contentHash": "6c3c8ecb43767d6b7a9fd0781e5f91bcab969ccd35157dca523441ae0e2cf6cd",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "2a5e844719ec612871b46c9930b1485ad927f201ecc06a6c5cc14f4b582cb28c",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "GE TV",
+        "PREMIERE",
+        "SPORTV"
+      ]
     },
     "copa-do-brasil-2026-08-04-juventude-vs-atletico-mg@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "09e2e2d4f7f95572fc417b54cc973bf537ea133dd974ed00da59b1b2daf463af",
-      "contentHash": "f406ef8f79e6f8d421dad492f92ef584f60b122bc48c6ffef34a73a3d2a976cb",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "49693b37c9f56b383e6e7f2d253d9ebbe0a6b58f8e83483e943d26edc4301d72",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "PRIME VIDEO"
+      ]
     },
     "copa-do-brasil-2026-08-04-remo-vs-santos@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "8c58191329c043f4c20ec04ed6051778a984301bd219fd46fa49d50391229ff2",
-      "contentHash": "2c6ca004e19b5b5a675cb07516a269eef83bc51106d30348741d67dcc10c2d31",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "dd7a1c37473f5ad7d06712c323c6f1ef4b64a2fde6691e61ffe090c1be3390f5",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "PREMIERE FC",
+        "SPORTV"
+      ]
     },
     "copa-do-brasil-2026-08-05-cruzeiro-vs-chapecoense@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "9266a60cc31e8a9f818ceecf49ec9b26811a82b385a0a5942d98d13d996890a9",
-      "contentHash": "5e6ae77aeca28f85c4764e1cc53cb04564ff118dc2e206a44d32bbbaa23ecefc",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "e0900e8a2cbd678f6ea4879edf2b6c3fcf14ec4b396ac58d893a1eb1e162bfa2",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "PREMIERE",
+        "SPORTV"
+      ]
     },
     "copa-do-brasil-2026-08-05-fluminense-vs-vasco@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "877f867b359d8213951b2ef8c94ffd87d627c95ae904e28ea71bbf7ae2753c7c",
-      "contentHash": "1f5db9470471643cf5d5de067c18d760210086f9ab42963a8d1234d6c6f1421c",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "ba5d913de7b213befb6360d98294a0a3b50d2d942fb2477da272e9ded84577f3",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "GE TV",
+        "GLOBO",
+        "PREMIERE",
+        "PRIME VIDEO",
+        "SPORTV"
+      ]
     },
     "copa-do-brasil-2026-08-05-fortaleza-vs-palmeiras@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "98bc867820488a45422c81c5138a7f24b753e6311887c523e14269eb0a8bb8f7",
-      "contentHash": "80f01cf029201a167016b04c2bada86e86e0478c8a32016eb68c0265ed0ffbd6",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "88ac15a3b9bd4a3b529fb6950d3ccb444e0d8568d79864037f3701e061e0168e",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "GLOBO",
+        "PREMIERE 2",
+        "PRIME VIDEO",
+        "SPORTV",
+        "SPORTV 2"
+      ]
     },
     "copa-do-brasil-2026-08-05-gremio-vs-mirassol@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "c32b442394561105b25225f77ab6c7195ce007a2ed8693b796f79e5601e9fcae",
-      "contentHash": "67c59e3d14bb124ec4cc9e30c5698d7019c14e93e72d6787057f7c720bc8e4ee",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "0f8271de46267f1c50ff23b7fdf9dc1debaa7fe988d81db2b15abdc97c062b13",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "PRIME VIDEO"
+      ]
     },
     "copa-do-brasil-2026-08-06-corinthians-vs-internacional@futebol.agendafut": {
       "sequence": 0,
@@ -9987,62 +10030,99 @@
     "libertadores-2026-08-11-deportes-tolima-vs-independiente-del-valle@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "bbbdd19e5d60d8eb4a4420fe33d6c1a22bcfdbc0fb4aaa5c0c664449c42ae981",
-      "contentHash": "f95e694b8c0044a14972491fc5fee6d10fbf11aaeb8b7f720dacc69adb69125a",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "2bcbea67ca5952c6dfc7d08fdcae78f8db824ba3b57f7f6597a885e719d5769d",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "PARAMOUNT+"
+      ]
     },
     "libertadores-2026-08-11-estudiantes-de-la-plata-vs-universidad-catolica@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "8d56c27fc24a7d2efd57bc43e8e2b53c7ed9ffa0925504d3de07de3b361acdcf",
-      "contentHash": "f5d9da1206c20c450956a31afd30ace93b30b37f615e2742a95dd6e3f0214bf1",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "8f87e15fbd6db34479b55bce6ea7b65e68622ee68ea3c4a924a759bedc31027e",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "libertadores-2026-08-11-fluminense-vs-independiente-rivadavia@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "0379df6f2b6ca3f344116f15c332814e29fd16c67944af8a0d0f2b2b8c1045b7",
-      "contentHash": "a8b0b6cf47194c806695ee9981dbca1f8fbbd828c264abba696bd671d91f3c8e",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "06db77281321c5641a2ba339771ba3c7afc9e9e96ce0b9b7813f19cbe20662f0",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "libertadores-2026-08-12-cruzeiro-vs-flamengo@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "2c4b93bcad64221353a2399ab900dcbb586689d7f0dc5b1a6a30a1137430e841",
-      "contentHash": "e1d7edcf2d07c1a9e220a66e9d78f289bc4a71b5d6eeb60c11e3642e722a8751",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "0bc3d63bcea41b8e06c6caa36ccbf36d01e3ce7268b7c264039dac37cccb89b7",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "GE TV",
+        "GLOBO",
+        "PARAMOUNT+"
+      ]
     },
     "libertadores-2026-08-12-palmeiras-vs-cerro-porteno@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "3e0d3e61b675e6554dfc6552f09221b242c3be7b3a07e46a5aa8b1f7a8aa6a26",
-      "contentHash": "6c8ff1691600f05e99c0e6e74e29944fdc0f96a3347f99563d895b7202f51961",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "8250e88d78e4e55a54ff33139bec8b928a3411ad1c4a48eae327f15f966bf558",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "PARAMOUNT+"
+      ]
     },
     "libertadores-2026-08-12-platense-vs-coquimbo-unido@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "fee7e90182155b47f4baa28e8996e714b5bde7afa392ff70e06b407850223c36",
-      "contentHash": "9b0b0db5cb1a8e75bff00797374320a3ed01fc4584ded1f07b00daccc832db84",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "723e3370688ea251bcd0fea9d00259c2a1b44bf2e7a5cdf85042995c64a55b80",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "PARAMOUNT+"
+      ]
     },
     "libertadores-2026-08-13-mirassol-vs-liga-de-quito@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "da812e05006dadd6193a0ce6e50a2da2e2aa365dbb94db5341e9588023a81649",
-      "contentHash": "234b2bfccfb24fa5f90aa82ad549e9903d9edf8eea397c94b7fa09f61d9e32b0",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "82cbaf65eaa0e063ce6c1552895e25a4b7e06485cd2ed2cac68587538d86bcf3",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "libertadores-2026-08-13-rosario-central-vs-corinthians@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "f18edb44632a78ad06e7754d675f6959a121030d4ce5545635f02d606dfc025f",
-      "contentHash": "3ee992e554ea057f88756cf2cb9b3d461eda15670a1621007d2e6828830dcca8",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "4834a1ddb4be80e9c20dab4442724e81387a6491b1fa9355f14aab612e7db130",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "libertadores-2026-08-18-independiente-del-valle-vs-deportes-tolima@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "af48a13f8ae381c8c6f32fb133d32d246d80be862b0320c48323073c33a14c41",
-      "contentHash": "3db7f43fa0eae239407fee2bba485787c1d94e6af2390ab56f8dc22bf695692f",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "0bb83546cf4985268d703c4014de6e6b6e8f52d4ea4460c39bf745d83ea3a7e3",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "PARAMOUNT+"
+      ]
     },
     "libertadores-2026-08-18-independiente-rivadavia-vs-fluminense@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "1ed6819fcefcb3dcfbca8130baf18b81b0d2b126726f2fef637c9072c61f5910",
-      "contentHash": "fac51840e6a1d7bcafaedf7f2545724fb3a44e5c85337f0b6b721eb0dd3e69e5",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "df3e29b9edf4a243e9a8c3d23b3724d4e5418b16d63666815c99e954c7e56909",
+      "lastModified": "2026-08-02T19:07:28.489Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "libertadores-2026-08-18-universidad-catolica-vs-estudiantes-de-la-plata@futebol.agendafut": {
       "sequence": 0,
