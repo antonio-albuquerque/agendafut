@@ -22237,7 +22237,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-08-02T19:07:25.664Z",
+      "fetchedAt": "2026-08-03T12:22:10.026Z",
       "matches": [
         {
           "id": "401858546",
@@ -25352,9 +25352,12 @@
           "kickoff": "2026-08-02T16:00:00.000-03:00",
           "date": "2026-08-02",
           "venue": "Allianz Parque",
-          "status": "confirmed",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 0
+          }
         },
         {
           "id": "401873939",
@@ -25373,9 +25376,12 @@
           "kickoff": "2026-08-02T18:00:00.000-03:00",
           "date": "2026-08-02",
           "venue": "Estadio Municipal José Maria de Campos Maia",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401873955",
@@ -25394,9 +25400,12 @@
           "kickoff": "2026-08-02T18:30:00.000-03:00",
           "date": "2026-08-02",
           "venue": "Arena Condá",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401873957",
@@ -25415,9 +25424,12 @@
           "kickoff": "2026-08-02T19:30:00.000-03:00",
           "date": "2026-08-02",
           "venue": "Estadio Beira-Rio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401873938",
