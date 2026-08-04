@@ -22237,7 +22237,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-08-03T12:22:10.026Z",
+      "fetchedAt": "2026-08-04T11:22:45.467Z",
       "matches": [
         {
           "id": "401858546",
@@ -25448,9 +25448,12 @@
           "kickoff": "2026-08-03T21:00:00.000-03:00",
           "date": "2026-08-03",
           "venue": "Arena da Baixada",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401874097",
