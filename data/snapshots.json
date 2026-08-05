@@ -22237,7 +22237,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-08-04T11:22:45.467Z",
+      "fetchedAt": "2026-08-05T11:20:20.967Z",
       "matches": [
         {
           "id": "401858546",
@@ -25472,9 +25472,12 @@
           "kickoff": "2026-08-04T19:30:00.000-03:00",
           "date": "2026-08-04",
           "venue": "Alfredo Jaconi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401874098",
@@ -25493,9 +25496,12 @@
           "kickoff": "2026-08-04T21:30:00.000-03:00",
           "date": "2026-08-04",
           "venue": "Mangueirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401874039",
