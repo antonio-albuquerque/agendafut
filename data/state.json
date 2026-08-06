@@ -2972,11 +2972,11 @@
     "brasileirao-serie-a-2026-08-08-coritiba-vs-chapecoense@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "7632fccdab08120ed32e22bfc8daae800209685662ce8040582efce7898d39da",
-      "contentHash": "32ef5b54be59edc2b6f229c7c4c5c96343fcb28c7f8b72fa2b51ada6019b49e9",
-      "lastModified": "2026-07-30T11:07:48.284Z",
+      "contentHash": "9b7326d95efaaa66c74bac2bc3c5c32c9fd196b61e2012f0a2e5e362d0a6f723",
+      "lastModified": "2026-08-06T11:22:39.124Z",
       "broadcasters": [
         "CAZÉTV",
-        "PREMIERE",
+        "PREMIERE 3",
         "RECORD"
       ]
     },
@@ -5275,10 +5275,11 @@
     "brasileirao-serie-b-2026-08-08-vila-nova-vs-sport@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "3e8e32d46b1ffb10753f65bae5d6f66168057f28f75cb6010d5fbb2b27a228c5",
-      "contentHash": "1ec0733379f64c45c7b9249019b550814af3d196fac88655db186e8119bb2131",
-      "lastModified": "2026-07-30T11:07:48.284Z",
+      "contentHash": "d3fcc30404ccc3bcf32e479c0ffc86c6e28bf1f696e3e19f6b3cc688414b3ffb",
+      "lastModified": "2026-08-06T11:22:39.124Z",
       "broadcasters": [
         "DISNEY+",
+        "ESPN",
         "SPORTYNET",
         "XSPORTS"
       ]
@@ -8475,20 +8476,20 @@
       ]
     },
     "copa-do-brasil-2026-08-05-cruzeiro-vs-chapecoense@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "9266a60cc31e8a9f818ceecf49ec9b26811a82b385a0a5942d98d13d996890a9",
-      "contentHash": "e0900e8a2cbd678f6ea4879edf2b6c3fcf14ec4b396ac58d893a1eb1e162bfa2",
-      "lastModified": "2026-08-02T19:07:28.489Z",
+      "sequence": 1,
+      "seqHash": "fb73495e2deddf5fa6fb85763a2d969f80d2e0c85173687d6462ebc3e5a0bb8b",
+      "contentHash": "bc790621b6cbf8ef99a87981c9b23d876b0857f222854128f4a255cebb3d1b71",
+      "lastModified": "2026-08-06T11:22:39.124Z",
       "broadcasters": [
         "PREMIERE",
         "SPORTV"
       ]
     },
     "copa-do-brasil-2026-08-05-fluminense-vs-vasco@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "877f867b359d8213951b2ef8c94ffd87d627c95ae904e28ea71bbf7ae2753c7c",
-      "contentHash": "ba5d913de7b213befb6360d98294a0a3b50d2d942fb2477da272e9ded84577f3",
-      "lastModified": "2026-08-02T19:07:28.489Z",
+      "sequence": 1,
+      "seqHash": "dc147f0f3424373061239bb233c8a1c92529a0649897d792fc3c91339a5c2964",
+      "contentHash": "184bb04345c3669de0029e0b61d5b275320ff7c170cba22029ab9c42a2b667ec",
+      "lastModified": "2026-08-06T11:22:39.124Z",
       "broadcasters": [
         "GE TV",
         "GLOBO",
@@ -8498,10 +8499,10 @@
       ]
     },
     "copa-do-brasil-2026-08-05-fortaleza-vs-palmeiras@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "98bc867820488a45422c81c5138a7f24b753e6311887c523e14269eb0a8bb8f7",
-      "contentHash": "88ac15a3b9bd4a3b529fb6950d3ccb444e0d8568d79864037f3701e061e0168e",
-      "lastModified": "2026-08-02T19:07:28.489Z",
+      "sequence": 1,
+      "seqHash": "64be5a99864b872c8e844c5c0afc483c7115038e20e29ac5f6efa81fd8563d82",
+      "contentHash": "ca38a1511c7f13bb99e945406ea9d5f05133c036007262a8b9cbd804e17f6615",
+      "lastModified": "2026-08-06T11:22:39.124Z",
       "broadcasters": [
         "GLOBO",
         "PREMIERE 2",
@@ -8511,10 +8512,10 @@
       ]
     },
     "copa-do-brasil-2026-08-05-gremio-vs-mirassol@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "c32b442394561105b25225f77ab6c7195ce007a2ed8693b796f79e5601e9fcae",
-      "contentHash": "0f8271de46267f1c50ff23b7fdf9dc1debaa7fe988d81db2b15abdc97c062b13",
-      "lastModified": "2026-08-02T19:07:28.489Z",
+      "sequence": 1,
+      "seqHash": "3b219fecd35f5b79ca4036a90d9d4bb4423ce269c5292229c1adeca16b9c7a2d",
+      "contentHash": "4a2c8e4a2a0b2116d27c069af5cce6ebd854e2f1aa683a293ebc3f2be50f9c56",
+      "lastModified": "2026-08-06T11:22:39.124Z",
       "broadcasters": [
         "PRIME VIDEO"
       ]

@@ -22237,7 +22237,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-08-05T11:20:20.967Z",
+      "fetchedAt": "2026-08-06T11:22:34.183Z",
       "matches": [
         {
           "id": "401858546",
@@ -25520,9 +25520,12 @@
           "kickoff": "2026-08-05T19:00:00.000-03:00",
           "date": "2026-08-05",
           "venue": "Estadio Mineirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401874038",
@@ -25541,9 +25544,12 @@
           "kickoff": "2026-08-05T19:30:00.000-03:00",
           "date": "2026-08-05",
           "venue": "Arena do Grêmio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401874095",
@@ -25562,9 +25568,12 @@
           "kickoff": "2026-08-05T21:30:00.000-03:00",
           "date": "2026-08-05",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 3
+          }
         },
         {
           "id": "401874099",
@@ -25583,9 +25592,12 @@
           "kickoff": "2026-08-05T21:30:00.000-03:00",
           "date": "2026-08-05",
           "venue": "Arena Pantanal",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 2
+          }
         },
         {
           "id": "401874094",
