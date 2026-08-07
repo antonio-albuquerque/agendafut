@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-07-31T11:28:55.530Z",
+      "fetchedAt": "2026-08-07T10:00:35.081Z",
       "matches": [
         {
           "id": "401840808",
@@ -5282,27 +5282,6 @@
           "score": null
         },
         {
-          "id": "401841195",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Atlético-MG",
-            "slug": "atletico-mg"
-          },
-          "away": {
-            "name": "Grêmio",
-            "slug": "gremio"
-          },
-          "kickoff": "2026-08-15T16:30:00.000-03:00",
-          "date": "2026-08-15",
-          "venue": "Arena MRV",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401841192",
           "competition": "brasileirao-serie-a",
           "competitionName": "Brasileirão Série A",
@@ -5382,6 +5361,27 @@
           "kickoff": "2026-08-16T11:00:00.000-03:00",
           "date": "2026-08-16",
           "venue": "Arena Condá",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841195",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Atlético-MG",
+            "slug": "atletico-mg"
+          },
+          "away": {
+            "name": "Grêmio",
+            "slug": "gremio"
+          },
+          "kickoff": "2026-08-16T16:00:00.000-03:00",
+          "date": "2026-08-16",
+          "venue": "Arena MRV",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -22237,7 +22237,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-08-06T11:22:34.183Z",
+      "fetchedAt": "2026-08-07T10:00:35.081Z",
       "matches": [
         {
           "id": "401858546",
@@ -25616,9 +25616,12 @@
           "kickoff": "2026-08-06T20:00:00.000-03:00",
           "date": "2026-08-06",
           "venue": "Neo Química Arena",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401874096",
@@ -25637,9 +25640,12 @@
           "kickoff": "2026-08-06T20:00:00.000-03:00",
           "date": "2026-08-06",
           "venue": "Estadio Manoel Barradas",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 4,
+            "away": 0
+          }
         }
       ]
     },
@@ -28630,7 +28636,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-07-29T13:57:41.238Z",
+      "fetchedAt": "2026-08-07T10:00:35.081Z",
       "matches": [
         {
           "id": "401842610",
@@ -30857,12 +30863,9 @@
           "kickoff": "2026-05-07T21:30:00.000-03:00",
           "date": "2026-05-07",
           "venue": "Atanasio Girardot",
-          "status": "finished",
+          "status": "scheduled",
           "broadcasters": [],
-          "score": {
-            "home": 0,
-            "away": 3
-          }
+          "score": null
         },
         {
           "id": "401865526",
