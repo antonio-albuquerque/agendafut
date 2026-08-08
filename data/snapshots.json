@@ -8644,7 +8644,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-07-31T11:28:55.530Z",
+      "fetchedAt": "2026-08-08T09:36:20.429Z",
       "matches": [
         {
           "id": "401860064",
@@ -13463,9 +13463,12 @@
           "kickoff": "2026-08-07T19:30:00.000-03:00",
           "date": "2026-08-07",
           "venue": "Germano Krüger",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 3
+          }
         },
         {
           "id": "401860269",
@@ -13484,9 +13487,12 @@
           "kickoff": "2026-08-07T20:30:00.000-03:00",
           "date": "2026-08-07",
           "venue": "Arena Castelão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401860263",

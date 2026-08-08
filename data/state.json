@@ -5245,19 +5245,19 @@
       ]
     },
     "brasileirao-serie-b-2026-08-07-ceara-vs-ponte-preta@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "0db8a7a0462545e3590fa035819a93ec9453889de939f2b3c3b7c79bbfb3ee0f",
-      "contentHash": "dc859a63ba8a4d38bfa0479e8768ef58b3e9ff90dcfafa0388fade6661643f9b",
-      "lastModified": "2026-07-31T11:28:58Z",
+      "sequence": 2,
+      "seqHash": "86039f6ba5c16a3e4236c09b9df28ee2c0460fb9b5c16b569eca9f1a2a28742f",
+      "contentHash": "522f2af7cdc8408e290d4067d01f098c5a47e46b2663aedbcb47980111144477",
+      "lastModified": "2026-08-08T09:36:22.172Z",
       "broadcasters": [
         "DISNEY+"
       ]
     },
     "brasileirao-serie-b-2026-08-07-operario-pr-vs-sao-bernardo@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "444bf91cf66343f1467cb729ed9360f1fb9c362f194bbf048917d78ac47bdd92",
-      "contentHash": "5bdd6d7fe0c5cdb6c362e4c30c40cb0e61882ea992a18a3733836e78095ce1d6",
-      "lastModified": "2026-08-02T10:40:45.533Z",
+      "sequence": 1,
+      "seqHash": "f667f55d603b7d254bd5513b6e3a2ef23fd373e2dfa2e315d76e867c9f21db24",
+      "contentHash": "7282c9736d07ea4e0d3e83a4de8f8286ee044fb62941871dcc30625822fa962a",
+      "lastModified": "2026-08-08T09:36:22.172Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN"
@@ -5328,10 +5328,11 @@
     "brasileirao-serie-b-2026-08-10-goias-vs-londrina@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "554b1fa1154aea4aa15ede5c754a6ed61834400c668e5d70852381c29da6a3e3",
-      "contentHash": "d5f59e86aa5ff8706fd88728fcd78836c38b678b37d870e3243de240e56b4977",
-      "lastModified": "2026-07-29T13:57:42.607Z",
+      "contentHash": "dca89c72cd2edf396a2c81ec3fa9ee9e782d90159881b4b6ed17941bcc097192",
+      "lastModified": "2026-08-08T09:36:22.172Z",
       "broadcasters": [
-        "DISNEY+"
+        "DISNEY+",
+        "ESPN"
       ]
     },
     "brasileirao-serie-b-2026-08-11-avai-vs-crb@futebol.agendafut": {
@@ -5348,14 +5349,23 @@
     "brasileirao-serie-b-2026-08-14-ponte-preta-vs-nautico@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "b80f7733b99674ab370ba2adacfb56f0d85e0d872af6206deaa5210539855512",
-      "contentHash": "4ee2bc7efd8f3ffdc0e842b8c31603b1d69552b81defb68742a42c7cbb34402b",
-      "lastModified": "2026-07-26T22:08:34.949Z"
+      "contentHash": "317358d0345e05ced0c2fe57038a2b541a1cbf52f49a10712fb2f77663d55ee1",
+      "lastModified": "2026-08-08T09:36:22.172Z",
+      "broadcasters": [
+        "DISNEY+",
+        "SPORTYNET",
+        "XSPORTS"
+      ]
     },
     "brasileirao-serie-b-2026-08-14-sao-bernardo-vs-botafogo-sp@futebol.agendafut": {
       "sequence": 1,
       "seqHash": "256ce97785cb791baaef5f6a158ca70e6449be62d8f55bb199fca42f26b7175f",
-      "contentHash": "43914c2c6f8d9f48aecdc2d3e1774eb1af6a750fe309ea5b84872fd8c096fbe9",
-      "lastModified": "2026-07-31T11:28:58Z"
+      "contentHash": "28126c53336628bd413b8cf62f47106307b4b2cbe9a51875c6a6ceed904908e9",
+      "lastModified": "2026-08-08T09:36:22.172Z",
+      "broadcasters": [
+        "PREMIERE",
+        "SPORTV"
+      ]
     },
     "brasileirao-serie-b-2026-08-14-sport-vs-londrina@futebol.agendafut": {
       "sequence": 0,
@@ -11846,8 +11856,12 @@
     "sudamericana-2026-08-18-sao-paulo-vs-bolivar@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "beef515211056fce1888437fd260bc29150cc6cf2f6cd93a15dc78691ff90b2b",
-      "contentHash": "e032bbde6e26682899d13a1fbefe92cc41d0b05273e78505ce033fa26bb69150",
-      "lastModified": "2026-08-01T10:39:59.913Z"
+      "contentHash": "489898a5efc4012a1d63764a0cfbeebda0e7d92a59382b37b102d5c137697d35",
+      "lastModified": "2026-08-08T09:36:22.172Z",
+      "broadcasters": [
+        "DISNEY+",
+        "SBT"
+      ]
     },
     "sudamericana-2026-08-19-atletico-mg-vs-bragantino@futebol.agendafut": {
       "sequence": 0,
