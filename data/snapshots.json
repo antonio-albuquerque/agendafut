@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-08-07T10:00:35.081Z",
+      "fetchedAt": "2026-08-09T09:38:05.631Z",
       "matches": [
         {
           "id": "401840808",
@@ -5088,9 +5088,12 @@
           "kickoff": "2026-08-08T16:00:00.000-03:00",
           "date": "2026-08-08",
           "venue": "Arena do Grêmio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401841178",
@@ -5109,9 +5112,12 @@
           "kickoff": "2026-08-08T18:30:00.000-03:00",
           "date": "2026-08-08",
           "venue": "Mangueirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 2
+          }
         },
         {
           "id": "401841184",
@@ -5130,9 +5136,12 @@
           "kickoff": "2026-08-08T20:30:00.000-03:00",
           "date": "2026-08-08",
           "venue": "Couto Pereira",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401841185",
@@ -5151,9 +5160,12 @@
           "kickoff": "2026-08-08T21:00:00.000-03:00",
           "date": "2026-08-08",
           "venue": "Joao Havelange Stadium",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841183",
@@ -8644,7 +8656,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-08-08T09:36:20.429Z",
+      "fetchedAt": "2026-08-09T09:38:05.631Z",
       "matches": [
         {
           "id": "401860064",
@@ -13511,9 +13523,12 @@
           "kickoff": "2026-08-08T16:00:00.000-03:00",
           "date": "2026-08-08",
           "venue": "Estádio Onésio Brasileiro Alvarenga",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860270",
@@ -13532,9 +13547,12 @@
           "kickoff": "2026-08-08T18:30:00.000-03:00",
           "date": "2026-08-08",
           "venue": "Estádio Santa Cruz",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860262",
