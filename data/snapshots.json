@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-08-09T09:38:05.631Z",
+      "fetchedAt": "2026-08-10T10:15:53.407Z",
       "matches": [
         {
           "id": "401840808",
@@ -5184,9 +5184,12 @@
           "kickoff": "2026-08-09T11:00:00.000-03:00",
           "date": "2026-08-09",
           "venue": "Estadio Mineirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 1
+          }
         },
         {
           "id": "401841186",
@@ -5205,9 +5208,12 @@
           "kickoff": "2026-08-09T16:00:00.000-03:00",
           "date": "2026-08-09",
           "venue": "Arena Fonte Nova",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401841180",
@@ -5226,9 +5232,12 @@
           "kickoff": "2026-08-09T16:00:00.000-03:00",
           "date": "2026-08-09",
           "venue": "Allianz Parque",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401841179",
@@ -5247,9 +5256,12 @@
           "kickoff": "2026-08-09T18:30:00.000-03:00",
           "date": "2026-08-09",
           "venue": "Estádio Municipal Cicero de Souza Marques",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401841182",
@@ -5268,9 +5280,12 @@
           "kickoff": "2026-08-09T18:30:00.000-03:00",
           "date": "2026-08-09",
           "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401841187",
@@ -5289,9 +5304,12 @@
           "kickoff": "2026-08-09T19:30:00.000-03:00",
           "date": "2026-08-09",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401841192",
@@ -8656,7 +8674,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-08-09T09:38:05.631Z",
+      "fetchedAt": "2026-08-10T10:15:53.407Z",
       "matches": [
         {
           "id": "401860064",
@@ -13571,9 +13589,12 @@
           "kickoff": "2026-08-09T11:00:00.000-03:00",
           "date": "2026-08-09",
           "venue": "Estádio Joaquim Portugal",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401860265",
@@ -13592,9 +13613,12 @@
           "kickoff": "2026-08-09T16:00:00.000-03:00",
           "date": "2026-08-09",
           "venue": "Estádio dos Aflitos",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401860271",
@@ -13613,9 +13637,12 @@
           "kickoff": "2026-08-09T16:00:00.000-03:00",
           "date": "2026-08-09",
           "venue": "Estádio Dr. Jorge Ismael de Biasi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860268",
@@ -13634,9 +13661,12 @@
           "kickoff": "2026-08-09T18:00:00.000-03:00",
           "date": "2026-08-09",
           "venue": "Arena Pantanal",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401860267",
