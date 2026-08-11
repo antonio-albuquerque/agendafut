@@ -5361,10 +5361,10 @@
       ]
     },
     "brasileirao-serie-b-2026-08-10-goias-vs-londrina@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "554b1fa1154aea4aa15ede5c754a6ed61834400c668e5d70852381c29da6a3e3",
-      "contentHash": "dca89c72cd2edf396a2c81ec3fa9ee9e782d90159881b4b6ed17941bcc097192",
-      "lastModified": "2026-08-08T09:36:22.172Z",
+      "sequence": 1,
+      "seqHash": "2e85f8567ebcd3c3f494fe705c1f7a3c06f06ea197e86047c0f211d1c87a983a",
+      "contentHash": "415f801e06676a789b35c47e7089709cc8f5ba87e43c86daf48ca0d852933a4e",
+      "lastModified": "2026-08-11T10:00:06.876Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN"
@@ -5454,8 +5454,11 @@
     "brasileirao-serie-b-2026-08-16-america-mg-vs-athletic@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "cb0b8f3fdcab22fd42510c5d77a964286bed9051622cbb3ede56a5ff83209500",
-      "contentHash": "2aca7196f98cdf4d50660e90f2c623fe560d768fde46f009ee87faf946470c05",
-      "lastModified": "2026-07-27T14:54:03.639Z"
+      "contentHash": "e94ba924c7003debd14a768a16d089d49a3c77c5d06dd68b070550ff9487eb8f",
+      "lastModified": "2026-08-11T10:00:06.876Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-08-16-crb-vs-novorizontino@futebol.agendafut": {
       "sequence": 0,
@@ -11848,10 +11851,10 @@
       ]
     },
     "sudamericana-2026-08-11-boca-juniors-vs-deportivo-recoleta@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "1c7518b0f4a4a762bcfcb014da3a9aab9afe0609f0fdbf4496bcce2dd993d05f",
-      "contentHash": "29ba0e375c05844b143b437c194b213eccb4e6039a0ea101671eb7cf3e50305d",
-      "lastModified": "2026-08-07T10:00:38.701Z",
+      "sequence": 1,
+      "seqHash": "c455ec912bb51394c6cc767d4d1196b57ae35a0a5cbc2644d52f53cca32f96ec",
+      "contentHash": "253f18f27ec1b0d8c5cbf6b2ebe3e1339fd6c97cfb15fc4aa012747bb6b8c18d",
+      "lastModified": "2026-08-11T10:00:06.876Z",
       "broadcasters": [
         "PARAMOUNT+"
       ]
