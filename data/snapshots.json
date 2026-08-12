@@ -8674,7 +8674,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-08-11T10:00:02.787Z",
+      "fetchedAt": "2026-08-12T10:03:01.946Z",
       "matches": [
         {
           "id": "401860064",
@@ -13709,9 +13709,12 @@
           "kickoff": "2026-08-11T19:30:00.000-03:00",
           "date": "2026-08-11",
           "venue": "Estádio da Ressacada",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860273",
@@ -13798,6 +13801,27 @@
           "score": null
         },
         {
+          "id": "401860278",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ceará",
+            "slug": "ceara"
+          },
+          "away": {
+            "name": "Cuiabá",
+            "slug": "cuiaba"
+          },
+          "kickoff": "2026-08-15T16:00:00.000-03:00",
+          "date": "2026-08-15",
+          "venue": "Arena Castelão",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
           "id": "401860277",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
@@ -13814,27 +13838,6 @@
           "kickoff": "2026-08-15T16:00:00.000-03:00",
           "date": "2026-08-15",
           "venue": "Heriberto Hülse",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860278",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Ceará",
-            "slug": "ceara"
-          },
-          "away": {
-            "name": "Cuiabá",
-            "slug": "cuiaba"
-          },
-          "kickoff": "2026-08-15T18:30:00.000-03:00",
-          "date": "2026-08-15",
-          "venue": "Estádio Presidente Vargas",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -28693,7 +28696,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-08-07T10:00:35.081Z",
+      "fetchedAt": "2026-08-12T10:03:01.946Z",
       "matches": [
         {
           "id": "401842610",
@@ -31733,9 +31736,12 @@
           "kickoff": "2026-08-11T19:00:00.000-03:00",
           "date": "2026-08-11",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401874152",
@@ -31754,7 +31760,7 @@
           "kickoff": "2026-08-11T21:30:00.000-03:00",
           "date": "2026-08-11",
           "venue": "Estadio Manuel Murillo Toro",
-          "status": "scheduled",
+          "status": "postponed",
           "broadcasters": [],
           "score": null
         },
@@ -31775,9 +31781,12 @@
           "kickoff": "2026-08-11T21:30:00.000-03:00",
           "date": "2026-08-11",
           "venue": "Estadio Jorge Luis Hirschi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401874076",
@@ -35262,7 +35271,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-08-11T10:00:02.787Z",
+      "fetchedAt": "2026-08-12T10:03:01.946Z",
       "matches": [
         {
           "id": "401843575",
@@ -38353,9 +38362,12 @@
           "kickoff": "2026-08-11T19:00:00.000-03:00",
           "date": "2026-08-11",
           "venue": "Estadio Tomás Adolfo Ducó",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 1
+          }
         },
         {
           "id": "401903296",
@@ -38374,9 +38386,12 @@
           "kickoff": "2026-08-11T21:30:00.000-03:00",
           "date": "2026-08-11",
           "venue": "Estadio Hernando Siles",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401902743",
@@ -38437,7 +38452,7 @@
           "kickoff": "2026-08-12T21:30:00.000-03:00",
           "date": "2026-08-12",
           "venue": "Estadio Nemesio Camacho El Campín",
-          "status": "scheduled",
+          "status": "postponed",
           "broadcasters": [],
           "score": null
         },
