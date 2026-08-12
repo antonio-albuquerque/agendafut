@@ -68,33 +68,33 @@ describe('reconcile', () => {
     expect(entries[0]!.meta.sequence).toBe(1);
   });
 
-  it('placar (só conteúdo) → mesma sequence, lastModified novo', () => {
+  it('correção de placar (SUMMARY) → sequence + 1, lastModified novo', () => {
     const state = emptyState();
     const scheduled = makeMatch({ status: 'confirmed' });
     reconcile(state, [scheduled], FIXED_NOW);
 
     const finished = makeMatch({ status: 'finished', score: { home: 2, away: 1 } });
-    // status mudou → bump esperado aqui
     const afterFinish = reconcile(state, [finished], LATER);
     expect(afterFinish.entries[0]!.meta.sequence).toBe(1);
 
-    // correção de placar depois: status igual, só o SUMMARY muda
+    // correção de placar depois: status igual, só o SUMMARY muda — o Google
+    // ignora update de evento já sincronizado sem SEQUENCE maior
     const corrected = makeMatch({ status: 'finished', score: { home: 3, away: 1 } });
     const MUCH_LATER = LATER.plus({ hours: 2 });
     const { entries, changed } = reconcile(state, [corrected], MUCH_LATER);
-    expect(entries[0]!.meta.sequence).toBe(1); // sem bump
+    expect(entries[0]!.meta.sequence).toBe(2);
     expect(entries[0]!.meta.lastModified).toBe(MUCH_LATER.toISO({ suppressMilliseconds: true }));
     expect(changed).toHaveLength(1);
   });
 
-  it('transmissão nova (só conteúdo) → mesma sequence, lastModified novo, persiste no estado', () => {
+  it('transmissão nova (DESCRIPTION) → sequence + 1, lastModified novo, persiste no estado', () => {
     const state = emptyState();
     const first = reconcile(state, [makeMatch()], FIXED_NOW);
     const uid = first.entries[0]!.meta.uid;
 
     const withTv = makeMatch({ broadcasters: ['GLOBO', 'PREMIERE'] });
     const { entries, changed } = reconcile(state, [withTv], LATER);
-    expect(entries[0]!.meta.sequence).toBe(0); // sem bump: DESCRIPTION não entra no seqHash
+    expect(entries[0]!.meta.sequence).toBe(1);
     expect(entries[0]!.meta.lastModified).toBe(LATER.toISO({ suppressMilliseconds: true }));
     expect(changed).toHaveLength(1);
     expect(state.events[uid]!.broadcasters).toEqual(['GLOBO', 'PREMIERE']);
