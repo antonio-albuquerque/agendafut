@@ -28696,7 +28696,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-08-12T10:03:01.946Z",
+      "fetchedAt": "2026-08-12T16:35:36.413Z",
       "matches": [
         {
           "id": "401842610",
@@ -31744,27 +31744,6 @@
           }
         },
         {
-          "id": "401874152",
-          "competition": "libertadores",
-          "competitionName": "CONMEBOL Libertadores",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Deportes Tolima",
-            "slug": "deportes-tolima"
-          },
-          "away": {
-            "name": "Independiente del Valle",
-            "slug": "independiente-del-valle"
-          },
-          "kickoff": "2026-08-11T21:30:00.000-03:00",
-          "date": "2026-08-11",
-          "venue": "Estadio Manuel Murillo Toro",
-          "status": "postponed",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401874145",
           "competition": "libertadores",
           "competitionName": "CONMEBOL Libertadores",
@@ -31915,22 +31894,22 @@
           "score": null
         },
         {
-          "id": "401874147",
+          "id": "401874152",
           "competition": "libertadores",
           "competitionName": "CONMEBOL Libertadores",
           "season": 2026,
           "round": null,
           "home": {
-            "name": "Independiente del Valle",
-            "slug": "independiente-del-valle"
-          },
-          "away": {
             "name": "Deportes Tolima",
             "slug": "deportes-tolima"
           },
+          "away": {
+            "name": "Independiente del Valle",
+            "slug": "independiente-del-valle"
+          },
           "kickoff": "2026-08-18T21:30:00.000-03:00",
           "date": "2026-08-18",
-          "venue": "Estadio Banco Guayaquil",
+          "venue": "Estadio Manuel Murillo Toro",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -32057,6 +32036,27 @@
           "kickoff": "2026-08-20T21:30:00.000-03:00",
           "date": "2026-08-20",
           "venue": "Neo Química Arena",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401874147",
+          "competition": "libertadores",
+          "competitionName": "CONMEBOL Libertadores",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Independiente del Valle",
+            "slug": "independiente-del-valle"
+          },
+          "away": {
+            "name": "Deportes Tolima",
+            "slug": "deportes-tolima"
+          },
+          "kickoff": "2026-08-25T21:30:00.000-03:00",
+          "date": "2026-08-25",
+          "venue": "Estadio Banco Guayaquil",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -35271,7 +35271,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-08-12T10:03:01.946Z",
+      "fetchedAt": "2026-08-12T16:35:36.413Z",
       "matches": [
         {
           "id": "401843575",
@@ -38436,27 +38436,6 @@
           "score": null
         },
         {
-          "id": "401903232",
-          "competition": "sudamericana",
-          "competitionName": "CONMEBOL Sudamericana",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Independiente Santa Fe",
-            "slug": "independiente-santa-fe"
-          },
-          "away": {
-            "name": "River Plate",
-            "slug": "river-plate"
-          },
-          "kickoff": "2026-08-12T21:30:00.000-03:00",
-          "date": "2026-08-12",
-          "venue": "Estadio Nemesio Camacho El Campín",
-          "status": "postponed",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401902572",
           "competition": "sudamericana",
           "competitionName": "CONMEBOL Sudamericana",
@@ -38583,6 +38562,27 @@
           "score": null
         },
         {
+          "id": "401903232",
+          "competition": "sudamericana",
+          "competitionName": "CONMEBOL Sudamericana",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Independiente Santa Fe",
+            "slug": "independiente-santa-fe"
+          },
+          "away": {
+            "name": "River Plate",
+            "slug": "river-plate"
+          },
+          "kickoff": "2026-08-19T21:30:00.000-03:00",
+          "date": "2026-08-19",
+          "venue": "Estadio Nemesio Camacho El Campín",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
           "id": "401902571",
           "competition": "sudamericana",
           "competitionName": "CONMEBOL Sudamericana",
@@ -38599,27 +38599,6 @@
           "kickoff": "2026-08-19T21:30:00.000-03:00",
           "date": "2026-08-19",
           "venue": "Estadio Centenario",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401903295",
-          "competition": "sudamericana",
-          "competitionName": "CONMEBOL Sudamericana",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "River Plate",
-            "slug": "river-plate"
-          },
-          "away": {
-            "name": "Independiente Santa Fe",
-            "slug": "independiente-santa-fe"
-          },
-          "kickoff": "2026-08-19T21:30:00.000-03:00",
-          "date": "2026-08-19",
-          "venue": "Estadio Más Monumental",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -38683,6 +38662,27 @@
           "kickoff": "2026-08-20T21:30:00.000-03:00",
           "date": "2026-08-20",
           "venue": "Joao Havelange Stadium",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401903295",
+          "competition": "sudamericana",
+          "competitionName": "CONMEBOL Sudamericana",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "River Plate",
+            "slug": "river-plate"
+          },
+          "away": {
+            "name": "Independiente Santa Fe",
+            "slug": "independiente-santa-fe"
+          },
+          "kickoff": "2026-08-26T21:30:00.000-03:00",
+          "date": "2026-08-26",
+          "venue": "Estadio Más Monumental",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
