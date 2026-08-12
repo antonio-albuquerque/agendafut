@@ -10,10 +10,13 @@ import { summaryFor, descriptionFor } from '../ics/builder.js';
 
 export interface EventState {
   sequence: number;
-  /** hash do que exige bump de SEQUENCE: DTSTART, LOCATION, STATUS */
+  /**
+   * Hash de tudo que é visível ao usuário (DTSTART, LOCATION, STATUS,
+   * SUMMARY, DESCRIPTION). Qualquer mudança bumpa SEQUENCE: o Google
+   * Calendar descarta atualização de evento já sincronizado se o SEQUENCE
+   * não for maior que o último visto — placar e transmissão inclusive.
+   */
   seqHash: string;
-  /** hash de tudo que é visível ao usuário (inclui placar, transmissão…) */
-  contentHash: string;
   /** ISO UTC — preservado quando nada muda, para o .ics ficar byte-idêntico */
   lastModified: string;
   /**
@@ -54,13 +57,14 @@ function dtstartRepr(match: Match): string {
     : `allday:${match.date}`;
 }
 
-/** Mudou → SEQUENCE + 1. Sem isso o Google Calendar ignora a atualização. */
+/**
+ * Mudou → SEQUENCE + 1. Sem isso o Google Calendar ignora a atualização —
+ * qualquer uma, não só as estruturais; por isso SUMMARY e DESCRIPTION
+ * também entram aqui. Trocar esta fórmula bumpa TODOS os eventos no build
+ * seguinte (o hash persistido deixa de bater) — foi proposital na migração
+ * de 2026-08 para forçar ressincronização, mas não repita sem querer isso.
+ */
 function seqHashOf(match: Match): string {
-  return sha256([dtstartRepr(match), match.venue, match.status]);
-}
-
-/** Mudou (mesmo sem seqHash mudar) → atualiza LAST-MODIFIED. */
-function contentHashOf(match: Match): string {
   return sha256([
     dtstartRepr(match),
     match.venue,
@@ -72,7 +76,7 @@ function contentHashOf(match: Match): string {
 
 export interface ReconcileResult {
   entries: CalendarEntry[];
-  /** UIDs que mudaram neste build (novo, sequence bump ou conteúdo) */
+  /** UIDs que mudaram neste build (novo ou sequence bump) */
   changed: string[];
 }
 
@@ -114,7 +118,6 @@ export function reconcile(
     usedThisRun.add(uid);
 
     const seqHash = seqHashOf(match);
-    const contentHash = contentHashOf(match);
     const prev = state.events[uid];
 
     // Persistida mesmo sem mudança de hash: o enriquecimento lê daqui no
@@ -124,16 +127,13 @@ export function reconcile(
 
     let next: EventState;
     if (prev === undefined) {
-      next = { sequence: 0, seqHash, contentHash, lastModified: nowIso, ...broadcasters };
+      next = { sequence: 0, seqHash, lastModified: nowIso, ...broadcasters };
       changed.push(uid);
     } else if (prev.seqHash !== seqHash) {
-      next = { sequence: prev.sequence + 1, seqHash, contentHash, lastModified: nowIso, ...broadcasters };
-      changed.push(uid);
-    } else if (prev.contentHash !== contentHash) {
       // Reconstrói em vez de `...prev`: se a transmissão foi retirada
       // (match.broadcasters vazio), o campo antigo precisa SUMIR do estado,
       // senão o fallback do enriquecimento o ressuscita no próximo build.
-      next = { sequence: prev.sequence, seqHash, contentHash, lastModified: nowIso, ...broadcasters };
+      next = { sequence: prev.sequence + 1, seqHash, lastModified: nowIso, ...broadcasters };
       changed.push(uid);
     } else {
       // Nada mudou: preserva sequence E lastModified. Reescrever

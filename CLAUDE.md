@@ -8,9 +8,12 @@ sem servidor. Estas invariantes são as que se perdem em refactors — não rela
    Partida adiada mantém o UID original via `pairIndex` no `data/state.json`.
    O sufixo `@futebol.agendafut` nunca muda depois do primeiro deploy.
 
-2. **SEQUENCE incrementa a cada mudança de DTSTART, LOCATION ou STATUS**
-   (`src/state/sequence.ts`). Sem isso o Google Calendar ignora a atualização.
-   Mudança só de conteúdo (placar) atualiza LAST-MODIFIED sem bump.
+2. **SEQUENCE incrementa a cada mudança visível ao usuário** — DTSTART,
+   LOCATION, STATUS, SUMMARY (placar) e DESCRIPTION (transmissão)
+   (`src/state/sequence.ts`). O Google Calendar descarta QUALQUER atualização
+   de evento já sincronizado se o SEQUENCE não for maior que o último visto —
+   inclusive mudança só de descrição (aprendido em 2026-08: assinantes ficaram
+   sem os canais). LAST-MODIFIED acompanha o bump.
 
 3. **TZID=America/Sao_Paulo + bloco VTIMEZONE completo** em todo VCALENDAR.
    Nunca converta horários para UTC fixo — o Brasil pode voltar a ter DST.
@@ -47,4 +50,4 @@ Outras convenções:
 - Transmissões: scrape do futebolnatv.com.br (`data/broadcast-leagues.json` mapeia
   liga → URL; `pnpm harvest:fntv` descobre URLs). É enriquecimento fail-soft — falha
   NUNCA derruba o build; último valor visto persiste em `state.json` (sem flapping).
-  Mudança de canal é conteúdo: LAST-MODIFIED sim, SEQUENCE não.
+  Mudança de canal bumpa SEQUENCE como qualquer mudança visível (invariante 2).
