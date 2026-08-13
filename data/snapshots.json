@@ -22297,7 +22297,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-08-07T10:00:35.081Z",
+      "fetchedAt": "2026-08-13T10:04:18.330Z",
       "matches": [
         {
           "id": "401858546",
@@ -25706,6 +25706,174 @@
             "home": 4,
             "away": 0
           }
+        },
+        {
+          "id": "401909066",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Cruzeiro",
+            "slug": "cruzeiro"
+          },
+          "away": {
+            "name": "Atlético-MG",
+            "slug": "atletico-mg"
+          },
+          "kickoff": "2026-08-25T21:00:00.000-03:00",
+          "date": "2026-08-25",
+          "venue": "Estadio Mineirão",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401909065",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Palmeiras",
+            "slug": "palmeiras"
+          },
+          "away": {
+            "name": "Santos",
+            "slug": "santos"
+          },
+          "kickoff": "2026-08-26T21:30:00.000-03:00",
+          "date": "2026-08-26",
+          "venue": "Allianz Parque",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401909113",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Vasco da Gama",
+            "slug": "vasco"
+          },
+          "away": {
+            "name": "Vitória",
+            "slug": "vitoria"
+          },
+          "kickoff": "2026-08-26T21:30:00.000-03:00",
+          "date": "2026-08-26",
+          "venue": "Estádio São Januário",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401909064",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Internacional",
+            "slug": "internacional"
+          },
+          "away": {
+            "name": "Grêmio",
+            "slug": "gremio"
+          },
+          "kickoff": "2026-08-27T20:00:00.000-03:00",
+          "date": "2026-08-27",
+          "venue": "Estadio Beira-Rio",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401909112",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Atlético-MG",
+            "slug": "atletico-mg"
+          },
+          "away": {
+            "name": "Cruzeiro",
+            "slug": "cruzeiro"
+          },
+          "kickoff": "2026-09-01T21:00:00.000-03:00",
+          "date": "2026-09-01",
+          "venue": "Arena MRV",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401909110",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Santos",
+            "slug": "santos"
+          },
+          "away": {
+            "name": "Palmeiras",
+            "slug": "palmeiras"
+          },
+          "kickoff": "2026-09-02T21:30:00.000-03:00",
+          "date": "2026-09-02",
+          "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401909111",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Vitória",
+            "slug": "vitoria"
+          },
+          "away": {
+            "name": "Vasco da Gama",
+            "slug": "vasco"
+          },
+          "kickoff": "2026-09-02T21:30:00.000-03:00",
+          "date": "2026-09-02",
+          "venue": "Estadio Manoel Barradas",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401909114",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Grêmio",
+            "slug": "gremio"
+          },
+          "away": {
+            "name": "Internacional",
+            "slug": "internacional"
+          },
+          "kickoff": "2026-09-03T20:00:00.000-03:00",
+          "date": "2026-09-03",
+          "venue": "Arena do Grêmio",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
         }
       ]
     },
@@ -28696,7 +28864,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-08-12T16:35:36.413Z",
+      "fetchedAt": "2026-08-13T10:04:18.330Z",
       "matches": [
         {
           "id": "401842610",
@@ -31784,9 +31952,12 @@
           "kickoff": "2026-08-12T19:00:00.000-03:00",
           "date": "2026-08-12",
           "venue": "Allianz Parque",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401874074",
@@ -31805,9 +31976,12 @@
           "kickoff": "2026-08-12T19:00:00.000-03:00",
           "date": "2026-08-12",
           "venue": "Ciudad de Vicente López",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401874153",
@@ -31826,9 +32000,12 @@
           "kickoff": "2026-08-12T21:30:00.000-03:00",
           "date": "2026-08-12",
           "venue": "Estadio Mineirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401874073",
@@ -35271,7 +35448,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-08-12T16:35:36.413Z",
+      "fetchedAt": "2026-08-13T10:04:18.330Z",
       "matches": [
         {
           "id": "401843575",
@@ -38410,9 +38587,12 @@
           "kickoff": "2026-08-12T19:00:00.000-03:00",
           "date": "2026-08-12",
           "venue": "Estádio Municipal Cicero de Souza Marques",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401902573",
@@ -38431,9 +38611,12 @@
           "kickoff": "2026-08-12T19:00:00.000-03:00",
           "date": "2026-08-12",
           "venue": "Monumental de Victoria (José Dellagiovanna)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401902572",

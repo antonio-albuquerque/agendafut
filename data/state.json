@@ -992,6 +992,7 @@
     "copa-do-brasil:2026:atletico-go:ponte-preta": "copa-do-brasil-2026-03-18-atletico-go-vs-ponte-preta@futebol.agendafut",
     "copa-do-brasil:2026:atletico-go:primavera-mg": "copa-do-brasil-2026-02-25-atletico-go-vs-primavera-mg@futebol.agendafut",
     "copa-do-brasil:2026:atletico-mg:ceara": "copa-do-brasil-2026-04-23-atletico-mg-vs-ceara@futebol.agendafut",
+    "copa-do-brasil:2026:atletico-mg:cruzeiro": "copa-do-brasil-2026-09-01-atletico-mg-vs-cruzeiro@futebol.agendafut",
     "copa-do-brasil:2026:atletico-mg:juventude": "copa-do-brasil-2026-08-01-atletico-mg-vs-juventude@futebol.agendafut",
     "copa-do-brasil:2026:avai:porto-vitoria-fc": "copa-do-brasil-2026-03-04-avai-vs-porto-vitoria-fc@futebol.agendafut",
     "copa-do-brasil:2026:bahia:remo": "copa-do-brasil-2026-04-22-bahia-vs-remo@futebol.agendafut",
@@ -1021,6 +1022,7 @@
     "copa-do-brasil:2026:crb:figueirense": "copa-do-brasil-2026-03-18-crb-vs-figueirense@futebol.agendafut",
     "copa-do-brasil:2026:crb:fortaleza": "copa-do-brasil-2026-05-14-crb-vs-fortaleza@futebol.agendafut",
     "copa-do-brasil:2026:crb:porta-ba": "copa-do-brasil-2026-03-03-crb-vs-porta-ba@futebol.agendafut",
+    "copa-do-brasil:2026:cruzeiro:atletico-mg": "copa-do-brasil-2026-08-25-cruzeiro-vs-atletico-mg@futebol.agendafut",
     "copa-do-brasil:2026:cruzeiro:chapecoense": "copa-do-brasil-2026-08-05-cruzeiro-vs-chapecoense@futebol.agendafut",
     "copa-do-brasil:2026:cruzeiro:goias": "copa-do-brasil-2026-05-12-cruzeiro-vs-goias@futebol.agendafut",
     "copa-do-brasil:2026:ferroviaria:sport": "copa-do-brasil-2026-03-05-ferroviaria-vs-sport@futebol.agendafut",
@@ -1035,9 +1037,11 @@
     "copa-do-brasil:2026:goias:cruzeiro": "copa-do-brasil-2026-04-22-goias-vs-cruzeiro@futebol.agendafut",
     "copa-do-brasil:2026:goias:fluminense-pi": "copa-do-brasil-2026-03-11-goias-vs-fluminense-pi@futebol.agendafut",
     "copa-do-brasil:2026:gremio:confianca": "copa-do-brasil-2026-04-21-gremio-vs-confianca@futebol.agendafut",
+    "copa-do-brasil:2026:gremio:internacional": "copa-do-brasil-2026-09-03-gremio-vs-internacional@futebol.agendafut",
     "copa-do-brasil:2026:gremio:mirassol": "copa-do-brasil-2026-08-05-gremio-vs-mirassol@futebol.agendafut",
     "copa-do-brasil:2026:internacional:athletic": "copa-do-brasil-2026-05-12-internacional-vs-athletic@futebol.agendafut",
     "copa-do-brasil:2026:internacional:corinthians": "copa-do-brasil-2026-08-02-internacional-vs-corinthians@futebol.agendafut",
+    "copa-do-brasil:2026:internacional:gremio": "copa-do-brasil-2026-08-27-internacional-vs-gremio@futebol.agendafut",
     "copa-do-brasil:2026:ivinhema:independente-ap": "copa-do-brasil-2026-02-18-ivinhema-vs-independente-ap@futebol.agendafut",
     "copa-do-brasil:2026:ivinhema:volta-redonda": "copa-do-brasil-2026-03-04-ivinhema-vs-volta-redonda@futebol.agendafut",
     "copa-do-brasil:2026:jacuipense:novorizontino": "copa-do-brasil-2026-03-18-jacuipense-vs-novorizontino@futebol.agendafut",
@@ -1072,6 +1076,7 @@
     "copa-do-brasil:2026:operario-pr:fluminense": "copa-do-brasil-2026-04-23-operario-pr-vs-fluminense@futebol.agendafut",
     "copa-do-brasil:2026:palmeiras:fortaleza": "copa-do-brasil-2026-08-02-palmeiras-vs-fortaleza@futebol.agendafut",
     "copa-do-brasil:2026:palmeiras:jacuipense": "copa-do-brasil-2026-04-23-palmeiras-vs-jacuipense@futebol.agendafut",
+    "copa-do-brasil:2026:palmeiras:santos": "copa-do-brasil-2026-08-26-palmeiras-vs-santos@futebol.agendafut",
     "copa-do-brasil:2026:paysandu:portuguesa-rj": "copa-do-brasil-2026-03-11-paysandu-vs-portuguesa-rj@futebol.agendafut",
     "copa-do-brasil:2026:paysandu:vasco": "copa-do-brasil-2026-04-21-paysandu-vs-vasco@futebol.agendafut",
     "copa-do-brasil:2026:ponte-preta:guarany-de-bage": "copa-do-brasil-2026-03-10-ponte-preta-vs-guarany-de-bage@futebol.agendafut",
@@ -1092,6 +1097,7 @@
     "copa-do-brasil:2026:santa-catarina:jacuipense": "copa-do-brasil-2026-03-11-santa-catarina-vs-jacuipense@futebol.agendafut",
     "copa-do-brasil:2026:santa-cruz:sousa-ec": "copa-do-brasil-2026-03-05-santa-cruz-vs-sousa-ec@futebol.agendafut",
     "copa-do-brasil:2026:santos:coritiba": "copa-do-brasil-2026-04-22-santos-vs-coritiba@futebol.agendafut",
+    "copa-do-brasil:2026:santos:palmeiras": "copa-do-brasil-2026-09-02-santos-vs-palmeiras@futebol.agendafut",
     "copa-do-brasil:2026:santos:remo": "copa-do-brasil-2026-08-01-santos-vs-remo@futebol.agendafut",
     "copa-do-brasil:2026:sao-bernardo:atletico-alagoinhas": "copa-do-brasil-2026-02-25-sao-bernardo-vs-atletico-alagoinhas@futebol.agendafut",
     "copa-do-brasil:2026:sao-bernardo:ceara": "copa-do-brasil-2026-03-17-sao-bernardo-vs-ceara@futebol.agendafut",
@@ -1110,10 +1116,12 @@
     "copa-do-brasil:2026:vasco-da-gama-ac:ae-velo-clube": "copa-do-brasil-2026-02-19-vasco-da-gama-ac-vs-ae-velo-clube@futebol.agendafut",
     "copa-do-brasil:2026:vasco:fluminense": "copa-do-brasil-2026-08-01-vasco-vs-fluminense@futebol.agendafut",
     "copa-do-brasil:2026:vasco:paysandu": "copa-do-brasil-2026-05-13-vasco-vs-paysandu@futebol.agendafut",
+    "copa-do-brasil:2026:vasco:vitoria": "copa-do-brasil-2026-08-26-vasco-vs-vitoria@futebol.agendafut",
     "copa-do-brasil:2026:vila-nova:confianca": "copa-do-brasil-2026-03-18-vila-nova-vs-confianca@futebol.agendafut",
     "copa-do-brasil:2026:vila-nova:operario-ms": "copa-do-brasil-2026-03-12-vila-nova-vs-operario-ms@futebol.agendafut",
     "copa-do-brasil:2026:vitoria:athletico-pr": "copa-do-brasil-2026-08-06-vitoria-vs-athletico-pr@futebol.agendafut",
     "copa-do-brasil:2026:vitoria:flamengo": "copa-do-brasil-2026-05-14-vitoria-vs-flamengo@futebol.agendafut",
+    "copa-do-brasil:2026:vitoria:vasco": "copa-do-brasil-2026-09-02-vitoria-vs-vasco@futebol.agendafut",
     "copa-do-brasil:2026:volta-redonda:america-rn": "copa-do-brasil-2026-03-11-volta-redonda-vs-america-rn@futebol.agendafut",
     "copa-do-brasil:2026:volta-redonda:barra-fc": "copa-do-brasil-2026-03-19-volta-redonda-vs-barra-fc@futebol.agendafut",
     "copa-do-brasil:2026:ypiranga:ji-parana-fc": "copa-do-brasil-2026-02-25-ypiranga-vs-ji-parana-fc@futebol.agendafut",
@@ -2844,10 +2852,12 @@
       ]
     },
     "brasileirao-serie-a-2026-08-15-atletico-mg-vs-gremio@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "0a40b746ef3b7e5dcf8b8ad51e503dc9c5fd5ee235298282886e28f598a754e3",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 3,
+      "seqHash": "5e255ec1deac388001b0d90ac0620f885be5e6064366ba34e742af11b06df630",
+      "lastModified": "2026-08-13T10:04:20.126Z",
       "broadcasters": [
+        "GE TV",
+        "GLOBO",
         "PREMIERE"
       ]
     },
@@ -4861,11 +4871,12 @@
       ]
     },
     "brasileirao-serie-b-2026-08-16-crb-vs-novorizontino@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "593686477237d4fa83d25a8ae9dc2e4d2ac8b7033c1ee1702829ffc018bc70f0",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "1166f0274cda44cb40201e06c3bdbdff488551e00822ff620cd35d4aaf53c6af",
+      "lastModified": "2026-08-13T10:04:20.126Z",
       "broadcasters": [
-        "DISNEY+"
+        "DISNEY+",
+        "ESPN"
       ]
     },
     "brasileirao-serie-b-2026-08-16-operario-pr-vs-avai@futebol.agendafut": {
@@ -7510,6 +7521,46 @@
         "SPORTV"
       ]
     },
+    "copa-do-brasil-2026-08-25-cruzeiro-vs-atletico-mg@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "9ac34c6ba7e37ea9eb833fdbd506940c77d707f1502bd27c7037ca55f106e00f",
+      "lastModified": "2026-08-13T10:04:20.126Z"
+    },
+    "copa-do-brasil-2026-08-26-palmeiras-vs-santos@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "8d61be2d8a22e2fb4bd330efbfe86737335e50d751e529395a44ee307320cebc",
+      "lastModified": "2026-08-13T10:04:20.126Z"
+    },
+    "copa-do-brasil-2026-08-26-vasco-vs-vitoria@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "ffe39c4cbc95c9c0a79f2d55063543498f3b8700a14cc3c648a995083e56c867",
+      "lastModified": "2026-08-13T10:04:20.126Z"
+    },
+    "copa-do-brasil-2026-08-27-internacional-vs-gremio@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "3b545f04210280d247927f4b2eae3563222a4e5bc63ba2b5cfdcc7ff32d9ebf4",
+      "lastModified": "2026-08-13T10:04:20.126Z"
+    },
+    "copa-do-brasil-2026-09-01-atletico-mg-vs-cruzeiro@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "88b12fa91e1c0b5fbce22cb7b6664b336674217cd446cbbfdc27830ea34769e3",
+      "lastModified": "2026-08-13T10:04:20.126Z"
+    },
+    "copa-do-brasil-2026-09-02-santos-vs-palmeiras@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "e61f039cd367bbac116a8f0742b787c3816f41c9ec87668df91af902dd5aba09",
+      "lastModified": "2026-08-13T10:04:20.126Z"
+    },
+    "copa-do-brasil-2026-09-02-vitoria-vs-vasco@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "75ff31cd127ece3a1d7842d248c09d8997bdc7d9a36c53475a072753dbe50098",
+      "lastModified": "2026-08-13T10:04:20.126Z"
+    },
+    "copa-do-brasil-2026-09-03-gremio-vs-internacional@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "a2e56e4e230c66153d749202fd3d2c67fa3f9a75fc5516c9e96b6c3336f8d1a7",
+      "lastModified": "2026-08-13T10:04:20.126Z"
+    },
     "copa-do-nordeste-2026-03-24-asa-vs-piaui-teresina@futebol.agendafut": {
       "sequence": 1,
       "seqHash": "d98037dff68fe182ff37dbaf7fcce4a545f0005fe67be9588c2b82ca8c17aeb3",
@@ -8788,9 +8839,9 @@
       ]
     },
     "libertadores-2026-08-12-cruzeiro-vs-flamengo@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "0bc3d63bcea41b8e06c6caa36ccbf36d01e3ce7268b7c264039dac37cccb89b7",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "ac759c9d35ed60918edf31e6abc2368d487a38ac9b7ebc177680b555df0d54a9",
+      "lastModified": "2026-08-13T10:04:20.126Z",
       "broadcasters": [
         "GE TV",
         "GLOBO",
@@ -8798,17 +8849,17 @@
       ]
     },
     "libertadores-2026-08-12-palmeiras-vs-cerro-porteno@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "8250e88d78e4e55a54ff33139bec8b928a3411ad1c4a48eae327f15f966bf558",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "b1da4a72d73070a854c55478b1cd67c4e2088c50ee58171b00017f3d0a60be7a",
+      "lastModified": "2026-08-13T10:04:20.126Z",
       "broadcasters": [
         "PARAMOUNT+"
       ]
     },
     "libertadores-2026-08-12-platense-vs-coquimbo-unido@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "723e3370688ea251bcd0fea9d00259c2a1b44bf2e7a5cdf85042995c64a55b80",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "5ca103f13beb7c9090ff518b02e451d9c2f58a22f0aa8238473aff7e600064cb",
+      "lastModified": "2026-08-13T10:04:20.126Z",
       "broadcasters": [
         "PARAMOUNT+"
       ]
@@ -8874,19 +8925,32 @@
       ]
     },
     "libertadores-2026-08-19-flamengo-vs-cruzeiro@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "d0a214aa6d443f84f29b486e29611e953b273494dabc863d5c21460acfe0349b",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "9d776a332e781404df4813da603a6a3e3484bb60fcd75f2d0d5163f2c139c181",
+      "lastModified": "2026-08-13T10:04:20.126Z",
+      "broadcasters": [
+        "GE TV",
+        "GLOBO",
+        "PARAMOUNT+"
+      ]
     },
     "libertadores-2026-08-20-corinthians-vs-rosario-central@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "27d27cbf8cebbd36ee51d978cd6fe45613deb233057ce652dff85ba05518e94c",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "eba150222d3722d33d810518efc5657e7d83a9397cb473d3eec4da2acafe4306",
+      "lastModified": "2026-08-13T10:04:20.126Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "libertadores-2026-08-20-liga-de-quito-vs-mirassol@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "31a330c249459caecb97d8d1b9d3f6db58de191f22cbdff7806b09c3be3248d4",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "7e43cfeea4781ed20e60335a24e9d11d8a6018c5b196eeb3316b17572d43b96b",
+      "lastModified": "2026-08-13T10:04:20.126Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "mineiro-2026-01-10-cruzeiro-vs-pouso-alegre@futebol.agendafut": {
       "sequence": 1,
@@ -10238,26 +10302,25 @@
       ]
     },
     "sudamericana-2026-08-12-bragantino-vs-atletico-mg@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "1a074dfb2a122d957f268e519bc2584c3d5a606ff2015ed71f917aec06ee0e9c",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "cbe50948fd3439674738bece6b12ba46f0abe70a17f7ff677b0c5df10bc01d1c",
+      "lastModified": "2026-08-13T10:04:20.126Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN"
       ]
     },
     "sudamericana-2026-08-12-criciuma-vs-montevideo-city-torque@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "6abf8560d47f6ff528b635d9f818560fe57238746b55df7e85006d1aa8e1bff3",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 3,
+      "seqHash": "ed45f8e108a3e40ab38c5b65972aa46c02e6783df1a501c5d27ef1fb935ccb01",
+      "lastModified": "2026-08-13T10:04:20.126Z"
     },
     "sudamericana-2026-08-12-independiente-santa-fe-vs-river-plate@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "678e537063650fdcdae6792c4bd819a1093e6e83ab5905e0bfd2409853453aa8",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 3,
+      "seqHash": "73e730dfb8a015b36298456bb117dbc482e2d3cf999700ea29b752f122d56770",
+      "lastModified": "2026-08-13T10:04:20.126Z",
       "broadcasters": [
-        "DISNEY+",
-        "ESPN"
+        "DISNEY+"
       ]
     },
     "sudamericana-2026-08-12-santos-vs-macara@futebol.agendafut": {
@@ -10309,9 +10372,12 @@
       ]
     },
     "sudamericana-2026-08-19-macara-vs-santos@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "ac706110c77af111b0006605732022b69fe607b182cab7bf89327f2c3b0cbcec",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 3,
+      "seqHash": "20881f1747a9195e035ff22a79a01281ce9d8f8e3331f21b0f2f265f70bb180a",
+      "lastModified": "2026-08-13T10:04:20.126Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "sudamericana-2026-08-19-montevideo-city-torque-vs-criciuma@futebol.agendafut": {
       "sequence": 2,
