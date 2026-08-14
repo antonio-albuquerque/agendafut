@@ -28864,7 +28864,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-08-13T10:04:18.330Z",
+      "fetchedAt": "2026-08-14T10:00:29.543Z",
       "matches": [
         {
           "id": "401842610",
@@ -32024,9 +32024,12 @@
           "kickoff": "2026-08-13T19:00:00.000-03:00",
           "date": "2026-08-13",
           "venue": "Estadio Municipal José Maria de Campos Maia",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401874075",
@@ -32045,9 +32048,12 @@
           "kickoff": "2026-08-13T21:30:00.000-03:00",
           "date": "2026-08-13",
           "venue": "Gigante de Arroyito",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401874156",
@@ -35448,7 +35454,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-08-13T10:04:18.330Z",
+      "fetchedAt": "2026-08-14T10:00:29.543Z",
       "matches": [
         {
           "id": "401843575",
@@ -38635,9 +38641,12 @@
           "kickoff": "2026-08-13T19:00:00.000-03:00",
           "date": "2026-08-13",
           "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401902742",
@@ -38656,9 +38665,12 @@
           "kickoff": "2026-08-13T19:00:00.000-03:00",
           "date": "2026-08-13",
           "venue": "Estádio São Januário",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401902715",
@@ -38677,9 +38689,12 @@
           "kickoff": "2026-08-13T21:30:00.000-03:00",
           "date": "2026-08-13",
           "venue": "Estadio Inca Garcilaso de la Vega",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 6,
+            "away": 1
+          }
         },
         {
           "id": "401903231",

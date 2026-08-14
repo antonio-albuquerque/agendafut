@@ -2862,28 +2862,28 @@
       ]
     },
     "brasileirao-serie-a-2026-08-15-fluminense-vs-palmeiras@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "2f6d3683f3656b87cf9c30b0e5dfa4c40dbf19bcba8a74d261ad460fbccd21f9",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "062f6f236c583487d94fa07a68a721f356777a688042a5818f6749afb6dfd534",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
-        "PREMIERE"
+        "PREMIERE FC"
       ]
     },
     "brasileirao-serie-a-2026-08-15-sao-paulo-vs-coritiba@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "ca482379a500d030e7dc5c8311ef15c9afc36a62674f08c586f556e7d1b0b3e5",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "66f65d3cb14f47745ed2d1b5d9e4c3d199aa959167014767350c21654eb32030",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
-        "PREMIERE",
+        "PREMIERE FC",
         "SPORTV"
       ]
     },
     "brasileirao-serie-a-2026-08-16-chapecoense-vs-bahia@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "6a520928b81c20f36790e3bfa0e38e3f60e6ad8da620ebf5e8a0c056f5a7c038",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "bfabb59bc8c1bec98ef68aef65176ce8bbd58674a0796d285ee78ec196157d42",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
-        "PREMIERE"
+        "PREMIERE FC"
       ]
     },
     "brasileirao-serie-a-2026-08-16-corinthians-vs-cruzeiro@futebol.agendafut": {
@@ -2905,28 +2905,28 @@
       ]
     },
     "brasileirao-serie-a-2026-08-16-vasco-vs-santos@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "967cbd2ea3523ddf17f3328cdcfabf0a0440455db0a13075d2650762d6a4c2df",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "13dda489f8222a583f30bbbfb14401efa70d0cfc6eed9e6255c9cc48742145de",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
         "GLOBO",
-        "PREMIERE"
+        "PREMIERE FC"
       ]
     },
     "brasileirao-serie-a-2026-08-16-vitoria-vs-botafogo@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "5a9299b9a20f36695dd49430001b0cca976c87ba4e786bc5d16d0041c45d365a",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "95110d1d8dc528034f78955138ca242b67156296583a8bbcd452fc5b60d9f41b",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
-        "PREMIERE"
+        "PREMIERE FC"
       ]
     },
     "brasileirao-serie-a-2026-08-17-internacional-vs-remo@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "447639f812e8da452c053fdff2ed38cc2fffea1ca52dd1802e8b3179da844dc4",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "973b1a666356f5fa58870efe592c18326859209d359461ae0b6ece1dd095e82e",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
-        "PREMIERE",
+        "PREMIERE FC",
         "SPORTV"
       ]
     },
@@ -4800,21 +4800,23 @@
       ]
     },
     "brasileirao-serie-b-2026-08-14-ponte-preta-vs-nautico@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "317358d0345e05ced0c2fe57038a2b541a1cbf52f49a10712fb2f77663d55ee1",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "17369e451b94969a7620b29a05d010c6abaab4226dc206e7b9cf49457e8dcbdd",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
         "DISNEY+",
+        "ESPN",
         "SPORTYNET",
-        "XSPORTS"
+        "XSPORTS",
+        "YOUTUBE"
       ]
     },
     "brasileirao-serie-b-2026-08-14-sao-bernardo-vs-botafogo-sp@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "28126c53336628bd413b8cf62f47106307b4b2cbe9a51875c6a6ceed904908e9",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 3,
+      "seqHash": "e51538beb6a0754cf7d7de374a9a1798ae8e7df3ce1c292989964e97e5be34bd",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
-        "PREMIERE",
+        "PREMIERE FC",
         "SPORTV"
       ]
     },
@@ -4843,13 +4845,15 @@
       ]
     },
     "brasileirao-serie-b-2026-08-15-criciuma-vs-goias@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "64042529aec8858799e9bed6c62a17b7bd46a213e00e719da542bbd7f6feaf9a",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "fda8dafa0dae91e0410d19c0d4a8623bd5554ee5f0984fba36071bc2dd1d5805",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
         "DISNEY+",
+        "ESPN",
         "REDETV!",
-        "SPORTYNET"
+        "SPORTYNET",
+        "YOUTUBE"
       ]
     },
     "brasileirao-serie-b-2026-08-15-juventude-vs-fortaleza@futebol.agendafut": {
@@ -6288,12 +6292,13 @@
       "lastModified": "2026-08-12T16:35:39.830Z"
     },
     "brasileirao-serie-c-2026-08-15-amazonas-vs-botafogo-pb@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "c6d3e63802c83a601bea3b221042b773ada9a4cde313776df863c71b361870a0",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "184ecea97dba67dff4ab0036c40c471c1679d6c0562478ccdeac0e038246e719",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
         "BAND",
-        "SPORTYNET"
+        "SPORTYNET",
+        "YOUTUBE"
       ]
     },
     "brasileirao-serie-c-2026-08-15-barra-fc-vs-itabaiana@futebol.agendafut": {
@@ -6335,11 +6340,12 @@
       "lastModified": "2026-08-12T16:35:39.830Z"
     },
     "brasileirao-serie-c-2026-08-15-santa-cruz-vs-maranhao@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "3b7d19b26cba98847c16cd42acd6bb76bc68d1a90d75540c2f0d58c6b9dd0add",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "102830b59d16910c9817dd5833a75a18ac1d08c6e618dda26d5c24a9a55e78e2",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
-        "SPORTYNET"
+        "SPORTYNET",
+        "YOUTUBE"
       ]
     },
     "brasileirao-serie-c-2026-08-15-volta-redonda-vs-ituano@futebol.agendafut": {
@@ -8865,18 +8871,18 @@
       ]
     },
     "libertadores-2026-08-13-mirassol-vs-liga-de-quito@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "4520c32490e24cfe4a0c857482173e9eb2daae9768e3deba6711cec056d4899a",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "6e249624f8f6cd068108c6d7f51687559e00d6f5cfe760ab5b68a1a198aa7f2f",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN 4"
       ]
     },
     "libertadores-2026-08-13-rosario-central-vs-corinthians@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "4834a1ddb4be80e9c20dab4442724e81387a6491b1fa9355f14aab612e7db130",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "0ede24e4ac73605091937f5f526771a49c993f87f044c8df0e13b5a3e2088a0b",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN"
@@ -8900,12 +8906,12 @@
       ]
     },
     "libertadores-2026-08-18-universidad-catolica-vs-estudiantes-de-la-plata@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "29dfb4005f80612cf05bef95eb4d062cbba1819427f49279efe45b31b0c6100f",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "71643fcb7fbb3f526a2e28f9da2451e09351b7fd439fe7c33a7d6989e8bc6236",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
         "DISNEY+",
-        "ESPN"
+        "ESPN 4"
       ]
     },
     "libertadores-2026-08-19-cerro-porteno-vs-palmeiras@futebol.agendafut": {
@@ -10324,26 +10330,26 @@
       ]
     },
     "sudamericana-2026-08-12-santos-vs-macara@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "317559af681890a0b9fd9cfdc9045e94bdbcbc380c2a14a36a1c1d2ff0376906",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 3,
+      "seqHash": "130c873c75dc8ec57b34039feebda74aa76c5eec8911e6e93b92878846744b2d",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN"
       ]
     },
     "sudamericana-2026-08-13-cienciano-del-cusco-vs-botafogo@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "fcbf89b9926a7e38259637a2dd7d12aca7b03e8f15da47d8993d174d39f9b984",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "94ec2ae528de6712a8a1485f8c316f1b7937ef71c2124abd64e482543599a8db",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
         "PARAMOUNT+"
       ]
     },
     "sudamericana-2026-08-13-vasco-vs-club-olimpia@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "e21984a0ecaeaf67ee9becc8a32c002ef87a51b6c0c8c3971eca05af76f23110",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "84062442ba7e2ed11a94d82ac5fd610356df2e6d83b4ce84e877a3e39420a2a7",
+      "lastModified": "2026-08-14T10:00:32.375Z"
     },
     "sudamericana-2026-08-18-deportivo-recoleta-vs-boca-juniors@futebol.agendafut": {
       "sequence": 1,
@@ -10354,11 +10360,12 @@
       ]
     },
     "sudamericana-2026-08-18-sao-paulo-vs-bolivar@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "489898a5efc4012a1d63764a0cfbeebda0e7d92a59382b37b102d5c137697d35",
-      "lastModified": "2026-08-12T16:35:39.830Z",
+      "sequence": 2,
+      "seqHash": "48bd50f671da6eb6d38a44f088b3ea5d9eb562414847dd47c4a2509463f15661",
+      "lastModified": "2026-08-14T10:00:32.375Z",
       "broadcasters": [
         "DISNEY+",
+        "ESPN",
         "SBT"
       ]
     },
@@ -10390,9 +10397,12 @@
       "lastModified": "2026-08-12T16:35:39.830Z"
     },
     "sudamericana-2026-08-20-botafogo-vs-cienciano-del-cusco@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "46ca0b70d7a8f107c58521950a2c0df296f6a5b238aed9d3750b90aa3334821a",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "74919a7ad3a0c2f3048dc677da7ee80c330de426e342d08577e740780efa1f86",
+      "lastModified": "2026-08-14T10:00:32.375Z",
+      "broadcasters": [
+        "PARAMOUNT+"
+      ]
     },
     "sudamericana-2026-08-20-club-olimpia-vs-vasco@futebol.agendafut": {
       "sequence": 1,
