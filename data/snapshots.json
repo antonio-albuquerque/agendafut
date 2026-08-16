@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-08-10T10:15:53.407Z",
+      "fetchedAt": "2026-08-16T09:25:40.893Z",
       "matches": [
         {
           "id": "401840808",
@@ -5328,9 +5328,12 @@
           "kickoff": "2026-08-15T16:30:00.000-03:00",
           "date": "2026-08-15",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 2
+          }
         },
         {
           "id": "401841196",
@@ -5349,9 +5352,12 @@
           "kickoff": "2026-08-15T18:30:00.000-03:00",
           "date": "2026-08-15",
           "venue": "Arena da Baixada",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841189",
@@ -5370,9 +5376,12 @@
           "kickoff": "2026-08-15T21:00:00.000-03:00",
           "date": "2026-08-15",
           "venue": "Estádio Cícero Pompeu de Toledo",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841194",
@@ -8674,7 +8683,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-08-15T09:24:23.246Z",
+      "fetchedAt": "2026-08-16T09:25:40.893Z",
       "matches": [
         {
           "id": "401860064",
@@ -13805,9 +13814,12 @@
           "kickoff": "2026-08-15T16:00:00.000-03:00",
           "date": "2026-08-15",
           "venue": "Estádio Antônio Accioly",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860278",
@@ -13826,9 +13838,12 @@
           "kickoff": "2026-08-15T16:00:00.000-03:00",
           "date": "2026-08-15",
           "venue": "Arena Castelão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 3
+          }
         },
         {
           "id": "401860277",
@@ -13847,9 +13862,12 @@
           "kickoff": "2026-08-15T16:00:00.000-03:00",
           "date": "2026-08-15",
           "venue": "Heriberto Hülse",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860276",
@@ -13868,9 +13886,12 @@
           "kickoff": "2026-08-15T18:30:00.000-03:00",
           "date": "2026-08-15",
           "venue": "Alfredo Jaconi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401860275",
