@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-08-18T09:31:43.487Z",
+      "fetchedAt": "2026-08-19T09:32:23.335Z",
       "matches": [
         {
           "id": "401840808",
@@ -5846,27 +5846,6 @@
           "score": null
         },
         {
-          "id": "401841215",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Bahia",
-            "slug": "bahia"
-          },
-          "away": {
-            "name": "Internacional",
-            "slug": "internacional"
-          },
-          "kickoff": "2026-08-30T16:00:00.000-03:00",
-          "date": "2026-08-30",
-          "venue": "Arena Fonte Nova",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401841214",
           "competition": "brasileirao-serie-a",
           "competitionName": "Brasileirão Série A",
@@ -5925,6 +5904,27 @@
           "kickoff": "2026-08-30T18:30:00.000-03:00",
           "date": "2026-08-30",
           "venue": "Arena do Grêmio",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841215",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Bahia",
+            "slug": "bahia"
+          },
+          "away": {
+            "name": "Internacional",
+            "slug": "internacional"
+          },
+          "kickoff": "2026-08-30T19:30:00.000-03:00",
+          "date": "2026-08-30",
+          "venue": "Arena Fonte Nova",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -6174,8 +6174,8 @@
             "name": "Grêmio",
             "slug": "gremio"
           },
-          "kickoff": "2026-09-06T20:00:00.000-03:00",
-          "date": "2026-09-06",
+          "kickoff": "2026-09-07T20:00:00.000-03:00",
+          "date": "2026-09-07",
           "venue": "Estadio Manoel Barradas",
           "status": "scheduled",
           "broadcasters": [],
@@ -8704,7 +8704,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-08-17T09:40:03.106Z",
+      "fetchedAt": "2026-08-19T09:32:23.335Z",
       "matches": [
         {
           "id": "401860064",
@@ -14003,9 +14003,12 @@
           "kickoff": "2026-08-18T19:30:00.000-03:00",
           "date": "2026-08-18",
           "venue": "Estadio VGD",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401860283",
@@ -14024,9 +14027,12 @@
           "kickoff": "2026-08-18T21:30:00.000-03:00",
           "date": "2026-08-18",
           "venue": "Estádio dos Aflitos",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860291",
@@ -14045,9 +14051,12 @@
           "kickoff": "2026-08-18T21:35:00.000-03:00",
           "date": "2026-08-18",
           "venue": "Estádio da Serrinha",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860290",
@@ -28924,7 +28933,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-08-14T10:00:29.543Z",
+      "fetchedAt": "2026-08-19T09:32:23.335Z",
       "matches": [
         {
           "id": "401842610",
@@ -32132,9 +32141,12 @@
           "kickoff": "2026-08-18T19:00:00.000-03:00",
           "date": "2026-08-18",
           "venue": "Malvinas Argentinas (Mendoza)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401874152",
@@ -32153,9 +32165,12 @@
           "kickoff": "2026-08-18T21:30:00.000-03:00",
           "date": "2026-08-18",
           "venue": "Estadio Manuel Murillo Toro",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401874163",
@@ -32174,9 +32189,12 @@
           "kickoff": "2026-08-18T21:30:00.000-03:00",
           "date": "2026-08-18",
           "venue": "Estadio San Carlos de Apoquindo",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 3
+          }
         },
         {
           "id": "401874155",
@@ -35514,7 +35532,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-08-14T10:00:29.543Z",
+      "fetchedAt": "2026-08-19T09:32:23.335Z",
       "matches": [
         {
           "id": "401843575",
@@ -38773,9 +38791,12 @@
           "kickoff": "2026-08-18T19:00:00.000-03:00",
           "date": "2026-08-18",
           "venue": "Defensores del Chaco",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 4
+          }
         },
         {
           "id": "401903294",
@@ -38794,9 +38815,12 @@
           "kickoff": "2026-08-18T21:30:00.000-03:00",
           "date": "2026-08-18",
           "venue": "Estádio Cícero Pompeu de Toledo",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 1
+          }
         },
         {
           "id": "401902714",
