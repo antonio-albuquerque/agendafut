@@ -19,6 +19,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      # Preenchido pelo build quando alguma liga está sendo servida por um
+      # snapshot velho demais: verde, mas com o feed envelhecendo calado.
+      degraded: ${{ steps.build.outputs.degraded }}
     steps:
       - uses: actions/checkout@v4
 
@@ -38,7 +42,8 @@ jobs:
       # Se a fonte falhar, o build falha ANTES do deploy e o dist/
       # anterior continua no ar. Nunca publicar feed vazio: apagaria a
       # agenda de todo mundo que assinou.
-      - run: pnpm run build
+      - id: build
+        run: pnpm run build
 
       # O commit diário do estado também impede o GitHub de desativar
       # o cron por inatividade (60 dias sem commit em repo público).
@@ -68,3 +73,61 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Build agendado que falha não avisa ninguém: em 2026-08 foram 21 falhas
+  # diárias seguidas e quem denunciou foi o feed congelado, três semanas
+  # depois. Aqui a falha (e o verde-degradado) vira issue, e o build bom
+  # de volta fecha a issue sozinho.
+  alerta:
+    needs: [build, deploy]
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Abre, atualiza ou fecha a issue de alerta
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          RESULTADO_BUILD: ${{ needs.build.result }}
+          RESULTADO_DEPLOY: ${{ needs.deploy.result }}
+          DEGRADADO: ${{ needs.build.outputs.degraded }}
+        run: |
+          set -euo pipefail
+          LABEL='build-quebrado'
+          TITULO='Build diário precisando de atenção'
+
+          gh label create "$LABEL" --color B60205 \
+            --description 'Build agendado falhando ou servindo dados velhos' 2>/dev/null || true
+
+          numero=$(gh issue list --label "$LABEL" --state open --limit 1 \
+            --json number --jq '.[0].number // empty')
+
+          if [ "$RESULTADO_BUILD" = success ] && [ "$RESULTADO_DEPLOY" = success ]; then
+            if [ -z "$DEGRADADO" ]; then
+              # Tudo certo: se havia alerta aberto, ele já cumpriu o papel.
+              if [ -n "$numero" ]; then
+                gh issue comment "$numero" --body "Build voltou ao normal e publicou: $RUN_URL"
+                gh issue close "$numero"
+              fi
+              exit 0
+            fi
+            corpo="O build passou e publicou, mas alguma liga está sendo servida por um snapshot velho — a fonte parou de devolver dados e o feed está envelhecendo sem ninguém notar.
+
+          Ligas degradadas (dias desde o último dado bom): **$DEGRADADO**
+
+          Run: $RUN_URL"
+          else
+            corpo="O build agendado falhou (build: \`$RESULTADO_BUILD\`, deploy: \`$RESULTADO_DEPLOY\`).
+
+          O \`dist/\` não é tocado quando o build falha, então o feed publicado continua no ar — porém congelado no último build bom. Quanto mais tempo assim, mais desatualizada fica a agenda de quem assinou.
+
+          Run: $RUN_URL"
+          fi
+
+          if [ -n "$numero" ]; then
+            gh issue comment "$numero" --body "$corpo"
+          else
+            gh issue create --title "$TITULO" --label "$LABEL" --body "$corpo"
+          fi

@@ -9,6 +9,7 @@ import {
   loadSnapshots,
   saveSnapshots,
   serializeMatch,
+  STALE_SNAPSHOT_DAYS,
 } from '../src/state/snapshots.js';
 import { emptyState, reconcile } from '../src/state/sequence.js';
 import { buildCalendar } from '../src/ics/builder.js';
@@ -55,7 +56,7 @@ describe('applyLeagueResult', () => {
     const snapshots = emptySnapshots();
     const fresh = [makeMatch()];
     const result = applyLeagueResult(snapshots, requiredLeague, fresh, NOW_ISO, noop);
-    expect(result).toEqual({ matches: fresh, usedSnapshot: false });
+    expect(result).toEqual({ matches: fresh, usedSnapshot: false, snapshotAgeDays: null });
     expect(snapshots.leagues['brasileirao-serie-a']!.matches).toHaveLength(1);
   });
 
@@ -103,7 +104,46 @@ describe('applyLeagueResult', () => {
 
   it('liga opcional sem dados e sem snapshot → segue sem partidas', () => {
     const result = applyLeagueResult(emptySnapshots(), optionalLeague, [], NOW_ISO, noop);
-    expect(result).toEqual({ matches: [], usedSnapshot: false });
+    expect(result).toEqual({ matches: [], usedSnapshot: false, snapshotAgeDays: null });
+  });
+
+  it('snapshot recente não conta como degradado (soluço de um dia é rotina)', () => {
+    const snapshots = emptySnapshots();
+    applyLeagueResult(snapshots, optionalLeague, [makeMatch()], NOW_ISO, noop);
+    const warnings: string[] = [];
+    const result = applyLeagueResult(snapshots, optionalLeague, [], LATER_ISO, (m) =>
+      warnings.push(m),
+    );
+    expect(result.snapshotAgeDays).toBe(1);
+    expect(result.snapshotAgeDays).toBeLessThan(STALE_SNAPSHOT_DAYS);
+    expect(warnings).toHaveLength(1); // só o aviso de reuso, sem alarme
+  });
+
+  it('fonte sumida há semanas → idade acusa e avisa (caso Série C)', () => {
+    const snapshots = emptySnapshots();
+    applyLeagueResult(snapshots, optionalLeague, [makeMatch()], NOW_ISO, noop);
+
+    const muitoDepois = FIXED_NOW.plus({ days: STALE_SNAPSHOT_DAYS + 29 }).toISO({
+      suppressMilliseconds: true,
+    })!;
+    const warnings: string[] = [];
+    const result = applyLeagueResult(snapshots, optionalLeague, [], muitoDepois, (m) =>
+      warnings.push(m),
+    );
+    expect(result.usedSnapshot).toBe(true);
+    expect(result.snapshotAgeDays).toBe(STALE_SNAPSHOT_DAYS + 29);
+    expect(warnings.some((w) => /tempo demais/.test(w))).toBe(true);
+    // degradado nunca vira feed vazio: as partidas velhas continuam servidas
+    expect(result.matches).toHaveLength(1);
+  });
+
+  it('fetchedAt inválido não quebra o cálculo de idade', () => {
+    const snapshots = emptySnapshots();
+    applyLeagueResult(snapshots, optionalLeague, [makeMatch()], NOW_ISO, noop);
+    snapshots.leagues['carioca']!.fetchedAt = 'nao-e-data';
+    const result = applyLeagueResult(snapshots, optionalLeague, [], NOW_ISO, noop);
+    expect(result.snapshotAgeDays).toBeNull();
+    expect(result.matches).toHaveLength(1);
   });
 });
 
