@@ -138,4 +138,24 @@ describe('reconcile', () => {
     expect(second.entries[0]!.meta.uid).toBe(uid);
     expect(uid).toContain('2026-07-30'); // UID congela a data original
   });
+
+  it('mesmo par em datas diferentes (desempate) ganha UIDs distintos', () => {
+    const state = emptyState();
+    const ida = makeMatch();
+    const volta = makeMatch({ id: '9002', date: '2026-08-06', kickoff: null });
+    const { entries } = reconcile(state, [ida, volta], FIXED_NOW);
+    expect(entries[0]!.meta.uid).not.toBe(entries[1]!.meta.uid);
+  });
+
+  it('mesmo par na MESMA data aborta o build em vez de sobrescrever evento', () => {
+    // O fallback por data não desempata aqui: os dois caem no mesmo UID.
+    // Na prática isso só aparecia com os placeholders "TBD" da ESPN, que
+    // agora são filtrados na origem (normalizeEvent) — se voltar a estourar,
+    // é sinal de dado novo estranho na fonte, não de calendário sobrescrito.
+    const state = emptyState();
+    const match = makeMatch();
+    expect(() => reconcile(state, [match, makeMatch({ id: '9002' })], FIXED_NOW)).toThrow(
+      /UID duplicado/,
+    );
+  });
 });

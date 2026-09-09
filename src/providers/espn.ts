@@ -135,6 +135,31 @@ function toTeam(competitor: z.infer<typeof CompetitorSchema>) {
   return resolveTeam(featuredSlug ?? competitor.team.displayName);
 }
 
+/**
+ * Times-placeholder que a ESPN usa para chaveamento ainda indefinido
+ * ("TBD Home" / "TBD Away"). Os ids são globais, valem para todas as ligas.
+ */
+const PLACEHOLDER_TEAM_IDS = new Set(['131556', '131554']);
+
+/**
+ * Vaga de mata-mata sem times definidos. Não é partida: o UID deriva de
+ * competição + data + times, então dois confrontos placeholder na mesma data
+ * geram UIDs idênticos e derrubam o build inteiro (`UID duplicado`) —
+ * aconteceu em 2026-08 com a Série B e deixou o feed 3 semanas parado.
+ * Publicar também não serve: "TBD Home x TBD Away" é lixo na agenda de quem
+ * assina e vira evento órfão quando os times saem (o UID muda com eles).
+ * Quando a ESPN define o confronto, o jogo entra normalmente.
+ *
+ * Casa por id (convenção do featured-teams.json); o nome é só rede de
+ * segurança para variantes de placeholder que ainda não vimos.
+ */
+function isPlaceholderTeam(competitor: z.infer<typeof CompetitorSchema>): boolean {
+  return (
+    PLACEHOLDER_TEAM_IDS.has(competitor.team.id) ||
+    /^tbd\b/i.test(competitor.team.displayName.trim())
+  );
+}
+
 export function normalizeEvent(
   raw: unknown,
   league: LeagueConfig,
@@ -148,6 +173,11 @@ export function normalizeEvent(
   const away = block.competitors.find((c) => c.homeAway === 'away');
   if (!home || !away) {
     warn(`evento ${event.id} sem mandante/visitante — ignorado`);
+    return null;
+  }
+
+  if (isPlaceholderTeam(home) || isPlaceholderTeam(away)) {
+    warn(`evento ${event.id} (${league.slug}) com time placeholder — ignorado até definirem o confronto`);
     return null;
   }
 
