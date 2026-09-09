@@ -90,6 +90,46 @@ describe('normalizeEvent', () => {
     }
   });
 
+  it('vaga de mata-mata com time placeholder é ignorada', () => {
+    // Shape real da bra.2 em 2026-08: 2 jogos placeholder na MESMA data.
+    // Sem o filtro, os dois geram o mesmo UID e o build inteiro aborta.
+    const placeholderEvent = (id: string) => {
+      const raw = structuredClone(fixture.events[0]) as {
+        id: string;
+        competitions: Array<{
+          competitors: Array<{ team: { id: string; displayName: string } }>;
+        }>;
+      };
+      raw.id = id;
+      const [home, away] = raw.competitions[0]!.competitors;
+      home!.team = { id: '131556', displayName: 'TBD Home' };
+      away!.team = { id: '131554', displayName: 'TBD Away' };
+      return raw;
+    };
+
+    const warnings: string[] = [];
+    for (const id of ['401912682', '401912708']) {
+      expect(normalizeEvent(placeholderEvent(id), league, 2026, (m) => warnings.push(m))).toBeNull();
+    }
+    expect(warnings).toHaveLength(2);
+  });
+
+  it('placeholder é pego pelo nome mesmo com id novo', () => {
+    const raw = structuredClone(fixture.events[0]) as {
+      competitions: Array<{ competitors: Array<{ team: { id: string; displayName: string } }> }>;
+    };
+    raw.competitions[0]!.competitors[0]!.team = { id: '999999', displayName: 'TBD Winner' };
+    expect(normalizeEvent(raw, league, 2026, noop)).toBeNull();
+  });
+
+  it('time real não é confundido com placeholder', () => {
+    for (const match of normalized()) {
+      expect(match.home.slug).not.toMatch(/^tbd/);
+      expect(match.away.slug).not.toMatch(/^tbd/);
+    }
+    expect(normalized()).toHaveLength(fixture.events.length);
+  });
+
   it('status desconhecido avisa e cai em scheduled', () => {
     const warnings: string[] = [];
     const raw = structuredClone(fixture.events[0]) as {
