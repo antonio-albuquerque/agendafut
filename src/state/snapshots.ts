@@ -75,6 +75,26 @@ export function deserializeMatch(stored: StoredMatch): Match {
 export interface ApplyResult {
   matches: Match[];
   usedSnapshot: boolean;
+  /**
+   * Idade do snapshot em dias inteiros quando o feed está sendo servido
+   * dele; null quando os dados são frescos. Soluço de um dia da ESPN é
+   * rotina — o que precisa de alarme é a liga que nunca mais volta.
+   */
+  snapshotAgeDays: number | null;
+}
+
+/**
+ * A partir de quantos dias no snapshot a liga conta como degradada.
+ * Duas semanas passa longe de qualquer indisponibilidade normal da ESPN e
+ * ainda pega a rodada seguinte antes de o feed ficar mentiroso.
+ */
+export const STALE_SNAPSHOT_DAYS = 14;
+
+function ageInDays(fetchedAt: string, nowIso: string): number | null {
+  const from = DateTime.fromISO(fetchedAt);
+  const to = DateTime.fromISO(nowIso);
+  if (!from.isValid || !to.isValid) return null;
+  return Math.max(0, Math.floor(to.diff(from, 'days').days));
 }
 
 /**
@@ -99,16 +119,22 @@ export function applyLeagueResult(
     if (prev === undefined || JSON.stringify(prev.matches) !== JSON.stringify(serialized)) {
       snapshots.leagues[league.slug] = { fetchedAt: nowIso, matches: serialized };
     }
-    return { matches: fresh, usedSnapshot: false };
+    return { matches: fresh, usedSnapshot: false, snapshotAgeDays: null };
   }
 
   const reason = fresh === null ? 'fonte falhou' : '0 eventos';
   const snap = snapshots.leagues[league.slug];
   if (snap !== undefined && snap.matches.length > 0) {
+    const ageDays = ageInDays(snap.fetchedAt, nowIso);
     log(
       `${league.slug}: ${reason} — mantendo ${snap.matches.length} partidas do snapshot de ${snap.fetchedAt}`,
     );
-    return { matches: snap.matches.map(deserializeMatch), usedSnapshot: true };
+    if (ageDays !== null && ageDays >= STALE_SNAPSHOT_DAYS) {
+      log(
+        `${league.slug}: snapshot com ${ageDays} dias — a fonte não devolve dados há tempo demais`,
+      );
+    }
+    return { matches: snap.matches.map(deserializeMatch), usedSnapshot: true, snapshotAgeDays: ageDays };
   }
 
   if (league.required) {
@@ -119,7 +145,7 @@ export function applyLeagueResult(
   if (fresh === null) {
     log(`${league.slug}: ${reason} (liga opcional, sem snapshot) — seguindo sem partidas`);
   }
-  return { matches: [], usedSnapshot: false };
+  return { matches: [], usedSnapshot: false, snapshotAgeDays: null };
 }
 
 export function loadSnapshots(path: string, log: (msg: string) => void): SnapshotFile {

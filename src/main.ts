@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync, readFileSync, rmSync, cpSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readFileSync, rmSync, cpSync, appendFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { join } from 'node:path';
 import { DateTime } from 'luxon';
@@ -14,6 +14,7 @@ import {
   emptySnapshots,
   loadSnapshots,
   saveSnapshots,
+  STALE_SNAPSHOT_DAYS,
 } from './state/snapshots.js';
 import { TIMEZONE } from './domain/types.js';
 import { renderShell } from './site/index.js';
@@ -33,6 +34,31 @@ function fixtureFetch(path: string): typeof fetch {
   return () => Promise.resolve(new Response(body, { status: 200 }));
 }
 
+/**
+ * Liga servida por um snapshot velho demais: o build passa (invariante 4 —
+ * nunca publicar feed vazio), mas o feed está mentindo devagar. Sem sinal
+ * explícito isso apodrece calado, que foi o que aconteceu com a Série C.
+ */
+interface DegradedLeague {
+  slug: string;
+  ageDays: number;
+}
+
+/**
+ * Avisa o CI que o build passou porém degradado. O job de alerta lê a saída
+ * e abre/atualiza a issue; fora do Actions as variáveis não existem e isto
+ * vira só um log.
+ */
+function reportDegraded(leagues: DegradedLeague[]): void {
+  if (leagues.length === 0) return;
+  const resumo = leagues.map((l) => `${l.slug} (${l.ageDays}d)`).join(', ');
+  console.warn(`[build] DEGRADADO: sem dados novos da fonte há mais de ${STALE_SNAPSHOT_DAYS} dias: ${resumo}`);
+  // Anotação aparece no resumo do run mesmo com o build verde.
+  console.log(`::warning title=Snapshot velho::${resumo}`);
+  const output = process.env.GITHUB_OUTPUT;
+  if (output !== undefined) appendFileSync(output, `degraded=${resumo}\n`, 'utf8');
+}
+
 async function fetchAllMatches(): Promise<Match[]> {
   const fixturePath = process.env.ESPN_FIXTURE;
   const provider = new EspnProvider(
@@ -49,6 +75,7 @@ async function fetchAllMatches(): Promise<Match[]> {
 
   const all: Match[] = [];
   const fromSnapshot: string[] = [];
+  const degraded: DegradedLeague[] = [];
   for (const competition of competitions) {
     const league = LEAGUES.find((l) => l.code === competition.id)!;
     let fresh: Match[] | null = null;
@@ -57,8 +84,17 @@ async function fetchAllMatches(): Promise<Match[]> {
     } catch (err) {
       warn(`${competition.slug}: ${err instanceof Error ? err.message : String(err)}`);
     }
-    const { matches, usedSnapshot } = applyLeagueResult(snapshots, league, fresh, nowIso, warn);
+    const { matches, usedSnapshot, snapshotAgeDays } = applyLeagueResult(
+      snapshots,
+      league,
+      fresh,
+      nowIso,
+      warn,
+    );
     if (usedSnapshot) fromSnapshot.push(competition.slug);
+    if (snapshotAgeDays !== null && snapshotAgeDays >= STALE_SNAPSHOT_DAYS) {
+      degraded.push({ slug: competition.slug, ageDays: snapshotAgeDays });
+    }
     console.log(
       `[build] ${competition.slug}: ${matches.length} partidas${usedSnapshot ? ' (snapshot)' : ''}`,
     );
@@ -69,6 +105,7 @@ async function fetchAllMatches(): Promise<Match[]> {
   if (fromSnapshot.length > 0) {
     console.warn(`[build] ligas sem dados novos (usando snapshot): ${fromSnapshot.join(', ')}`);
   }
+  reportDegraded(degraded);
   return all;
 }
 
