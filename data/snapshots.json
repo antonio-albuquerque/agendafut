@@ -8818,7 +8818,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-09-09T22:47:06.131Z",
+      "fetchedAt": "2026-09-10T13:20:05.973Z",
       "matches": [
         {
           "id": "401860064",
@@ -15125,9 +15125,12 @@
           "kickoff": "2026-09-09T19:30:00.000-03:00",
           "date": "2026-09-09",
           "venue": "Estádio Santa Cruz",
-          "status": "confirmed",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 3
+          }
         },
         {
           "id": "401860331",
@@ -15146,9 +15149,12 @@
           "kickoff": "2026-09-09T19:30:00.000-03:00",
           "date": "2026-09-09",
           "venue": "Arena Castelão",
-          "status": "confirmed",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860322",
@@ -15167,9 +15173,12 @@
           "kickoff": "2026-09-09T20:30:00.000-03:00",
           "date": "2026-09-09",
           "venue": "Estádio Raimundo Sampaio (Independência)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860325",
@@ -15188,9 +15197,12 @@
           "kickoff": "2026-09-09T20:30:00.000-03:00",
           "date": "2026-09-09",
           "venue": "Germano Krüger",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 0
+          }
         },
         {
           "id": "401860330",
@@ -15209,9 +15221,12 @@
           "kickoff": "2026-09-09T21:30:00.000-03:00",
           "date": "2026-09-09",
           "venue": "Estádio Antônio Accioly",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860323",
@@ -29188,7 +29203,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-09-09T22:24:15.851Z",
+      "fetchedAt": "2026-09-10T13:20:05.973Z",
       "matches": [
         {
           "id": "401842610",
@@ -32639,9 +32654,12 @@
           "kickoff": "2026-09-09T19:00:00.000-03:00",
           "date": "2026-09-09",
           "venue": "Allianz Parque",
-          "status": "confirmed",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401912541",
@@ -32660,9 +32678,12 @@
           "kickoff": "2026-09-09T21:30:00.000-03:00",
           "date": "2026-09-09",
           "venue": "Estadio Jorge Luis Hirschi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401912543",
@@ -35979,7 +36000,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-09-09T22:24:15.851Z",
+      "fetchedAt": "2026-09-10T13:20:05.973Z",
       "matches": [
         {
           "id": "401843575",
@@ -39502,9 +39523,12 @@
           "kickoff": "2026-09-09T19:00:00.000-03:00",
           "date": "2026-09-09",
           "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
-          "status": "confirmed",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401913074",
