@@ -8818,7 +8818,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-09-10T13:20:05.973Z",
+      "fetchedAt": "2026-09-11T13:15:54.923Z",
       "matches": [
         {
           "id": "401860064",
@@ -15229,27 +15229,6 @@
           }
         },
         {
-          "id": "401860323",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "São Bernardo",
-            "slug": "sao-bernardo"
-          },
-          "away": {
-            "name": "Londrina",
-            "slug": "londrina"
-          },
-          "kickoff": "2026-09-10T19:30:00.000-03:00",
-          "date": "2026-09-10",
-          "venue": "Estádio Primeiro de Maio",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401860326",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
@@ -15266,9 +15245,36 @@
           "kickoff": "2026-09-10T19:30:00.000-03:00",
           "date": "2026-09-10",
           "venue": "Estádio Onésio Brasileiro Alvarenga",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": "401860323",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "São Bernardo",
+            "slug": "sao-bernardo"
+          },
+          "away": {
+            "name": "Londrina",
+            "slug": "londrina"
+          },
+          "kickoff": "2026-09-10T21:00:00.000-03:00",
+          "date": "2026-09-10",
+          "venue": "Estádio Primeiro de Maio",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401860324",
@@ -15287,9 +15293,12 @@
           "kickoff": "2026-09-10T21:30:00.000-03:00",
           "date": "2026-09-10",
           "venue": "Ilha do Retiro",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401860334",
@@ -22612,7 +22621,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-09-09T22:24:15.851Z",
+      "fetchedAt": "2026-09-11T13:15:54.923Z",
       "matches": [
         {
           "id": "401858546",
@@ -26213,6 +26222,90 @@
             "home": 3,
             "away": 1
           }
+        },
+        {
+          "id": "401913109",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Grêmio",
+            "slug": "gremio"
+          },
+          "away": {
+            "name": "Atlético-MG",
+            "slug": "atletico-mg"
+          },
+          "kickoff": null,
+          "date": "2026-11-01",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401913105",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Palmeiras",
+            "slug": "palmeiras"
+          },
+          "away": {
+            "name": "Vasco da Gama",
+            "slug": "vasco"
+          },
+          "kickoff": null,
+          "date": "2026-11-01",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401913108",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Atlético-MG",
+            "slug": "atletico-mg"
+          },
+          "away": {
+            "name": "Grêmio",
+            "slug": "gremio"
+          },
+          "kickoff": null,
+          "date": "2026-11-08",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401913107",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Vasco da Gama",
+            "slug": "vasco"
+          },
+          "away": {
+            "name": "Palmeiras",
+            "slug": "palmeiras"
+          },
+          "kickoff": null,
+          "date": "2026-11-08",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
         }
       ]
     },
@@ -29203,7 +29296,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-09-10T13:20:05.973Z",
+      "fetchedAt": "2026-09-11T13:15:54.923Z",
       "matches": [
         {
           "id": "401842610",
@@ -32702,9 +32795,12 @@
           "kickoff": "2026-09-10T21:30:00.000-03:00",
           "date": "2026-09-10",
           "venue": "Estadio Olímpico Atahualpa",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401912517",
@@ -36000,7 +36096,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-09-10T13:20:05.973Z",
+      "fetchedAt": "2026-09-11T13:15:54.923Z",
       "matches": [
         {
           "id": "401843575",
@@ -39547,9 +39643,12 @@
           "kickoff": "2026-09-10T21:30:00.000-03:00",
           "date": "2026-09-10",
           "venue": "Estadio Inca Garcilaso de la Vega",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401913959",
