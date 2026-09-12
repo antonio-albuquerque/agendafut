@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-09-09T22:24:15.851Z",
+      "fetchedAt": "2026-09-12T12:38:11.947Z",
       "matches": [
         {
           "id": "401840808",
@@ -6291,9 +6291,12 @@
           "kickoff": "2026-09-11T21:00:00.000-03:00",
           "date": "2026-09-11",
           "venue": "Couto Pereira",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 3
+          }
         },
         {
           "id": "401841231",

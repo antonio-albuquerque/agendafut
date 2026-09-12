@@ -2707,9 +2707,12 @@
       "lastModified": "2026-08-12T16:35:39.830Z"
     },
     "brasileirao-serie-a-2026-07-29-botafogo-vs-gremio@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "662763554a3a959333c646a4b0ffb3f499746486ae5e8c1b999521c71d5ec09a",
-      "lastModified": "2026-09-09T22:24:17.417Z"
+      "sequence": 3,
+      "seqHash": "d1c8ed2619ff60a241df8b9b492562e62623d8ad26c3a4da4160b6f6ed85b0cd",
+      "lastModified": "2026-09-12T12:38:15.144Z",
+      "broadcasters": [
+        "PREMIERE"
+      ]
     },
     "brasileirao-serie-a-2026-07-29-chapecoense-vs-vasco@futebol.agendafut": {
       "sequence": 1,
@@ -3154,11 +3157,12 @@
       ]
     },
     "brasileirao-serie-a-2026-09-12-bahia-vs-remo@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "e0b0271bca36e849911f2b505b64e7a0c3fe84a2bdcfe0cc50f5560a36735a47",
-      "lastModified": "2026-09-11T13:15:58.304Z",
+      "sequence": 4,
+      "seqHash": "d08fd77058047ce18b64b70a084bef1c0e1f3477e17ccfe831fb8766bc7471e8",
+      "lastModified": "2026-09-12T12:38:15.144Z",
       "broadcasters": [
-        "PREMIERE FC"
+        "PREMIERE FC",
+        "SPORTV"
       ]
     },
     "brasileirao-serie-a-2026-09-12-botafogo-vs-bragantino@futebol.agendafut": {
@@ -3180,9 +3184,9 @@
       ]
     },
     "brasileirao-serie-a-2026-09-12-coritiba-vs-athletico-pr@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "225d0112e2cddeba6ed4dc68b83cfaf711731d1b71d6000d0e27592d522cf48b",
-      "lastModified": "2026-09-09T22:24:17.417Z",
+      "sequence": 3,
+      "seqHash": "c00c99e8f414c3cac059bf1bd2133ef34d528e8a29fe6eadc24b9206fb79ceb6",
+      "lastModified": "2026-09-12T12:38:15.144Z",
       "broadcasters": [
         "PREMIERE",
         "SPORTV"
@@ -5354,11 +5358,12 @@
       ]
     },
     "brasileirao-serie-b-2026-09-11-botafogo-sp-vs-goias@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "c72aa54922eea795f8acdcfe83b5242b9c342a07b771cf3b51498e2117ae50d8",
-      "lastModified": "2026-09-10T13:20:09.439Z",
+      "sequence": 4,
+      "seqHash": "d4f9b12b0a7ff146e82ad320f79d34b8b0955d1e0ad3298b6e3531c4e7f36cff",
+      "lastModified": "2026-09-12T12:38:15.144Z",
       "broadcasters": [
-        "DISNEY+"
+        "DISNEY+",
+        "ESPN 4"
       ]
     },
     "brasileirao-serie-b-2026-09-11-crb-vs-sport@futebol.agendafut": {
