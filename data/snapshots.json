@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-09-12T12:38:11.947Z",
+      "fetchedAt": "2026-09-13T13:40:44.497Z",
       "matches": [
         {
           "id": "401840808",
@@ -6315,9 +6315,12 @@
           "kickoff": "2026-09-12T16:00:00.000-03:00",
           "date": "2026-09-12",
           "venue": "Arena MRV",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 1
+          }
         },
         {
           "id": "401841236",
@@ -6336,9 +6339,12 @@
           "kickoff": "2026-09-12T16:00:00.000-03:00",
           "date": "2026-09-12",
           "venue": "Arena do Grêmio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401841228",
@@ -6357,9 +6363,12 @@
           "kickoff": "2026-09-12T17:00:00.000-03:00",
           "date": "2026-09-12",
           "venue": "Arena Condá",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401841234",
@@ -6378,9 +6387,12 @@
           "kickoff": "2026-09-12T18:30:00.000-03:00",
           "date": "2026-09-12",
           "venue": "Allianz Parque",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401841229",
@@ -6399,9 +6411,12 @@
           "kickoff": "2026-09-12T20:30:00.000-03:00",
           "date": "2026-09-12",
           "venue": "Joao Havelange Stadium",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841233",
@@ -6420,9 +6435,12 @@
           "kickoff": "2026-09-12T21:00:00.000-03:00",
           "date": "2026-09-12",
           "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401841235",
