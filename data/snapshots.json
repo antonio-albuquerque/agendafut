@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-09-13T13:40:44.497Z",
+      "fetchedAt": "2026-09-14T15:40:56.149Z",
       "matches": [
         {
           "id": "401840808",
@@ -6459,9 +6459,12 @@
           "kickoff": "2026-09-13T16:00:00.000-03:00",
           "date": "2026-09-13",
           "venue": "Estadio Municipal José Maria de Campos Maia",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 2
+          }
         },
         {
           "id": "401841237",
@@ -6480,9 +6483,12 @@
           "kickoff": "2026-09-13T17:30:00.000-03:00",
           "date": "2026-09-13",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401841230",
@@ -8839,7 +8845,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-09-11T13:15:54.923Z",
+      "fetchedAt": "2026-09-14T15:40:56.149Z",
       "matches": [
         {
           "id": "401860064",
@@ -15338,9 +15344,12 @@
           "kickoff": "2026-09-13T16:00:00.000-03:00",
           "date": "2026-09-13",
           "venue": "Estádio Antônio Accioly",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 4,
+            "away": 0
+          }
         },
         {
           "id": "401860340",
@@ -15359,9 +15368,12 @@
           "kickoff": "2026-09-13T18:00:00.000-03:00",
           "date": "2026-09-13",
           "venue": "Alfredo Jaconi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860341",
@@ -15380,9 +15392,12 @@
           "kickoff": "2026-09-13T18:30:00.000-03:00",
           "date": "2026-09-13",
           "venue": "Arena Castelão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401860338",
@@ -15401,9 +15416,12 @@
           "kickoff": "2026-09-13T18:30:00.000-03:00",
           "date": "2026-09-13",
           "venue": "Estádio Dr. Jorge Ismael de Biasi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401860335",
