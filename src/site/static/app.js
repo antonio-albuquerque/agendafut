@@ -13,6 +13,16 @@
   var DOW = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'];
   var DOW1 = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
   var ACCENT = '#ff5a1f';
+  // cor principal de cada time: tinge o gradiente do hero na página do time.
+  // Clubes preto-e-branco usam um grafite, senão o hero vira cinza-lavado.
+  var TEAM_COLORS = {
+    'america-mg': '#12874f', 'athletico-pr': '#d0342c', 'atletico-mg': '#3a3f47', 'bahia': '#1a6cb5',
+    'botafogo': '#3a3f47', 'ceara': '#2b2f36', 'corinthians': '#2b2f36', 'coritiba': '#0e6b5c',
+    'cruzeiro': '#1355a8', 'flamengo': '#d02c2c', 'fluminense': '#8c1c3a', 'fortaleza': '#1f5fb0',
+    'goias': '#0d8a44', 'gremio': '#2a9fd8', 'internacional': '#d81e2a', 'nautico': '#d13a45',
+    'palmeiras': '#14804a', 'paysandu': '#1e4f9c', 'remo': '#2b5cb0', 'santa-cruz': '#cf3339',
+    'santos': '#4a4f57', 'sao-paulo': '#cc2830', 'sport': '#c8342c', 'vasco': '#3a3f47', 'vitoria': '#d64230'
+  };
   var query = '';
   // mês corrente da view de detalhe (zerado ao trocar de feed)
   var sel = { key: null, y: null, m: null };
@@ -32,7 +42,7 @@
     });
   }
   function norm(s) {
-    return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   }
   function pad(n) { return String(n).padStart(2, '0'); }
   function absUrl(path) { return new URL(path, window.location.href).href; }
@@ -260,6 +270,11 @@
 
       var matchDays = {};
       data.matches.forEach(function (mt) { matchDays[mt.date] = true; });
+      // competições e times sem cor mapeada ficam com o gradiente padrão
+      var teamColor = kind === 'team' ? TEAM_COLORS[slug] : null;
+      var pageOpen = teamColor
+        ? '<div class="page tinted" style="--team:' + teamColor + '">'
+        : '<div class="page">';
 
       var monthMatches = data.matches
         .filter(function (mt) { return mt.date.slice(0, 7) === ym; })
@@ -287,7 +302,7 @@
       }).join('');
 
       app.innerHTML =
-        '<div class="page"><div class="hero"></div>' +
+        pageOpen + '<div class="hero"></div>' +
         '<div class="wrap detail">' +
         '<div class="topbar">' +
         '<button class="iconbtn backbtn" aria-label="Voltar">' + SVG_CHEV_L + '</button>' +
