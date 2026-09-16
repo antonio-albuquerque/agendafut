@@ -20,7 +20,10 @@
   --warn: #ffb26b;
   --danger: #ff6b6b;
   --radius: 24px;
-  --hero: linear-gradient(180deg, #ff5a1f 0%, #ea1b1b 32%, #8a1211 66%, #0d0b0b 100%);
+  /* paradas do hero (laranja→vermelho→preto); no detalhe de time viram a cor do clube */
+  --h0: #ff5a1f;
+  --h1: #ea1b1b;
+  --h2: #8a1211;
 }
 
 * { box-sizing: border-box; }
@@ -46,7 +49,14 @@ a { color: inherit; }
 .page { position: relative; overflow: hidden; min-height: 100vh; }
 .hero {
   position: absolute; top: 0; left: 0; right: 0; height: 560px;
-  background: var(--hero); pointer-events: none;
+  background: linear-gradient(180deg, var(--h0) 0%, var(--h1) 32%, var(--h2) 66%, var(--bg) 100%);
+  pointer-events: none;
+}
+/* detalhe de time: gradiente derivado da cor do clube (--team vem inline) */
+.page.tinted {
+  --h0: color-mix(in oklab, var(--team) 78%, #ffffff);
+  --h1: var(--team);
+  --h2: color-mix(in oklab, var(--team) 55%, #000000);
 }
 .hero::before, .hero::after {
   content: ''; position: absolute; left: 50%; border-radius: 50%;
