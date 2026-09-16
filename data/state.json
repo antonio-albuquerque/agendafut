@@ -5473,14 +5473,23 @@
       ]
     },
     "brasileirao-serie-b-2026-09-18-criciuma-vs-operario-pr@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "7125276bd73570ad2f5bbcf731e40a9a1135f55b7c10d2c1ae898f31f6d84e09",
-      "lastModified": "2026-08-15T09:24:27.912Z"
+      "sequence": 3,
+      "seqHash": "885e301ee88e53fe1539e822df7f203049882f5fffb7ee9afad47e198c4039cf",
+      "lastModified": "2026-09-16T14:02:50.947Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "brasileirao-serie-b-2026-09-18-cuiaba-vs-nautico@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "5b651cb68e8207a3e443318f6ba760daaf3edbd736702f688fb5043b292da36a",
-      "lastModified": "2026-08-15T09:24:27.912Z"
+      "sequence": 3,
+      "seqHash": "47e471330c40744bd8ad4c993d3f5df24ae66b4efcaa31982c8d1e5ded58622a",
+      "lastModified": "2026-09-16T14:02:50.947Z",
+      "broadcasters": [
+        "DISNEY+",
+        "SPORTYNET",
+        "XSPORTS"
+      ]
     },
     "brasileirao-serie-b-2026-09-18-goias-vs-avai@futebol.agendafut": {
       "sequence": 3,
@@ -5491,9 +5500,14 @@
       ]
     },
     "brasileirao-serie-b-2026-09-18-londrina-vs-fortaleza@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "eed9f62c7478c0cffedcdd1c84d77ca862a094b171ab9906edd40b5cb8691896",
-      "lastModified": "2026-08-15T09:24:27.912Z"
+      "sequence": 3,
+      "seqHash": "2923a1970f8212f9705c02d1ebe7b9e90397b675c336ff0c55e244a824081198",
+      "lastModified": "2026-09-16T14:02:50.947Z",
+      "broadcasters": [
+        "CANAL GOAT",
+        "DISNEY+",
+        "XSPORTS"
+      ]
     },
     "brasileirao-serie-b-2026-09-18-ponte-preta-vs-crb@futebol.agendafut": {
       "sequence": 3,
@@ -5504,10 +5518,11 @@
       ]
     },
     "brasileirao-serie-b-2026-09-18-sao-bernardo-vs-atletico-go@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "701b4720c55be311a9290673ed920e488755f659e4e513688755321f67cf4d59",
-      "lastModified": "2026-09-14T15:40:58.565Z",
+      "sequence": 4,
+      "seqHash": "ef27c4de50a6fe083093b44d58e53d8176ff5661c7a1a744a0894b52a17777c8",
+      "lastModified": "2026-09-16T14:02:50.947Z",
       "broadcasters": [
+        "GE TV",
         "PREMIERE FC",
         "SPORTV"
       ]
@@ -5524,11 +5539,12 @@
       ]
     },
     "brasileirao-serie-b-2026-09-18-vila-nova-vs-america-mg@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "7dc5077d7fb6afa2164775547c4a40a4f89a446be7204192793effc16bbfbe29",
-      "lastModified": "2026-09-14T15:40:58.565Z",
+      "sequence": 4,
+      "seqHash": "9e51b7567e11aea5a4fdaf6afce10287858b4966253ae0e09e056f130bd68e64",
+      "lastModified": "2026-09-16T14:02:50.947Z",
       "broadcasters": [
         "DISNEY+",
+        "ESPN",
         "ESPN 4"
       ]
     },
