@@ -168,7 +168,7 @@ describe('SPA', () => {
     await gotoMonth(window, 'agosto 2026');
 
     expect(appEl.innerHTML).toContain('Horário a definir');
-    expect(appEl.innerHTML).toContain('—'); // horário vazio na linha do jogo
+    expect(appEl.querySelector('.mtime')).toBeNull(); // sem chip de horário
   });
 
   it('feed inexistente mostra erro sem quebrar', async () => {
