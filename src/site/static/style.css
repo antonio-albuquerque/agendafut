@@ -1,7 +1,8 @@
 /* Tema "gradiente": base preta com hero laranja→vermelho→preto, títulos em
    Bebas Neue (caixa alta), controles em pílula translúcida e escudos em
    círculos escuros. Mesma estrutura de telas de antes: home com busca e
-   listas; detalhe com assinar, grade mensal e jogos do mês. */
+   listas; detalhe com assinar, grade mensal (dias com jogo em pílula
+   translúcida, clicáveis para filtrar) e jogos do mês. */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
@@ -200,13 +201,29 @@ a { color: inherit; }
 .cell {
   height: 44px; display: flex; flex-direction: column; align-items: center;
   justify-content: center; gap: 3px; font-size: 14px; color: rgba(255, 255, 255, 0.9);
+  padding: 0; border: none; background: transparent; font: inherit; border-radius: 14px;
 }
 .cell .n { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; }
 .cell.out { color: rgba(255, 255, 255, 0.28); }
 .cell.today .n { background: #ffffff; color: var(--bg); font-weight: 600; }
-.cell .dot { width: 5px; height: 5px; border-radius: 50%; }
+.cell .dot { width: 5px; height: 5px; border-radius: 50%; background: transparent; }
+/* dia com jogo: pílula translúcida + ponto laranja; no mês corrente é um botão */
+.cell.has { background: var(--glass); font-weight: 600; }
+.cell.has .dot { background: var(--accent); }
+.cell.has.out { background: transparent; font-weight: 400; }
+.cell.has.out .dot { background: color-mix(in srgb, var(--accent) 45%, transparent); }
+button.cell { cursor: pointer; }
+button.cell:hover { background: var(--glass-hi); }
+/* dia selecionado: número em círculo laranja, ponto some (o filtro está ativo) */
+.cell.sel { background: color-mix(in srgb, var(--accent) 22%, transparent); }
+.cell.sel .n { background: var(--accent); color: #ffffff; font-weight: 600; }
+.cell.sel .dot { background: transparent; }
+.calhint { margin: 0; text-align: center; font-size: 11px; color: var(--faint); }
 
 /* ── Jogos do mês ──────────────────────────────────────────── */
+.ghead { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.clearday { border: none; cursor: pointer; height: 26px; padding: 0 12px; }
+.clearday:hover { background: var(--pill-hi); }
 .mlist { display: flex; flex-direction: column; gap: 6px; }
 .mrow {
   display: flex; align-items: center; gap: 12px;
@@ -287,5 +304,6 @@ a { color: inherit; }
   .wrap.detail .calcard { grid-area: cal; }
   .wrap.detail .g-month { grid-area: list; }
   .wrap.detail .g-month .glabel { text-align: left; }
+  .wrap.detail .ghead { flex-direction: row; align-items: baseline; justify-content: space-between; }
   .wrap.detail .foot { grid-area: foot; text-align: left; }
 }

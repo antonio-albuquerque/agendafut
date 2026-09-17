@@ -135,11 +135,56 @@ describe('SPA', () => {
     expect(html).toContain('21:30');
     expect(html).toContain('2 x 1'); // placar do encerrado
     expect(html).toContain('Campeonato Paulista');
-    // dia 28 tem jogo → ponto colorido na grade
-    const dots = [...appEl.querySelectorAll('.cell')].filter(
-      (c) => !(c.querySelector('.dot')!.getAttribute('style') || '').includes('transparent'),
-    );
-    expect(dots.length).toBe(1);
+    // dia 28 tem jogo → célula marcada e clicável
+    const marked = appEl.querySelectorAll('.cell.has');
+    expect(marked.length).toBe(1);
+    expect(marked[0]!.tagName).toBe('BUTTON');
+    expect(marked[0]!.getAttribute('data-day')).toBe('2026-01-28');
+    expect(appEl.querySelectorAll('button.cell').length).toBe(1); // dias sem jogo são inertes
+  });
+
+  it('clicar num dia filtra a lista; clicar de novo volta ao mês', async () => {
+    const { window } = bootApp();
+    const appEl = await openDetail(window, '#/time/palmeiras');
+    await gotoMonth(window, 'janeiro 2026');
+
+    const click = (el: Element | null) => (el as unknown as { click(): void }).click();
+    click(appEl.querySelector('.cell[data-day="2026-01-28"]'));
+    await flush(window);
+    expect(appEl.querySelector('.cell.sel')!.getAttribute('data-day')).toBe('2026-01-28');
+    expect(appEl.querySelector('.cell.sel')!.getAttribute('aria-pressed')).toBe('true');
+    expect(appEl.querySelector('.g-month .glabel')!.textContent).toBe('Jogos de qua 28 jan');
+    expect(appEl.querySelectorAll('.mrow').length).toBe(1);
+    expect(appEl.querySelector('.clearday')).toBeTruthy();
+
+    click(appEl.querySelector('.cell[data-day="2026-01-28"]'));
+    await flush(window);
+    expect(appEl.querySelector('.cell.sel')).toBeNull();
+    expect(appEl.querySelector('.g-month .glabel')!.textContent).toBe('Jogos do mês');
+    expect(appEl.querySelector('.clearday')).toBeNull();
+  });
+
+  it('chip "Ver mês inteiro" e troca de mês limpam o filtro por dia', async () => {
+    const { window } = bootApp();
+    const appEl = await openDetail(window, '#/time/palmeiras');
+    await gotoMonth(window, 'janeiro 2026');
+    const click = (el: Element | null) => (el as unknown as { click(): void }).click();
+
+    click(appEl.querySelector('.cell[data-day="2026-01-28"]'));
+    await flush(window);
+    click(appEl.querySelector('.clearday'));
+    await flush(window);
+    expect(appEl.querySelector('.cell.sel')).toBeNull();
+    expect(appEl.querySelectorAll('.mrow').length).toBe(1); // único jogo de janeiro
+
+    click(appEl.querySelector('.cell[data-day="2026-01-28"]'));
+    await flush(window);
+    click(appEl.querySelectorAll('.mbtn')[1]!); // fevereiro
+    await flush(window);
+    expect(appEl.querySelector('.mlabel')!.textContent).toBe('fevereiro 2026');
+    expect(appEl.querySelector('.cell.sel')).toBeNull();
+    expect(appEl.querySelector('.clearday')).toBeNull();
+    expect(appEl.innerHTML).toContain('Sem jogos neste mês.');
   });
 
   it('jogo agendado exibe canais de transmissão', async () => {
