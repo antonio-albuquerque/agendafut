@@ -5,24 +5,27 @@ import path from 'node:path';
 const BASE = process.env.BASE || 'https://antonio-albuquerque.github.io/agendafut/';
 const OUT = process.env.OUT || 'out';
 const W = Number(process.env.W || 1280), H = Number(process.env.H || 720);
-const DSF = Number(process.env.DSF || 1);
+const Z = Number(process.env.Z || 1);           // CSS zoom: layout = W/Z × H/Z
+const LW = W / Z, LH = H / Z;                   // layout size in CSS px
+const PHONE = LW < 600;
 const QUICK = !!process.env.QUICK;
 const sleep = (ms) => new Promise(r => setTimeout(r, QUICK ? Math.min(ms, 150) : ms));
 
 const browser = await chromium.launch();
 const ctx = await browser.newContext({
   viewport: { width: W, height: H },
-  deviceScaleFactor: DSF,
+  deviceScaleFactor: 1,
   locale: 'pt-BR',
   timezoneId: 'America/Sao_Paulo',
   permissions: ['clipboard-read', 'clipboard-write'],
-  recordVideo: { dir: OUT, size: { width: W * DSF, height: H * DSF } },
+  recordVideo: { dir: OUT, size: { width: W, height: H } },
 });
 const page = await ctx.newPage();
 
 // overlay: cursor + caption bar + end card, attached to <body> (the app re-renders #app)
 const OVERLAY = `
 (() => {
+  document.documentElement.style.zoom = '${Z}';
   if (document.getElementById('demo-cursor')) return;
   const st = document.createElement('style');
   st.textContent = \`
@@ -34,8 +37,8 @@ const OVERLAY = `
     #demo-ripple.go{animation:demo-rip .5s ease-out}
     @keyframes demo-rip{0%{opacity:.9;transform:translate(-50%,-50%) scale(.3)}100%{opacity:0;transform:translate(-50%,-50%) scale(1.3)}}
     #demo-cap{position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(12px);z-index:99997;
-      max-width:min(760px,88vw);padding:14px 26px;border-radius:999px;background:rgba(10,8,8,.82);
-      backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font:600 clamp(15px,1.65vw,21px)/1.3 Inter,system-ui,sans-serif;
+      max-width:${PHONE ? Math.round(LW*0.88) : 760}px;padding:14px 26px;border-radius:999px;background:rgba(10,8,8,.82);
+      backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font:600 ${PHONE ? 15 : 21}px/1.3 Inter,system-ui,sans-serif;
       text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.5),inset 0 0 0 1px rgba(255,255,255,.14);
       opacity:0;transition:opacity .35s,transform .35s;pointer-events:none}
     #demo-cap.on{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -44,15 +47,15 @@ const OVERLAY = `
       gap:18px;background:radial-gradient(1200px 700px at 50% 20%,#8a1211 0%,#0d0b0b 70%);color:#fff;
       font-family:Inter,system-ui,sans-serif;opacity:0;transition:opacity .6s;pointer-events:none}
     #demo-card.on{opacity:1}
-    #demo-card .t{font:400 clamp(72px,11.7vw,150px)/0.9 "Bebas Neue",Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em}
-    #demo-card .s{font-size:clamp(17px,2vw,26px);font-weight:500;opacity:.9}
-    #demo-card .u{margin-top:10px;font-size:clamp(13px,1.7vw,22px);max-width:90vw;padding:12px 26px;border-radius:999px;background:rgba(255,255,255,.12);
+    #demo-card .t{font:400 ${PHONE ? 72 : 150}px/0.9 "Bebas Neue",Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em}
+    #demo-card .s{font-size:${PHONE ? 17 : 26}px;font-weight:500;opacity:.9}
+    #demo-card .u{margin-top:10px;font-size:${PHONE ? 13 : 22}px;max-width:${Math.round(LW*0.9)}px;padding:12px 26px;border-radius:999px;background:rgba(255,255,255,.12);
       box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
   \`;
   document.head.appendChild(st);
   const c = document.createElement('div'); c.id = 'demo-cursor';
   c.innerHTML = '<svg viewBox="0 0 24 24" width="28" height="28"><path d="M5 3l14 9-6.2 1.2L16 20l-2.6 1.3-3.2-6.8L5 19z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round"/></svg>';
-  c.style.left = '640px'; c.style.top = '520px';
+  c.style.left = '${LW/2}px'; c.style.top = '${LH*0.7}px';
   document.body.appendChild(c);
   const r = document.createElement('div'); r.id = 'demo-ripple'; document.body.appendChild(r);
   const cap = document.createElement('div'); cap.id = 'demo-cap'; document.body.appendChild(cap);
@@ -61,22 +64,25 @@ const OVERLAY = `
 await page.addInitScript(OVERLAY);
 const ensureOverlay = () => page.evaluate(OVERLAY);
 
-let cur = { x: 640, y: 520 };
 async function moveTo(x, y, ms = 600) {
-  cur = { x, y };
   await page.evaluate(([x, y]) => { const c = document.getElementById('demo-cursor'); c.style.left = x + 'px'; c.style.top = y + 'px'; }, [x, y]);
-  await page.mouse.move(x, y, { steps: 12 });
+  await page.mouse.move(x * Z, y * Z, { steps: 12 });
   await sleep(ms);
+}
+// bounding box in CSS px of the (zoomed) layout
+async function box(el) {
+  const b = await el.boundingBox();
+  return { x: b.x / Z, y: b.y / Z, width: b.width / Z, height: b.height / Z };
 }
 async function center(selector, dx = 0, dy = 0) {
   const el = page.locator(selector).first();
   await el.waitFor({ state: 'visible' });
-  let b = await el.boundingBox();
-  if (b.y < 70 || b.y + b.height > H - 90) {
+  let b = await box(el);
+  if (b.y < 70 || b.y + b.height > LH - 90) {
     // bring the target on screen (smooth) before pointing at it
     const y = await page.evaluate(() => window.scrollY);
-    await scrollTo(Math.max(0, y + b.y - Math.min(160, Math.max(60, (H - b.height) / 3))), 1000);
-    b = await el.boundingBox();
+    await scrollTo(Math.max(0, y + b.y - Math.min(160, Math.max(60, (LH - b.height) / 3))), 1000);
+    b = await box(el);
   }
   return { x: b.x + b.width / 2 + dx, y: b.y + b.height / 2 + dy };
 }
@@ -87,7 +93,7 @@ async function click(selector, { pause = 900, navigate = true } = {}) {
   const p = await center(selector);
   await moveTo(p.x, p.y, 350);
   await page.evaluate(([x, y]) => { const r = document.getElementById('demo-ripple'); r.style.left = x + 'px'; r.style.top = y + 'px'; r.classList.remove('go'); void r.offsetWidth; r.classList.add('go'); }, [p.x, p.y]);
-  if (navigate) await page.mouse.click(p.x, p.y);
+  if (navigate) await page.mouse.click(p.x * Z, p.y * Z);
   await sleep(pause);
 }
 async function caption(html, hold = 0) {
@@ -103,7 +109,7 @@ async function scrollTo(y, ms = 1100) {
   await sleep(ms);
 }
 async function scrollIntoView(selector, offset = 90, ms = 1100) {
-  const b = await page.locator(selector).first().boundingBox();
+  const b = await box(page.locator(selector).first());
   const y = await page.evaluate(() => window.scrollY);
   await scrollTo(Math.max(0, y + b.y - offset), ms);
 }
@@ -132,16 +138,16 @@ await hover('#list-comps .item >> nth=1', 900);
 // ── 2. Busca ──────────────────────────────────────────────────
 await caption('Ou <b>busque</b> pelo nome…', 200);
 await hover('#q', 300);
-await typeSlow('#q', 'flam');
+await typeSlow('#q', 'palm');
 await sleep(900);
 
 // ── 3. Página do time ─────────────────────────────────────────
 await caption('Abra a página do time', 200);
-await click('#list-teams .item[href="#/time/flamengo"]', { pause: 400 });
+await click('#list-teams .item[href="#/time/palmeiras"]', { pause: 400 });
 await page.locator('.bigbtn.primary').waitFor();
 await settled();
 await sleep(500);
-await caption('Página do <b>Flamengo</b>: temporada inteira, todas as competições', 2200);
+await caption('Página do <b>Palmeiras</b>: temporada inteira, todas as competições', 2200);
 
 await caption('<b>iPhone e Mac:</b> toque em Assinar — o Calendário acompanha os jogos sozinho', 200);
 await click('.bigbtn.primary', { navigate: false, pause: 2200 });
