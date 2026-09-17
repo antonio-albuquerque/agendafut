@@ -3236,9 +3236,12 @@
       ]
     },
     "brasileirao-serie-a-2026-09-19-athletico-pr-vs-bahia@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "4366e79041311aac7fd138a47e3e816685e992e7fcee7896b3c1f8247896e403",
-      "lastModified": "2026-09-09T22:24:17.417Z"
+      "sequence": 3,
+      "seqHash": "00af124c06139767dcdbaf0f95fdd570509d177cc20d2f4075317eed6414ad8a",
+      "lastModified": "2026-09-17T14:07:07.514Z",
+      "broadcasters": [
+        "PREMIERE"
+      ]
     },
     "brasileirao-serie-a-2026-09-19-atletico-mg-vs-chapecoense@futebol.agendafut": {
       "sequence": 3,
@@ -5500,12 +5503,13 @@
       ]
     },
     "brasileirao-serie-b-2026-09-18-londrina-vs-fortaleza@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "2923a1970f8212f9705c02d1ebe7b9e90397b675c336ff0c55e244a824081198",
-      "lastModified": "2026-09-16T14:02:50.947Z",
+      "sequence": 4,
+      "seqHash": "0159d0cf87942e75cdb2f1dd6494db7ee03d1c14aad6a6c38eb94274a12f4e4b",
+      "lastModified": "2026-09-17T14:07:07.514Z",
       "broadcasters": [
         "CANAL GOAT",
         "DISNEY+",
+        "ESPN",
         "XSPORTS"
       ]
     },
