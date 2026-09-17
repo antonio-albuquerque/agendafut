@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it, vi } from 'vitest';
-import { Window } from 'happy-dom';
+import { Window, type Element, type HTMLElement } from 'happy-dom';
 
 const appJs = readFileSync(
   new URL('../src/site/static/app.js', import.meta.url),
@@ -148,7 +148,7 @@ describe('SPA', () => {
     const appEl = await openDetail(window, '#/time/palmeiras');
     await gotoMonth(window, 'janeiro 2026');
 
-    const click = (el: Element | null) => (el as unknown as { click(): void }).click();
+    const click = (el: Element | null) => (el as HTMLElement).click();
     click(appEl.querySelector('.cell[data-day="2026-01-28"]'));
     await flush(window);
     expect(appEl.querySelector('.cell.sel')!.getAttribute('data-day')).toBe('2026-01-28');
@@ -168,7 +168,7 @@ describe('SPA', () => {
     const { window } = bootApp();
     const appEl = await openDetail(window, '#/time/palmeiras');
     await gotoMonth(window, 'janeiro 2026');
-    const click = (el: Element | null) => (el as unknown as { click(): void }).click();
+    const click = (el: Element | null) => (el as HTMLElement).click();
 
     click(appEl.querySelector('.cell[data-day="2026-01-28"]'));
     await flush(window);

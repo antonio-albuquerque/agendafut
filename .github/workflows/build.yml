@@ -37,6 +37,8 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      - run: pnpm run typecheck
+
       - run: pnpm test
 
       # Se a fonte falhar, o build falha ANTES do deploy e o dist/
