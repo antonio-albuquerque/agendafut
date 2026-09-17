@@ -1,6 +1,7 @@
 /* agendafut — SPA estática, tema "gradiente" (ver style.css): home com
    busca e listas em pílula; detalhe com assinar, último jogo, grade mensal
-   e jogos do mês. Renderiza a partir de feeds.json e
+   (dias com jogo são clicáveis e filtram a lista) e jogos do mês.
+   Renderiza a partir de feeds.json e
    calendars/{kind}/{slug}.json; roteamento por hash para funcionar em
    qualquer subcaminho do GitHub Pages. */
 (function () {
@@ -12,7 +13,6 @@
     'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
   var DOW = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb'];
   var DOW1 = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
-  var ACCENT = '#ff5a1f';
   // cor principal de cada time: tinge o gradiente do hero na página do time.
   // Clubes preto-e-branco usam um grafite, senão o hero vira cinza-lavado.
   var TEAM_COLORS = {
@@ -24,8 +24,9 @@
     'santos': '#4a4f57', 'sao-paulo': '#cc2830', 'sport': '#c8342c', 'vasco': '#3a3f47', 'vitoria': '#d64230'
   };
   var query = '';
-  // mês corrente da view de detalhe (zerado ao trocar de feed)
-  var sel = { key: null, y: null, m: null };
+  // mês corrente da view de detalhe (zerado ao trocar de feed) e, opcionalmente,
+  // o dia (ISO) selecionado na grade que filtra a lista de jogos
+  var sel = { key: null, y: null, m: null, d: null };
 
   var SVG_SEARCH = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>';
   var SVG_CHEV_R = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg>';
@@ -34,6 +35,7 @@
   var SVG_CAL = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="4"></rect><path d="M8 3v4M16 3v4M3 10h18M12 13v6M9 16h6"></path></svg>';
   var SVG_COPY = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="9" y="9" width="12" height="12" rx="3"></rect><path d="M5 15V5a2 2 0 0 1 2-2h10"></path></svg>';
   var SVG_TV = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="3"></rect><path d="M8 2l4 4 4-4"></path></svg>';
+  var SVG_X = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>';
   var SVG_CHECK = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>';
 
   function esc(s) {
@@ -231,7 +233,9 @@
       '</div>';
   }
 
-  function gridHtml(y, m, matchDays) {
+  // dias do mês com jogo viram botões (filtram a lista); os demais são inertes.
+  // matchDays: { iso: quantidade de jogos }; selDay: iso selecionado ou null
+  function gridHtml(y, m, matchDays, selDay) {
     var first = new Date(y, m, 1, 12);
     var off = first.getDay();
     var today = todayIso();
@@ -242,10 +246,18 @@
       var d = new Date(y, m, 1 - off + i, 12);
       var iso = d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
       var inMonth = d.getMonth() === m;
-      html += '<div class="cell' + (inMonth ? '' : ' out') + (iso === today ? ' today' : '') + '">' +
-        '<span class="n">' + d.getDate() + '</span>' +
-        '<span class="dot" style="background:' + (matchDays[iso] ? ACCENT : 'transparent') + '"></span>' +
-        '</div>';
+      var n = matchDays[iso] || 0;
+      var cls = 'cell' + (inMonth ? '' : ' out') + (iso === today ? ' today' : '') +
+        (n ? ' has' : '') + (iso === selDay ? ' sel' : '');
+      var inner = '<span class="n">' + d.getDate() + '</span><span class="dot"></span>';
+      if (inMonth && n) {
+        html += '<button type="button" class="' + cls + '" data-day="' + iso + '" ' +
+          'aria-pressed="' + (iso === selDay ? 'true' : 'false') + '" ' +
+          'aria-label="' + esc(dateLabel(iso)) + ': ' + n + (n > 1 ? ' jogos' : ' jogo') + '">' +
+          inner + '</button>';
+      } else {
+        html += '<div class="' + cls + '">' + inner + '</div>';
+      }
     }
     return html + '</div>';
   }
@@ -264,12 +276,12 @@
       var dates = data.matches.map(function (m) { return m.date; }).sort();
       if (sel.key !== key) {
         var def = defaultMonth(dates);
-        sel = { key: key, y: def.y, m: def.m };
+        sel = { key: key, y: def.y, m: def.m, d: null };
       }
       var ym = sel.y + '-' + pad(sel.m + 1);
 
       var matchDays = {};
-      data.matches.forEach(function (mt) { matchDays[mt.date] = true; });
+      data.matches.forEach(function (mt) { matchDays[mt.date] = (matchDays[mt.date] || 0) + 1; });
       // competições e times sem cor mapeada ficam com o gradiente padrão
       var teamColor = kind === 'team' ? TEAM_COLORS[slug] : null;
       var pageOpen = teamColor
@@ -285,7 +297,11 @@
           if (b.time === null) return -1;
           return a.time < b.time ? -1 : 1;
         });
-      var rows = monthMatches.map(function (mt) {
+      // filtro por dia: só os jogos do dia clicado na grade
+      var shown = sel.d
+        ? monthMatches.filter(function (mt) { return mt.date === sel.d; })
+        : monthMatches;
+      var rows = shown.map(function (mt) {
         var d = new Date(mt.date + 'T12:00:00');
         return '<div class="mrow">' +
           '<div class="mday"><span class="d display">' + pad(d.getDate()) + '</span>' +
@@ -329,12 +345,18 @@
         '<h3 class="mlabel display">' + MONTHS[sel.m] + ' ' + sel.y + '</h3>' +
         '<button class="iconbtn mbtn" data-nav="1" aria-label="Próximo mês">' + SVG_CHEV_R + '</button>' +
         '</div>' +
-        gridHtml(sel.y, sel.m, matchDays) +
+        gridHtml(sel.y, sel.m, matchDays, sel.d) +
+        '<p class="calhint">' + (sel.d
+          ? 'Mostrando só ' + esc(dateLabel(sel.d)) + '. Toque de novo para ver o mês.'
+          : 'Toque em um dia marcado para ver só os jogos dele.') + '</p>' +
         '</div>' +
-        '<div class="sect g-month"><h2 class="glabel display">Jogos do mês</h2>' +
-        (monthMatches.length
+        '<div class="sect g-month"><div class="ghead">' +
+        '<h2 class="glabel display">' + (sel.d ? 'Jogos de ' + esc(dateLabel(sel.d)) : 'Jogos do mês') + '</h2>' +
+        (sel.d ? '<button type="button" class="chip clearday">' + SVG_X + '<span>Ver mês inteiro</span></button>' : '') +
+        '</div>' +
+        (shown.length
           ? '<div class="mlist">' + rows + '</div>'
-          : '<p class="empty">Sem jogos neste mês.</p>') +
+          : '<p class="empty">Sem jogos neste ' + (sel.d ? 'dia' : 'mês') + '.</p>') +
         '</div>' +
         '<p class="foot">Também no Google Agenda: copie o link .ics e cole em ' +
         'Outras agendas → Assinar por URL.</p>' +
@@ -350,9 +372,24 @@
           if (m < 0) { sel.m = 11; sel.y--; }
           else if (m > 11) { sel.m = 0; sel.y++; }
           else sel.m = m;
+          sel.d = null; // trocar de mês volta à lista do mês inteiro
           renderDetail(kind, slug);
         });
       });
+      // clique num dia com jogo filtra a lista; clicar de novo (ou no chip) limpa
+      app.querySelectorAll('.cell[data-day]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          sel.d = sel.d === btn.dataset.day ? null : btn.dataset.day;
+          renderDetail(kind, slug);
+        });
+      });
+      var clear = app.querySelector('.clearday');
+      if (clear) {
+        clear.addEventListener('click', function () {
+          sel.d = null;
+          renderDetail(kind, slug);
+        });
+      }
     }).catch(renderError);
   }
 
