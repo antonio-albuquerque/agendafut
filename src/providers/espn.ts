@@ -268,8 +268,12 @@ export class EspnProvider implements FixtureProvider {
       throw new Error(`liga desconhecida em data/leagues.json: ${competitionId}`);
     }
 
+    // `dates=<ano>` cobre a temporada inteira. A forma por intervalo
+    // (`dates=AAAA0101-AAAA1231`) passou a devolver HTTP 400 "Failed to get
+    // events endpoint" para toda liga em 2026-09-16; a forma por ano devolve
+    // os mesmos eventos (conferido liga a liga contra os snapshots).
     const payload = await this.fetchJson(
-      `/${league.code}/scoreboard?dates=${season}0101-${season}1231&limit=1000`,
+      `/${league.code}/scoreboard?dates=${season}&limit=1000`,
     );
     const scoreboard = ScoreboardSchema.parse(payload);
 
