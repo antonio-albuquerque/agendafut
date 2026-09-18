@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-09-17T23:13:42.950Z",
+      "fetchedAt": "2026-09-18T13:24:18.693Z",
       "matches": [
         {
           "id": "401840808",
@@ -4844,27 +4844,6 @@
           }
         },
         {
-          "id": "401841168",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Atlético-MG",
-            "slug": "atletico-mg"
-          },
-          "away": {
-            "name": "Red Bull Bragantino",
-            "slug": "bragantino"
-          },
-          "kickoff": null,
-          "date": "2026-07-29",
-          "venue": "Arena MRV",
-          "status": "postponed",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401841175",
           "competition": "brasileirao-serie-a",
           "competitionName": "Brasileirão Série A",
@@ -6744,6 +6723,27 @@
           "kickoff": "2026-10-02T20:00:00.000-03:00",
           "date": "2026-10-02",
           "venue": "Estádio Cícero Pompeu de Toledo",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841168",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Atlético-MG",
+            "slug": "atletico-mg"
+          },
+          "away": {
+            "name": "Red Bull Bragantino",
+            "slug": "bragantino"
+          },
+          "kickoff": "2026-10-03T18:30:00.000-03:00",
+          "date": "2026-10-03",
+          "venue": "Arena MRV",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -29359,7 +29359,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-09-17T23:13:42.950Z",
+      "fetchedAt": "2026-09-18T13:24:18.693Z",
       "matches": [
         {
           "id": "401842610",
@@ -32954,6 +32954,30 @@
           "kickoff": "2026-09-17T21:30:00.000-03:00",
           "date": "2026-09-17",
           "venue": "Estadio do Maracana",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 1,
+            "away": 1
+          }
+        },
+        {
+          "id": "401912523",
+          "competition": "libertadores",
+          "competitionName": "CONMEBOL Libertadores",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Estudiantes de La Plata",
+            "slug": "estudiantes-de-la-plata"
+          },
+          "away": {
+            "name": "Flamengo",
+            "slug": "flamengo"
+          },
+          "kickoff": null,
+          "date": "2026-10-14",
+          "venue": null,
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -32974,6 +32998,27 @@
           },
           "kickoff": null,
           "date": "2026-10-14",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401912521",
+          "competition": "libertadores",
+          "competitionName": "CONMEBOL Libertadores",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Flamengo",
+            "slug": "flamengo"
+          },
+          "away": {
+            "name": "Estudiantes de La Plata",
+            "slug": "estudiantes-de-la-plata"
+          },
+          "kickoff": null,
+          "date": "2026-10-21",
           "venue": null,
           "status": "scheduled",
           "broadcasters": [],
@@ -36210,7 +36255,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-09-17T23:13:42.950Z",
+      "fetchedAt": "2026-09-18T13:24:18.693Z",
       "matches": [
         {
           "id": "401843575",
@@ -39853,6 +39898,30 @@
           "kickoff": "2026-09-17T21:30:00.000-03:00",
           "date": "2026-09-17",
           "venue": "Estadio Centenario",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "id": "401913916",
+          "competition": "sudamericana",
+          "competitionName": "CONMEBOL Sudamericana",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Atlético-MG",
+            "slug": "atletico-mg"
+          },
+          "away": {
+            "name": "Montevideo City Torque",
+            "slug": "montevideo-city-torque"
+          },
+          "kickoff": null,
+          "date": "2026-10-14",
+          "venue": null,
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -39873,6 +39942,27 @@
           },
           "kickoff": null,
           "date": "2026-10-14",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401913956",
+          "competition": "sudamericana",
+          "competitionName": "CONMEBOL Sudamericana",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Montevideo City Torque",
+            "slug": "montevideo-city-torque"
+          },
+          "away": {
+            "name": "Atlético-MG",
+            "slug": "atletico-mg"
+          },
+          "kickoff": null,
+          "date": "2026-10-21",
           "venue": null,
           "status": "scheduled",
           "broadcasters": [],

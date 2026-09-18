@@ -1314,11 +1314,13 @@
     "libertadores:2026:estudiantes-de-la-plata:corinthians": "libertadores-2026-09-09-estudiantes-de-la-plata-vs-corinthians@futebol.agendafut",
     "libertadores:2026:estudiantes-de-la-plata:cusco-fc": "libertadores-2026-04-14-estudiantes-de-la-plata-vs-cusco-fc@futebol.agendafut",
     "libertadores:2026:estudiantes-de-la-plata:flamengo": "libertadores-2026-04-29-estudiantes-de-la-plata-vs-flamengo@futebol.agendafut",
+    "libertadores:2026:estudiantes-de-la-plata:flamengo:2026-10-14": "libertadores-2026-10-14-estudiantes-de-la-plata-vs-flamengo@futebol.agendafut",
     "libertadores:2026:estudiantes-de-la-plata:independiente-medellin": "libertadores-2026-05-26-estudiantes-de-la-plata-vs-independiente-medellin@futebol.agendafut",
     "libertadores:2026:estudiantes-de-la-plata:universidad-catolica": "libertadores-2026-08-11-estudiantes-de-la-plata-vs-universidad-catolica@futebol.agendafut",
     "libertadores:2026:flamengo:cruzeiro": "libertadores-2026-08-19-flamengo-vs-cruzeiro@futebol.agendafut",
     "libertadores:2026:flamengo:cusco-fc": "libertadores-2026-05-26-flamengo-vs-cusco-fc@futebol.agendafut",
     "libertadores:2026:flamengo:estudiantes-de-la-plata": "libertadores-2026-05-20-flamengo-vs-estudiantes-de-la-plata@futebol.agendafut",
+    "libertadores:2026:flamengo:estudiantes-de-la-plata:2026-10-21": "libertadores-2026-10-21-flamengo-vs-estudiantes-de-la-plata@futebol.agendafut",
     "libertadores:2026:flamengo:independiente-del-valle": "libertadores-2026-09-17-flamengo-vs-independiente-del-valle@futebol.agendafut",
     "libertadores:2026:flamengo:independiente-medellin": "libertadores-2026-04-16-flamengo-vs-independiente-medellin@futebol.agendafut",
     "libertadores:2026:fluminense:bolivar": "libertadores-2026-05-19-fluminense-vs-bolivar@futebol.agendafut",
@@ -1555,6 +1557,7 @@
     "sudamericana:2026:atletico-mg:bragantino": "sudamericana-2026-08-19-atletico-mg-vs-bragantino@futebol.agendafut",
     "sudamericana:2026:atletico-mg:cienciano-del-cusco": "sudamericana-2026-05-21-atletico-mg-vs-cienciano-del-cusco@futebol.agendafut",
     "sudamericana:2026:atletico-mg:juventud": "sudamericana-2026-04-16-atletico-mg-vs-juventud@futebol.agendafut",
+    "sudamericana:2026:atletico-mg:montevideo-city-torque": "sudamericana-2026-10-14-atletico-mg-vs-montevideo-city-torque@futebol.agendafut",
     "sudamericana:2026:atletico-mg:santos": "sudamericana-2026-09-16-atletico-mg-vs-santos@futebol.agendafut",
     "sudamericana:2026:atletico-nacional:millonarios": "sudamericana-2026-03-04-atletico-nacional-vs-millonarios@futebol.agendafut",
     "sudamericana:2026:audax-italiano:barracas-central": "sudamericana-2026-05-19-audax-italiano-vs-barracas-central@futebol.agendafut",
@@ -1645,6 +1648,7 @@
     "sudamericana:2026:millonarios:boston-river": "sudamericana-2026-04-15-millonarios-vs-boston-river@futebol.agendafut",
     "sudamericana:2026:millonarios:o-higgins": "sudamericana-2026-05-26-millonarios-vs-o-higgins@futebol.agendafut",
     "sudamericana:2026:millonarios:sao-paulo": "sudamericana-2026-04-28-millonarios-vs-sao-paulo@futebol.agendafut",
+    "sudamericana:2026:montevideo-city-torque:atletico-mg": "sudamericana-2026-10-21-montevideo-city-torque-vs-atletico-mg@futebol.agendafut",
     "sudamericana:2026:montevideo-city-torque:cienciano-del-cusco": "sudamericana-2026-09-17-montevideo-city-torque-vs-cienciano-del-cusco@futebol.agendafut",
     "sudamericana:2026:montevideo-city-torque:criciuma": "sudamericana-2026-08-19-montevideo-city-torque-vs-criciuma@futebol.agendafut",
     "sudamericana:2026:montevideo-city-torque:defensor-sporting": "sudamericana-2026-03-03-montevideo-city-torque-vs-defensor-sporting@futebol.agendafut",
@@ -2706,9 +2710,9 @@
       "lastModified": "2026-08-12T16:35:39.830Z"
     },
     "brasileirao-serie-a-2026-07-29-atletico-mg-vs-bragantino@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "38b9a47dde6560b73b478622eda1c4a3d2986260c041eec5dbb0529be8c44299",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "3940a5368b81f3dd44d8b999a377e198316b1133b6d19e1ae1d6399d57d6e33b",
+      "lastModified": "2026-09-18T13:24:22.564Z"
     },
     "brasileirao-serie-a-2026-07-29-botafogo-vs-gremio@futebol.agendafut": {
       "sequence": 5,
@@ -9405,18 +9409,28 @@
       ]
     },
     "libertadores-2026-09-17-flamengo-vs-independiente-del-valle@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "a9791e619cdb6b867b6a4f83c871e547ee5d29eec962ea655f66c414870cc5f7",
-      "lastModified": "2026-09-09T22:24:17.417Z",
+      "sequence": 1,
+      "seqHash": "9e0f9b189059b5f539e7773987e62f72303e468b8893534b29e49038d237c479",
+      "lastModified": "2026-09-18T13:24:22.564Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN"
       ]
     },
+    "libertadores-2026-10-14-estudiantes-de-la-plata-vs-flamengo@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "9b5784b5542589ed077fce6f9d0e836bae795b46b93f415e948557db5f1f48f2",
+      "lastModified": "2026-09-18T13:24:22.564Z"
+    },
     "libertadores-2026-10-14-fluminense-vs-palmeiras@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "f72c19c749401f3dc590c4941f763a7e0a50866ef1a2b5501442c1238dd4d71c",
       "lastModified": "2026-09-17T23:13:45.994Z"
+    },
+    "libertadores-2026-10-21-flamengo-vs-estudiantes-de-la-plata@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "e4db371f9f08dda4304df12486623974d11059761c5874462f2e1d51449cd9fa",
+      "lastModified": "2026-09-18T13:24:22.564Z"
     },
     "libertadores-2026-10-21-palmeiras-vs-fluminense@futebol.agendafut": {
       "sequence": 0,
@@ -10927,14 +10941,24 @@
       ]
     },
     "sudamericana-2026-09-17-montevideo-city-torque-vs-cienciano-del-cusco@futebol.agendafut": {
+      "sequence": 1,
+      "seqHash": "4969267ccd133d45e295497021d1d8581123a88897393efe5f11bd05fa2269fb",
+      "lastModified": "2026-09-18T13:24:22.564Z"
+    },
+    "sudamericana-2026-10-14-atletico-mg-vs-montevideo-city-torque@futebol.agendafut": {
       "sequence": 0,
-      "seqHash": "cc714942030c9c9ac14f3925d17404a776e32d0a65d47f36e9b6cac3e61378d4",
-      "lastModified": "2026-09-09T22:24:17.417Z"
+      "seqHash": "2fde4efd837d450891746d9937abb9eb0fbc02bb2a0b9d60d4e804082708d983",
+      "lastModified": "2026-09-18T13:24:22.564Z"
     },
     "sudamericana-2026-10-14-boca-juniors-vs-vasco@futebol.agendafut": {
       "sequence": 0,
       "seqHash": "dd6d8a11a87a7abffc238b8c65a188f3279d222455b97f403c7ba49b84bc7032",
       "lastModified": "2026-09-17T23:13:45.994Z"
+    },
+    "sudamericana-2026-10-21-montevideo-city-torque-vs-atletico-mg@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "7b2b188df2b637a1a55f3c56192813159d50e06daa0f86b6826befa059bdd67a",
+      "lastModified": "2026-09-18T13:24:22.564Z"
     },
     "sudamericana-2026-10-21-vasco-vs-boca-juniors@futebol.agendafut": {
       "sequence": 0,
