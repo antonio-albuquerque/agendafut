@@ -6,9 +6,10 @@ brasileiro. Gerador 100% estático: GitHub Actions roda um cron diário, gera os
 
 **Assine em:** https://antonio-albuquerque.github.io/agendafut/
 
-**Vídeo de demonstração** (~1 min, sem áudio): [`docs/demo/agendafut-demo.mp4`](docs/demo/agendafut-demo.mp4)
-(1080p, para apresentar) · [`agendafut-demo-celular.mp4`](docs/demo/agendafut-demo-celular.mp4)
-(retrato, para WhatsApp). Gravado do site em produção; veja [docs/demo](docs/demo/README.md) para regenerar.
+**Vídeo de demonstração** (~1,5 min, narrado): [`docs/demo/agendafut-demo-narrado.mp4`](docs/demo/agendafut-demo-narrado.mp4)
+(1080p, para apresentar) · [`agendafut-demo-celular-narrado.mp4`](docs/demo/agendafut-demo-celular-narrado.mp4)
+(1080×2340 retrato, para WhatsApp). Gravado do site em produção e narrado por
+`scripts/narrar-clipe.py`; veja [docs/demo](docs/demo/README.md) para regenerar.
 
 ## Como funciona
 
@@ -91,7 +92,8 @@ valide por uma semana real antes de divulgar.**
 | `data/teams.json` | Nomes canônicos + aliases (fontes divergem: "CAM", "Atlético-MG"…) |
 | `data/state.json` | Estado de SEQUENCE, commitado pelo CI |
 | `test/golden/` | `.ics` esperados; regenerar com `UPDATE_GOLDEN=1 pnpm test` |
-| `docs/demo/` | Vídeo de demonstração do site + roteiro Playwright que o grava |
+| `docs/demo/` | Vídeo de demonstração narrado + roteiro Playwright que o grava |
+| `scripts/narrar-clipe.py` | Narra um clipe a partir do SRT (edge-tts + ffmpeg) |
 
 As regras invariantes do formato estão em [CLAUDE.md](CLAUDE.md).
 

@@ -1,0 +1,64 @@
+1
+00:00:08,959 --> 00:00:14,020
+agendafut — os jogos do futebol brasileiro direto na sua agenda
+
+2
+00:00:14,383 --> 00:00:21,165
+Escolha um dos 25 times ou uma das 12 competições
+
+3
+00:00:21,526 --> 00:00:26,390
+Ou busque pelo nome…
+
+4
+00:00:26,753 --> 00:00:29,273
+Abra a página do time
+
+5
+00:00:29,637 --> 00:00:34,699
+Página do Palmeiras: temporada inteira, todas as competições
+
+6
+00:00:35,061 --> 00:00:40,563
+iPhone e Mac: toque em Assinar — o Calendário acompanha os jogos sozinho
+
+7
+00:00:40,925 --> 00:00:47,546
+Google Agenda, Outlook, Android: copie o link .ics e assine por URL
+
+8
+00:00:47,910 --> 00:00:51,101
+O último resultado fica em destaque
+
+9
+00:00:51,464 --> 00:00:55,375
+Na grade do mês, os dias marcados têm jogo
+
+10
+00:00:55,737 --> 00:00:59,079
+Toque em um dia para ver só os jogos dele
+
+11
+00:00:59,440 --> 00:01:04,191
+Horário, estádio e canal de transmissão de cada partida
+
+12
+00:01:04,555 --> 00:01:07,387
+Volte à lista do mês inteiro…
+
+13
+00:01:07,749 --> 00:01:15,314
+…ou navegue pelos próximos meses
+
+14
+00:01:15,675 --> 00:01:23,385
+Também há um calendário para cada competição
+
+15
+00:01:23,748 --> 00:01:31,014
+Brasileirão Série A: todas as rodadas em um só feed
+
+16
+00:01:32,069 --> 00:01:35,569
+Escolha o time. Assine. Pronto.
+
