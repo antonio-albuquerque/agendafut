@@ -9,6 +9,12 @@ const Z = Number(process.env.Z || 1);           // CSS zoom: layout = W/Z × H/Z
 const LW = W / Z, LH = H / Z;                   // layout size in CSS px
 const PHONE = LW < 600;
 const QUICK = !!process.env.QUICK;
+// CUES_OUT=arquivo.srt grava início/fim de cada legenda (tempo do vídeo), para
+// a narração (scripts/narrar-clipe.py). MIN_HOLD=arquivo.json (segundos por
+// legenda, na ordem) segura cada legenda pelo menos esse tempo — a duração da
+// fala correspondente — antes de trocar para a próxima.
+const CUES_OUT = process.env.CUES_OUT;
+const MIN_HOLD = process.env.MIN_HOLD ? JSON.parse(fs.readFileSync(process.env.MIN_HOLD, 'utf8')) : [];
 const sleep = (ms) => new Promise(r => setTimeout(r, QUICK ? Math.min(ms, 150) : ms));
 
 const browser = await chromium.launch();
@@ -21,6 +27,9 @@ const ctx = await browser.newContext({
   recordVideo: { dir: OUT, size: { width: W, height: H } },
 });
 const page = await ctx.newPage();
+const t0 = Date.now(); // o vídeo começa a ser gravado com a página
+const cues = [];
+let openCue = null;
 
 // overlay: cursor + caption bar + end card, attached to <body> (the app re-renders #app)
 const OVERLAY = `
@@ -62,6 +71,16 @@ const OVERLAY = `
   const card = document.createElement('div'); card.id = 'demo-card'; document.body.appendChild(card);
 })();`;
 await page.addInitScript(OVERLAY);
+if (PHONE) {
+  // Media queries olham a largura real (W), não a do layout com zoom: acima
+  // de 900px o site entraria no layout de desktop. Serve o CSS com o
+  // breakpoint fora de alcance para a gravação de celular ficar em coluna única.
+  await page.route(/\/assets\/style\.css(\?.*)?$/, async (route) => {
+    const res = await route.fetch();
+    const css = (await res.text()).replace(/@media \(min-width: 900px\)/g, '@media (min-width: 99999px)');
+    await route.fulfill({ response: res, body: css, headers: { ...res.headers(), 'content-type': 'text/css' } });
+  });
+}
 const ensureOverlay = () => page.evaluate(OVERLAY);
 
 async function moveTo(x, y, ms = 600) {
@@ -79,9 +98,10 @@ async function center(selector, dx = 0, dy = 0) {
   await el.waitFor({ state: 'visible' });
   let b = await box(el);
   if (b.y < 70 || b.y + b.height > LH - 90) {
-    // bring the target on screen (smooth) before pointing at it
+    // bring the target on screen (smooth) before pointing at it.
+    // scrollY e scrollTo trabalham em px da tela (não do layout com zoom): ×Z
     const y = await page.evaluate(() => window.scrollY);
-    await scrollTo(Math.max(0, y + b.y - Math.min(160, Math.max(60, (LH - b.height) / 3))), 1000);
+    await scrollTo(Math.max(0, (y / Z + b.y - Math.min(160, Math.max(60, (LH - b.height) / 3))) * Z), 1000);
     b = await box(el);
   }
   return { x: b.x + b.width / 2 + dx, y: b.y + b.height / 2 + dy };
@@ -96,13 +116,29 @@ async function click(selector, { pause = 900, navigate = true } = {}) {
   if (navigate) await page.mouse.click(p.x * Z, p.y * Z);
   await sleep(pause);
 }
+const now = () => (Date.now() - t0) / 1000;
+async function closeCue() {
+  if (!openCue) return;
+  const min = MIN_HOLD[cues.length] || 0;
+  const elapsed = now() - openCue.start;
+  if (elapsed < min) await sleep((min - elapsed) * 1000);
+  openCue.end = now();
+  cues.push(openCue);
+  openCue = null;
+}
 async function caption(html, hold = 0) {
-  await page.evaluate((h) => {
-    const c = document.getElementById('demo-cap');
-    c.classList.remove('on');
-    setTimeout(() => { c.innerHTML = h; if (h) c.classList.add('on'); }, 360);
-  }, html);
-  await sleep(450 + hold);
+  await closeCue();
+  await page.evaluate(() => document.getElementById('demo-cap').classList.remove('on'));
+  await sleep(360);
+  if (html) {
+    await page.evaluate((h) => { const c = document.getElementById('demo-cap'); c.innerHTML = h; c.classList.add('on'); }, html);
+    openCue = { text: html.replace(/<[^>]+>/g, ''), start: now() };
+  }
+  await sleep(90 + hold);
+}
+function srtTime(t) {
+  const ms = Math.round(t * 1000), p = (n, w) => String(n).padStart(w, '0');
+  return p(Math.floor(ms / 3600000), 2) + ':' + p(Math.floor(ms / 60000) % 60, 2) + ':' + p(Math.floor(ms / 1000) % 60, 2) + ',' + p(ms % 1000, 3);
 }
 async function scrollTo(y, ms = 1100) {
   await page.evaluate((y) => window.scrollTo({ top: y, behavior: 'smooth' }), y);
@@ -110,8 +146,8 @@ async function scrollTo(y, ms = 1100) {
 }
 async function scrollIntoView(selector, offset = 90, ms = 1100) {
   const b = await box(page.locator(selector).first());
-  const y = await page.evaluate(() => window.scrollY);
-  await scrollTo(Math.max(0, y + b.y - offset), ms);
+  const y = await page.evaluate(() => window.scrollY); // px da tela
+  await scrollTo(Math.max(0, (y / Z + b.y - offset) * Z), ms);
 }
 async function typeSlow(selector, text) {
   await page.locator(selector).first().click();
@@ -213,11 +249,18 @@ await page.evaluate((base) => {
   c.innerHTML = '<div class="t">agendafut</div><div class="s">Escolha o time. Assine. Pronto.</div><div class="u">' + host + '</div>';
   c.classList.add('on');
 }, BASE);
+openCue = { text: 'Escolha o time. Assine. Pronto.', start: now() + 0.6 }; // cartão final também é narrado
 await sleep(3600);
+await closeCue();
 
 await ctx.close();
 await browser.close();
 const files = fs.readdirSync(OUT).filter(f => f.endsWith('.webm')).map(f => path.join(OUT, f))
   .sort((a, b) => fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs);
 fs.renameSync(files[0], path.join(OUT, 'raw.webm'));
+if (CUES_OUT) {
+  fs.writeFileSync(CUES_OUT, cues.map((c, i) =>
+    `${i + 1}\n${srtTime(c.start)} --> ${srtTime(c.end)}\n${c.text}\n`).join('\n') + '\n');
+  console.log('cues', CUES_OUT, cues.length);
+}
 console.log('ok', path.join(OUT, 'raw.webm'));
