@@ -5476,9 +5476,9 @@
       ]
     },
     "brasileirao-serie-b-2026-09-18-ceara-vs-novorizontino@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "41a58debe6ec5a6036bba8f027eb0e03fdb07aec8dc5246c32b5f754309f8db2",
-      "lastModified": "2026-09-14T15:40:58.565Z",
+      "sequence": 4,
+      "seqHash": "aaaeaf30fcb725f352fef098b7f3191604b405a516db48e9deb5736cff6afb74",
+      "lastModified": "2026-09-19T12:53:07.025Z",
       "broadcasters": [
         "DISNEY+"
       ]
@@ -5530,9 +5530,9 @@
       ]
     },
     "brasileirao-serie-b-2026-09-18-sao-bernardo-vs-atletico-go@futebol.agendafut": {
-      "sequence": 4,
-      "seqHash": "ef27c4de50a6fe083093b44d58e53d8176ff5661c7a1a744a0894b52a17777c8",
-      "lastModified": "2026-09-16T14:02:50.947Z",
+      "sequence": 5,
+      "seqHash": "f08360f7e8c69ceaaf17f1aa744a39dfe66bd147573174220ba0c25097bba062",
+      "lastModified": "2026-09-19T12:53:07.025Z",
       "broadcasters": [
         "GE TV",
         "PREMIERE FC",
@@ -5551,9 +5551,9 @@
       ]
     },
     "brasileirao-serie-b-2026-09-18-vila-nova-vs-america-mg@futebol.agendafut": {
-      "sequence": 4,
-      "seqHash": "9e51b7567e11aea5a4fdaf6afce10287858b4966253ae0e09e056f130bd68e64",
-      "lastModified": "2026-09-16T14:02:50.947Z",
+      "sequence": 5,
+      "seqHash": "73dea8aec58fcff411ea7e917efe14d53c25095120a71ac26a7b8930c1774711",
+      "lastModified": "2026-09-19T12:53:07.025Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN",
@@ -5596,19 +5596,30 @@
       "lastModified": "2026-09-09T22:24:17.417Z"
     },
     "brasileirao-serie-b-2026-09-25-novorizontino-vs-sao-bernardo@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "b666c9ee83c50745cd98beb0e203858e1df466d85575a122b8defb296c6f592c",
-      "lastModified": "2026-08-15T09:24:27.912Z"
+      "sequence": 3,
+      "seqHash": "215cb45d6c1407d40760795f7251fb5664313cc50b6c1cd9d287477069a1ed3f",
+      "lastModified": "2026-09-19T12:53:07.025Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-09-25-operario-pr-vs-ceara@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "5910e1be44a0d600fe522843ba3034e915fef0a0473ed56ec4c8ba8a129ce0d2",
-      "lastModified": "2026-09-09T22:24:17.417Z"
+      "sequence": 4,
+      "seqHash": "cca2996b7de322cf168798574f93c1f637f61837e29381449c38939be1933641",
+      "lastModified": "2026-09-19T12:53:07.025Z",
+      "broadcasters": [
+        "CANAL GOAT",
+        "DISNEY+",
+        "REDETV!"
+      ]
     },
     "brasileirao-serie-b-2026-09-25-vila-nova-vs-londrina@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "dae2b8d9aeb05c08a801a18b4ec667e9cecc3187ced0bc25e593f9fa24efc7be",
-      "lastModified": "2026-08-15T09:24:27.912Z"
+      "sequence": 3,
+      "seqHash": "393e84081671bc1d13e0dcbee51161b672ead371634d19fa2ce6b3a7b8eccd31",
+      "lastModified": "2026-09-19T12:53:07.025Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-10-02-athletic-vs-sport@futebol.agendafut": {
       "sequence": 2,

@@ -8851,7 +8851,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-09-17T23:13:42.950Z",
+      "fetchedAt": "2026-09-19T12:53:04.469Z",
       "matches": [
         {
           "id": "401860064",
@@ -15590,9 +15590,12 @@
           "kickoff": "2026-09-18T19:30:00.000-03:00",
           "date": "2026-09-18",
           "venue": "Estádio Onésio Brasileiro Alvarenga",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860343",
@@ -15611,9 +15614,12 @@
           "kickoff": "2026-09-18T20:30:00.000-03:00",
           "date": "2026-09-18",
           "venue": "Arena Castelão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860345",
@@ -15632,9 +15638,12 @@
           "kickoff": "2026-09-18T21:00:00.000-03:00",
           "date": "2026-09-18",
           "venue": "Estádio Primeiro de Maio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860346",
