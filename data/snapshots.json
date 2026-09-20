@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-09-18T13:24:18.693Z",
+      "fetchedAt": "2026-09-20T13:27:50.407Z",
       "matches": [
         {
           "id": "401840808",
@@ -6513,9 +6513,12 @@
           "kickoff": "2026-09-19T16:00:00.000-03:00",
           "date": "2026-09-19",
           "venue": "Arena MRV",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841245",
@@ -6534,9 +6537,12 @@
           "kickoff": "2026-09-19T17:00:00.000-03:00",
           "date": "2026-09-19",
           "venue": "Estadio Municipal José Maria de Campos Maia",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401841244",
@@ -6555,9 +6561,12 @@
           "kickoff": "2026-09-19T18:30:00.000-03:00",
           "date": "2026-09-19",
           "venue": "Mangueirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401841247",
@@ -6576,9 +6585,12 @@
           "kickoff": "2026-09-19T20:30:00.000-03:00",
           "date": "2026-09-19",
           "venue": "Estádio São Januário",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 5,
+            "away": 0
+          }
         },
         {
           "id": "401841243",
@@ -6597,9 +6609,12 @@
           "kickoff": "2026-09-19T21:00:00.000-03:00",
           "date": "2026-09-19",
           "venue": "Estádio Cícero Pompeu de Toledo",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401841246",
@@ -8851,7 +8866,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-09-19T12:53:04.469Z",
+      "fetchedAt": "2026-09-20T13:27:50.407Z",
       "matches": [
         {
           "id": "401860064",
@@ -15662,9 +15677,12 @@
           "kickoff": "2026-09-19T16:30:00.000-03:00",
           "date": "2026-09-19",
           "venue": "Ilha do Retiro",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860342",
@@ -15683,9 +15701,12 @@
           "kickoff": "2026-09-19T18:30:00.000-03:00",
           "date": "2026-09-19",
           "venue": "Estádio Joaquim Portugal",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401860347",
