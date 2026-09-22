@@ -5487,18 +5487,18 @@
       ]
     },
     "brasileirao-serie-b-2026-09-18-criciuma-vs-operario-pr@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "885e301ee88e53fe1539e822df7f203049882f5fffb7ee9afad47e198c4039cf",
-      "lastModified": "2026-09-16T14:02:50.947Z",
+      "sequence": 4,
+      "seqHash": "af05416834139ef65b28df3bb503d81be7b870501dbe5223d579e54bca9b9173",
+      "lastModified": "2026-09-22T13:55:04.940Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN"
       ]
     },
     "brasileirao-serie-b-2026-09-18-cuiaba-vs-nautico@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "47e471330c40744bd8ad4c993d3f5df24ae66b4efcaa31982c8d1e5ded58622a",
-      "lastModified": "2026-09-16T14:02:50.947Z",
+      "sequence": 4,
+      "seqHash": "64dd53a7babcd3f11ef97124fb1007aa634433b1e6e5b92b7d37e89dedc6b0b8",
+      "lastModified": "2026-09-22T13:55:04.940Z",
       "broadcasters": [
         "DISNEY+",
         "SPORTYNET",
@@ -5564,14 +5564,20 @@
       ]
     },
     "brasileirao-serie-b-2026-09-25-america-mg-vs-juventude@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "d8ecdc94b49e2336e70a38ba83d8387f61519ccd5b65d5db0cc3781dbf2343ee",
-      "lastModified": "2026-08-15T09:24:27.912Z"
+      "sequence": 3,
+      "seqHash": "733214bbe3650d43d221f2d994b6f8522858afe6b668a000fa4240e661710ca5",
+      "lastModified": "2026-09-22T13:55:04.940Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-09-25-botafogo-sp-vs-ponte-preta@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "7cabd9d058f31f5d85634c4d40c3ad45bb56ba712a98eca436211a635334ccdf",
-      "lastModified": "2026-08-15T09:24:27.912Z"
+      "sequence": 3,
+      "seqHash": "52f625b96e3eee8497a92918e1cc621a14dfe9fc3fcbc8c7d53208b9070e57e3",
+      "lastModified": "2026-09-22T13:55:04.940Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-09-25-crb-vs-cuiaba@futebol.agendafut": {
       "sequence": 3,

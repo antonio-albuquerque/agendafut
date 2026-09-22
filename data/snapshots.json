@@ -8881,7 +8881,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-09-21T15:40:58.486Z",
+      "fetchedAt": "2026-09-22T13:55:02.993Z",
       "matches": [
         {
           "id": "401860064",
@@ -15796,27 +15796,6 @@
           }
         },
         {
-          "id": "401860351",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Criciúma",
-            "slug": "criciuma"
-          },
-          "away": {
-            "name": "Operário-PR",
-            "slug": "operario-pr"
-          },
-          "kickoff": "2026-09-21T19:30:00.000-03:00",
-          "date": "2026-09-21",
-          "venue": "Heriberto Hülse",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401860350",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
@@ -15833,6 +15812,30 @@
           "kickoff": "2026-09-21T21:30:00.000-03:00",
           "date": "2026-09-21",
           "venue": "Arena Pantanal",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "id": "401860351",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Criciúma",
+            "slug": "criciuma"
+          },
+          "away": {
+            "name": "Operário-PR",
+            "slug": "operario-pr"
+          },
+          "kickoff": "2026-09-22T19:30:00.000-03:00",
+          "date": "2026-09-22",
+          "venue": "Heriberto Hülse",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
