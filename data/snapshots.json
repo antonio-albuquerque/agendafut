@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-09-21T15:40:58.486Z",
+      "fetchedAt": "2026-09-23T14:05:15.046Z",
       "matches": [
         {
           "id": "401840808",
@@ -7149,8 +7149,8 @@
             "name": "Botafogo",
             "slug": "botafogo"
           },
-          "kickoff": "2026-10-11T19:30:00.000-03:00",
-          "date": "2026-10-11",
+          "kickoff": "2026-10-12T16:00:00.000-03:00",
+          "date": "2026-10-12",
           "venue": "Couto Pereira",
           "status": "scheduled",
           "broadcasters": [],
@@ -8881,7 +8881,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-09-22T13:55:02.993Z",
+      "fetchedAt": "2026-09-23T14:05:15.046Z",
       "matches": [
         {
           "id": "401860064",
@@ -15836,9 +15836,12 @@
           "kickoff": "2026-09-22T19:30:00.000-03:00",
           "date": "2026-09-22",
           "venue": "Heriberto Hülse",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860355",
