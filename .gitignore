@@ -3,3 +3,5 @@ dist/
 .cache/
 *.log
 .DS_Store
+docs/demo/agendafut-demo.mp4
+docs/demo/agendafut-demo-celular.mp4
