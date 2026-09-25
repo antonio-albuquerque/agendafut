@@ -5600,11 +5600,12 @@
       ]
     },
     "brasileirao-serie-b-2026-09-25-america-mg-vs-juventude@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "733214bbe3650d43d221f2d994b6f8522858afe6b668a000fa4240e661710ca5",
-      "lastModified": "2026-09-22T13:55:04.940Z",
+      "sequence": 4,
+      "seqHash": "7aead88b799d21f3a3faabbbbc74b4680885b1b7355ee23af2178ac8a158b7aa",
+      "lastModified": "2026-09-25T14:26:24.433Z",
       "broadcasters": [
-        "DISNEY+"
+        "DISNEY+",
+        "ESPN"
       ]
     },
     "brasileirao-serie-b-2026-09-25-botafogo-sp-vs-ponte-preta@futebol.agendafut": {
@@ -5653,13 +5654,14 @@
       ]
     },
     "brasileirao-serie-b-2026-09-25-nautico-vs-sport@futebol.agendafut": {
-      "sequence": 4,
-      "seqHash": "b6da13137418ba7b8028f1b3a6e73aa1208f0e12bdf9ce9eadb5cefcb8740805",
-      "lastModified": "2026-09-20T13:27:52.956Z",
+      "sequence": 5,
+      "seqHash": "826ef9e882bf0b53e181191be7bd404ebe9617329c9d81273ba1ff28f641727f",
+      "lastModified": "2026-09-25T14:26:24.433Z",
       "broadcasters": [
         "GLOBO",
         "PREMIERE",
-        "SPORTV"
+        "SPORTV",
+        "SPORTV 2"
       ]
     },
     "brasileirao-serie-b-2026-09-25-novorizontino-vs-sao-bernardo@futebol.agendafut": {
@@ -9506,9 +9508,9 @@
       "lastModified": "2026-09-21T15:41:02.686Z"
     },
     "libertadores-2026-10-15-estudiantes-de-la-plata-vs-flamengo@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "48d5f9268e4e5374769e2e6e716cd008694af8cc38f1583de47e4abb7cb143f5",
-      "lastModified": "2026-09-21T15:41:02.686Z"
+      "sequence": 1,
+      "seqHash": "02d91aafe461976abebeed2c9338a7e3e0dc83c5eaefbee9d30a8a6d442030d4",
+      "lastModified": "2026-09-25T14:26:24.433Z"
     },
     "libertadores-2026-10-21-flamengo-vs-estudiantes-de-la-plata@futebol.agendafut": {
       "sequence": 0,

@@ -29419,7 +29419,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-09-21T15:40:58.486Z",
+      "fetchedAt": "2026-09-25T14:26:21.495Z",
       "matches": [
         {
           "id": "401842610",
@@ -33058,7 +33058,7 @@
           },
           "kickoff": "2026-10-15T21:30:00.000-03:00",
           "date": "2026-10-15",
-          "venue": null,
+          "venue": "Estadio Jorge Luis Hirschi",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
