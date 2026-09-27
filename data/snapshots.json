@@ -8881,7 +8881,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-09-26T13:37:53.457Z",
+      "fetchedAt": "2026-09-27T14:33:43.816Z",
       "matches": [
         {
           "id": "401860064",
@@ -15908,9 +15908,12 @@
           "kickoff": "2026-09-26T16:30:00.000-03:00",
           "date": "2026-09-26",
           "venue": "Estádio dos Aflitos",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 1
+          }
         },
         {
           "id": "401860357",
@@ -15929,9 +15932,12 @@
           "kickoff": "2026-09-26T16:30:00.000-03:00",
           "date": "2026-09-26",
           "venue": "Germano Krüger",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 2
+          }
         },
         {
           "id": "401860354",
@@ -15950,9 +15956,12 @@
           "kickoff": "2026-09-26T18:30:00.000-03:00",
           "date": "2026-09-26",
           "venue": "Estádio da Serrinha",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860358",
@@ -15971,7 +15980,7 @@
           "kickoff": "2026-09-27T11:00:00.000-03:00",
           "date": "2026-09-27",
           "venue": "Heriberto Hülse",
-          "status": "scheduled",
+          "status": "confirmed",
           "broadcasters": [],
           "score": null
         },
