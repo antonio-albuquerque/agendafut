@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-09-28T17:22:33.638Z",
+      "fetchedAt": "2026-09-29T15:22:55.318Z",
       "matches": [
         {
           "id": "401840808",
@@ -7892,90 +7892,6 @@
           "score": null
         },
         {
-          "id": "401841303",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Cruzeiro",
-            "slug": "cruzeiro"
-          },
-          "away": {
-            "name": "Bahia",
-            "slug": "bahia"
-          },
-          "kickoff": null,
-          "date": "2026-11-04",
-          "venue": "Estadio Mineirão",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401841300",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Palmeiras",
-            "slug": "palmeiras"
-          },
-          "away": {
-            "name": "Remo",
-            "slug": "remo"
-          },
-          "kickoff": null,
-          "date": "2026-11-04",
-          "venue": "Allianz Parque",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401841298",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "São Paulo",
-            "slug": "sao-paulo"
-          },
-          "away": {
-            "name": "Corinthians",
-            "slug": "corinthians"
-          },
-          "kickoff": null,
-          "date": "2026-11-04",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401841302",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Vitória",
-            "slug": "vitoria"
-          },
-          "away": {
-            "name": "Fluminense",
-            "slug": "fluminense"
-          },
-          "kickoff": null,
-          "date": "2026-11-04",
-          "venue": "Estadio Manoel Barradas",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401841306",
           "competition": "brasileirao-serie-a",
           "competitionName": "Brasileirão Série A",
@@ -8034,6 +7950,90 @@
           "kickoff": "2026-11-04T21:30:00.000-03:00",
           "date": "2026-11-04",
           "venue": "Joao Havelange Stadium",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841298",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "São Paulo",
+            "slug": "sao-paulo"
+          },
+          "away": {
+            "name": "Corinthians",
+            "slug": "corinthians"
+          },
+          "kickoff": "2026-11-04T21:30:00.000-03:00",
+          "date": "2026-11-04",
+          "venue": null,
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841300",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Palmeiras",
+            "slug": "palmeiras"
+          },
+          "away": {
+            "name": "Remo",
+            "slug": "remo"
+          },
+          "kickoff": "2026-11-05T19:30:00.000-03:00",
+          "date": "2026-11-05",
+          "venue": "Allianz Parque",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841303",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Cruzeiro",
+            "slug": "cruzeiro"
+          },
+          "away": {
+            "name": "Bahia",
+            "slug": "bahia"
+          },
+          "kickoff": "2026-11-05T21:30:00.000-03:00",
+          "date": "2026-11-05",
+          "venue": "Estadio Mineirão",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841302",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Vitória",
+            "slug": "vitoria"
+          },
+          "away": {
+            "name": "Fluminense",
+            "slug": "fluminense"
+          },
+          "kickoff": "2026-11-06T20:00:00.000-03:00",
+          "date": "2026-11-06",
+          "venue": "Estadio Manoel Barradas",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -8881,7 +8881,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-09-28T17:22:33.638Z",
+      "fetchedAt": "2026-09-29T15:22:55.318Z",
       "matches": [
         {
           "id": "401860064",
@@ -16052,9 +16052,12 @@
           "kickoff": "2026-09-28T19:30:00.000-03:00",
           "date": "2026-09-28",
           "venue": "Estádio Raimundo Sampaio (Independência)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860360",
