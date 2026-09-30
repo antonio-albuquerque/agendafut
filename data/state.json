@@ -3563,9 +3563,9 @@
       "lastModified": "2026-09-28T17:22:35.652Z"
     },
     "brasileirao-serie-a-2026-10-24-santos-vs-bahia@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "cdac08b31de342f1a7ccbdab719c0bc12c96c896e8bdf032552e70b35ae5060f",
-      "lastModified": "2026-09-28T17:22:35.652Z"
+      "sequence": 3,
+      "seqHash": "435f7bfdbfb954a80df29c023fc34354490b489e5e06274ccefdbbf64168a0c8",
+      "lastModified": "2026-09-30T15:39:15.232Z"
     },
     "brasileirao-serie-a-2026-10-24-vasco-vs-corinthians@futebol.agendafut": {
       "sequence": 2,
@@ -5616,9 +5616,9 @@
       ]
     },
     "brasileirao-serie-b-2026-09-25-botafogo-sp-vs-ponte-preta@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "52f625b96e3eee8497a92918e1cc621a14dfe9fc3fcbc8c7d53208b9070e57e3",
-      "lastModified": "2026-09-22T13:55:04.940Z",
+      "sequence": 4,
+      "seqHash": "05628199824530ae7ed8c37878aa78fd4345be8ec1222193526f7a81a66eed0e",
+      "lastModified": "2026-09-30T15:39:15.232Z",
       "broadcasters": [
         "DISNEY+"
       ]
@@ -5723,9 +5723,13 @@
       ]
     },
     "brasileirao-serie-b-2026-10-02-botafogo-sp-vs-vila-nova@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "3159257fb0fb33b0d36e62c484c4d482a1a24489ffc4e1122887e093366b48f8",
-      "lastModified": "2026-09-15T14:11:02.888Z"
+      "sequence": 3,
+      "seqHash": "3f0d985d6fe2a606f41036671eff2c596b51e5fe8fbb1e82968c6e5590d008df",
+      "lastModified": "2026-09-30T15:39:15.232Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "brasileirao-serie-b-2026-10-02-cuiaba-vs-ponte-preta@futebol.agendafut": {
       "sequence": 3,
@@ -5775,11 +5779,12 @@
       ]
     },
     "brasileirao-serie-b-2026-10-02-sao-bernardo-vs-crb@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "92a6ce7847e2969b9503acb9016e90fc7510cb26d5d2034a9ebc0a642d557a86",
-      "lastModified": "2026-09-27T14:33:46.007Z",
+      "sequence": 4,
+      "seqHash": "0952c795794ed57171c93accaf7c32c671959e1ad19a9bd613bc8e5e509a4d2b",
+      "lastModified": "2026-09-30T15:39:15.232Z",
       "broadcasters": [
-        "PREMIERE"
+        "GE TV",
+        "PREMIERE 2"
       ]
     },
     "brasileirao-serie-b-2026-10-06-america-mg-vs-fortaleza@futebol.agendafut": {
