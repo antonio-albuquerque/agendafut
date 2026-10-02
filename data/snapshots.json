@@ -8881,7 +8881,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-09-30T15:39:12.216Z",
+      "fetchedAt": "2026-10-02T15:24:38.377Z",
       "matches": [
         {
           "id": "401860064",
@@ -16100,9 +16100,12 @@
           "kickoff": "2026-10-01T20:30:00.000-03:00",
           "date": "2026-10-01",
           "venue": "Estádio Joaquim Portugal",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401860365",
@@ -16121,9 +16124,12 @@
           "kickoff": "2026-10-01T21:00:00.000-03:00",
           "date": "2026-10-01",
           "venue": "Estádio Dr. Jorge Ismael de Biasi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 0
+          }
         },
         {
           "id": "401860364",
@@ -16351,7 +16357,7 @@
           },
           "kickoff": "2026-10-06T21:35:00.000-03:00",
           "date": "2026-10-06",
-          "venue": "Moisés Lucarelli",
+          "venue": "Estádio Italo Mário Limongi",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
