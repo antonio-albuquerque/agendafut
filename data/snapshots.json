@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-09-30T15:39:12.216Z",
+      "fetchedAt": "2026-10-03T14:09:06.820Z",
       "matches": [
         {
           "id": "401840808",
@@ -6753,9 +6753,12 @@
           "kickoff": "2026-10-02T20:00:00.000-03:00",
           "date": "2026-10-02",
           "venue": "Estádio Cícero Pompeu de Toledo",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401841168",
@@ -8881,7 +8884,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-02T15:24:38.377Z",
+      "fetchedAt": "2026-10-03T14:09:06.820Z",
       "matches": [
         {
           "id": "401860064",
@@ -16148,9 +16151,12 @@
           "kickoff": "2026-10-02T19:30:00.000-03:00",
           "date": "2026-10-02",
           "venue": "Estádio Primeiro de Maio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 1
+          }
         },
         {
           "id": "401860366",
@@ -16169,9 +16175,12 @@
           "kickoff": "2026-10-02T20:30:00.000-03:00",
           "date": "2026-10-02",
           "venue": "Estadio VGD",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860362",
@@ -16190,9 +16199,12 @@
           "kickoff": "2026-10-02T20:45:00.000-03:00",
           "date": "2026-10-02",
           "venue": "Alfredo Jaconi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 0
+          }
         },
         {
           "id": "401860363",
@@ -16211,9 +16223,12 @@
           "kickoff": "2026-10-02T21:35:00.000-03:00",
           "date": "2026-10-02",
           "venue": "Arena Castelão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401860369",
@@ -17660,7 +17675,7 @@
           "kickoff": null,
           "date": "2026-11-14",
           "venue": null,
-          "status": "scheduled",
+          "status": "postponed",
           "broadcasters": [],
           "score": null
         },
