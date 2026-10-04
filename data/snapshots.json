@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-03T14:09:06.820Z",
+      "fetchedAt": "2026-10-04T14:38:15.919Z",
       "matches": [
         {
           "id": "401840808",
@@ -6777,9 +6777,12 @@
           "kickoff": "2026-10-03T18:30:00.000-03:00",
           "date": "2026-10-03",
           "venue": "Arena MRV",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401841255",
@@ -8884,7 +8887,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-03T14:09:06.820Z",
+      "fetchedAt": "2026-10-04T14:38:15.919Z",
       "matches": [
         {
           "id": "401860064",
@@ -16247,9 +16250,12 @@
           "kickoff": "2026-10-03T11:00:00.000-03:00",
           "date": "2026-10-03",
           "venue": "Estádio da Ressacada",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860368",
@@ -16268,9 +16274,12 @@
           "kickoff": "2026-10-03T16:00:00.000-03:00",
           "date": "2026-10-03",
           "venue": "Estádio Antônio Accioly",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401860371",
@@ -16289,9 +16298,12 @@
           "kickoff": "2026-10-03T17:00:00.000-03:00",
           "date": "2026-10-03",
           "venue": "Arena Pantanal",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401860370",
@@ -16310,9 +16322,12 @@
           "kickoff": "2026-10-03T18:30:00.000-03:00",
           "date": "2026-10-03",
           "venue": "Estádio Santa Cruz",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860380",
