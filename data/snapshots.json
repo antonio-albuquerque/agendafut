@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-04T14:38:15.919Z",
+      "fetchedAt": "2026-10-06T15:42:19.879Z",
       "matches": [
         {
           "id": "401840808",
@@ -7008,7 +7008,7 @@
             "name": "Remo",
             "slug": "remo"
           },
-          "kickoff": "2026-10-10T17:00:00.000-03:00",
+          "kickoff": "2026-10-10T18:00:00.000-03:00",
           "date": "2026-10-10",
           "venue": "Estádio São Januário",
           "status": "scheduled",
