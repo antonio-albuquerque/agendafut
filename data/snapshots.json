@@ -8887,7 +8887,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-04T14:38:15.919Z",
+      "fetchedAt": "2026-10-07T16:06:23.433Z",
       "matches": [
         {
           "id": "401860064",
@@ -16346,9 +16346,12 @@
           "kickoff": "2026-10-06T19:30:00.000-03:00",
           "date": "2026-10-06",
           "venue": "Ilha do Retiro",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860377",
@@ -16367,9 +16370,12 @@
           "kickoff": "2026-10-06T20:30:00.000-03:00",
           "date": "2026-10-06",
           "venue": "Estádio da Serrinha",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860372",
@@ -16388,9 +16394,12 @@
           "kickoff": "2026-10-06T21:35:00.000-03:00",
           "date": "2026-10-06",
           "venue": "Estádio Italo Mário Limongi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860374",

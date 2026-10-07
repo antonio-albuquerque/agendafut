@@ -5831,9 +5831,9 @@
       ]
     },
     "brasileirao-serie-b-2026-10-06-goias-vs-athletic@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "b49554e3064328cadfab7d243f63e302ca62cd3b1dcab026acc15737dc93fc3d",
-      "lastModified": "2026-10-02T15:24:40.282Z",
+      "sequence": 4,
+      "seqHash": "cec5a65221ebeec69160f69d799e34bc3bbeb24362ac526705537454e4e8d43c",
+      "lastModified": "2026-10-07T16:06:25.692Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN"
@@ -5856,9 +5856,9 @@
       ]
     },
     "brasileirao-serie-b-2026-10-06-ponte-preta-vs-juventude@futebol.agendafut": {
-      "sequence": 4,
-      "seqHash": "dc49bdd1575870e32552e94e022049d80c086daefa002420aed1603db3a3961d",
-      "lastModified": "2026-10-03T14:09:10.266Z",
+      "sequence": 5,
+      "seqHash": "e321df73bfd83a0d216ecc2d53cc84ef9df40ddebb71b2cc65c68d518c953069",
+      "lastModified": "2026-10-07T16:06:25.692Z",
       "broadcasters": [
         "CANAL GOAT",
         "DISNEY+",
@@ -5866,9 +5866,9 @@
       ]
     },
     "brasileirao-serie-b-2026-10-06-sport-vs-sao-bernardo@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "cdd859e3d635a3147623a22aa8102e08f1bb399c58e925bc379547bd668c39a5",
-      "lastModified": "2026-10-02T15:24:40.282Z",
+      "sequence": 4,
+      "seqHash": "71b180c74fe8e4604190735d5b79c37f34160d2e7300840a77319829b7b31c2f",
+      "lastModified": "2026-10-07T16:06:25.692Z",
       "broadcasters": [
         "DISNEY+"
       ]
@@ -5887,9 +5887,15 @@
       "lastModified": "2026-09-15T14:11:02.888Z"
     },
     "brasileirao-serie-b-2026-10-09-atletico-go-vs-sport@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "d46f0d36d37e89ade4c6b88c3f65e3f83645ce79ad3331f02a0ac884e3072ac9",
-      "lastModified": "2026-09-15T14:11:02.888Z"
+      "sequence": 3,
+      "seqHash": "49a9a8ae9082299a12cdbb519eb04020057af190d3977d4a2b28bc904d8d1494",
+      "lastModified": "2026-10-07T16:06:25.692Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN",
+        "REDETV!",
+        "SPORTYNET"
+      ]
     },
     "brasileirao-serie-b-2026-10-09-botafogo-sp-vs-ceara@futebol.agendafut": {
       "sequence": 2,
@@ -5912,14 +5918,22 @@
       "lastModified": "2026-09-28T17:22:35.652Z"
     },
     "brasileirao-serie-b-2026-10-09-juventude-vs-sao-bernardo@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "8fa5abbfadb618c474db34d198888c4633a741193ecbdd77a9f8d40f6cbf27f3",
-      "lastModified": "2026-09-15T14:11:02.888Z"
+      "sequence": 3,
+      "seqHash": "6bebcb8984f87c1371187943951cffebc6775c5ab201eda6874a794ddcfa575f",
+      "lastModified": "2026-10-07T16:06:25.692Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-10-09-nautico-vs-vila-nova@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "2a3fc4c0a89571ad48867e4567772af5ded3fc2e5fed9e6edc8d896924dba1a6",
-      "lastModified": "2026-09-15T14:11:02.888Z"
+      "sequence": 3,
+      "seqHash": "6498be415d98f5a54e6c904f568396ca51ffd4994a11b38ebed59a0b00ef9041",
+      "lastModified": "2026-10-07T16:06:25.692Z",
+      "broadcasters": [
+        "GLOBO",
+        "PREMIERE",
+        "SPORTV"
+      ]
     },
     "brasileirao-serie-b-2026-10-09-novorizontino-vs-ponte-preta@futebol.agendafut": {
       "sequence": 2,
