@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-06T15:42:19.879Z",
+      "fetchedAt": "2026-10-08T16:08:47.616Z",
       "matches": [
         {
           "id": "401840808",
@@ -6801,9 +6801,12 @@
           "kickoff": "2026-10-07T19:30:00.000-03:00",
           "date": "2026-10-07",
           "venue": "Estadio Beira-Rio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401841253",
@@ -6822,9 +6825,12 @@
           "kickoff": "2026-10-07T19:30:00.000-03:00",
           "date": "2026-10-07",
           "venue": "Estádio Municipal Cicero de Souza Marques",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841252",
@@ -6843,9 +6849,12 @@
           "kickoff": "2026-10-07T19:30:00.000-03:00",
           "date": "2026-10-07",
           "venue": "Mangueirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841250",
@@ -6864,9 +6873,12 @@
           "kickoff": "2026-10-07T20:00:00.000-03:00",
           "date": "2026-10-07",
           "venue": "Estadio Manoel Barradas",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 4,
+            "away": 0
+          }
         },
         {
           "id": "401841257",
@@ -6885,9 +6897,12 @@
           "kickoff": "2026-10-07T20:30:00.000-03:00",
           "date": "2026-10-07",
           "venue": "Joao Havelange Stadium",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401841249",
@@ -6906,9 +6921,12 @@
           "kickoff": "2026-10-07T21:30:00.000-03:00",
           "date": "2026-10-07",
           "venue": "Estadio Mineirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401841251",
@@ -8887,7 +8905,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-07T16:06:23.433Z",
+      "fetchedAt": "2026-10-08T16:08:47.616Z",
       "matches": [
         {
           "id": "401860064",
@@ -16418,9 +16436,12 @@
           "kickoff": "2026-10-07T19:30:00.000-03:00",
           "date": "2026-10-07",
           "venue": "Estádio da Ressacada",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860373",
@@ -16439,9 +16460,12 @@
           "kickoff": "2026-10-07T19:30:00.000-03:00",
           "date": "2026-10-07",
           "venue": "Germano Krüger",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401860379",
@@ -16460,9 +16484,12 @@
           "kickoff": "2026-10-07T20:30:00.000-03:00",
           "date": "2026-10-07",
           "venue": "Estádio Raimundo Sampaio (Independência)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860375",
@@ -16481,9 +16508,12 @@
           "kickoff": "2026-10-07T20:30:00.000-03:00",
           "date": "2026-10-07",
           "venue": "Estádio Rei Pelé",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 1
+          }
         },
         {
           "id": "401860376",
@@ -16502,9 +16532,12 @@
           "kickoff": "2026-10-07T20:30:00.000-03:00",
           "date": "2026-10-07",
           "venue": "Estádio Onésio Brasileiro Alvarenga",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401860378",
@@ -17599,6 +17632,27 @@
           "score": null
         },
         {
+          "id": "401860437",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Fortaleza",
+            "slug": "fortaleza"
+          },
+          "away": {
+            "name": "Vila Nova",
+            "slug": "vila-nova"
+          },
+          "kickoff": "2026-11-14T16:30:00.000-03:00",
+          "date": "2026-11-14",
+          "venue": "Arena Castelão",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
           "id": "401860432",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
@@ -17679,27 +17733,6 @@
           "date": "2026-11-14",
           "venue": null,
           "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860437",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Fortaleza",
-            "slug": "fortaleza"
-          },
-          "away": {
-            "name": "Vila Nova",
-            "slug": "vila-nova"
-          },
-          "kickoff": null,
-          "date": "2026-11-14",
-          "venue": null,
-          "status": "postponed",
           "broadcasters": [],
           "score": null
         },
