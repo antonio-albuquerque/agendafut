@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-08T16:08:47.616Z",
+      "fetchedAt": "2026-10-09T15:50:26.783Z",
       "matches": [
         {
           "id": "401840808",
@@ -6945,9 +6945,12 @@
           "kickoff": "2026-10-08T19:30:00.000-03:00",
           "date": "2026-10-08",
           "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 2
+          }
         },
         {
           "id": "401841256",
@@ -6966,9 +6969,12 @@
           "kickoff": "2026-10-08T20:00:00.000-03:00",
           "date": "2026-10-08",
           "venue": "Arena da Baixada",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 2
+          }
         },
         {
           "id": "401841248",
@@ -6987,9 +6993,12 @@
           "kickoff": "2026-10-08T21:30:00.000-03:00",
           "date": "2026-10-08",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 4,
+            "away": 0
+          }
         },
         {
           "id": "401841254",
@@ -7008,9 +7017,12 @@
           "kickoff": "2026-10-08T21:30:00.000-03:00",
           "date": "2026-10-08",
           "venue": "Allianz Parque",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401841262",
@@ -8905,7 +8917,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-08T16:08:47.616Z",
+      "fetchedAt": "2026-10-09T15:50:26.783Z",
       "matches": [
         {
           "id": "401860064",
@@ -16556,9 +16568,12 @@
           "kickoff": "2026-10-08T19:30:00.000-03:00",
           "date": "2026-10-08",
           "venue": "Arena Castelão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860381",
@@ -16577,9 +16592,12 @@
           "kickoff": "2026-10-08T19:30:00.000-03:00",
           "date": "2026-10-08",
           "venue": "Estádio dos Aflitos",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860384",
@@ -16807,7 +16825,7 @@
           },
           "kickoff": "2026-10-16T19:30:00.000-03:00",
           "date": "2026-10-16",
-          "venue": "Moisés Lucarelli",
+          "venue": "Estádio Italo Mário Limongi",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17002,132 +17020,6 @@
           "score": null
         },
         {
-          "id": "401860405",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "América-MG",
-            "slug": "america-mg"
-          },
-          "away": {
-            "name": "Cuiabá",
-            "slug": "cuiaba"
-          },
-          "kickoff": null,
-          "date": "2026-10-23",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860404",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Atlético-GO",
-            "slug": "atletico-go"
-          },
-          "away": {
-            "name": "Novorizontino",
-            "slug": "novorizontino"
-          },
-          "kickoff": null,
-          "date": "2026-10-23",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860403",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Avaí",
-            "slug": "avai"
-          },
-          "away": {
-            "name": "Botafogo-SP",
-            "slug": "botafogo-sp"
-          },
-          "kickoff": null,
-          "date": "2026-10-23",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860406",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Ceará",
-            "slug": "ceara"
-          },
-          "away": {
-            "name": "Goiás",
-            "slug": "goias"
-          },
-          "kickoff": null,
-          "date": "2026-10-23",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860402",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "CRB",
-            "slug": "crb"
-          },
-          "away": {
-            "name": "Londrina",
-            "slug": "londrina"
-          },
-          "kickoff": null,
-          "date": "2026-10-23",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860411",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Juventude",
-            "slug": "juventude"
-          },
-          "away": {
-            "name": "Náutico",
-            "slug": "nautico"
-          },
-          "kickoff": null,
-          "date": "2026-10-23",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401860410",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
@@ -17141,51 +17033,9 @@
             "name": "Athletic-MG",
             "slug": "athletic"
           },
-          "kickoff": null,
+          "kickoff": "2026-10-23T19:30:00.000-03:00",
           "date": "2026-10-23",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860409",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Ponte Preta",
-            "slug": "ponte-preta"
-          },
-          "away": {
-            "name": "Fortaleza",
-            "slug": "fortaleza"
-          },
-          "kickoff": null,
-          "date": "2026-10-23",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860407",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "São Bernardo",
-            "slug": "sao-bernardo"
-          },
-          "away": {
-            "name": "Vila Nova",
-            "slug": "vila-nova"
-          },
-          "kickoff": null,
-          "date": "2026-10-23",
-          "venue": null,
+          "venue": "Germano Krüger",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17204,51 +17054,177 @@
             "name": "Criciúma",
             "slug": "criciuma"
           },
-          "kickoff": null,
+          "kickoff": "2026-10-23T21:00:00.000-03:00",
           "date": "2026-10-23",
-          "venue": null,
+          "venue": "Ilha do Retiro",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
         },
         {
-          "id": "401860412",
+          "id": "401860403",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
           "season": 2026,
           "round": null,
           "home": {
-            "name": "Athletic-MG",
-            "slug": "athletic"
+            "name": "Avaí",
+            "slug": "avai"
           },
           "away": {
-            "name": "Ceará",
-            "slug": "ceara"
-          },
-          "kickoff": null,
-          "date": "2026-10-30",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860413",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
             "name": "Botafogo-SP",
             "slug": "botafogo-sp"
           },
-          "away": {
-            "name": "Sport",
-            "slug": "sport"
+          "kickoff": "2026-10-24T16:00:00.000-03:00",
+          "date": "2026-10-24",
+          "venue": "Estádio da Ressacada",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860404",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Atlético-GO",
+            "slug": "atletico-go"
           },
-          "kickoff": null,
-          "date": "2026-10-30",
-          "venue": null,
+          "away": {
+            "name": "Novorizontino",
+            "slug": "novorizontino"
+          },
+          "kickoff": "2026-10-24T16:30:00.000-03:00",
+          "date": "2026-10-24",
+          "venue": "Estádio Antônio Accioly",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860407",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "São Bernardo",
+            "slug": "sao-bernardo"
+          },
+          "away": {
+            "name": "Vila Nova",
+            "slug": "vila-nova"
+          },
+          "kickoff": "2026-10-24T16:30:00.000-03:00",
+          "date": "2026-10-24",
+          "venue": "Estádio Primeiro de Maio",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860402",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "CRB",
+            "slug": "crb"
+          },
+          "away": {
+            "name": "Londrina",
+            "slug": "londrina"
+          },
+          "kickoff": "2026-10-24T18:30:00.000-03:00",
+          "date": "2026-10-24",
+          "venue": "Estádio Rei Pelé",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860409",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ponte Preta",
+            "slug": "ponte-preta"
+          },
+          "away": {
+            "name": "Fortaleza",
+            "slug": "fortaleza"
+          },
+          "kickoff": "2026-10-24T18:30:00.000-03:00",
+          "date": "2026-10-24",
+          "venue": "Moisés Lucarelli",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860405",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "América-MG",
+            "slug": "america-mg"
+          },
+          "away": {
+            "name": "Cuiabá",
+            "slug": "cuiaba"
+          },
+          "kickoff": "2026-10-26T19:30:00.000-03:00",
+          "date": "2026-10-26",
+          "venue": "Estádio Raimundo Sampaio (Independência)",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860411",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Juventude",
+            "slug": "juventude"
+          },
+          "away": {
+            "name": "Náutico",
+            "slug": "nautico"
+          },
+          "kickoff": "2026-10-26T20:30:00.000-03:00",
+          "date": "2026-10-26",
+          "venue": "Alfredo Jaconi",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860406",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ceará",
+            "slug": "ceara"
+          },
+          "away": {
+            "name": "Goiás",
+            "slug": "goias"
+          },
+          "kickoff": "2026-10-27T20:00:00.000-03:00",
+          "date": "2026-10-27",
+          "venue": "Arena Castelão",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17267,135 +17243,30 @@
             "name": "Ponte Preta",
             "slug": "ponte-preta"
           },
-          "kickoff": null,
+          "kickoff": "2026-10-30T19:30:00.000-03:00",
           "date": "2026-10-30",
-          "venue": null,
+          "venue": "Heriberto Hülse",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
         },
         {
-          "id": "401860415",
+          "id": "401860413",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
           "season": 2026,
           "round": null,
           "home": {
-            "name": "Cuiabá",
-            "slug": "cuiaba"
+            "name": "Botafogo-SP",
+            "slug": "botafogo-sp"
           },
           "away": {
-            "name": "São Bernardo",
-            "slug": "sao-bernardo"
+            "name": "Sport",
+            "slug": "sport"
           },
-          "kickoff": null,
-          "date": "2026-10-30",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860420",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Fortaleza",
-            "slug": "fortaleza"
-          },
-          "away": {
-            "name": "Atlético-GO",
-            "slug": "atletico-go"
-          },
-          "kickoff": null,
-          "date": "2026-10-30",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860419",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Goiás",
-            "slug": "goias"
-          },
-          "away": {
-            "name": "CRB",
-            "slug": "crb"
-          },
-          "kickoff": null,
-          "date": "2026-10-30",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860418",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Londrina",
-            "slug": "londrina"
-          },
-          "away": {
-            "name": "América-MG",
-            "slug": "america-mg"
-          },
-          "kickoff": null,
-          "date": "2026-10-30",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860421",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Náutico",
-            "slug": "nautico"
-          },
-          "away": {
-            "name": "Avaí",
-            "slug": "avai"
-          },
-          "kickoff": null,
-          "date": "2026-10-30",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860417",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Novorizontino",
-            "slug": "novorizontino"
-          },
-          "away": {
-            "name": "Operário-PR",
-            "slug": "operario-pr"
-          },
-          "kickoff": null,
-          "date": "2026-10-30",
-          "venue": null,
+          "kickoff": "2026-10-31T16:00:00.000-03:00",
+          "date": "2026-10-31",
+          "venue": "Estádio Santa Cruz",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17414,15 +17285,120 @@
             "name": "Juventude",
             "slug": "juventude"
           },
-          "kickoff": null,
-          "date": "2026-10-30",
-          "venue": null,
+          "kickoff": "2026-10-31T18:00:00.000-03:00",
+          "date": "2026-10-31",
+          "venue": "Estádio Onésio Brasileiro Alvarenga",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
         },
         {
-          "id": "401860422",
+          "id": "401860421",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Náutico",
+            "slug": "nautico"
+          },
+          "away": {
+            "name": "Avaí",
+            "slug": "avai"
+          },
+          "kickoff": "2026-10-31T19:30:00.000-03:00",
+          "date": "2026-10-31",
+          "venue": "Estádio dos Aflitos",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860418",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Londrina",
+            "slug": "londrina"
+          },
+          "away": {
+            "name": "América-MG",
+            "slug": "america-mg"
+          },
+          "kickoff": "2026-11-01T16:00:00.000-03:00",
+          "date": "2026-11-01",
+          "venue": "Estadio VGD",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860415",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Cuiabá",
+            "slug": "cuiaba"
+          },
+          "away": {
+            "name": "São Bernardo",
+            "slug": "sao-bernardo"
+          },
+          "kickoff": "2026-11-01T18:30:00.000-03:00",
+          "date": "2026-11-01",
+          "venue": "Arena Pantanal",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860417",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Novorizontino",
+            "slug": "novorizontino"
+          },
+          "away": {
+            "name": "Operário-PR",
+            "slug": "operario-pr"
+          },
+          "kickoff": "2026-11-01T18:30:00.000-03:00",
+          "date": "2026-11-01",
+          "venue": "Estádio Dr. Jorge Ismael de Biasi",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860420",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Fortaleza",
+            "slug": "fortaleza"
+          },
+          "away": {
+            "name": "Atlético-GO",
+            "slug": "atletico-go"
+          },
+          "kickoff": "2026-11-02T16:00:00.000-03:00",
+          "date": "2026-11-02",
+          "venue": "Arena Castelão",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860412",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
           "season": 2026,
@@ -17432,33 +17408,33 @@
             "slug": "athletic"
           },
           "away": {
-            "name": "Atlético-GO",
-            "slug": "atletico-go"
+            "name": "Ceará",
+            "slug": "ceara"
           },
-          "kickoff": null,
-          "date": "2026-11-06",
-          "venue": null,
+          "kickoff": "2026-11-02T18:00:00.000-03:00",
+          "date": "2026-11-02",
+          "venue": "Estádio Joaquim Portugal",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
         },
         {
-          "id": "401860423",
+          "id": "401860419",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
           "season": 2026,
           "round": null,
           "home": {
-            "name": "Avaí",
-            "slug": "avai"
+            "name": "Goiás",
+            "slug": "goias"
           },
           "away": {
-            "name": "São Bernardo",
-            "slug": "sao-bernardo"
+            "name": "CRB",
+            "slug": "crb"
           },
-          "kickoff": null,
-          "date": "2026-11-06",
-          "venue": null,
+          "kickoff": "2026-11-02T20:30:00.000-03:00",
+          "date": "2026-11-02",
+          "venue": "Estádio da Serrinha",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17477,114 +17453,9 @@
             "name": "Londrina",
             "slug": "londrina"
           },
-          "kickoff": null,
+          "kickoff": "2026-11-06T19:30:00.000-03:00",
           "date": "2026-11-06",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860430",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Ceará",
-            "slug": "ceara"
-          },
-          "away": {
-            "name": "América-MG",
-            "slug": "america-mg"
-          },
-          "kickoff": null,
-          "date": "2026-11-06",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860429",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Cuiabá",
-            "slug": "cuiaba"
-          },
-          "away": {
-            "name": "Juventude",
-            "slug": "juventude"
-          },
-          "kickoff": null,
-          "date": "2026-11-06",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860428",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Goiás",
-            "slug": "goias"
-          },
-          "away": {
-            "name": "Ponte Preta",
-            "slug": "ponte-preta"
-          },
-          "kickoff": null,
-          "date": "2026-11-06",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860426",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Náutico",
-            "slug": "nautico"
-          },
-          "away": {
-            "name": "CRB",
-            "slug": "crb"
-          },
-          "kickoff": null,
-          "date": "2026-11-06",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860427",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Novorizontino",
-            "slug": "novorizontino"
-          },
-          "away": {
-            "name": "Fortaleza",
-            "slug": "fortaleza"
-          },
-          "kickoff": null,
-          "date": "2026-11-06",
-          "venue": null,
+          "venue": "Estádio Santa Cruz",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17603,9 +17474,9 @@
             "name": "Sport",
             "slug": "sport"
           },
-          "kickoff": null,
+          "kickoff": "2026-11-06T19:30:00.000-03:00",
           "date": "2026-11-06",
-          "venue": null,
+          "venue": "Germano Krüger",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17624,9 +17495,240 @@
             "name": "Criciúma",
             "slug": "criciuma"
           },
-          "kickoff": null,
+          "kickoff": "2026-11-06T20:30:00.000-03:00",
           "date": "2026-11-06",
-          "venue": null,
+          "venue": "Estádio Onésio Brasileiro Alvarenga",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860429",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Cuiabá",
+            "slug": "cuiaba"
+          },
+          "away": {
+            "name": "Juventude",
+            "slug": "juventude"
+          },
+          "kickoff": "2026-11-06T21:30:00.000-03:00",
+          "date": "2026-11-06",
+          "venue": "Arena Pantanal",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860423",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Avaí",
+            "slug": "avai"
+          },
+          "away": {
+            "name": "São Bernardo",
+            "slug": "sao-bernardo"
+          },
+          "kickoff": "2026-11-07T16:00:00.000-03:00",
+          "date": "2026-11-07",
+          "venue": "Estádio da Ressacada",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860427",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Novorizontino",
+            "slug": "novorizontino"
+          },
+          "away": {
+            "name": "Fortaleza",
+            "slug": "fortaleza"
+          },
+          "kickoff": "2026-11-07T16:10:00.000-03:00",
+          "date": "2026-11-07",
+          "venue": "Estádio Dr. Jorge Ismael de Biasi",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860426",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Náutico",
+            "slug": "nautico"
+          },
+          "away": {
+            "name": "CRB",
+            "slug": "crb"
+          },
+          "kickoff": "2026-11-07T21:30:00.000-03:00",
+          "date": "2026-11-07",
+          "venue": "Estádio dos Aflitos",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860422",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Athletic-MG",
+            "slug": "athletic"
+          },
+          "away": {
+            "name": "Atlético-GO",
+            "slug": "atletico-go"
+          },
+          "kickoff": "2026-11-08T16:00:00.000-03:00",
+          "date": "2026-11-08",
+          "venue": "Estádio Joaquim Portugal",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860430",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Ceará",
+            "slug": "ceara"
+          },
+          "away": {
+            "name": "América-MG",
+            "slug": "america-mg"
+          },
+          "kickoff": "2026-11-08T19:15:00.000-03:00",
+          "date": "2026-11-08",
+          "venue": "Arena Castelão",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860428",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Goiás",
+            "slug": "goias"
+          },
+          "away": {
+            "name": "Ponte Preta",
+            "slug": "ponte-preta"
+          },
+          "kickoff": "2026-11-08T19:15:00.000-03:00",
+          "date": "2026-11-08",
+          "venue": "Estádio da Serrinha",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860432",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "América-MG",
+            "slug": "america-mg"
+          },
+          "away": {
+            "name": "Avaí",
+            "slug": "avai"
+          },
+          "kickoff": "2026-11-14T16:30:00.000-03:00",
+          "date": "2026-11-14",
+          "venue": "Estádio Raimundo Sampaio (Independência)",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860440",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Atlético-GO",
+            "slug": "atletico-go"
+          },
+          "away": {
+            "name": "Cuiabá",
+            "slug": "cuiaba"
+          },
+          "kickoff": "2026-11-14T16:30:00.000-03:00",
+          "date": "2026-11-14",
+          "venue": "Estádio Antônio Accioly",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860439",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "CRB",
+            "slug": "crb"
+          },
+          "away": {
+            "name": "Ceará",
+            "slug": "ceara"
+          },
+          "kickoff": "2026-11-14T16:30:00.000-03:00",
+          "date": "2026-11-14",
+          "venue": "Estádio Rei Pelé",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860438",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Criciúma",
+            "slug": "criciuma"
+          },
+          "away": {
+            "name": "Novorizontino",
+            "slug": "novorizontino"
+          },
+          "kickoff": "2026-11-14T16:30:00.000-03:00",
+          "date": "2026-11-14",
+          "venue": "Heriberto Hülse",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17653,90 +17755,6 @@
           "score": null
         },
         {
-          "id": "401860432",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "América-MG",
-            "slug": "america-mg"
-          },
-          "away": {
-            "name": "Avaí",
-            "slug": "avai"
-          },
-          "kickoff": null,
-          "date": "2026-11-14",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860440",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Atlético-GO",
-            "slug": "atletico-go"
-          },
-          "away": {
-            "name": "Cuiabá",
-            "slug": "cuiaba"
-          },
-          "kickoff": null,
-          "date": "2026-11-14",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860439",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "CRB",
-            "slug": "crb"
-          },
-          "away": {
-            "name": "Ceará",
-            "slug": "ceara"
-          },
-          "kickoff": null,
-          "date": "2026-11-14",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860438",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Criciúma",
-            "slug": "criciuma"
-          },
-          "away": {
-            "name": "Novorizontino",
-            "slug": "novorizontino"
-          },
-          "kickoff": null,
-          "date": "2026-11-14",
-          "venue": null,
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401860441",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
@@ -17750,9 +17768,9 @@
             "name": "Botafogo-SP",
             "slug": "botafogo-sp"
           },
-          "kickoff": null,
+          "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
-          "venue": null,
+          "venue": "Alfredo Jaconi",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17771,9 +17789,9 @@
             "name": "Náutico",
             "slug": "nautico"
           },
-          "kickoff": null,
+          "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
-          "venue": null,
+          "venue": "Estadio VGD",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17792,9 +17810,9 @@
             "name": "Operário-PR",
             "slug": "operario-pr"
           },
-          "kickoff": null,
+          "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
-          "venue": null,
+          "venue": "Moisés Lucarelli",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17813,9 +17831,9 @@
             "name": "Athletic-MG",
             "slug": "athletic"
           },
-          "kickoff": null,
+          "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
-          "venue": null,
+          "venue": "Estádio Primeiro de Maio",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17834,9 +17852,9 @@
             "name": "Goiás",
             "slug": "goias"
           },
-          "kickoff": null,
+          "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
-          "venue": null,
+          "venue": "Ilha do Retiro",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
