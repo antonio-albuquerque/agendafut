@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-09T15:50:26.783Z",
+      "fetchedAt": "2026-10-11T15:20:44.427Z",
       "matches": [
         {
           "id": "401840808",
@@ -7041,9 +7041,12 @@
           "kickoff": "2026-10-10T18:00:00.000-03:00",
           "date": "2026-10-10",
           "venue": "Estádio São Januário",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401841259",
@@ -7062,9 +7065,12 @@
           "kickoff": "2026-10-10T21:00:00.000-03:00",
           "date": "2026-10-10",
           "venue": "Estádio Cícero Pompeu de Toledo",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401841258",

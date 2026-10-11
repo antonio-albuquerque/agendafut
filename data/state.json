@@ -3502,18 +3502,18 @@
       ]
     },
     "brasileirao-serie-a-2026-10-10-sao-paulo-vs-vitoria@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "beb402542ca6cddd3e2fddd06afe0125cce7d1cf5d4a8db74c566985a7b3f890",
-      "lastModified": "2026-10-08T16:08:50.846Z",
+      "sequence": 4,
+      "seqHash": "3ea0fea41300778823676e24362e3811b0121e1d52fb7a11924caf2d3ed43887",
+      "lastModified": "2026-10-11T15:20:47.026Z",
       "broadcasters": [
         "PREMIERE FC",
         "SPORTV"
       ]
     },
     "brasileirao-serie-a-2026-10-10-vasco-vs-remo@futebol.agendafut": {
-      "sequence": 4,
-      "seqHash": "3d4f985af23f064b41e12e1aedaa01d14d777449b4b3f16f6d96ba27ef072328",
-      "lastModified": "2026-10-08T16:08:50.846Z",
+      "sequence": 5,
+      "seqHash": "d9f371481ee5a1d9dd1b01fd0acc5dac852984423d84f5847227159f929f7781",
+      "lastModified": "2026-10-11T15:20:47.026Z",
       "broadcasters": [
         "CAZÉTV",
         "PREMIERE FC",
@@ -3536,9 +3536,14 @@
       "lastModified": "2026-09-28T17:22:35.652Z"
     },
     "brasileirao-serie-a-2026-10-17-botafogo-vs-chapecoense@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "59d29937628b8719ad4cc5083deea568b0df005c9fd6918f2772e30e19f6b238",
-      "lastModified": "2026-09-28T17:22:35.652Z"
+      "sequence": 3,
+      "seqHash": "d8fb5185b6f964110be376cc67a05a11f4ce88c196b2fbfb94cbe687554f0676",
+      "lastModified": "2026-10-11T15:20:47.026Z",
+      "broadcasters": [
+        "CAZÉTV",
+        "PREMIERE",
+        "RECORD"
+      ]
     },
     "brasileirao-serie-a-2026-10-17-corinthians-vs-vitoria@futebol.agendafut": {
       "sequence": 2,
@@ -3556,9 +3561,13 @@
       "lastModified": "2026-09-28T17:22:35.652Z"
     },
     "brasileirao-serie-a-2026-10-17-mirassol-vs-internacional@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "6f93d518342c07e21e8c4aee560755a85a80ced162c545ad99b9a2faaa6a467c",
-      "lastModified": "2026-09-28T17:22:35.652Z"
+      "sequence": 3,
+      "seqHash": "e248c898ddc8aa1a459ceb7b603c9915dc7cab19f6b458244a27e6d010282553",
+      "lastModified": "2026-10-11T15:20:47.026Z",
+      "broadcasters": [
+        "PREMIERE",
+        "SPORTV"
+      ]
     },
     "brasileirao-serie-a-2026-10-17-remo-vs-bragantino@futebol.agendafut": {
       "sequence": 2,
@@ -11216,9 +11225,14 @@
       "lastModified": "2026-09-21T15:41:02.686Z"
     },
     "sudamericana-2026-10-14-boca-juniors-vs-vasco@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "47659602d3177380c926cddb0f65fec5269d09fba7c4ae7c00127336bc0f4771",
-      "lastModified": "2026-09-21T15:41:02.686Z"
+      "sequence": 2,
+      "seqHash": "a8190a08c42785338636edfc5af892a405ecc56b1a04a37010e3340dc016adaa",
+      "lastModified": "2026-10-11T15:20:47.026Z",
+      "broadcasters": [
+        "PARAMOUNT+",
+        "SBT",
+        "YOUTUBE"
+      ]
     },
     "sudamericana-2026-10-21-montevideo-city-torque-vs-atletico-mg@futebol.agendafut": {
       "sequence": 1,
