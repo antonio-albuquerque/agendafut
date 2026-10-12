@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-11T15:20:44.427Z",
+      "fetchedAt": "2026-10-12T18:37:24.789Z",
       "matches": [
         {
           "id": "401840808",
@@ -7089,9 +7089,12 @@
           "kickoff": "2026-10-11T16:00:00.000-03:00",
           "date": "2026-10-11",
           "venue": "Arena MRV",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401841263",
@@ -7110,9 +7113,12 @@
           "kickoff": "2026-10-11T17:30:00.000-03:00",
           "date": "2026-10-11",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401841267",
@@ -7131,9 +7137,12 @@
           "kickoff": "2026-10-11T17:30:00.000-03:00",
           "date": "2026-10-11",
           "venue": "Arena do Grêmio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841261",
@@ -7152,9 +7161,12 @@
           "kickoff": "2026-10-11T17:30:00.000-03:00",
           "date": "2026-10-11",
           "venue": "Allianz Parque",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 4,
+            "away": 1
+          }
         },
         {
           "id": "401841266",
@@ -7173,9 +7185,12 @@
           "kickoff": "2026-10-11T19:30:00.000-03:00",
           "date": "2026-10-11",
           "venue": "Arena Fonte Nova",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401841264",
@@ -8923,7 +8938,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-09T15:50:26.783Z",
+      "fetchedAt": "2026-10-12T18:37:24.789Z",
       "matches": [
         {
           "id": "401860064",
@@ -16622,9 +16637,12 @@
           "kickoff": "2026-10-11T16:00:00.000-03:00",
           "date": "2026-10-11",
           "venue": "Alfredo Jaconi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 2
+          }
         },
         {
           "id": "401860389",
@@ -16643,9 +16661,12 @@
           "kickoff": "2026-10-11T16:10:00.000-03:00",
           "date": "2026-10-11",
           "venue": "Estádio Antônio Accioly",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401860382",
@@ -16664,9 +16685,12 @@
           "kickoff": "2026-10-11T17:30:00.000-03:00",
           "date": "2026-10-11",
           "venue": "Estádio dos Aflitos",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860386",
@@ -16685,9 +16709,12 @@
           "kickoff": "2026-10-11T18:30:00.000-03:00",
           "date": "2026-10-11",
           "venue": "Arena Pantanal",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860391",
@@ -16706,9 +16733,12 @@
           "kickoff": "2026-10-11T18:30:00.000-03:00",
           "date": "2026-10-11",
           "venue": "Germano Krüger",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860385",
