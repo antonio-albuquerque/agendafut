@@ -3447,26 +3447,26 @@
       ]
     },
     "brasileirao-serie-a-2026-10-10-bragantino-vs-cruzeiro@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "6ed09749e2fe28bce990bd85e03684ff40c42eb2545d0e75181b34a6d2cd0755",
-      "lastModified": "2026-10-09T15:50:30.511Z",
+      "sequence": 4,
+      "seqHash": "1713811b377e337bb7032ad0269a354434ecca6c852cb75065de0a399aa9bcd7",
+      "lastModified": "2026-10-13T16:44:07.061Z",
       "broadcasters": [
         "PREMIERE",
         "SPORTV"
       ]
     },
     "brasileirao-serie-a-2026-10-10-chapecoense-vs-athletico-pr@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "c7bd1c7db605d4f7d08be771112c8ce73742979f01bffa448ef7e150d2440301",
-      "lastModified": "2026-10-09T15:50:30.511Z",
+      "sequence": 4,
+      "seqHash": "4a7af013338efaabdc1f51cd4d7cba517a046cbb2b0c7a54845d9473798630a7",
+      "lastModified": "2026-10-13T16:44:07.061Z",
       "broadcasters": [
         "PREMIERE"
       ]
     },
     "brasileirao-serie-a-2026-10-10-coritiba-vs-botafogo@futebol.agendafut": {
-      "sequence": 4,
-      "seqHash": "0c0151fdcf20c07b275f3469dcfc0c6ffa2abd0519f1d633bec0afa95c89ad0f",
-      "lastModified": "2026-10-09T15:50:30.511Z",
+      "sequence": 5,
+      "seqHash": "427936c587709283179b6ff510324b058131bc277b97deb1dc8e43d46329e649",
+      "lastModified": "2026-10-13T16:44:07.061Z",
       "broadcasters": [
         "PRIME VIDEO"
       ]
@@ -3537,9 +3537,12 @@
       ]
     },
     "brasileirao-serie-a-2026-10-17-bahia-vs-flamengo@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "66a598beeb9c3baae47b97b02882dc9fb9a9da8666a0d3b471b62af0b8d2331b",
-      "lastModified": "2026-09-28T17:22:35.652Z"
+      "sequence": 3,
+      "seqHash": "d937f81658da486fb1ba33d5cebd2ca2e9fdb4fcbadcf27260dc0b1a0ef8cd02",
+      "lastModified": "2026-10-13T16:44:07.061Z",
+      "broadcasters": [
+        "PREMIERE"
+      ]
     },
     "brasileirao-serie-a-2026-10-17-botafogo-vs-chapecoense@futebol.agendafut": {
       "sequence": 3,
@@ -3552,9 +3555,13 @@
       ]
     },
     "brasileirao-serie-a-2026-10-17-corinthians-vs-vitoria@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "beeb37da0392559dad1f64c3510c9c7aad436a5fcafc1b706b8dbcfc154ecc7e",
-      "lastModified": "2026-09-28T17:22:35.652Z"
+      "sequence": 3,
+      "seqHash": "37a6f60491b0f083cca7b380c8ccc4045ab7dcaf87d807c22b98a6c4d3778c46",
+      "lastModified": "2026-10-13T16:44:07.061Z",
+      "broadcasters": [
+        "PREMIERE",
+        "SPORTV"
+      ]
     },
     "brasileirao-serie-a-2026-10-17-fluminense-vs-santos@futebol.agendafut": {
       "sequence": 3,
@@ -3585,9 +3592,12 @@
       ]
     },
     "brasileirao-serie-a-2026-10-17-remo-vs-bragantino@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "c87e1efe104fb9a67b0b5aa45f87e86d64e25d530bb3d686104a6f66cb9d6d57",
-      "lastModified": "2026-09-28T17:22:35.652Z"
+      "sequence": 3,
+      "seqHash": "a540afd3ea2678b853995f2fdc250c5909dc9c84084ad1409214dcdcbac89f23",
+      "lastModified": "2026-10-13T16:44:07.061Z",
+      "broadcasters": [
+        "PREMIERE"
+      ]
     },
     "brasileirao-serie-a-2026-10-17-sao-paulo-vs-vasco@futebol.agendafut": {
       "sequence": 3,
@@ -5972,9 +5982,9 @@
       ]
     },
     "brasileirao-serie-b-2026-10-09-botafogo-sp-vs-ceara@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "0b7a3d35676f70d917314c5edfad206d9b1e9125f5e09638fcd4155fbc8e657b",
-      "lastModified": "2026-10-09T15:50:30.511Z",
+      "sequence": 4,
+      "seqHash": "ca4f47d51ea4ebb2850a9f2822a91ba52575fc9af15e34eadc72704c9b6f6996",
+      "lastModified": "2026-10-13T16:44:07.061Z",
       "broadcasters": [
         "CANAL GOAT",
         "DISNEY+",
@@ -5983,9 +5993,9 @@
       ]
     },
     "brasileirao-serie-b-2026-10-09-criciuma-vs-america-mg@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "35217afedf77c9f40010be6e9e86da9556943584de568f692c973606b8017ecc",
-      "lastModified": "2026-10-08T16:08:50.846Z",
+      "sequence": 4,
+      "seqHash": "15869e1bd2a6c12970f0a58b44fa33f58bf3e206e619ad9f2efa93f029e0c85f",
+      "lastModified": "2026-10-13T16:44:07.061Z",
       "broadcasters": [
         "DISNEY+"
       ]
@@ -6000,9 +6010,9 @@
       ]
     },
     "brasileirao-serie-b-2026-10-09-fortaleza-vs-crb@futebol.agendafut": {
-      "sequence": 4,
-      "seqHash": "6cdf6036acdc18df7a8a197ab22a70f165f27f929e168371d082fa6e49d87fe7",
-      "lastModified": "2026-10-08T16:08:50.846Z",
+      "sequence": 5,
+      "seqHash": "53c1fc55dd68c34d1f7b246f7aa6ee8360ffc9812c87648f4b5a451d4393af4b",
+      "lastModified": "2026-10-13T16:44:07.061Z",
       "broadcasters": [
         "DISNEY+"
       ]
@@ -6026,9 +6036,9 @@
       ]
     },
     "brasileirao-serie-b-2026-10-09-novorizontino-vs-ponte-preta@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "cba53b9330aa47c5e48c85818b48f013435649fe6754e642bfb3a2b10c08b4af",
-      "lastModified": "2026-10-08T16:08:50.846Z",
+      "sequence": 4,
+      "seqHash": "b653a215d06475918f0624aa78e38c0d414a4d312f33cf1620904991cb00704a",
+      "lastModified": "2026-10-13T16:44:07.061Z",
       "broadcasters": [
         "DISNEY+"
       ]
@@ -6072,14 +6082,23 @@
       ]
     },
     "brasileirao-serie-b-2026-10-16-crb-vs-botafogo-sp@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "543203745ef1f9b95c06fbca880c47adc0e7c09f2655ca32c34a01edc2e9e0bc",
-      "lastModified": "2026-09-15T14:11:02.888Z"
+      "sequence": 3,
+      "seqHash": "7479f578f97bfba0bcbddf0797afd00d2091c5f307ff2f6839626bba1ebd92e3",
+      "lastModified": "2026-10-13T16:44:07.061Z",
+      "broadcasters": [
+        "DISNEY+",
+        "SPORTYNET",
+        "XSPORTS"
+      ]
     },
     "brasileirao-serie-b-2026-10-16-goias-vs-nautico@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "876b837cc933be7828baedc0aea473eaad70811fad36426772588988531ca4b4",
-      "lastModified": "2026-09-15T14:11:02.888Z"
+      "sequence": 3,
+      "seqHash": "fafd5cc7d744dd24feb823e189b1f282dd6b61cb2ba9740abb6c166608ff5ebe",
+      "lastModified": "2026-10-13T16:44:07.061Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "brasileirao-serie-b-2026-10-16-londrina-vs-cuiaba@futebol.agendafut": {
       "sequence": 2,
@@ -6095,9 +6114,14 @@
       ]
     },
     "brasileirao-serie-b-2026-10-16-sao-bernardo-vs-criciuma@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "41fd051443f00b9deda1847405fc927841d7ab8cd31e6443b12dc14f9b8fe66f",
-      "lastModified": "2026-09-15T14:11:02.888Z"
+      "sequence": 3,
+      "seqHash": "647cefeb3b0ee498ef6d6ebf102bd9b91161ed40f177d1fee0cdc97d0a24dcb5",
+      "lastModified": "2026-10-13T16:44:07.061Z",
+      "broadcasters": [
+        "GLOBO",
+        "PREMIERE",
+        "SPORTV"
+      ]
     },
     "brasileirao-serie-b-2026-10-16-sport-vs-fortaleza@futebol.agendafut": {
       "sequence": 3,
@@ -6108,9 +6132,14 @@
       ]
     },
     "brasileirao-serie-b-2026-10-16-vila-nova-vs-novorizontino@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "ac45cb061234e2f07054e26506dd6ae5cfc3f50b40a1d449c5bccfa775d5f00b",
-      "lastModified": "2026-09-15T14:11:02.888Z"
+      "sequence": 3,
+      "seqHash": "7fb923cf3b8655352be7499d3657f1daa10f9b0e9e4dd4de0f152c6fca02abc2",
+      "lastModified": "2026-10-13T16:44:07.061Z",
+      "broadcasters": [
+        "DISNEY+",
+        "REDETV!",
+        "SPORTYNET"
+      ]
     },
     "brasileirao-serie-b-2026-10-23-america-mg-vs-cuiaba@futebol.agendafut": {
       "sequence": 2,
@@ -9733,9 +9762,13 @@
       ]
     },
     "libertadores-2026-10-15-estudiantes-de-la-plata-vs-flamengo@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "02d91aafe461976abebeed2c9338a7e3e0dc83c5eaefbee9d30a8a6d442030d4",
-      "lastModified": "2026-09-25T14:26:24.433Z"
+      "sequence": 2,
+      "seqHash": "c33510412834ae326b128d01f94098d8bab37483e5f1e0259bfdb1ba6faf76ea",
+      "lastModified": "2026-10-13T16:44:07.061Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "libertadores-2026-10-21-flamengo-vs-estudiantes-de-la-plata@futebol.agendafut": {
       "sequence": 0,
@@ -9743,14 +9776,21 @@
       "lastModified": "2026-09-18T13:24:22.564Z"
     },
     "libertadores-2026-10-21-palmeiras-vs-fluminense@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "cab36db2aacc20eeaf926256db3bf91a5a37e1c50f43fccbbc00d57babdfdc8f",
-      "lastModified": "2026-09-21T15:41:02.686Z"
+      "sequence": 2,
+      "seqHash": "0520570d11e7d8984ca8cf579eae6d6a7eadf4b0c8d86b54b0b107bb62ad1f47",
+      "lastModified": "2026-10-13T16:44:07.061Z",
+      "broadcasters": [
+        "PARAMOUNT+"
+      ]
     },
     "libertadores-2026-10-22-flamengo-vs-estudiantes-de-la-plata@futebol.agendafut": {
-      "sequence": 0,
-      "seqHash": "85a3fd10f2d64a49f3ae6b9869ef42487df2c43e0490355d45ec118fd4d03247",
-      "lastModified": "2026-09-21T15:41:02.686Z"
+      "sequence": 1,
+      "seqHash": "54ad460ccde6d2e8a0a40e4d15b989e25db1a8f5df1203d85d017d0f420684a5",
+      "lastModified": "2026-10-13T16:44:07.061Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN"
+      ]
     },
     "mineiro-2026-01-10-cruzeiro-vs-pouso-alegre@futebol.agendafut": {
       "sequence": 1,
