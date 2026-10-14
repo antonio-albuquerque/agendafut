@@ -5961,9 +5961,9 @@
       ]
     },
     "brasileirao-serie-b-2026-10-09-athletic-vs-londrina@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "14fcc78ec5265b0978c39b1c2146fade63c9a8a33c68d39cbe427dadfbd298f3",
-      "lastModified": "2026-10-09T15:50:30.511Z",
+      "sequence": 4,
+      "seqHash": "3a74f11bb57eebfdfb3877641c567f003452c957c285e781e1f3f4bfc88c795f",
+      "lastModified": "2026-10-14T14:21:07.604Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN",
@@ -6101,9 +6101,12 @@
       ]
     },
     "brasileirao-serie-b-2026-10-16-londrina-vs-cuiaba@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "35c6478061cc81e717d3fa06778bb181b8447100497ae8fd93b3adc128739668",
-      "lastModified": "2026-09-15T14:11:02.888Z"
+      "sequence": 3,
+      "seqHash": "c62d30235ae9cc225fc2df9bf6092e7149891260145fc13bfe4e7d68bc975a15",
+      "lastModified": "2026-10-14T14:21:07.604Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-10-16-ponte-preta-vs-atletico-go@futebol.agendafut": {
       "sequence": 4,
@@ -9754,10 +9757,12 @@
       "lastModified": "2026-09-18T13:24:22.564Z"
     },
     "libertadores-2026-10-14-fluminense-vs-palmeiras@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "9a75ec26e0f3393856bc55d99fd5e68e8eea0d7556bfd43e52933b021ddbb689",
-      "lastModified": "2026-10-12T18:37:27.739Z",
+      "sequence": 3,
+      "seqHash": "377452d6f966578cf2513ce61d51acee05527e8e70fa221b8fea1765520b52be",
+      "lastModified": "2026-10-14T14:21:07.604Z",
       "broadcasters": [
+        "GE TV",
+        "GLOBO",
         "PARAMOUNT+"
       ]
     },
@@ -9776,10 +9781,12 @@
       "lastModified": "2026-09-18T13:24:22.564Z"
     },
     "libertadores-2026-10-21-palmeiras-vs-fluminense@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "0520570d11e7d8984ca8cf579eae6d6a7eadf4b0c8d86b54b0b107bb62ad1f47",
-      "lastModified": "2026-10-13T16:44:07.061Z",
+      "sequence": 3,
+      "seqHash": "3a2f9779ea3d1daa04bdc3dd4de983fafedb234880bfb63493b3b92f3c028c0b",
+      "lastModified": "2026-10-14T14:21:07.604Z",
       "broadcasters": [
+        "GE TV",
+        "GLOBO",
         "PARAMOUNT+"
       ]
     },
@@ -11306,9 +11313,9 @@
       "lastModified": "2026-09-21T15:41:02.686Z"
     },
     "sudamericana-2026-10-14-boca-juniors-vs-vasco@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "a8190a08c42785338636edfc5af892a405ecc56b1a04a37010e3340dc016adaa",
-      "lastModified": "2026-10-11T15:20:47.026Z",
+      "sequence": 3,
+      "seqHash": "49b2cdd68222abfd1df0379c64cb919f13a9298667a612ef3ca3fd8331f3d59f",
+      "lastModified": "2026-10-14T14:21:07.604Z",
       "broadcasters": [
         "PARAMOUNT+",
         "SBT",
@@ -11321,9 +11328,9 @@
       "lastModified": "2026-09-21T15:41:02.686Z"
     },
     "sudamericana-2026-10-21-vasco-vs-boca-juniors@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "4a9e8af664a566b4d2bff73ce7a30df142e75bca160c6842f898ee08384fd893",
-      "lastModified": "2026-09-21T15:41:02.686Z"
+      "sequence": 2,
+      "seqHash": "ca9686acd4ff7b46eecd4aa213e1975989556e6fc0b5065e6dc9cd722442bc1f",
+      "lastModified": "2026-10-14T14:21:07.604Z"
     }
   }
 }

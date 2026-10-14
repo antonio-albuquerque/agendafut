@@ -8947,7 +8947,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-13T16:44:05.050Z",
+      "fetchedAt": "2026-10-14T14:21:04.633Z",
       "matches": [
         {
           "id": "401860064",
@@ -16862,9 +16862,12 @@
           "kickoff": "2026-10-13T19:30:00.000-03:00",
           "date": "2026-10-13",
           "venue": "Estádio Joaquim Portugal",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 2
+          }
         },
         {
           "id": "401860398",
@@ -36498,7 +36501,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-09-21T15:40:58.486Z",
+      "fetchedAt": "2026-10-14T14:21:04.633Z",
       "matches": [
         {
           "id": "401843575",
@@ -40165,9 +40168,12 @@
           "kickoff": "2026-10-13T21:30:00.000-03:00",
           "date": "2026-10-13",
           "venue": "Alberto José Armando (La Bombonera)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401913916",
@@ -40206,7 +40212,7 @@
           },
           "kickoff": "2026-10-20T21:30:00.000-03:00",
           "date": "2026-10-20",
-          "venue": null,
+          "venue": "Estadio do Maracana",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
