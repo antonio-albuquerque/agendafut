@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-13T16:44:05.050Z",
+      "fetchedAt": "2026-10-15T13:58:40.009Z",
       "matches": [
         {
           "id": "401840808",
@@ -8036,7 +8036,7 @@
           },
           "kickoff": "2026-11-04T21:30:00.000-03:00",
           "date": "2026-11-04",
-          "venue": null,
+          "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -29605,7 +29605,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-09-25T14:26:21.495Z",
+      "fetchedAt": "2026-10-15T13:58:40.009Z",
       "matches": [
         {
           "id": "401842610",
@@ -33224,9 +33224,12 @@
           "kickoff": "2026-10-14T21:30:00.000-03:00",
           "date": "2026-10-14",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401912523",
@@ -36501,7 +36504,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-10-14T14:21:04.633Z",
+      "fetchedAt": "2026-10-15T13:58:40.009Z",
       "matches": [
         {
           "id": "401843575",
@@ -40192,9 +40195,12 @@
           "kickoff": "2026-10-14T19:00:00.000-03:00",
           "date": "2026-10-14",
           "venue": "Arena MRV",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 0
+          }
         },
         {
           "id": "401913957",
