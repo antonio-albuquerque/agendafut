@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-15T13:58:40.009Z",
+      "fetchedAt": "2026-10-17T12:42:30.766Z",
       "matches": [
         {
           "id": "401840808",
@@ -7281,9 +7281,12 @@
           "kickoff": "2026-10-16T20:00:00.000-03:00",
           "date": "2026-10-16",
           "venue": "Estadio Municipal José Maria de Campos Maia",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401841268",
@@ -8947,7 +8950,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-14T14:21:04.633Z",
+      "fetchedAt": "2026-10-17T12:42:30.766Z",
       "matches": [
         {
           "id": "401860064",
@@ -16886,9 +16889,12 @@
           "kickoff": "2026-10-16T19:30:00.000-03:00",
           "date": "2026-10-16",
           "venue": "Estádio Italo Mário Limongi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401860399",
@@ -16907,9 +16913,12 @@
           "kickoff": "2026-10-16T20:30:00.000-03:00",
           "date": "2026-10-16",
           "venue": "Ilha do Retiro",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860392",
