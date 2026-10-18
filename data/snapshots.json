@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-17T12:42:30.766Z",
+      "fetchedAt": "2026-10-18T12:58:57.054Z",
       "matches": [
         {
           "id": "401840808",
@@ -7305,9 +7305,12 @@
           "kickoff": "2026-10-17T18:00:00.000-03:00",
           "date": "2026-10-17",
           "venue": "Joao Havelange Stadium",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401841270",
@@ -7326,9 +7329,12 @@
           "kickoff": "2026-10-17T18:30:00.000-03:00",
           "date": "2026-10-17",
           "venue": "Arena MRV",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401841271",
@@ -7347,9 +7353,12 @@
           "kickoff": "2026-10-17T19:30:00.000-03:00",
           "date": "2026-10-17",
           "venue": "Arena da Baixada",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401841273",
@@ -7368,9 +7377,12 @@
           "kickoff": "2026-10-17T21:00:00.000-03:00",
           "date": "2026-10-17",
           "venue": "Estádio Cícero Pompeu de Toledo",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401841277",
@@ -8950,7 +8962,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-17T12:42:30.766Z",
+      "fetchedAt": "2026-10-18T12:58:57.054Z",
       "matches": [
         {
           "id": "401860064",
@@ -16937,9 +16949,12 @@
           "kickoff": "2026-10-17T16:30:00.000-03:00",
           "date": "2026-10-17",
           "venue": "Arena Castelão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 2
+          }
         },
         {
           "id": "401860395",
@@ -16958,9 +16973,12 @@
           "kickoff": "2026-10-17T18:30:00.000-03:00",
           "date": "2026-10-17",
           "venue": "Estádio Raimundo Sampaio (Independência)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860394",
