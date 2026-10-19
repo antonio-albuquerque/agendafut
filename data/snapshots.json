@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-18T12:58:57.054Z",
+      "fetchedAt": "2026-10-19T16:13:00.445Z",
       "matches": [
         {
           "id": "401840808",
@@ -7401,9 +7401,12 @@
           "kickoff": "2026-10-18T16:00:00.000-03:00",
           "date": "2026-10-18",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401841276",
@@ -7422,9 +7425,12 @@
           "kickoff": "2026-10-18T16:00:00.000-03:00",
           "date": "2026-10-18",
           "venue": "Arena do Grêmio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 4
+          }
         },
         {
           "id": "401841269",
@@ -7443,9 +7449,12 @@
           "kickoff": "2026-10-18T18:30:00.000-03:00",
           "date": "2026-10-18",
           "venue": "Arena Fonte Nova",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 3
+          }
         },
         {
           "id": "401841274",
@@ -7464,9 +7473,12 @@
           "kickoff": "2026-10-18T19:30:00.000-03:00",
           "date": "2026-10-18",
           "venue": "Mangueirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841272",
@@ -7826,27 +7838,6 @@
           "score": null
         },
         {
-          "id": "401841294",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Coritiba",
-            "slug": "coritiba"
-          },
-          "away": {
-            "name": "Vitória",
-            "slug": "vitoria"
-          },
-          "kickoff": "2026-10-29T19:30:00.000-03:00",
-          "date": "2026-10-29",
-          "venue": "Couto Pereira",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401841292",
           "competition": "brasileirao-serie-a",
           "competitionName": "Brasileirão Série A",
@@ -7905,6 +7896,27 @@
           "kickoff": "2026-10-30T20:00:00.000-03:00",
           "date": "2026-10-30",
           "venue": "Neo Química Arena",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841294",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Coritiba",
+            "slug": "coritiba"
+          },
+          "away": {
+            "name": "Vitória",
+            "slug": "vitoria"
+          },
+          "kickoff": "2026-10-31T16:00:00.000-03:00",
+          "date": "2026-10-31",
+          "venue": "Couto Pereira",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -8962,7 +8974,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-18T12:58:57.054Z",
+      "fetchedAt": "2026-10-19T16:13:00.445Z",
       "matches": [
         {
           "id": "401860064",
@@ -16997,9 +17009,12 @@
           "kickoff": "2026-10-18T16:00:00.000-03:00",
           "date": "2026-10-18",
           "venue": "Estádio da Ressacada",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401860393",
@@ -17018,9 +17033,12 @@
           "kickoff": "2026-10-18T16:00:00.000-03:00",
           "date": "2026-10-18",
           "venue": "Estádio Rei Pelé",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860400",
@@ -17039,9 +17057,12 @@
           "kickoff": "2026-10-18T16:00:00.000-03:00",
           "date": "2026-10-18",
           "venue": "Estádio Primeiro de Maio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860396",
@@ -17060,9 +17081,12 @@
           "kickoff": "2026-10-18T18:00:00.000-03:00",
           "date": "2026-10-18",
           "venue": "Estádio Onésio Brasileiro Alvarenga",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 2
+          }
         },
         {
           "id": "401860401",
