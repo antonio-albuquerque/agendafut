@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-19T16:13:00.445Z",
+      "fetchedAt": "2026-10-20T14:07:40.951Z",
       "matches": [
         {
           "id": "401840808",
@@ -7497,9 +7497,12 @@
           "kickoff": "2026-10-19T20:00:00.000-03:00",
           "date": "2026-10-19",
           "venue": "Neo Química Arena",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841287",
@@ -8974,7 +8977,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-19T16:13:00.445Z",
+      "fetchedAt": "2026-10-20T14:07:40.951Z",
       "matches": [
         {
           "id": "401860064",
@@ -17105,9 +17108,12 @@
           "kickoff": "2026-10-19T19:30:00.000-03:00",
           "date": "2026-10-19",
           "venue": "Estádio da Serrinha",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401860397",

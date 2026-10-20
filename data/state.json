@@ -3555,9 +3555,9 @@
       ]
     },
     "brasileirao-serie-a-2026-10-17-corinthians-vs-vitoria@futebol.agendafut": {
-      "sequence": 4,
-      "seqHash": "e8dde7478de1671e06dd3eda77ce6a643654372b8915d0783f0f6435dff1d0d4",
-      "lastModified": "2026-10-19T16:13:03.385Z",
+      "sequence": 5,
+      "seqHash": "1e7f3dc9fcc199073b7963ec934533830fe6a9ff94a843b16773395c77b26af0",
+      "lastModified": "2026-10-20T14:07:44.030Z",
       "broadcasters": [
         "PREMIERE FC",
         "SPORTV"
@@ -3634,9 +3634,13 @@
       ]
     },
     "brasileirao-serie-a-2026-10-24-flamengo-vs-atletico-mg@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "ed852b644f558fcbf5ca50be09562a0f0d6ef1aac78d4474b21132c8aaa5e651",
-      "lastModified": "2026-09-28T17:22:35.652Z"
+      "sequence": 3,
+      "seqHash": "619be28aa4b78354aabc6133b67328bef2075559c3db79690cce4d609eb2bc9e",
+      "lastModified": "2026-10-20T14:07:44.030Z",
+      "broadcasters": [
+        "PREMIERE",
+        "SPORTV"
+      ]
     },
     "brasileirao-serie-a-2026-10-24-internacional-vs-botafogo@futebol.agendafut": {
       "sequence": 3,
@@ -6126,9 +6130,9 @@
       ]
     },
     "brasileirao-serie-b-2026-10-16-goias-vs-nautico@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "fafd5cc7d744dd24feb823e189b1f282dd6b61cb2ba9740abb6c166608ff5ebe",
-      "lastModified": "2026-10-13T16:44:07.061Z",
+      "sequence": 4,
+      "seqHash": "d0e5afefa8b40285c70c8f2c0596bb52f6d5d0d8e7dab64f5929ac67fc84ea39",
+      "lastModified": "2026-10-20T14:07:44.030Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN"
@@ -6218,9 +6222,12 @@
       ]
     },
     "brasileirao-serie-b-2026-10-23-juventude-vs-nautico@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "2f7bea43c656ad8f79e6b764759818681a4f1312e2ba0d65295fb2cdc3521cd2",
-      "lastModified": "2026-10-09T15:50:30.511Z"
+      "sequence": 3,
+      "seqHash": "bb239ccf14b27893af5c503b6af0d5a49f1e097cde611cd75a3ddf4727510361",
+      "lastModified": "2026-10-20T14:07:44.030Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
     },
     "brasileirao-serie-b-2026-10-23-operario-pr-vs-athletic@futebol.agendafut": {
       "sequence": 3,
@@ -11404,11 +11411,13 @@
       "lastModified": "2026-09-21T15:41:02.686Z"
     },
     "sudamericana-2026-10-21-vasco-vs-boca-juniors@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "9bfd56c962fbfb04b77de15a33bb76886824b704ad4d31cee35e280ab57862ec",
-      "lastModified": "2026-10-18T12:58:59.537Z",
+      "sequence": 4,
+      "seqHash": "af22a5eabab120986f5849ce3547b4e87e0254cc92f590843a0436d89209c616",
+      "lastModified": "2026-10-20T14:07:44.030Z",
       "broadcasters": [
-        "PARAMOUNT+"
+        "PARAMOUNT+",
+        "SBT",
+        "YOUTUBE"
       ]
     }
   }
