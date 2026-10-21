@@ -8977,7 +8977,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-20T14:07:40.951Z",
+      "fetchedAt": "2026-10-21T14:21:12.741Z",
       "matches": [
         {
           "id": "401860064",
@@ -17132,9 +17132,12 @@
           "kickoff": "2026-10-20T19:30:00.000-03:00",
           "date": "2026-10-20",
           "venue": "Estadio VGD",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860410",
@@ -17278,7 +17281,7 @@
           },
           "kickoff": "2026-10-24T18:30:00.000-03:00",
           "date": "2026-10-24",
-          "venue": "Moisés Lucarelli",
+          "venue": "Estádio Italo Mário Limongi",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -36564,7 +36567,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-10-15T13:58:40.009Z",
+      "fetchedAt": "2026-10-21T14:21:12.741Z",
       "matches": [
         {
           "id": "401843575",
@@ -40279,9 +40282,12 @@
           "kickoff": "2026-10-20T21:30:00.000-03:00",
           "date": "2026-10-20",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 3
+          }
         },
         {
           "id": "401913956",
