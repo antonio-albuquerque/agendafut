@@ -1556,6 +1556,7 @@
     "sudamericana:2026:america-de-cali:criciuma": "sudamericana-2026-05-19-america-de-cali-vs-criciuma@futebol.agendafut",
     "sudamericana:2026:america-de-cali:macara": "sudamericana-2026-05-28-america-de-cali-vs-macara@futebol.agendafut",
     "sudamericana:2026:atletico-mg:academia-puerto-cabello": "sudamericana-2026-05-27-atletico-mg-vs-academia-puerto-cabello@futebol.agendafut",
+    "sudamericana:2026:atletico-mg:boca-juniors": "sudamericana-2026-11-21-atletico-mg-vs-boca-juniors@futebol.agendafut",
     "sudamericana:2026:atletico-mg:bragantino": "sudamericana-2026-08-19-atletico-mg-vs-bragantino@futebol.agendafut",
     "sudamericana:2026:atletico-mg:cienciano-del-cusco": "sudamericana-2026-05-21-atletico-mg-vs-cienciano-del-cusco@futebol.agendafut",
     "sudamericana:2026:atletico-mg:juventud": "sudamericana-2026-04-16-atletico-mg-vs-juventud@futebol.agendafut",
@@ -3617,11 +3618,12 @@
       ]
     },
     "brasileirao-serie-a-2026-10-24-coritiba-vs-gremio@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "57ce885e4e6b95706dfe14d82f0f674abbbf29f198642d6c89720c7abfe2f014",
-      "lastModified": "2026-10-19T16:13:03.385Z",
+      "sequence": 4,
+      "seqHash": "57025a75ca08737059e8ac296d1a5228eed1e80a6f17b6f02bd94e2009249d1b",
+      "lastModified": "2026-10-22T14:21:42.038Z",
       "broadcasters": [
-        "PREMIERE"
+        "PREMIERE 2",
+        "PREMIERE 3"
       ]
     },
     "brasileirao-serie-a-2026-10-24-cruzeiro-vs-remo@futebol.agendafut": {
@@ -3634,11 +3636,11 @@
       ]
     },
     "brasileirao-serie-a-2026-10-24-flamengo-vs-atletico-mg@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "619be28aa4b78354aabc6133b67328bef2075559c3db79690cce4d609eb2bc9e",
-      "lastModified": "2026-10-20T14:07:44.030Z",
+      "sequence": 4,
+      "seqHash": "00bcb253a8a0d6fd4563b713cd9d58ef7fecc4259c923de988440809677a9258",
+      "lastModified": "2026-10-22T14:21:42.038Z",
       "broadcasters": [
-        "PREMIERE",
+        "PREMIERE FC",
         "SPORTV"
       ]
     },
@@ -6255,12 +6257,12 @@
       ]
     },
     "brasileirao-serie-b-2026-10-23-sao-bernardo-vs-vila-nova@futebol.agendafut": {
-      "sequence": 4,
-      "seqHash": "a3d27e624192498df9fbaa0761d85c82045628eb09b3034427ad097e0c35c7cc",
-      "lastModified": "2026-10-21T14:21:14.577Z",
+      "sequence": 5,
+      "seqHash": "99a82455f2d05121e62d7d0854b9febb0c6aac010d719d94e0e68e13b3b08b59",
+      "lastModified": "2026-10-22T14:21:42.038Z",
       "broadcasters": [
         "GLOBO",
-        "PREMIERE 6"
+        "PREMIERE 7"
       ]
     },
     "brasileirao-serie-b-2026-10-23-sport-vs-criciuma@futebol.agendafut": {
@@ -9874,9 +9876,9 @@
       "lastModified": "2026-09-18T13:24:22.564Z"
     },
     "libertadores-2026-10-21-palmeiras-vs-fluminense@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "3a2f9779ea3d1daa04bdc3dd4de983fafedb234880bfb63493b3b92f3c028c0b",
-      "lastModified": "2026-10-14T14:21:07.604Z",
+      "sequence": 4,
+      "seqHash": "bbcdde6b7a9789fb87b1f428c61162c8c119f1e9a9f2bc46ff69a0022fcab36f",
+      "lastModified": "2026-10-22T14:21:42.038Z",
       "broadcasters": [
         "GE TV",
         "GLOBO",
@@ -11416,9 +11418,9 @@
       ]
     },
     "sudamericana-2026-10-21-montevideo-city-torque-vs-atletico-mg@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "aa1d11315fd40eab7c26d259bd0144f78e1a4b14b803e5dbc90bbc847d5af970",
-      "lastModified": "2026-09-21T15:41:02.686Z"
+      "sequence": 2,
+      "seqHash": "8ca69add0c466f7dd783b3d93e60d2c3e48fa4af4e85aff3f2107c15580343d7",
+      "lastModified": "2026-10-22T14:21:42.038Z"
     },
     "sudamericana-2026-10-21-vasco-vs-boca-juniors@futebol.agendafut": {
       "sequence": 5,
@@ -11429,6 +11431,11 @@
         "SBT",
         "YOUTUBE"
       ]
+    },
+    "sudamericana-2026-11-21-atletico-mg-vs-boca-juniors@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "c1ef321e4ad91e24201d4a04fa67497cf842f40b42499a646bab009a1173225f",
+      "lastModified": "2026-10-22T14:21:42.038Z"
     }
   }
 }

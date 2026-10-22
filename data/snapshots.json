@@ -29665,7 +29665,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-10-16T13:45:27.567Z",
+      "fetchedAt": "2026-10-22T14:21:39.335Z",
       "matches": [
         {
           "id": "401842610",
@@ -33332,9 +33332,12 @@
           "kickoff": "2026-10-21T21:30:00.000-03:00",
           "date": "2026-10-21",
           "venue": "Allianz Parque",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401912521",
@@ -36567,7 +36570,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-10-21T14:21:12.741Z",
+      "fetchedAt": "2026-10-22T14:21:39.335Z",
       "matches": [
         {
           "id": "401843575",
@@ -40306,6 +40309,30 @@
           "kickoff": "2026-10-21T19:00:00.000-03:00",
           "date": "2026-10-21",
           "venue": "Estadio Centenario",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 0
+          }
+        },
+        {
+          "id": "401913961",
+          "competition": "sudamericana",
+          "competitionName": "CONMEBOL Sudamericana",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Atlético-MG",
+            "slug": "atletico-mg"
+          },
+          "away": {
+            "name": "Boca Juniors",
+            "slug": "boca-juniors"
+          },
+          "kickoff": null,
+          "date": "2026-11-21",
+          "venue": "Metropolitano Roberto Meléndez",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
