@@ -1378,6 +1378,7 @@
     "libertadores:2026:palmeiras:atletico-junior": "libertadores-2026-05-28-palmeiras-vs-atletico-junior@futebol.agendafut",
     "libertadores:2026:palmeiras:cerro-porteno": "libertadores-2026-05-20-palmeiras-vs-cerro-porteno@futebol.agendafut",
     "libertadores:2026:palmeiras:cerro-porteno:2026-08-12": "libertadores-2026-08-12-palmeiras-vs-cerro-porteno@futebol.agendafut",
+    "libertadores:2026:palmeiras:estudiantes-de-la-plata": "libertadores-2026-11-28-palmeiras-vs-estudiantes-de-la-plata@futebol.agendafut",
     "libertadores:2026:palmeiras:fluminense": "libertadores-2026-10-21-palmeiras-vs-fluminense@futebol.agendafut",
     "libertadores:2026:palmeiras:liga-de-quito": "libertadores-2026-09-09-palmeiras-vs-liga-de-quito@futebol.agendafut",
     "libertadores:2026:palmeiras:sporting-cristal": "libertadores-2026-04-16-palmeiras-vs-sporting-cristal@futebol.agendafut",
@@ -9886,13 +9887,18 @@
       ]
     },
     "libertadores-2026-10-22-flamengo-vs-estudiantes-de-la-plata@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "54ad460ccde6d2e8a0a40e4d15b989e25db1a8f5df1203d85d017d0f420684a5",
-      "lastModified": "2026-10-13T16:44:07.061Z",
+      "sequence": 2,
+      "seqHash": "83ed2df08dceea4f96d56ee20fb68cc294d8de125a9d3dbf568a0b9ccc7b8a46",
+      "lastModified": "2026-10-23T14:04:40.361Z",
       "broadcasters": [
         "DISNEY+",
         "ESPN"
       ]
+    },
+    "libertadores-2026-11-28-palmeiras-vs-estudiantes-de-la-plata@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "701f943cd9d310d46eb5c0d177a5e1e4e8c050fcf6141646bd9b94bd41abfc26",
+      "lastModified": "2026-10-23T14:04:40.361Z"
     },
     "mineiro-2026-01-10-cruzeiro-vs-pouso-alegre@futebol.agendafut": {
       "sequence": 1,

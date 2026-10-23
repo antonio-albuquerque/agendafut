@@ -29665,7 +29665,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-10-22T14:21:39.335Z",
+      "fetchedAt": "2026-10-23T14:04:38.477Z",
       "matches": [
         {
           "id": "401842610",
@@ -33356,6 +33356,30 @@
           "kickoff": "2026-10-22T21:30:00.000-03:00",
           "date": "2026-10-22",
           "venue": "Estadio do Maracana",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 0,
+            "away": 0
+          }
+        },
+        {
+          "id": "401912519",
+          "competition": "libertadores",
+          "competitionName": "CONMEBOL Libertadores",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Palmeiras",
+            "slug": "palmeiras"
+          },
+          "away": {
+            "name": "Estudiantes de La Plata",
+            "slug": "estudiantes-de-la-plata"
+          },
+          "kickoff": null,
+          "date": "2026-11-28",
+          "venue": "Estadio Centenario",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
