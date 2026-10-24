@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-20T14:07:40.951Z",
+      "fetchedAt": "2026-10-24T13:07:29.230Z",
       "matches": [
         {
           "id": "401840808",
@@ -7521,9 +7521,12 @@
           "kickoff": "2026-10-23T20:00:00.000-03:00",
           "date": "2026-10-23",
           "venue": "Estadio Mineirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401841285",
@@ -8977,7 +8980,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-21T14:21:12.741Z",
+      "fetchedAt": "2026-10-24T13:07:29.230Z",
       "matches": [
         {
           "id": "401860064",
@@ -17156,9 +17159,12 @@
           "kickoff": "2026-10-23T19:30:00.000-03:00",
           "date": "2026-10-23",
           "venue": "Germano Krüger",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860408",
@@ -17177,9 +17183,12 @@
           "kickoff": "2026-10-23T21:00:00.000-03:00",
           "date": "2026-10-23",
           "venue": "Ilha do Retiro",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860403",
@@ -17602,27 +17611,6 @@
           "score": null
         },
         {
-          "id": "401860424",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Vila Nova",
-            "slug": "vila-nova"
-          },
-          "away": {
-            "name": "Criciúma",
-            "slug": "criciuma"
-          },
-          "kickoff": "2026-11-06T20:30:00.000-03:00",
-          "date": "2026-11-06",
-          "venue": "Estádio Onésio Brasileiro Alvarenga",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401860429",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
@@ -17681,6 +17669,27 @@
           "kickoff": "2026-11-07T16:10:00.000-03:00",
           "date": "2026-11-07",
           "venue": "Estádio Dr. Jorge Ismael de Biasi",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860424",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Vila Nova",
+            "slug": "vila-nova"
+          },
+          "away": {
+            "name": "Criciúma",
+            "slug": "criciuma"
+          },
+          "kickoff": "2026-11-07T20:00:00.000-03:00",
+          "date": "2026-11-07",
+          "venue": "Estádio Onésio Brasileiro Alvarenga",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
