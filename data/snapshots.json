@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-24T13:07:29.230Z",
+      "fetchedAt": "2026-10-25T13:34:18.820Z",
       "matches": [
         {
           "id": "401840808",
@@ -7545,9 +7545,12 @@
           "kickoff": "2026-10-24T16:30:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Estadio Beira-Rio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 0
+          }
         },
         {
           "id": "401841284",
@@ -7566,9 +7569,12 @@
           "kickoff": "2026-10-24T16:30:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Estadio Municipal José Maria de Campos Maia",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841280",
@@ -7587,9 +7593,12 @@
           "kickoff": "2026-10-24T16:30:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Estadio Manoel Barradas",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841283",
@@ -7608,9 +7617,12 @@
           "kickoff": "2026-10-24T18:30:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Arena Barueri",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401841281",
@@ -7629,9 +7641,12 @@
           "kickoff": "2026-10-24T18:30:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Estádio São Januário",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 2
+          }
         },
         {
           "id": "401841278",
@@ -7650,9 +7665,12 @@
           "kickoff": "2026-10-24T19:30:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Arena Condá",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401841282",
@@ -7671,9 +7689,12 @@
           "kickoff": "2026-10-24T21:00:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841279",
@@ -7859,7 +7880,7 @@
           },
           "kickoff": "2026-10-29T20:00:00.000-03:00",
           "date": "2026-10-29",
-          "venue": null,
+          "venue": "Joao Havelange Stadium",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -8980,7 +9001,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-24T13:07:29.230Z",
+      "fetchedAt": "2026-10-25T13:34:18.820Z",
       "matches": [
         {
           "id": "401860064",
@@ -17207,9 +17228,12 @@
           "kickoff": "2026-10-24T16:00:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Estádio da Ressacada",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860404",
@@ -17228,9 +17252,12 @@
           "kickoff": "2026-10-24T16:30:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Estádio Antônio Accioly",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860407",
@@ -17249,9 +17276,12 @@
           "kickoff": "2026-10-24T16:30:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Estádio Primeiro de Maio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 2
+          }
         },
         {
           "id": "401860402",
@@ -17270,9 +17300,12 @@
           "kickoff": "2026-10-24T18:30:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Estádio Rei Pelé",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860409",
@@ -17291,9 +17324,12 @@
           "kickoff": "2026-10-24T18:30:00.000-03:00",
           "date": "2026-10-24",
           "venue": "Estádio Italo Mário Limongi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 2
+          }
         },
         {
           "id": "401860405",
