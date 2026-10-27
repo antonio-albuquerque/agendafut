@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-25T13:34:18.820Z",
+      "fetchedAt": "2026-10-27T15:08:35.230Z",
       "matches": [
         {
           "id": "401840808",
@@ -7713,9 +7713,12 @@
           "kickoff": "2026-10-26T19:30:00.000-03:00",
           "date": "2026-10-26",
           "venue": "Couto Pereira",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401841286",
@@ -7734,9 +7737,12 @@
           "kickoff": "2026-10-26T20:00:00.000-03:00",
           "date": "2026-10-26",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 2
+          }
         },
         {
           "id": "401841289",
@@ -9001,7 +9007,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-25T13:34:18.820Z",
+      "fetchedAt": "2026-10-27T15:08:35.230Z",
       "matches": [
         {
           "id": "401860064",
@@ -17348,9 +17354,12 @@
           "kickoff": "2026-10-26T19:30:00.000-03:00",
           "date": "2026-10-26",
           "venue": "Estádio Raimundo Sampaio (Independência)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860411",
@@ -17369,9 +17378,12 @@
           "kickoff": "2026-10-26T20:30:00.000-03:00",
           "date": "2026-10-26",
           "venue": "Alfredo Jaconi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 4,
+            "away": 0
+          }
         },
         {
           "id": "401860406",
