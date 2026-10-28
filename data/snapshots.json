@@ -9007,7 +9007,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-27T15:08:35.230Z",
+      "fetchedAt": "2026-10-28T15:44:23.853Z",
       "matches": [
         {
           "id": "401860064",
@@ -17402,9 +17402,12 @@
           "kickoff": "2026-10-27T20:00:00.000-03:00",
           "date": "2026-10-27",
           "venue": "Arena Castelão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860414",
@@ -17462,7 +17465,7 @@
             "name": "Juventude",
             "slug": "juventude"
           },
-          "kickoff": "2026-10-31T18:00:00.000-03:00",
+          "kickoff": "2026-10-31T17:30:00.000-03:00",
           "date": "2026-10-31",
           "venue": "Estádio Onésio Brasileiro Alvarenga",
           "status": "scheduled",
@@ -17630,8 +17633,8 @@
             "name": "Londrina",
             "slug": "londrina"
           },
-          "kickoff": "2026-11-06T19:30:00.000-03:00",
-          "date": "2026-11-06",
+          "kickoff": "2026-11-05T19:30:00.000-03:00",
+          "date": "2026-11-05",
           "venue": "Estádio Santa Cruz",
           "status": "scheduled",
           "broadcasters": [],
@@ -17654,27 +17657,6 @@
           "kickoff": "2026-11-06T19:30:00.000-03:00",
           "date": "2026-11-06",
           "venue": "Germano Krüger",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860429",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Cuiabá",
-            "slug": "cuiaba"
-          },
-          "away": {
-            "name": "Juventude",
-            "slug": "juventude"
-          },
-          "kickoff": "2026-11-06T21:30:00.000-03:00",
-          "date": "2026-11-06",
-          "venue": "Arena Pantanal",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -17717,6 +17699,27 @@
           "kickoff": "2026-11-07T16:10:00.000-03:00",
           "date": "2026-11-07",
           "venue": "Estádio Dr. Jorge Ismael de Biasi",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401860429",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Cuiabá",
+            "slug": "cuiaba"
+          },
+          "away": {
+            "name": "Juventude",
+            "slug": "juventude"
+          },
+          "kickoff": "2026-11-07T20:00:00.000-03:00",
+          "date": "2026-11-07",
+          "venue": "Arena Pantanal",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
