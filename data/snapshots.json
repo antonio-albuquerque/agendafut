@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-27T15:08:35.230Z",
+      "fetchedAt": "2026-10-29T15:52:32.738Z",
       "matches": [
         {
           "id": "401840808",
@@ -7761,9 +7761,12 @@
           "kickoff": "2026-10-28T19:30:00.000-03:00",
           "date": "2026-10-28",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401841291",
@@ -7782,9 +7785,12 @@
           "kickoff": "2026-10-28T19:30:00.000-03:00",
           "date": "2026-10-28",
           "venue": "Estádio Municipal Cicero de Souza Marques",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 0
+          }
         },
         {
           "id": "401841293",
@@ -7803,9 +7809,12 @@
           "kickoff": "2026-10-28T19:30:00.000-03:00",
           "date": "2026-10-28",
           "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401841296",
@@ -7824,9 +7833,12 @@
           "kickoff": "2026-10-28T21:30:00.000-03:00",
           "date": "2026-10-28",
           "venue": "Arena Fonte Nova",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 2
+          }
         },
         {
           "id": "401841297",
@@ -7845,9 +7857,12 @@
           "kickoff": "2026-10-28T21:30:00.000-03:00",
           "date": "2026-10-28",
           "venue": "Mangueirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401841288",
