@@ -3701,9 +3701,9 @@
       ]
     },
     "brasileirao-serie-a-2026-10-28-atletico-mg-vs-cruzeiro@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "f75ae4ff629d5b09c43f7c6db782517fd1c86cb057af088cee5e7b4ba84e37b1",
-      "lastModified": "2026-10-25T13:34:20.802Z",
+      "sequence": 4,
+      "seqHash": "404ca0f8bf0f8906e4bdf7a22f8f04b0890f1f2369f5bcb31a360ef78b8fa3c1",
+      "lastModified": "2026-10-30T15:33:54.665Z",
       "broadcasters": [
         "PREMIERE 2",
         "PREMIERE FC"
@@ -3757,9 +3757,9 @@
       ]
     },
     "brasileirao-serie-a-2026-10-28-gremio-vs-athletico-pr@futebol.agendafut": {
-      "sequence": 4,
-      "seqHash": "0988f4acea44b23857b5ca725b4f7baaafa587fb2cbc77a9f5f3e255dbfe71be",
-      "lastModified": "2026-10-28T15:44:25.864Z",
+      "sequence": 5,
+      "seqHash": "742f53c731355cb01edb2e4294dbb561d7455f7f3ae7c2858e00941f88a3f35e",
+      "lastModified": "2026-10-30T15:33:54.665Z",
       "broadcasters": [
         "PREMIERE 3",
         "SPORTV"
@@ -3784,27 +3784,34 @@
       ]
     },
     "brasileirao-serie-a-2026-10-28-vasco-vs-flamengo@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "9aef4bed632232f1dc782d814cdbe87e421f92e9ec36a94ecc1d59070d9d57ac",
-      "lastModified": "2026-10-25T13:34:20.802Z",
+      "sequence": 4,
+      "seqHash": "2ba6331ebb8687c6fca6b2b524a34fc3efa12926e1c004dda5f84cb2523724ed",
+      "lastModified": "2026-10-30T15:33:54.665Z",
       "broadcasters": [
         "PRIME VIDEO"
       ]
     },
     "brasileirao-serie-a-2026-11-04-athletico-pr-vs-vasco@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "5521c30a66fe4aad93f174db5db36bcacec31cc8edf5111cbadbe684653d11a3",
-      "lastModified": "2026-10-29T15:52:35.884Z",
+      "sequence": 4,
+      "seqHash": "2094449fa578ef9ff92b8ab73f94e95b12087f48bfc7a3d6a13c706370b95646",
+      "lastModified": "2026-10-30T15:33:54.665Z",
       "broadcasters": [
         "CAZÉTV",
         "PREMIERE",
+        "PREMIERE 5",
         "RECORD"
       ]
     },
     "brasileirao-serie-a-2026-11-04-botafogo-vs-atletico-mg@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "7191cc0fb76f50640e002968dd3f3bf25faa018ce791b7c5a49bd615b5c4a854",
-      "lastModified": "2026-09-28T17:22:35.652Z"
+      "sequence": 3,
+      "seqHash": "d27e67c5b79bf32d321024c621d498991c76c0bdd0dab8ab4f0a08a9cddd80b4",
+      "lastModified": "2026-10-30T15:33:54.665Z",
+      "broadcasters": [
+        "GLOBO",
+        "PREMIERE",
+        "PREMIERE 2",
+        "PREMIERE 3"
+      ]
     },
     "brasileirao-serie-a-2026-11-04-bragantino-vs-santos@futebol.agendafut": {
       "sequence": 3,
@@ -3831,11 +3838,13 @@
       "lastModified": "2026-09-29T15:22:57.447Z"
     },
     "brasileirao-serie-a-2026-11-04-flamengo-vs-gremio@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "ffd29f8b1fcf6626dd6a3c16c469b75b4ac0f8a95abcc0ca59a84c9927d46458",
-      "lastModified": "2026-10-29T15:52:35.884Z",
+      "sequence": 4,
+      "seqHash": "d015d83653a7b42edc6545dc881442fb0129a4e5a5e4d4f19807eb9bc7217f62",
+      "lastModified": "2026-10-30T15:33:54.665Z",
       "broadcasters": [
-        "PREMIERE"
+        "PREMIERE",
+        "PREMIERE FC",
+        "SPORTV"
       ]
     },
     "brasileirao-serie-a-2026-11-04-internacional-vs-coritiba@futebol.agendafut": {
@@ -3848,14 +3857,24 @@
       ]
     },
     "brasileirao-serie-a-2026-11-04-palmeiras-vs-remo@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "5c332f6d2cb26de1026ea09dbbb02e747f4bea3d0b83b425256e4693ca8b583f",
-      "lastModified": "2026-09-29T15:22:57.447Z"
+      "sequence": 3,
+      "seqHash": "78d8f636e35644c4088fa398f128d68d7ff86ffc6d81a036d62eb69f6a556719",
+      "lastModified": "2026-10-30T15:33:54.665Z",
+      "broadcasters": [
+        "PREMIERE",
+        "PREMIERE FC"
+      ]
     },
     "brasileirao-serie-a-2026-11-04-sao-paulo-vs-corinthians@futebol.agendafut": {
-      "sequence": 4,
-      "seqHash": "bf88373eddb74e796a1fb3231e4548906f64b77a3a132a17641d564604e3391c",
-      "lastModified": "2026-10-15T13:58:42.595Z"
+      "sequence": 5,
+      "seqHash": "3e0dd89c01f1f1092087b742da3add565732980a66fbbd10fd5e26f6a4b82c07",
+      "lastModified": "2026-10-30T15:33:54.665Z",
+      "broadcasters": [
+        "GE TV",
+        "GLOBO",
+        "PREMIERE",
+        "PREMIERE 4"
+      ]
     },
     "brasileirao-serie-a-2026-11-04-vitoria-vs-fluminense@futebol.agendafut": {
       "sequence": 2,
@@ -3863,104 +3882,104 @@
       "lastModified": "2026-09-29T15:22:57.447Z"
     },
     "brasileirao-serie-a-2026-11-18-corinthians-vs-botafogo@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "d7dc87fbc5f7e6e48400c936c8da638d3dc86d4af8d198b7205505857b2ac816",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "27157852622553560d3a894b60ec6e2f4961016de0fc46216bd7015e3f7f5bb5",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-18-coritiba-vs-santos@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "7bc9eec269234a030fb30b867201b8fb31e580ea55d68ce52c1844f11bad7127",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "749f71309eba0be3375ab5d25766367bfe29c937eb74ff038758f854d2952117",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-18-cruzeiro-vs-palmeiras@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "ef586ad8344e3e92adc58c85d4151c5f36cccfe4671414936f313eb14d5a7a1a",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "2550d07f294a2592ee98a16735dd0684a9ae3c159e106b285f3a1b851218814b",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-18-flamengo-vs-athletico-pr@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "99f47620d2d478a773efb4f6727d427b4923f59733ada170aa72ee72f001cc10",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "cceb6bbc52ecdb682879246671f371190291b8c4c245439cb6b89066705e7800",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-18-gremio-vs-bahia@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "0928512206475f47023f55ef270ac295d096f93dba5e057d20e191416e012fc6",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "f78890d11470c9e4ff38421b091e0bdb4278919c5e8406768a2dcf42f6684068",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-18-mirassol-vs-atletico-mg@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "506a304af6a0d09d7b852f8f2fd4aad10ff3d5a8fdcd0ebbdf976bb703e7a435",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "6fb66891e1ff37dd93c211de8178fce1ff9027022c0a33a5015c69b806cbfa44",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-18-remo-vs-chapecoense@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "17ba8e88714cbdd659ea9f131e7ca1947df4e16834573251e0916dfea0969089",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "539123baa53570e48ef17318a33578d215ffbbdf48b2eb5270bee2f9ccad993b",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-18-sao-paulo-vs-fluminense@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "b007677718866270fc54c341b0fd2fb100ca3d2420b60d6018e079c5dac7ffc3",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "284c163a994473a125279e3b350f5bc134fd58dcd98c076d7373023907c967af",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-18-vasco-vs-internacional@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "a8e3d67fdd8a8f5bd9b152060db7e248827dc32ee69610d4bfc17908c0371ee8",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "bd73ec7077162ca73f79670add3f2f1134d6ec709fc9044f14946e2757fd50e4",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-18-vitoria-vs-bragantino@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "0743ff24ab8bb7d241a95a9bd914b9c13b0432a185081b6ce7939fcb57faa71b",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "13851d95858fe96a453808a0ed642343c9b3e92b77bff2f6d070d9a902c00f3f",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-21-athletico-pr-vs-remo@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "368cbe0952a2c1a8575a71ba4cc8601dd4dd265ac9d2a9f76862e6a661d68906",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "f21573e5408e1dbf143dbc4c24c76a22cc0f0ebf9b24c5a55d43aa494df6fdd3",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-21-atletico-mg-vs-corinthians@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "2ba037f078284f1870ac696405f4eb09a60f18872db051f2c94e3ac2680b7f34",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "f42389a655e66017373b9f3e77d0897505195f02acf54de75175b69768da14e7",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-21-bahia-vs-coritiba@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "70970c70907195130d74330496c07862dba75bdd7da302089629e59e162e5b7a",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "54e8e383ff49eaff6e4476611e105e9b53a863ae34c231c526f86de8965e000d",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-21-botafogo-vs-sao-paulo@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "1a76d50dc9e51293dbec75f1bd5569c3451e3b6ad05979c6ca8ad91f05f2a7de",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "ed54d85235a8d4ffcc952d00fc2919199b33536a88925c05418a45336cdb2437",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-21-bragantino-vs-vasco@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "99a4486eed2d76f64534ead970ca61c91eb4b32a024ce0bed107cfb0397a455e",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "f92deff94ac5499a569d558981108d171fbc21ef33a835a51b6fd46e4c3b4fe2",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-21-chapecoense-vs-cruzeiro@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "ae7ab4eabd9d7f50e9edd98f63cf1f32733d6466cafa4d143900e8e3aef63679",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "5301c681fbd76667acb13a4c3b08ce2982cc21cda7b5e1e8b0108db1bb9e3b54",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-21-fluminense-vs-mirassol@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "a7c8a3710b9bde63866ff1b41394829898af291df0d9a100ae2775e609e14727",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "f5fe224bc6a1b627c7e66fbe3c9acf38f0a0c73c2497cfbb5cce8c997e2c219f",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-21-internacional-vs-vitoria@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "278deef6ac9b343d9b032d6ba43f9bae83b37e561fb16f73102ca4776423da2e",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "802c62e139b342af76805947e237b1e11126376c875e6cd8fb1a975132d86a52",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-21-palmeiras-vs-flamengo@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "c4452fa7b61243528c6cd37e6cb98bbd31bd04aa3ffe91497cd88170323f9ee5",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "8d8e833e74b3bb902eab858715fb5f3c4ee13ec26a251de8fef16a33b75da5dc",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-21-santos-vs-gremio@futebol.agendafut": {
-      "sequence": 1,
-      "seqHash": "bab8f8e3885bd2a64642ebb7e729af494df8d78214def776e5300adeb931b18d",
-      "lastModified": "2026-08-12T16:35:39.830Z"
+      "sequence": 2,
+      "seqHash": "1199b2de1cf2366a29c070c08442a42dfc7c4fa67c1b6fff2d3b30cabf3fc11d",
+      "lastModified": "2026-10-30T15:33:54.665Z"
     },
     "brasileirao-serie-a-2026-11-28-atletico-mg-vs-vasco@futebol.agendafut": {
       "sequence": 1,
