@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-30T15:33:52.651Z",
+      "fetchedAt": "2026-10-31T15:03:48.174Z",
       "matches": [
         {
           "id": "401840808",
@@ -7953,9 +7953,12 @@
           "kickoff": "2026-10-30T20:00:00.000-03:00",
           "date": "2026-10-30",
           "venue": "Neo Química Arena",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401841294",
@@ -9031,7 +9034,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-28T15:44:23.853Z",
+      "fetchedAt": "2026-10-31T15:03:48.174Z",
       "matches": [
         {
           "id": "401860064",
@@ -17450,9 +17453,12 @@
           "kickoff": "2026-10-30T19:30:00.000-03:00",
           "date": "2026-10-30",
           "venue": "Heriberto Hülse",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401860413",

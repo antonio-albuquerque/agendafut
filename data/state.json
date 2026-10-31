@@ -3729,9 +3729,9 @@
       ]
     },
     "brasileirao-serie-a-2026-10-28-corinthians-vs-mirassol@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "74cbf905877c8480756f80e176330027464ebb110f221ab5c9ec07dcc0af3fd6",
-      "lastModified": "2026-10-27T15:08:37.615Z",
+      "sequence": 4,
+      "seqHash": "e8caf256fddc5a455256c8b10a66baa2a081ceddcf47d546693d9a11cb807d85",
+      "lastModified": "2026-10-31T15:03:51.193Z",
       "broadcasters": [
         "PREMIERE FC",
         "SPORTV"
@@ -3833,9 +3833,12 @@
       ]
     },
     "brasileirao-serie-a-2026-11-04-cruzeiro-vs-bahia@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "469fd8731b78f620d197669199031d01fe44d75bdc176251161469313a53b158",
-      "lastModified": "2026-09-29T15:22:57.447Z"
+      "sequence": 3,
+      "seqHash": "381a43698d85eae4584ee04297125b83911ff62aa8093a93cb51ee124431f73a",
+      "lastModified": "2026-10-31T15:03:51.193Z",
+      "broadcasters": [
+        "PRIME VIDEO"
+      ]
     },
     "brasileirao-serie-a-2026-11-04-flamengo-vs-gremio@futebol.agendafut": {
       "sequence": 4,
@@ -6382,9 +6385,9 @@
       ]
     },
     "brasileirao-serie-b-2026-10-30-criciuma-vs-ponte-preta@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "8a4cd41f01cf10631bcf83bfb6408ff98ae740d5b88626c762c8df84df191c24",
-      "lastModified": "2026-10-24T13:07:31.104Z",
+      "sequence": 4,
+      "seqHash": "52dfbaa463e8290c89b8c23b354f3d8986bbef813eb8c5b78c8f34b6e5b2c7de",
+      "lastModified": "2026-10-31T15:03:51.193Z",
       "broadcasters": [
         "DISNEY+"
       ]
@@ -6495,9 +6498,15 @@
       "lastModified": "2026-10-09T15:50:30.511Z"
     },
     "brasileirao-serie-b-2026-11-06-operario-pr-vs-sport@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "a11d4ce4e3b3218bad32743b521f7e384c9d6aef006bd9fc3af5ee31fe4ccaf0",
-      "lastModified": "2026-10-09T15:50:30.511Z"
+      "sequence": 3,
+      "seqHash": "214e518e2513dd0694adea8abf4c97df3ca30463b5a25d730f939e4cdf16eb14",
+      "lastModified": "2026-10-31T15:03:51.193Z",
+      "broadcasters": [
+        "DISNEY+",
+        "ESPN",
+        "SPORTYNET",
+        "XSPORTS"
+      ]
     },
     "brasileirao-serie-b-2026-11-06-vila-nova-vs-criciuma@futebol.agendafut": {
       "sequence": 3,
@@ -8483,24 +8492,22 @@
       ]
     },
     "copa-do-brasil-2026-11-01-gremio-vs-atletico-mg@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "6c72b1f3c417f68de52f68672a26622db5622b87ac1338f3cea4ca25e0e0b979",
-      "lastModified": "2026-10-29T15:52:35.884Z",
+      "sequence": 4,
+      "seqHash": "c74b4f43a4a2f9002a884e598db0a3c268ffad259d41ddb5e6b9b1db8cda50ca",
+      "lastModified": "2026-10-31T15:03:51.193Z",
       "broadcasters": [
-        "PREMIERE",
         "PREMIERE FC",
         "PRIME VIDEO",
         "SPORTV"
       ]
     },
     "copa-do-brasil-2026-11-01-palmeiras-vs-vasco@futebol.agendafut": {
-      "sequence": 3,
-      "seqHash": "5d88246d7ccc1eecd1e7d7bd5d6a77bc7b3a427f3dce9ca4752c4ea4f787ac99",
-      "lastModified": "2026-10-29T15:52:35.884Z",
+      "sequence": 4,
+      "seqHash": "c268aaf44cc7256849c360f0b0b5442607a9c679cf91dc95f0e1fcbced3033a5",
+      "lastModified": "2026-10-31T15:03:51.193Z",
       "broadcasters": [
         "GE TV",
         "GLOBO",
-        "PREMIERE",
         "PREMIERE 2",
         "PREMIERE FC",
         "PRIME VIDEO",
