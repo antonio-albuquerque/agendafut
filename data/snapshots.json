@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-10-31T15:03:48.174Z",
+      "fetchedAt": "2026-11-01T15:47:09.513Z",
       "matches": [
         {
           "id": "401840808",
@@ -4844,27 +4844,6 @@
           }
         },
         {
-          "id": "401841175",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Chapecoense",
-            "slug": "chapecoense"
-          },
-          "away": {
-            "name": "Vasco da Gama",
-            "slug": "vasco"
-          },
-          "kickoff": null,
-          "date": "2026-07-29",
-          "venue": "Arena Condá",
-          "status": "postponed",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401841171",
           "competition": "brasileirao-serie-a",
           "competitionName": "Brasileirão Série A",
@@ -7977,9 +7956,12 @@
           "kickoff": "2026-10-31T16:00:00.000-03:00",
           "date": "2026-10-31",
           "venue": "Couto Pereira",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401841299",
@@ -8208,6 +8190,27 @@
           "kickoff": "2026-11-14T18:30:00.000-03:00",
           "date": "2026-11-14",
           "venue": "Estadio Municipal José Maria de Campos Maia",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841175",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Chapecoense",
+            "slug": "chapecoense"
+          },
+          "away": {
+            "name": "Vasco da Gama",
+            "slug": "vasco"
+          },
+          "kickoff": "2026-11-14T20:30:00.000-03:00",
+          "date": "2026-11-14",
+          "venue": "Arena Condá",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -9034,7 +9037,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-10-31T15:03:48.174Z",
+      "fetchedAt": "2026-11-01T15:47:09.513Z",
       "matches": [
         {
           "id": "401860064",
@@ -17477,9 +17480,12 @@
           "kickoff": "2026-10-31T16:00:00.000-03:00",
           "date": "2026-10-31",
           "venue": "Estádio Santa Cruz",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401860416",
@@ -17498,9 +17504,12 @@
           "kickoff": "2026-10-31T17:30:00.000-03:00",
           "date": "2026-10-31",
           "venue": "Estádio Onésio Brasileiro Alvarenga",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 2
+          }
         },
         {
           "id": "401860421",
@@ -17519,9 +17528,12 @@
           "kickoff": "2026-10-31T19:30:00.000-03:00",
           "date": "2026-10-31",
           "venue": "Estádio dos Aflitos",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860418",
@@ -29755,7 +29767,7 @@
       ]
     },
     "libertadores": {
-      "fetchedAt": "2026-10-23T14:04:38.477Z",
+      "fetchedAt": "2026-11-01T15:47:09.513Z",
       "matches": [
         {
           "id": "401842610",
@@ -33467,7 +33479,7 @@
             "name": "Estudiantes de La Plata",
             "slug": "estudiantes-de-la-plata"
           },
-          "kickoff": null,
+          "kickoff": "2026-11-28T17:00:00.000-03:00",
           "date": "2026-11-28",
           "venue": "Estadio Centenario",
           "status": "scheduled",
@@ -36684,7 +36696,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-10-22T14:21:39.335Z",
+      "fetchedAt": "2026-11-01T15:47:09.513Z",
       "matches": [
         {
           "id": "401843575",
@@ -40444,7 +40456,7 @@
             "name": "Boca Juniors",
             "slug": "boca-juniors"
           },
-          "kickoff": null,
+          "kickoff": "2026-11-21T19:30:00.000-03:00",
           "date": "2026-11-21",
           "venue": "Metropolitano Roberto Meléndez",
           "status": "scheduled",
