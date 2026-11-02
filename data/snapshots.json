@@ -9037,7 +9037,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-11-01T15:47:09.513Z",
+      "fetchedAt": "2026-11-02T19:12:43.695Z",
       "matches": [
         {
           "id": "401860064",
@@ -17552,9 +17552,12 @@
           "kickoff": "2026-11-01T16:00:00.000-03:00",
           "date": "2026-11-01",
           "venue": "Estadio VGD",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 3
+          }
         },
         {
           "id": "401860415",
@@ -17573,9 +17576,12 @@
           "kickoff": "2026-11-01T18:30:00.000-03:00",
           "date": "2026-11-01",
           "venue": "Arena Pantanal",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401860417",
@@ -17594,9 +17600,12 @@
           "kickoff": "2026-11-01T18:30:00.000-03:00",
           "date": "2026-11-01",
           "venue": "Estádio Dr. Jorge Ismael de Biasi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860420",
@@ -17615,7 +17624,7 @@
           "kickoff": "2026-11-02T16:00:00.000-03:00",
           "date": "2026-11-02",
           "venue": "Arena Castelão",
-          "status": "scheduled",
+          "status": "confirmed",
           "broadcasters": [],
           "score": null
         },
@@ -23092,7 +23101,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-09-28T17:22:33.638Z",
+      "fetchedAt": "2026-11-02T19:12:43.695Z",
       "matches": [
         {
           "id": "401858546",
@@ -26711,9 +26720,12 @@
           "kickoff": "2026-11-01T16:00:00.000-03:00",
           "date": "2026-11-01",
           "venue": "Allianz Parque",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401913109",
@@ -26732,9 +26744,12 @@
           "kickoff": "2026-11-01T18:30:00.000-03:00",
           "date": "2026-11-01",
           "venue": "Arena do Grêmio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401913108",
