@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-11-03T16:50:46.833Z",
+      "fetchedAt": "2026-11-04T16:52:09.660Z",
       "matches": [
         {
           "id": "401840808",
@@ -8004,9 +8004,12 @@
           "kickoff": "2026-11-03T19:30:00.000-03:00",
           "date": "2026-11-03",
           "venue": "Arena Condá",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401841301",
@@ -8025,9 +8028,12 @@
           "kickoff": "2026-11-03T21:30:00.000-03:00",
           "date": "2026-11-03",
           "venue": "Estadio Beira-Rio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401841306",
