@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-11-05T17:06:50.399Z",
+      "fetchedAt": "2026-11-06T16:36:31.096Z",
       "matches": [
         {
           "id": "401840808",
@@ -8148,9 +8148,12 @@
           "kickoff": "2026-11-05T19:30:00.000-03:00",
           "date": "2026-11-05",
           "venue": "Allianz Parque",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 6,
+            "away": 1
+          }
         },
         {
           "id": "401841303",
@@ -8169,9 +8172,12 @@
           "kickoff": "2026-11-05T21:30:00.000-03:00",
           "date": "2026-11-05",
           "venue": "Estadio Mineirão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 2
+          }
         },
         {
           "id": "401841302",
@@ -9058,7 +9064,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-11-03T16:50:46.833Z",
+      "fetchedAt": "2026-11-06T16:36:31.096Z",
       "matches": [
         {
           "id": "401860064",
@@ -17717,9 +17723,12 @@
           "kickoff": "2026-11-05T19:30:00.000-03:00",
           "date": "2026-11-05",
           "venue": "Estádio Santa Cruz",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 4,
+            "away": 0
+          }
         },
         {
           "id": "401860425",
@@ -17911,6 +17920,27 @@
           "score": null
         },
         {
+          "id": "401860435",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Londrina",
+            "slug": "londrina"
+          },
+          "away": {
+            "name": "Náutico",
+            "slug": "nautico"
+          },
+          "kickoff": "2026-11-11T19:00:00.000-03:00",
+          "date": "2026-11-11",
+          "venue": "Estadio VGD",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
           "id": "401860432",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
@@ -18032,27 +18062,6 @@
           "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
           "venue": "Alfredo Jaconi",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401860435",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Londrina",
-            "slug": "londrina"
-          },
-          "away": {
-            "name": "Náutico",
-            "slug": "nautico"
-          },
-          "kickoff": "2026-11-14T16:30:00.000-03:00",
-          "date": "2026-11-14",
-          "venue": "Estadio VGD",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
