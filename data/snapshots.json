@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-11-06T16:36:31.096Z",
+      "fetchedAt": "2026-11-07T15:25:58.917Z",
       "matches": [
         {
           "id": "401840808",
@@ -8196,9 +8196,12 @@
           "kickoff": "2026-11-06T20:00:00.000-03:00",
           "date": "2026-11-06",
           "venue": "Estadio Manoel Barradas",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 3
+          }
         },
         {
           "id": "401841311",
@@ -9064,7 +9067,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-11-06T16:36:31.096Z",
+      "fetchedAt": "2026-11-07T15:25:58.917Z",
       "matches": [
         {
           "id": "401860064",
@@ -17747,9 +17750,12 @@
           "kickoff": "2026-11-06T19:30:00.000-03:00",
           "date": "2026-11-06",
           "venue": "Germano Krüger",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 2
+          }
         },
         {
           "id": "401860423",
