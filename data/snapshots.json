@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-11-07T15:25:58.917Z",
+      "fetchedAt": "2026-11-08T15:48:04.193Z",
       "matches": [
         {
           "id": "401840808",
@@ -8624,6 +8624,27 @@
           "score": null
         },
         {
+          "id": "401841335",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Chapecoense",
+            "slug": "chapecoense"
+          },
+          "away": {
+            "name": "Palmeiras",
+            "slug": "palmeiras"
+          },
+          "kickoff": "2026-11-24T18:00:00.000-03:00",
+          "date": "2026-11-24",
+          "venue": "Arena Condá",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
           "id": "401841319",
           "competition": "brasileirao-serie-a",
           "competitionName": "Brasileirão Série A",
@@ -8645,106 +8666,22 @@
           "score": null
         },
         {
-          "id": "401841328",
+          "id": "401841329",
           "competition": "brasileirao-serie-a",
           "competitionName": "Brasileirão Série A",
           "season": 2026,
           "round": null,
           "home": {
-            "name": "Atlético-MG",
-            "slug": "atletico-mg"
+            "name": "São Paulo",
+            "slug": "sao-paulo"
           },
           "away": {
-            "name": "Vasco da Gama",
-            "slug": "vasco"
+            "name": "Remo",
+            "slug": "remo"
           },
-          "kickoff": null,
-          "date": "2026-11-28",
-          "venue": "Arena MRV",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401841336",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Botafogo",
-            "slug": "botafogo"
-          },
-          "away": {
-            "name": "Bahia",
-            "slug": "bahia"
-          },
-          "kickoff": null,
-          "date": "2026-11-28",
-          "venue": "Joao Havelange Stadium",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401841335",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Chapecoense",
-            "slug": "chapecoense"
-          },
-          "away": {
-            "name": "Palmeiras",
-            "slug": "palmeiras"
-          },
-          "kickoff": null,
-          "date": "2026-11-28",
-          "venue": "Arena Condá",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401841334",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Corinthians",
-            "slug": "corinthians"
-          },
-          "away": {
-            "name": "Grêmio",
-            "slug": "gremio"
-          },
-          "kickoff": null,
-          "date": "2026-11-28",
-          "venue": "Neo Química Arena",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401841333",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Coritiba",
-            "slug": "coritiba"
-          },
-          "away": {
-            "name": "Flamengo",
-            "slug": "flamengo"
-          },
-          "kickoff": null,
-          "date": "2026-11-28",
-          "venue": "Couto Pereira",
+          "kickoff": "2026-11-26T20:00:00.000-03:00",
+          "date": "2026-11-26",
+          "venue": "Estádio Cícero Pompeu de Toledo",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -8763,9 +8700,93 @@
             "name": "Cruzeiro",
             "slug": "cruzeiro"
           },
-          "kickoff": null,
-          "date": "2026-11-28",
+          "kickoff": "2026-11-27T20:00:00.000-03:00",
+          "date": "2026-11-27",
           "venue": "Estadio do Maracana",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841336",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Botafogo",
+            "slug": "botafogo"
+          },
+          "away": {
+            "name": "Bahia",
+            "slug": "bahia"
+          },
+          "kickoff": "2026-11-28T21:00:00.000-03:00",
+          "date": "2026-11-28",
+          "venue": "Joao Havelange Stadium",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841333",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Coritiba",
+            "slug": "coritiba"
+          },
+          "away": {
+            "name": "Flamengo",
+            "slug": "flamengo"
+          },
+          "kickoff": "2026-11-29T16:00:00.000-03:00",
+          "date": "2026-11-29",
+          "venue": "Couto Pereira",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841332",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Vitória",
+            "slug": "vitoria"
+          },
+          "away": {
+            "name": "Santos",
+            "slug": "santos"
+          },
+          "kickoff": "2026-11-29T16:00:00.000-03:00",
+          "date": "2026-11-29",
+          "venue": "Estadio Manoel Barradas",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401841334",
+          "competition": "brasileirao-serie-a",
+          "competitionName": "Brasileirão Série A",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Corinthians",
+            "slug": "corinthians"
+          },
+          "away": {
+            "name": "Grêmio",
+            "slug": "gremio"
+          },
+          "kickoff": "2026-11-29T18:30:00.000-03:00",
+          "date": "2026-11-29",
+          "venue": "Neo Química Arena",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -8784,8 +8805,8 @@
             "name": "Red Bull Bragantino",
             "slug": "bragantino"
           },
-          "kickoff": null,
-          "date": "2026-11-28",
+          "kickoff": "2026-11-29T18:30:00.000-03:00",
+          "date": "2026-11-29",
           "venue": "Estadio Beira-Rio",
           "status": "scheduled",
           "broadcasters": [],
@@ -8805,51 +8826,30 @@
             "name": "Athletico-PR",
             "slug": "athletico-pr"
           },
-          "kickoff": null,
-          "date": "2026-11-28",
+          "kickoff": "2026-11-29T18:30:00.000-03:00",
+          "date": "2026-11-29",
           "venue": "Estadio Municipal José Maria de Campos Maia",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
         },
         {
-          "id": "401841329",
+          "id": "401841328",
           "competition": "brasileirao-serie-a",
           "competitionName": "Brasileirão Série A",
           "season": 2026,
           "round": null,
           "home": {
-            "name": "São Paulo",
-            "slug": "sao-paulo"
+            "name": "Atlético-MG",
+            "slug": "atletico-mg"
           },
           "away": {
-            "name": "Remo",
-            "slug": "remo"
+            "name": "Vasco da Gama",
+            "slug": "vasco"
           },
-          "kickoff": null,
-          "date": "2026-11-28",
-          "venue": "Estádio Cícero Pompeu de Toledo",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
-          "id": "401841332",
-          "competition": "brasileirao-serie-a",
-          "competitionName": "Brasileirão Série A",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Vitória",
-            "slug": "vitoria"
-          },
-          "away": {
-            "name": "Santos",
-            "slug": "santos"
-          },
-          "kickoff": null,
-          "date": "2026-11-28",
-          "venue": "Estadio Manoel Barradas",
+          "kickoff": "2026-11-29T19:30:00.000-03:00",
+          "date": "2026-11-29",
+          "venue": "Arena MRV",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -8868,7 +8868,7 @@
             "name": "São Paulo",
             "slug": "sao-paulo"
           },
-          "kickoff": null,
+          "kickoff": "2026-12-02T21:30:00.000-03:00",
           "date": "2026-12-02",
           "venue": "Arena da Baixada",
           "status": "scheduled",
@@ -8889,7 +8889,7 @@
             "name": "Atlético-MG",
             "slug": "atletico-mg"
           },
-          "kickoff": null,
+          "kickoff": "2026-12-02T21:30:00.000-03:00",
           "date": "2026-12-02",
           "venue": "Arena Fonte Nova",
           "status": "scheduled",
@@ -8910,7 +8910,7 @@
             "name": "Internacional",
             "slug": "internacional"
           },
-          "kickoff": null,
+          "kickoff": "2026-12-02T21:30:00.000-03:00",
           "date": "2026-12-02",
           "venue": "Estadio Mineirão",
           "status": "scheduled",
@@ -8931,7 +8931,7 @@
             "name": "Chapecoense",
             "slug": "chapecoense"
           },
-          "kickoff": null,
+          "kickoff": "2026-12-02T21:30:00.000-03:00",
           "date": "2026-12-02",
           "venue": "Estadio do Maracana",
           "status": "scheduled",
@@ -8952,7 +8952,7 @@
             "name": "Mirassol",
             "slug": "mirassol"
           },
-          "kickoff": null,
+          "kickoff": "2026-12-02T21:30:00.000-03:00",
           "date": "2026-12-02",
           "venue": "Arena do Grêmio",
           "status": "scheduled",
@@ -8973,7 +8973,7 @@
             "name": "Coritiba",
             "slug": "coritiba"
           },
-          "kickoff": null,
+          "kickoff": "2026-12-02T21:30:00.000-03:00",
           "date": "2026-12-02",
           "venue": "Allianz Parque",
           "status": "scheduled",
@@ -8994,7 +8994,7 @@
             "name": "Fluminense",
             "slug": "fluminense"
           },
-          "kickoff": null,
+          "kickoff": "2026-12-02T21:30:00.000-03:00",
           "date": "2026-12-02",
           "venue": "Estádio Municipal Cicero de Souza Marques",
           "status": "scheduled",
@@ -9015,9 +9015,9 @@
             "name": "Corinthians",
             "slug": "corinthians"
           },
-          "kickoff": null,
+          "kickoff": "2026-12-02T21:30:00.000-03:00",
           "date": "2026-12-02",
-          "venue": "Estadio Evandro Almeida (Baenao)",
+          "venue": "Mangueirão",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -9036,7 +9036,7 @@
             "name": "Botafogo",
             "slug": "botafogo"
           },
-          "kickoff": null,
+          "kickoff": "2026-12-02T21:30:00.000-03:00",
           "date": "2026-12-02",
           "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
           "status": "scheduled",
@@ -9057,7 +9057,7 @@
             "name": "Vitória",
             "slug": "vitoria"
           },
-          "kickoff": null,
+          "kickoff": "2026-12-02T21:30:00.000-03:00",
           "date": "2026-12-02",
           "venue": "Estádio São Januário",
           "status": "scheduled",
@@ -9067,7 +9067,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-11-07T15:25:58.917Z",
+      "fetchedAt": "2026-11-08T15:48:04.193Z",
       "matches": [
         {
           "id": "401860064",
@@ -17774,9 +17774,12 @@
           "kickoff": "2026-11-07T16:00:00.000-03:00",
           "date": "2026-11-07",
           "venue": "Estádio da Ressacada",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860427",
@@ -17795,9 +17798,12 @@
           "kickoff": "2026-11-07T16:10:00.000-03:00",
           "date": "2026-11-07",
           "venue": "Estádio Dr. Jorge Ismael de Biasi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860429",
@@ -17816,9 +17822,12 @@
           "kickoff": "2026-11-07T20:00:00.000-03:00",
           "date": "2026-11-07",
           "venue": "Arena Pantanal",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401860424",
@@ -17837,9 +17846,12 @@
           "kickoff": "2026-11-07T20:00:00.000-03:00",
           "date": "2026-11-07",
           "venue": "Estádio Onésio Brasileiro Alvarenga",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860426",
@@ -17858,9 +17870,12 @@
           "kickoff": "2026-11-07T21:30:00.000-03:00",
           "date": "2026-11-07",
           "venue": "Estádio dos Aflitos",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 3
+          }
         },
         {
           "id": "401860422",
@@ -23146,7 +23161,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-11-02T19:12:43.695Z",
+      "fetchedAt": "2026-11-08T15:48:04.193Z",
       "matches": [
         {
           "id": "401858546",
@@ -26813,9 +26828,12 @@
           "kickoff": "2026-11-07T18:00:00.000-03:00",
           "date": "2026-11-07",
           "venue": "Arena MRV",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401913107",
