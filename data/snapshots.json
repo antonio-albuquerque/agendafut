@@ -9067,7 +9067,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-11-08T15:48:04.193Z",
+      "fetchedAt": "2026-11-09T19:30:29.763Z",
       "matches": [
         {
           "id": "401860064",
@@ -17894,9 +17894,12 @@
           "kickoff": "2026-11-08T16:00:00.000-03:00",
           "date": "2026-11-08",
           "venue": "Estádio Joaquim Portugal",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 3
+          }
         },
         {
           "id": "401860430",
@@ -17915,9 +17918,12 @@
           "kickoff": "2026-11-08T19:15:00.000-03:00",
           "date": "2026-11-08",
           "venue": "Arena Castelão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860428",
@@ -17936,9 +17942,12 @@
           "kickoff": "2026-11-08T19:15:00.000-03:00",
           "date": "2026-11-08",
           "venue": "Estádio da Serrinha",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860435",
@@ -23161,7 +23170,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-11-08T15:48:04.193Z",
+      "fetchedAt": "2026-11-09T19:30:29.763Z",
       "matches": [
         {
           "id": "401858546",
@@ -26852,6 +26861,30 @@
           "kickoff": "2026-11-08T17:00:00.000-03:00",
           "date": "2026-11-08",
           "venue": "Estádio São Januário",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 2,
+            "away": 1
+          }
+        },
+        {
+          "id": "401913106",
+          "competition": "copa-do-brasil",
+          "competitionName": "Copa do Brasil",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Grêmio",
+            "slug": "gremio"
+          },
+          "away": {
+            "name": "Palmeiras",
+            "slug": "palmeiras"
+          },
+          "kickoff": null,
+          "date": "2026-12-06",
+          "venue": "Arena BRB Mané Garrincha",
           "status": "scheduled",
           "broadcasters": [],
           "score": null

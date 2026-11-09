@@ -1042,6 +1042,7 @@
     "copa-do-brasil:2026:gremio:confianca": "copa-do-brasil-2026-04-21-gremio-vs-confianca@futebol.agendafut",
     "copa-do-brasil:2026:gremio:internacional": "copa-do-brasil-2026-09-03-gremio-vs-internacional@futebol.agendafut",
     "copa-do-brasil:2026:gremio:mirassol": "copa-do-brasil-2026-08-05-gremio-vs-mirassol@futebol.agendafut",
+    "copa-do-brasil:2026:gremio:palmeiras": "copa-do-brasil-2026-12-06-gremio-vs-palmeiras@futebol.agendafut",
     "copa-do-brasil:2026:internacional:athletic": "copa-do-brasil-2026-05-12-internacional-vs-athletic@futebol.agendafut",
     "copa-do-brasil:2026:internacional:corinthians": "copa-do-brasil-2026-08-02-internacional-vs-corinthians@futebol.agendafut",
     "copa-do-brasil:2026:internacional:gremio": "copa-do-brasil-2026-08-27-internacional-vs-gremio@futebol.agendafut",
@@ -6458,9 +6459,9 @@
       ]
     },
     "brasileirao-serie-b-2026-11-06-athletic-vs-atletico-go@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "2b3a1f57b5678c488049c068f43fb28a5853e844e74d2bef0f881823a926a72e",
-      "lastModified": "2026-10-09T15:50:30.511Z"
+      "sequence": 3,
+      "seqHash": "4015970ae608b47f05346eb5c539979ff190de732ec91f22e44fe50df1e4e41f",
+      "lastModified": "2026-11-09T19:30:35.308Z"
     },
     "brasileirao-serie-b-2026-11-06-avai-vs-sao-bernardo@futebol.agendafut": {
       "sequence": 3,
@@ -6473,9 +6474,9 @@
       "lastModified": "2026-11-06T16:36:33.290Z"
     },
     "brasileirao-serie-b-2026-11-06-ceara-vs-america-mg@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "e18041954a064de0c61398149b22141ad3790f3d0f7ff19bdc667215543edd62",
-      "lastModified": "2026-10-09T15:50:30.511Z"
+      "sequence": 3,
+      "seqHash": "a8f008c9412b272035f54708b86bf077e456cc3be49ea23650c8314b3e8b8347",
+      "lastModified": "2026-11-09T19:30:35.308Z"
     },
     "brasileirao-serie-b-2026-11-06-cuiaba-vs-juventude@futebol.agendafut": {
       "sequence": 4,
@@ -6483,9 +6484,9 @@
       "lastModified": "2026-11-08T15:48:05.811Z"
     },
     "brasileirao-serie-b-2026-11-06-goias-vs-ponte-preta@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "96632525f648d1a4a5327c345b47c3389382f95e881a898a0efb845177f6251a",
-      "lastModified": "2026-10-09T15:50:30.511Z"
+      "sequence": 3,
+      "seqHash": "a3b06a049d9f23c78dc5dbc83546754b262be99c4dd2a4e37e5accd7f867b86c",
+      "lastModified": "2026-11-09T19:30:35.308Z"
     },
     "brasileirao-serie-b-2026-11-06-nautico-vs-crb@futebol.agendafut": {
       "sequence": 3,
@@ -8525,9 +8526,9 @@
       ]
     },
     "copa-do-brasil-2026-11-08-vasco-vs-palmeiras@futebol.agendafut": {
-      "sequence": 2,
-      "seqHash": "14770849a82a7c19db33d9914622e5e4d631347c3bdf13839f39de41640ed760",
-      "lastModified": "2026-10-25T13:34:20.802Z",
+      "sequence": 3,
+      "seqHash": "eaf1984fc8df7e5670126f930853295d0a4412de4184cd427222156f1b612af9",
+      "lastModified": "2026-11-09T19:30:35.308Z",
       "broadcasters": [
         "GE TV",
         "GLOBO",
@@ -8535,6 +8536,11 @@
         "PRIME VIDEO",
         "SPORTV"
       ]
+    },
+    "copa-do-brasil-2026-12-06-gremio-vs-palmeiras@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "6705bf93202a96207a8960ed92238543887ea2d92faed3d2b407c78566bcdd14",
+      "lastModified": "2026-11-09T19:30:35.308Z"
     },
     "copa-do-nordeste-2026-03-24-asa-vs-piaui-teresina@futebol.agendafut": {
       "sequence": 1,
