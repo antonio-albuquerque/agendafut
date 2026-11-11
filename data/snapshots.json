@@ -9067,7 +9067,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-11-10T16:48:20.827Z",
+      "fetchedAt": "2026-11-11T16:53:49.769Z",
       "matches": [
         {
           "id": "401860064",
@@ -17986,7 +17986,7 @@
           },
           "kickoff": "2026-11-12T19:00:00.000-03:00",
           "date": "2026-11-12",
-          "venue": "Moisés Lucarelli",
+          "venue": "Estádio Italo Mário Limongi",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
