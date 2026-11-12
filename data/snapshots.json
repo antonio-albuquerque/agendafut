@@ -9067,7 +9067,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-11-11T16:53:49.769Z",
+      "fetchedAt": "2026-11-12T17:22:35.396Z",
       "matches": [
         {
           "id": "401860064",
@@ -17966,9 +17966,12 @@
           "kickoff": "2026-11-11T19:00:00.000-03:00",
           "date": "2026-11-11",
           "venue": "Estadio VGD",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 1
+          }
         },
         {
           "id": "401860434",
