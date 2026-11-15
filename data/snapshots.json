@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-11-08T15:48:04.193Z",
+      "fetchedAt": "2026-11-15T16:05:26.896Z",
       "matches": [
         {
           "id": "401840808",
@@ -8220,9 +8220,12 @@
           "kickoff": "2026-11-14T18:30:00.000-03:00",
           "date": "2026-11-14",
           "venue": "Estadio Municipal José Maria de Campos Maia",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 0
+          }
         },
         {
           "id": "401841175",
@@ -8241,9 +8244,12 @@
           "kickoff": "2026-11-14T20:30:00.000-03:00",
           "date": "2026-11-14",
           "venue": "Arena Condá",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401841315",
@@ -9067,7 +9073,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-11-13T16:57:33.923Z",
+      "fetchedAt": "2026-11-15T16:05:26.896Z",
       "matches": [
         {
           "id": "401860064",
@@ -18038,9 +18044,12 @@
           "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
           "venue": "Estádio Raimundo Sampaio (Independência)",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401860440",
@@ -18059,9 +18068,12 @@
           "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
           "venue": "Estádio Antônio Accioly",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860439",
@@ -18080,9 +18092,12 @@
           "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
           "venue": "Estádio Rei Pelé",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401860438",
@@ -18101,9 +18116,12 @@
           "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
           "venue": "Heriberto Hülse",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401860437",
@@ -18122,9 +18140,12 @@
           "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
           "venue": "Arena Castelão",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 0
+          }
         },
         {
           "id": "401860441",
@@ -18143,9 +18164,12 @@
           "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
           "venue": "Alfredo Jaconi",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401860433",
@@ -18164,6 +18188,93 @@
           "kickoff": "2026-11-14T16:30:00.000-03:00",
           "date": "2026-11-14",
           "venue": "Ilha do Retiro",
+          "status": "finished",
+          "broadcasters": [],
+          "score": {
+            "home": 3,
+            "away": 0
+          }
+        },
+        {
+          "id": "401912708",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Atlético-GO",
+            "slug": "atletico-go"
+          },
+          "away": {
+            "name": "Vila Nova",
+            "slug": "vila-nova"
+          },
+          "kickoff": null,
+          "date": "2026-11-21",
+          "venue": "Estádio Antônio Accioly",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401912682",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Criciúma",
+            "slug": "criciuma"
+          },
+          "away": {
+            "name": "Fortaleza",
+            "slug": "fortaleza"
+          },
+          "kickoff": null,
+          "date": "2026-11-21",
+          "venue": "Heriberto Hülse",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401912709",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Fortaleza",
+            "slug": "fortaleza"
+          },
+          "away": {
+            "name": "Criciúma",
+            "slug": "criciuma"
+          },
+          "kickoff": null,
+          "date": "2026-11-28",
+          "venue": "Arena Castelão",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401912683",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Vila Nova",
+            "slug": "vila-nova"
+          },
+          "away": {
+            "name": "Atlético-GO",
+            "slug": "atletico-go"
+          },
+          "kickoff": null,
+          "date": "2026-11-28",
+          "venue": "Estádio Onésio Brasileiro Alvarenga",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
