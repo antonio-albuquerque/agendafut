@@ -442,6 +442,7 @@
     "brasileirao-serie-b:2026:atletico-go:sport": "brasileirao-serie-b-2026-10-09-atletico-go-vs-sport@futebol.agendafut",
     "brasileirao-serie-b:2026:atletico-go:vila-nova": "brasileirao-serie-b-2026-08-15-atletico-go-vs-vila-nova@futebol.agendafut",
     "brasileirao-serie-b:2026:atletico-go:vila-nova:2026-11-21": "brasileirao-serie-b-2026-11-21-atletico-go-vs-vila-nova@futebol.agendafut",
+    "brasileirao-serie-b:2026:atletico-go:vila-nova:2026-11-22": "brasileirao-serie-b-2026-11-22-atletico-go-vs-vila-nova@futebol.agendafut",
     "brasileirao-serie-b:2026:avai:america-mg": "brasileirao-serie-b-2026-07-21-avai-vs-america-mg@futebol.agendafut",
     "brasileirao-serie-b:2026:avai:athletic": "brasileirao-serie-b-2026-10-16-avai-vs-athletic@futebol.agendafut",
     "brasileirao-serie-b:2026:avai:atletico-go": "brasileirao-serie-b-2026-08-28-avai-vs-atletico-go@futebol.agendafut",
@@ -528,6 +529,7 @@
     "brasileirao-serie-b:2026:criciuma:cuiaba": "brasileirao-serie-b-2026-09-04-criciuma-vs-cuiaba@futebol.agendafut",
     "brasileirao-serie-b:2026:criciuma:fortaleza": "brasileirao-serie-b-2026-08-23-criciuma-vs-fortaleza@futebol.agendafut",
     "brasileirao-serie-b:2026:criciuma:fortaleza:2026-11-21": "brasileirao-serie-b-2026-11-21-criciuma-vs-fortaleza@futebol.agendafut",
+    "brasileirao-serie-b:2026:criciuma:fortaleza:2026-11-22": "brasileirao-serie-b-2026-11-22-criciuma-vs-fortaleza@futebol.agendafut",
     "brasileirao-serie-b:2026:criciuma:goias": "brasileirao-serie-b-2026-08-15-criciuma-vs-goias@futebol.agendafut",
     "brasileirao-serie-b:2026:criciuma:juventude": "brasileirao-serie-b-2026-09-08-criciuma-vs-juventude@futebol.agendafut",
     "brasileirao-serie-b:2026:criciuma:londrina": "brasileirao-serie-b-2026-06-06-criciuma-vs-londrina@futebol.agendafut",
@@ -751,6 +753,7 @@
     "brasileirao-serie-b:2026:vila-nova:america-mg": "brasileirao-serie-b-2026-09-18-vila-nova-vs-america-mg@futebol.agendafut",
     "brasileirao-serie-b:2026:vila-nova:athletic": "brasileirao-serie-b-2026-05-04-vila-nova-vs-athletic@futebol.agendafut",
     "brasileirao-serie-b:2026:vila-nova:atletico-go": "brasileirao-serie-b-2026-04-04-vila-nova-vs-atletico-go@futebol.agendafut",
+    "brasileirao-serie-b:2026:vila-nova:atletico-go:2026-11-27": "brasileirao-serie-b-2026-11-27-vila-nova-vs-atletico-go@futebol.agendafut",
     "brasileirao-serie-b:2026:vila-nova:atletico-go:2026-11-28": "brasileirao-serie-b-2026-11-28-vila-nova-vs-atletico-go@futebol.agendafut",
     "brasileirao-serie-b:2026:vila-nova:avai": "brasileirao-serie-b-2026-05-17-vila-nova-vs-avai@futebol.agendafut",
     "brasileirao-serie-b:2026:vila-nova:botafogo-sp": "brasileirao-serie-b-2026-06-08-vila-nova-vs-botafogo-sp@futebol.agendafut",
@@ -6581,10 +6584,28 @@
       "seqHash": "601d49a5626b9103e57690450f8767f2af22eb534df8bf5c8fde9e0d807fea42",
       "lastModified": "2026-11-15T16:05:30.197Z"
     },
-    "brasileirao-serie-b-2026-11-28-fortaleza-vs-criciuma@futebol.agendafut": {
+    "brasileirao-serie-b-2026-11-22-atletico-go-vs-vila-nova@futebol.agendafut": {
       "sequence": 0,
-      "seqHash": "4c7fd6b1b68f02c90b0f47eb4930e43a7d4f48fc256e63758282352be4b24e65",
-      "lastModified": "2026-11-15T16:05:30.197Z"
+      "seqHash": "4b866a875ab27da69b4d8117f76fa64f4a257baa8f2d43d3a7fb4a1221e06ce7",
+      "lastModified": "2026-11-16T19:17:00.015Z",
+      "broadcasters": [
+        "DISNEY+"
+      ]
+    },
+    "brasileirao-serie-b-2026-11-22-criciuma-vs-fortaleza@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "4bed954e2c9775b1bfed4b2cc42d5fbe1b5092aed6be634403aef7e0453ebb3c",
+      "lastModified": "2026-11-16T19:17:00.015Z"
+    },
+    "brasileirao-serie-b-2026-11-27-vila-nova-vs-atletico-go@futebol.agendafut": {
+      "sequence": 0,
+      "seqHash": "ddecd9a5af6f49f3fc10d1613cb289abafc792f564813f60a4ed28907b4389eb",
+      "lastModified": "2026-11-16T19:17:00.015Z"
+    },
+    "brasileirao-serie-b-2026-11-28-fortaleza-vs-criciuma@futebol.agendafut": {
+      "sequence": 1,
+      "seqHash": "63b171afe02311f6dfa051934e4558efad257cb824b4a46159b5682386893248",
+      "lastModified": "2026-11-16T19:17:00.015Z"
     },
     "brasileirao-serie-b-2026-11-28-vila-nova-vs-atletico-go@futebol.agendafut": {
       "sequence": 0,

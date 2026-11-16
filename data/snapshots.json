@@ -9073,7 +9073,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-11-15T16:05:26.896Z",
+      "fetchedAt": "2026-11-16T19:16:56.727Z",
       "matches": [
         {
           "id": "401860064",
@@ -18196,27 +18196,6 @@
           }
         },
         {
-          "id": "401912708",
-          "competition": "brasileirao-serie-b",
-          "competitionName": "Brasileirão Série B",
-          "season": 2026,
-          "round": null,
-          "home": {
-            "name": "Atlético-GO",
-            "slug": "atletico-go"
-          },
-          "away": {
-            "name": "Vila Nova",
-            "slug": "vila-nova"
-          },
-          "kickoff": null,
-          "date": "2026-11-21",
-          "venue": "Estádio Antônio Accioly",
-          "status": "scheduled",
-          "broadcasters": [],
-          "score": null
-        },
-        {
           "id": "401912682",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
@@ -18230,30 +18209,30 @@
             "name": "Fortaleza",
             "slug": "fortaleza"
           },
-          "kickoff": null,
-          "date": "2026-11-21",
+          "kickoff": "2026-11-22T16:00:00.000-03:00",
+          "date": "2026-11-22",
           "venue": "Heriberto Hülse",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
         },
         {
-          "id": "401912709",
+          "id": "401912708",
           "competition": "brasileirao-serie-b",
           "competitionName": "Brasileirão Série B",
           "season": 2026,
           "round": null,
           "home": {
-            "name": "Fortaleza",
-            "slug": "fortaleza"
+            "name": "Atlético-GO",
+            "slug": "atletico-go"
           },
           "away": {
-            "name": "Criciúma",
-            "slug": "criciuma"
+            "name": "Vila Nova",
+            "slug": "vila-nova"
           },
-          "kickoff": null,
-          "date": "2026-11-28",
-          "venue": "Arena Castelão",
+          "kickoff": "2026-11-22T18:30:00.000-03:00",
+          "date": "2026-11-22",
+          "venue": "Estádio Antônio Accioly",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
@@ -18272,9 +18251,30 @@
             "name": "Atlético-GO",
             "slug": "atletico-go"
           },
-          "kickoff": null,
-          "date": "2026-11-28",
+          "kickoff": "2026-11-27T20:00:00.000-03:00",
+          "date": "2026-11-27",
           "venue": "Estádio Onésio Brasileiro Alvarenga",
+          "status": "scheduled",
+          "broadcasters": [],
+          "score": null
+        },
+        {
+          "id": "401912709",
+          "competition": "brasileirao-serie-b",
+          "competitionName": "Brasileirão Série B",
+          "season": 2026,
+          "round": null,
+          "home": {
+            "name": "Fortaleza",
+            "slug": "fortaleza"
+          },
+          "away": {
+            "name": "Criciúma",
+            "slug": "criciuma"
+          },
+          "kickoff": "2026-11-28T20:00:00.000-03:00",
+          "date": "2026-11-28",
+          "venue": "Arena Castelão",
           "status": "scheduled",
           "broadcasters": [],
           "score": null
