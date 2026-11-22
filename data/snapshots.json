@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-11-20T17:33:45.642Z",
+      "fetchedAt": "2026-11-22T16:54:02.581Z",
       "matches": [
         {
           "id": "401840808",
@@ -8484,9 +8484,12 @@
           "kickoff": "2026-11-21T16:30:00.000-03:00",
           "date": "2026-11-21",
           "venue": "Allianz Parque",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841327",
@@ -8505,9 +8508,12 @@
           "kickoff": "2026-11-21T17:30:00.000-03:00",
           "date": "2026-11-21",
           "venue": "Arena Fonte Nova",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401841325",
@@ -8526,9 +8532,12 @@
           "kickoff": "2026-11-21T21:00:00.000-03:00",
           "date": "2026-11-21",
           "venue": "Arena Condá",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 2
+          }
         },
         {
           "id": "401841318",
@@ -36954,7 +36963,7 @@
       ]
     },
     "sudamericana": {
-      "fetchedAt": "2026-11-01T15:47:09.513Z",
+      "fetchedAt": "2026-11-22T16:54:02.581Z",
       "matches": [
         {
           "id": "401843575",
@@ -40717,9 +40726,12 @@
           "kickoff": "2026-11-21T19:30:00.000-03:00",
           "date": "2026-11-21",
           "venue": "Metropolitano Roberto Meléndez",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         }
       ]
     }
