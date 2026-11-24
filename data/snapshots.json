@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-11-23T20:53:18.657Z",
+      "fetchedAt": "2026-11-24T19:56:54.267Z",
       "matches": [
         {
           "id": "401840808",
@@ -8628,9 +8628,12 @@
           "kickoff": "2026-11-23T19:30:00.000-03:00",
           "date": "2026-11-23",
           "venue": "Estadio Beira-Rio",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 5
+          }
         },
         {
           "id": "401841326",
@@ -8649,9 +8652,12 @@
           "kickoff": "2026-11-23T20:00:00.000-03:00",
           "date": "2026-11-23",
           "venue": "Joao Havelange Stadium",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841320",
@@ -8670,9 +8676,12 @@
           "kickoff": "2026-11-23T21:00:00.000-03:00",
           "date": "2026-11-23",
           "venue": "Estádio Cícero Pompeu de Toledo",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 2
+          }
         },
         {
           "id": "401841335",
