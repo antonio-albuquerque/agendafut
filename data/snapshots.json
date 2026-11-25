@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-11-24T19:56:54.267Z",
+      "fetchedAt": "2026-11-25T18:58:53.350Z",
       "matches": [
         {
           "id": "401840808",
@@ -8700,9 +8700,12 @@
           "kickoff": "2026-11-24T18:00:00.000-03:00",
           "date": "2026-11-24",
           "venue": "Arena Condá",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 0
+          }
         },
         {
           "id": "401841319",
@@ -23350,7 +23353,7 @@
       ]
     },
     "copa-do-brasil": {
-      "fetchedAt": "2026-11-23T20:53:18.657Z",
+      "fetchedAt": "2026-11-25T18:58:53.350Z",
       "matches": [
         {
           "id": "401858546",
@@ -27062,7 +27065,7 @@
             "name": "Palmeiras",
             "slug": "palmeiras"
           },
-          "kickoff": "2026-12-06T17:00:00.000-03:00",
+          "kickoff": "2026-12-06T16:00:00.000-03:00",
           "date": "2026-12-06",
           "venue": "Arena BRB Mané Garrincha",
           "status": "scheduled",
