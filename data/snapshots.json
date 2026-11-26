@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-11-25T18:58:53.350Z",
+      "fetchedAt": "2026-11-26T18:50:21.317Z",
       "matches": [
         {
           "id": "401840808",
@@ -8724,9 +8724,12 @@
           "kickoff": "2026-11-25T20:00:00.000-03:00",
           "date": "2026-11-25",
           "venue": "Arena MRV",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 1,
+            "away": 1
+          }
         },
         {
           "id": "401841329",
