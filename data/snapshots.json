@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-11-26T18:50:21.317Z",
+      "fetchedAt": "2026-11-27T18:41:47.215Z",
       "matches": [
         {
           "id": "401840808",
@@ -8748,9 +8748,12 @@
           "kickoff": "2026-11-26T20:00:00.000-03:00",
           "date": "2026-11-26",
           "venue": "Estádio Cícero Pompeu de Toledo",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 3,
+            "away": 1
+          }
         },
         {
           "id": "401841337",
