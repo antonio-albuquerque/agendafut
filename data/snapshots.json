@@ -2,7 +2,7 @@
   "version": 1,
   "leagues": {
     "brasileirao-serie-a": {
-      "fetchedAt": "2026-11-27T18:41:47.215Z",
+      "fetchedAt": "2026-11-28T17:23:00.345Z",
       "matches": [
         {
           "id": "401840808",
@@ -8772,9 +8772,12 @@
           "kickoff": "2026-11-27T20:00:00.000-03:00",
           "date": "2026-11-27",
           "venue": "Estadio do Maracana",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 0,
+            "away": 1
+          }
         },
         {
           "id": "401841336",
@@ -9136,7 +9139,7 @@
       ]
     },
     "brasileirao-serie-b": {
-      "fetchedAt": "2026-11-23T20:53:18.657Z",
+      "fetchedAt": "2026-11-28T17:23:00.345Z",
       "matches": [
         {
           "id": "401860064",
@@ -18323,9 +18326,12 @@
           "kickoff": "2026-11-27T20:00:00.000-03:00",
           "date": "2026-11-27",
           "venue": "Estádio Onésio Brasileiro Alvarenga",
-          "status": "scheduled",
+          "status": "finished",
           "broadcasters": [],
-          "score": null
+          "score": {
+            "home": 2,
+            "away": 0
+          }
         },
         {
           "id": "401912709",
